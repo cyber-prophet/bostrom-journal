@@ -6,12 +6,12 @@
 
 ### Welcome to Bostrom
 
--  the new way of sharing, storing, ranking, and searching for information, blockchain-based on cyberlinks, knowledge graph, and IPFS file system.
--  the platform for building on top of these ☝;
--  the social platform;
--  the economic environment;
--  the ground for AI;
--  whatever you can imagine and do.
+- the new way of sharing, storing, ranking, and searching for information, blockchain-based on cyberlinks, knowledge graph, and IPFS file system.
+- the platform for building on top of these ☝;
+- the social platform;
+- the economic environment;
+- the ground for AI;
+- whatever you can imagine and do.
 
 Here you already can create [cyberlinks](/search/cyberlink), search on the [graph](/oracle), rank with the [Relevance machine](/search/rm), share and store information, [earn rewards](/halloffame), [investmint](/mint), and [tweet](/search/tweet). [Bostrom](/search/bostrom) is the [bootloader](/bootloader) for [Cyber](/search/cyber), with the same features. <==
 
@@ -78,7 +78,7 @@ source:ionos.com <==
 
 First of all, you need a Bostrom address. For that, you need a Keplr extension.
 
--  [extension for chrome](https://chrome.google.com/webstore/detail/keplr/dmkamcknogkgcdfhhbddcghachkejeap)
+- [extension for chrome](https://chrome.google.com/webstore/detail/keplr/dmkamcknogkgcdfhhbddcghachkejeap)
 
 Setup Keplr, then go to [My robot](https://cyb.ai/) and connect it. <==
 
@@ -90,8 +90,8 @@ Setup Keplr, then go to [My robot](https://cyb.ai/) and connect it. <==
 
 Once you will get Bostrom address, you can continue with advanced steps.
 
--  [help & guide](/search/help)
--  [video guide](/ipfs/QmYc7t8wnAEXgQFzYBEkpZp8ubtYrcEPsJBbr9m3GQ1VCU) <==
+- [help & guide](/search/help)
+- [video guide](/ipfs/QmYc7t8wnAEXgQFzYBEkpZp8ubtYrcEPsJBbr9m3GQ1VCU) <==
 
 ---
 
@@ -164,7 +164,7 @@ To cyberlink - to create a cyberlink between two particles. <==
 
 You can cyberlink any information to each other. You can search on cyber or add content by yourself. To start cyberlinking you need A and V, which you can get by [investmint H](/mint) in [HFR](/search/hfr), or buy H in [Teleport](/teleport).
 
--  [cyberlink](/search/cyberlink) <==
+- [cyberlink](/search/cyberlink) <==
 
 ## Tokens
 
@@ -179,7 +179,7 @@ There are several tokens in the Bostrom network: BOOT, HYDROGEN, VOLT, AMPERE. E
 With BOOT one can:
 
 - `stake` (delegate tokens to a validator), being paid rewards in return (risk fee);
-  - for each staked BOOT a HYDROGEN is produced (with a 1 to 1 ratio)
+- for each staked BOOT a HYDROGEN is produced (with a 1 to 1 ratio)
 - transfer to somebody (if BOOT is in a liquid state)
 - pay for network transactions (pay for gas). Though now, many validators accept transactions for free.
 - vote for protocol change and public goods.
@@ -352,8 +352,8 @@ A message in a particular Twitter account's feed is a cyberlink between the text
 
 Once you will get a bostrom address, then you will have a robot page, which will show your avatars and balances
 
--  [check balances](/)
--  [manage accounts](/) <==
+- [check balances](/)
+- [manage accounts](/) <==
 
 ---
 
@@ -363,9 +363,9 @@ Once you will get a bostrom address, then you will have a robot page, which will
 
 You can exchange your tokens on another by using swap, explore [existing pools](/teleport/pools) or add liquidity and sub liquidity
 
--  [swap](/teleport)
--  [add liquidity](/teleport/add-liquidity)
--  [sub liquidity](/teleport/sub-liquidity) <==
+- [swap](/teleport)
+- [add liquidity](/teleport/add-liquidity)
+- [sub liquidity](/teleport/sub-liquidity) <==
 
 ---
 
@@ -375,7 +375,7 @@ You can exchange your tokens on another by using swap, explore [existing pools](
 
 You can delegate(stake) BOOT by hiring a Hero in the [Dyson Sphere](/search/dyson%20shpere) and get H in equal amounts of staked BOOT.
 
--  [hire & fire Heros](/halloffame) <==
+- [hire & fire Heros](/halloffame) <==
 
 ---
 
@@ -386,7 +386,7 @@ You can delegate(stake) BOOT by hiring a Hero in the [Dyson Sphere](/search/dyso
 You can mint [A](/token/A) and [V](/token/V) by locking your [H](/token/H).
 You can get H by delegating on Heroes in the [Dyson Sphere](/search/dyson%20shpere).
 
--  [nvestmint](/mint) <==
+- [nvestmint](/mint) <==
 
 ---
 
@@ -402,9 +402,9 @@ In this reactor, [amperes](/token/A) or [volts](/token/V) can be [extracted](/mi
 
 You can exchange your tokens on another by using swap, explore [existing pools](/teleport/pools) or add liquidity and sub liquidity
 
--  [swap](/teleport)
--  [add liquidity](/teleport/add-liquidity)
--  [sub liquidity](/teleport/add-liquidity) <==
+- [swap](/teleport)
+- [add liquidity](/teleport/add-liquidity)
+- [sub liquidity](/teleport/add-liquidity) <==
 
 ---
 
@@ -414,8 +414,8 @@ You can exchange your tokens on another by using swap, explore [existing pools](
 
 Here you can check your energy, route A and V to your friends
 
--  [check energy](/grid)
--  [route](/grid/outcome) <==
+- [check energy](/grid)
+- [route](/grid/outcome) <==
 
 ---
 
@@ -425,8 +425,8 @@ Here you can check your energy, route A and V to your friends
 
 You can participate in community life by voting for proposals in [senate](/senate)
 
--  [vote](/senate)
--  [propose](/senate) <==
+- [vote](/senate)
+- [propose](/senate) <==
 
 ---
 
@@ -434,9 +434,9 @@ You can participate in community life by voting for proposals in [senate](/senat
 
 Governance process of [Cyber networks](https://cyb.ai/search/computing%20knowledge) is focused on the [evolution](https://cyb.ai/search/cyber%20evolution) of its code and is based on 3 methods.
 
--  [self-reflection](https://cyb.ai/search/cyber%20self-reflection)
--  [investments](https://cyb.ai/search/cyber%20investments)
--  [adaptation](https://cyb.ai/search/cyber%20adaptation)
+- [self-reflection](https://cyb.ai/search/cyber%20self-reflection)
+- [investments](https://cyb.ai/search/cyber%20investments)
+- [adaptation](https://cyb.ai/search/cyber%20adaptation)
 
 Everyone can submit proposals.
 
@@ -517,22 +517,26 @@ The Great Web is built by connecting particles through cyberlinks. The result is
 ### Strategic Plan of Contracts Development
 
 #### Cybercongress
+
 1. investmint contract
 2. staking contract
 3. fungible token factory
 4. nft factory
 
 #### Deuslabs
+
 1. gift
 2. namespaces
 3. passport
 
 #### HackJuno
+
 1. liquidity incentives
 2. conditional tokens
 3. option with price oracles
 
 #### Research
+
 1. exodus
 2. dao contract
 3. nonfungible particle token
@@ -651,41 +655,41 @@ The amount of addresses should also be divided into grades for each audience as
 
 #### Average Citizens
 
--  ETH owners and senders of outgoing transactions
+- ETH owners and senders of outgoing transactions
 
 #### Masters of the Great Web
 
--  ERC721 owners and creators of contracts using factories
+- ERC721 owners and creators of contracts using factories
 
 #### Astronauts
 
--  ATOM owners
--  OSMO owners and liquidity providers
--  LUNA owners
+- ATOM owners
+- OSMO owners and liquidity providers
+- LUNA owners
 
 #### Extraordinary Hackers
 
--  contract creators
+- contract creators
 
 #### Heroes of the Great Web
 
--  participants of Genesis and ETH 2.0 stackers
+- participants of Genesis and ETH 2.0 stackers
 
 #### Passionate Investors
 
--  owners of the selected ERC20 tokens
+- owners of the selected ERC20 tokens
 
 #### Key Opinion Leaders
 
--  TOP holders by the selected ERC20 tokens
+- TOP holders by the selected ERC20 tokens
 
 #### Cyberpunks
 
--  owners of the cyberpunk tokens
+- owners of the cyberpunk tokens
 
 #### Leeches
 
--  manual assigned addresses of top CEXes
+- manual assigned addresses of top CEXes
 
 These audiences were highlighted because their participation is necessary to form a full-fledged ecosystem of the project.
 
@@ -769,9 +773,9 @@ There will be incentive **13x** for those who claim first reducing to **7x** who
 
 My name is Maxim Razhev (@ninjascant). I'm a software engineer with 3+ years of experience in blockchain analytics development. I made a manual re-check of queries used here e.g.
 
--  re-calculating balances on a subset of wallets and comparing with a node output
--  comparing the list of NFTs and other entities with open sources like Etherscan and OpenSea
--  verifying that the data presented in the final tables are consistent with query logic
+- re-calculating balances on a subset of wallets and comparing with a node output
+- comparing the list of NFTs and other entities with open sources like Etherscan and OpenSea
+- verifying that the data presented in the final tables are consistent with query logic
 
 So, by making this commit, I confirm that the results of the analysis presented in this repository are checked by me and correct. <==
 
@@ -811,14 +815,14 @@ And finally, we want our incentive contract to mint liquid token of the incentiv
 
 So we came to an understanding of the main input parameters for a contract factory:
 
--  pool token
--  expiration time
--  reward token
--  name of the farming token
+- pool token
+- expiration time
+- reward token
+- name of the farming token
 
 ### Rewarding Formula
 
-```
+````
 LP Reward =
   Contract balance *
   Amount of farming tokens *
@@ -1019,3 +1023,4 @@ Some collected wisdom on soft governance strategies for making and passing propo
 5. Mind the character limit! The limit for proposals is 5000 characters and this includes markdown formatting and links.
 
 by [lexa](https://forum.cosmos.network/u/lexa/summary) on [forum.cosmos.network](https://forum.cosmos.network/t/best-practices-for-proposal-makers/6245) <==
+````
