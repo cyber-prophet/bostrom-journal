@@ -12,7 +12,7 @@ Bostrom is a superintelligence project based on blockchain (cosmos-SDK), consens
 
 ==> [cid](https://cyb.ai/ipfs/QmREDsSSALhBnPCPXKYSi9piknyqEvCErTAGvpWyMCWAmZ), by [author](https://cyb.ai/network/bostrom/contract/bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
 
-### Capabilities of Bostrom Blockchain
+### Capabilities of the Bostrom Blockchain
 
 - the new way of sharing, storing, ranking, and searching for information;
 - the platform for building on top of these ☝;
@@ -21,9 +21,25 @@ Bostrom is a superintelligence project based on blockchain (cosmos-SDK), consens
 - the ground for AI;
 - and much more that can imagined and done.
 
-Site [cyb.ai](https://cyb.ai) is an application built using Bostrom Blockchain.
+Site [cyb.ai](https://cyb.ai) is an application built using the Bostrom Blockchain.
 
 On [cyb.ai](https://cyb.ai) you already can create [cyberlinks](/search/cyberlink), search on the [graph](/oracle), rank with the [Relevance machine](/search/rm), share and store information, [earn rewards](/halloffame), [investmint](/mint), and [tweet](/search/tweet). [Bostrom](/search/bostrom) is the [bootloader](/bootloader) for [Cyber](/search/cyber), with the same features. <==
+
+---
+
+==> [cid](https://cyb.ai/ipfs/QmX3owfDdvVUAr2J58nrdBQShBH8be6iwv9NZwnTAjTdjf), by [author](https://cyb.ai/network/bostrom/contract/bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
+
+### Purpose of the Bostrom network
+
+Bostrom allows adding knowledge to the knowledge graph verifiably. By "verifiably" we mean that it is guaranteed by blockchain design that a particular address added specific content into the blockchain at the known time.
+
+The knowledge graph is a directed weighted graph between CIDs (Content-ID of files, also known as content addresses, IPFS-hashes, IPFS-links).
+
+Cyberlinks are the edges of the knowledge graph, CIDs are the vertexes (aka nodes).
+
+In order to create cyberlinks in Bostrom, user accounts (so-called neurons) must have VOLT and AMPERE tokens.
+
+By definition, created cyberlinks cannot be deleted. This means, among other things, that they will always be taken into account in cyberrank (until "forgetting" or "pruning" functions are introduced). <==
 
 ---
 
@@ -127,22 +143,6 @@ This is first of the many articles that I am planning to publish as I expore the
 More articles to follow explain the next steps of exploration. <==
 
 ## Knowledge graph
-
----
-
-==> [cid](https://cyb.ai/ipfs/QmX3owfDdvVUAr2J58nrdBQShBH8be6iwv9NZwnTAjTdjf), by [author](https://cyb.ai/network/bostrom/contract/bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
-
-### Purpose of the Bostrom network
-
-Bostrom allows adding knowledge to the knowledge graph verifiably. By "verifiably" we mean that it is guaranteed by blockchain design that a particular address added specific content into the blockchain at the known time.
-
-The knowledge graph is a directed weighted graph between CIDs (Content-ID of files, also known as content addresses, IPFS-hashes, IPFS-links).
-
-Cyberlinks are the edges of the knowledge graph, CIDs are the vertexes (aka nodes).
-
-In order to create cyberlinks in Bostrom, user accounts (so-called neurons) must have VOLT and AMPERE tokens.
-
-By definition, created cyberlinks cannot be deleted. This means, among other things, that they will always be taken into account in cyberrank (until "forgetting" or "pruning" functions are introduced). <==
 
 ---
 
