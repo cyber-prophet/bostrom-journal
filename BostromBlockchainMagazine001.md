@@ -2,26 +2,28 @@
 
 ---
 
+==> [cid](https://cyb.ai/ipfs/QmbvXoTA8nqZGzzCtQtw7rrrNrTRxyRSHsJPa5ZsPLHDG7), by [author](https://cyb.ai/network/bostrom/contract/bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
+
+### Bostrom - the short definition
+
+Bostrom is a superintelligence project based on blockchain (cosmos-SDK), consensus protocol Tendermint and content addressing mechanism (with the current IPFS implementation). <==
+
+---
+
 ==> [cid](https://cyb.ai/ipfs/QmREDsSSALhBnPCPXKYSi9piknyqEvCErTAGvpWyMCWAmZ), by [author](https://cyb.ai/network/bostrom/contract/bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
 
-### Welcome to Bostrom
+### Capabilities of Bostrom Blockchain
 
-- the new way of sharing, storing, ranking, and searching for information, blockchain-based on cyberlinks, knowledge graph, and IPFS file system.
+- the new way of sharing, storing, ranking, and searching for information;
 - the platform for building on top of these ☝;
 - the social platform;
 - the economic environment;
 - the ground for AI;
-- whatever you can imagine and do.
+- and much more that can imagined and done.
 
-Here you already can create [cyberlinks](/search/cyberlink), search on the [graph](/oracle), rank with the [Relevance machine](/search/rm), share and store information, [earn rewards](/halloffame), [investmint](/mint), and [tweet](/search/tweet). [Bostrom](/search/bostrom) is the [bootloader](/bootloader) for [Cyber](/search/cyber), with the same features. <==
+Site [cyb.ai](https://cyb.ai) is an application built using Bostrom Blockchain.
 
----
-
-==> [cid](https://cyb.ai/ipfs/QmbvXoTA8nqZGzzCtQtw7rrrNrTRxyRSHsJPa5ZsPLHDG7), by [author](https://cyb.ai/network/bostrom/contract/bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
-
-### Bostrom
-
-Bostrom is a superintelligence project based on blockchain (cosmos-SDK), consensus protocol Tendermint and content addressing mechanism (with the current IPFS implementation). <==
+On [cyb.ai](https://cyb.ai) you already can create [cyberlinks](/search/cyberlink), search on the [graph](/oracle), rank with the [Relevance machine](/search/rm), share and store information, [earn rewards](/halloffame), [investmint](/mint), and [tweet](/search/tweet). [Bostrom](/search/bostrom) is the [bootloader](/bootloader) for [Cyber](/search/cyber), with the same features. <==
 
 ---
 
@@ -179,7 +181,7 @@ There are several tokens in the Bostrom network: BOOT, HYDROGEN, VOLT, AMPERE. E
 With BOOT one can:
 
 - `stake` (delegate tokens to a validator), being paid rewards in return (risk fee);
-- for each staked BOOT a HYDROGEN is produced (with a 1 to 1 ratio)
+  - for each staked BOOT a HYDROGEN is produced (with a 1 to 1 ratio)
 - transfer to somebody (if BOOT is in a liquid state)
 - pay for network transactions (pay for gas). Though now, many validators accept transactions for free.
 - vote for protocol change and public goods.
@@ -217,7 +219,7 @@ Every 1 V token on the neuron's balance allows to can create 1 cyberlink per day
 
 If the network is underloaded, one can produce more cyberlinks (up to 4 cyberlinks for each V on balance per day).
 
-The more A tokens the neuron has, the higher his cyberlinks would be ranked. Cyberrank is recalculated for each `cycle`so that the changes in the amount of A tokens on the neuron's balances that produced cyberlinks would influence the cyberrank of the whole graph.
+The more A tokens the neuron has, the higher his cyberlinks would be ranked. Cyberrank is recalculated for each `cycle` so that the changes in the amount of A tokens on the neuron's balances that produced cyberlinks would influence the cyberrank of the whole graph.
 
 The following rules apply in investminting:
 
@@ -226,7 +228,7 @@ The following rules apply in investminting:
 3. H, A, and V tokens become liquid after the investminting period has ended.
 4. Before the tokens are unlocked, they perform their resource function for the account - As increase links' rank (their place in the search result), Vs may be used for producing cyberlinks.
 5. Maximum investminting period (`investmint_max_period`) is limited. However, it increases every 547 days (`horizon_period_init`).
-6. The amount of A and V available for investminting per time unit is determined by the following parameters `ampere_mint_rate` and `volt_mint_rate`. These parameters' values are halved every 18 months to align with Moors law(~547 days). (`ampere_base_halving_period`, `volt_base_halving_period`). At the beginning of the network`s lifecycle, one can investmint more A and V than later.
+6. The amount of A and V available for investminting per time unit is determined by the following parameters `ampere_mint_rate` and `volt_mint_rate`. These parameters' values are halved every 18 months to align with Moors law(~547 days). (`ampere_base_halving_period`, `volt_base_halving_period`). At the beginning of the network's lifecycle, one can investmint more A and V than later.
 
 A and V are finite due to fundamental constraints in computing resources. They cannot be replenished in case the investminting has been missed. So if you didn't investmint your H, you would miss the opportunity to have A and V.
 
