@@ -1,3 +1,11 @@
+# Bostrom Blockchain Journal
+
+## Preface
+
+Issue 1, 20220414
+
+In this issue we collected particles from the founding team and the first users of Bostrom about using Bostrom. Those particles could have been edited to correct typos and grammar mistakes. Initial particle references are provided.
+
 ## Intro to Bostrom Blockchain
 
 ---
@@ -283,9 +291,11 @@ When signing a transaction, the neuron should set an amount of gas for executing
 
 Bostrom is a proof-of-stake blockchain. Validators ensure Proof-of-stake blockchain functioning. A validator (the hero in Bostrom terminology) is a server with installed blockchain software (node).
 
-Each node contains a blockchain replica (transaction log) that allows computing the total state into each block (e.g. accounts balance). Nodes agree among themselves on a common state of affairs using the Tendermint consensus protocol as a guideline.
+Each node contains a blockchain replica (transaction log) that allows computing the total state into each block (e.g. accounts balance). Nodes agree among themselves on a common state of affairs according to the Tendermint consensus protocol as a guideline.
 
 Bostrom is designed to economically encourage (incentivize) heroes and neurons to perform useful functions for the system.
+
+#### Valuable functions of Bostrom's agents (Heroes and Neurons)
 
 Heroe's valuable functions are:
 
@@ -293,16 +303,18 @@ Heroe's valuable functions are:
 - checking and signing transaction messages from other nodes (thus reaching a consensus on the present state of the blockchain),
 - distributing state of a blockchain to applications and consumers.
 
-Neurons’ useful functions are:
+Neurons' useful functions are:
 
 - maintaining desired balance between `staked` and `liquid` tokens (`goal_bonded` parameter in the senate which is `80%` at the moment of writing)
 - distributing `staked` tokens to validators who perform their functions properly thus preventing `slashing`
 - using H token (HYDROGEN), which can be obtained in exchange for a `staked` BOOT, for investminting A and V tokens (and then using As and Vs for creating сyberlinks, i.e. training Bostrom).
 - deciding on the evolution of the network using the governance portal (`senate`)
 
+#### The economic incentivization mechanism of agents in Bostrom
+
 The economic incentivization mechanism of heroes and neurons in Bostrom includes rewards and penalties.
 
-Blockchain is programmed to produce new BOOT tokens in each block to pay rewards. The `inflation_rate` coefficient determines the amount of new tokens to be produced. `Inflation_rate` coefficient depends on the share of `staked` BOOT:
+Blockchain is programmed to mint new BOOT tokens in each block to pay rewards. The `inflation_rate` coefficient determines the amount of new tokens to be produced. `Inflation_rate` coefficient depends on the share of `staked` BOOT:
 
 - if there are `staked` percentage of BOOTs is less than the `goal_bonded` parameter, then the `inflation_rate` coefficient will increase for each block till it hits the `inflation_rate_max` value. The higher the `inflation_rate` , the more rewarding is the `stake`
 - if there are `staked` percentage of BOOTs is more than the `goal_bonded` parameter, then the `inflation_rate` coefficient will decrease for each block till it hits the `inflation_rate_min` value, thus signaling to search for another way of profiting from BOOTs
@@ -311,12 +323,12 @@ New tokens are distributed between neurons, who `staked` their tokens, and heroe
 
 Heroes receive a set fee.
 
-Neurons are rewarded for deligating (`staking`) tokens to heroes and bearing risks `slashing` (reducing `stake` by the penalty amount), and also for skipping blocks without getting any rewards (while the validator remains in the `jail` state).
+Neurons are rewarded for deligating (`staking`) tokens to heroes and bearing risks `slashing` (reducing `stake` by the penalty amount), and also for skipping blocks without getting any rewards (while the hero commited violation remains in the `jail` state).
 
 Neurons' risks are that the heroes, to whom the former have delegated their tokens, may commit a violation.
 
 - Downtime (skipping new blocks computing)
-- Double sign (...)
+- Double sign (using the same private key of validator on two diffrenet servers)
 
 `slashing` is a feedback mechanism from the blockchain to heroes, as it forces neurons to redistribute their `stakes` in favor of heroes, who perform their functions properly.
 
