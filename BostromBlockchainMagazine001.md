@@ -1,10 +1,26 @@
 # Bostrom Blockchain Journal
 
-## Preface
-
 Issue 1, 20220414
 
+## Preface
+
 In this issue we collected particles from the founding team and the first users of Bostrom about using Bostrom. Those particles could have been edited to correct typos and grammar mistakes. Initial particle references are provided.
+
+### About journal
+
+This journal is a new phenomenon. We experiment here with Bostrom unique features and apply them to real world problems in a form resembling to modern scientific journals.
+
+Bostrom journal is created on top of the Bostrom Blockchain knowledge rank.
+
+Bostrom journal created to be easyly parsable to enable users to work with it as a knowledge subgraph.
+
+We assembled the journal from the particles.
+
+### Journals standard markup and tags
+
+- `==>` symbol marks the line with service tags. To lines after start text of particle.
+- `[cid]` - the tag with cid of the original particle
+- `[author]` - the tag with url to the author of the original particle
 
 ## Intro to Bostrom Blockchain
 
