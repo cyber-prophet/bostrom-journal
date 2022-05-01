@@ -73,13 +73,15 @@ IPFS does not guarantee the safety or accessibility of the files. >>|
 
 ==> [cid](https://cyb.ai/ipfs/QmYaf3J118vExRV6gFv2CjwYCyHmzV6Z9ACV7avWb652XZ), by [author](https://cyb.ai/network/bostrom/contract/bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
 
-### Bootloader
+### Bostrom is a full refactoring of the Euler network
 
 Bostrom is a full refactoring of the Euler network with a strong focus on Superintelligence. It includes a new distribution model, economics, improved ranking, and some superintelligent abilities. We think of a [Bostrom](https://cyb.ai/search/bostrom) as a canary network in the same way that Kusama relates to Polkadot. The knowledge graph of Bostrom tends to be a bootstrap hub for domain-specific networks of Cyber. The network works as a testbed for Interplanetary Knowlege Protocol communications and different experiments. Consider Bostrom as a network with high risks but which has a market value. The key differences within the Cyber network are being discussed [here](https://cyb.ai/search/bostrom%20vs%20cyber). The launch of the Bostrom network is the inception of the ecosystem. >>|
 
 ---
 
 ==> [cid](https://cyb.ai/ipfs/QmV8GwMkwPvCT7nC9TGZpXxov819fFzxS7WsaWBkF1ghQc), by [author](https://cyb.ai/network/bostrom/contract/bostrom1jtmdnure6hvjew2fdsrg4g6vlmd87ky4uvzaus)
+
+### Bootloader meaning
 
 A bootloader, also known as a boot program or bootstrap loader, is a special operating system software that loads into the working memory of a computer after start-up. For this purpose, immediately after a device starts, a bootloader is generally launched by a bootable medium like a hard drive, a CD/DVD or a USB stick. The boot medium receives information from the computer’s firmware (e.g. BIOS) about where the bootloader is. The whole process is also described as “booting”.
 
@@ -110,25 +112,14 @@ Setup Keplr, then go to [My robot](https://cyb.ai/) and connect it. >>|
 
 ---
 
-==> [cid](https://cyb.ai/ipfs/QmPmLUxQwZK7bpCLfnb3B9s1eSxy8XwQNzbViiMKRPXwzz), by [author](https://cyb.ai/network/bostrom/contract/bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
-
-### Help and guide
-
-Once you will get Bostrom address, you can continue with advanced steps.
-
-- [help & guide](/search/help)
-- [video guide](/ipfs/QmYc7t8wnAEXgQFzYBEkpZp8ubtYrcEPsJBbr9m3GQ1VCU) >>|
-
----
-
 ==> [cid](https://cyb.ai/ipfs/QmURCt4FhrK1nve4oGedJSPJ4ZvyZLaRojaM69wWBqVqyt), by [author](https://cyb.ai/network/bostrom/contract/bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
 
 ### Main Quest
 
 1. [Get BOOT](https://cyb.ai/search/get%20BOOT)
-2. Go to Dyson Sphere and [Hire Heroes](https://cyb.ai/halloffame) for BOOT. You will start to earn BOOT and instantly get H.
-3. [Put your H](https://cyb.ai/mint) in HFR for some time and you receive A or V. Yeah, now you can cyberlink.
-4. Search for you nickname. Add something to search about you.
+2. Go to [Dyson Sphere](https://cyb.ai/halloffame) and hire Heroes for stacking your BOOTs. You will start to earn BOOT and instantly get H.
+3. Put your H in [HFR](https://cyb.ai/mint) for some time and you receive A or V. Yeah, now you can cyberlink.
+4. Search for you nickname. Cyberlink it with some information about you.
 5. Profit >>|
 
 ---
@@ -137,7 +128,7 @@ Once you will get Bostrom address, you can continue with advanced steps.
 
 ### Bostrom: How to start and navigate step by step
 
-This is first of the many articles that I am planning to publish as I expore the cyb.ai. Initially it might seem complex but as you dwell into it there is lot of fun exploring the whole process one by one. Of course even I have just started it and there is a lot for me to discover. Saying that if you are a first time cyb.ai, start with the below:
+Initially it might seem complex but as you dwell into it there is lot of fun exploring the whole process one by one. Of course even I have just started it and there is a lot for me to discover. Saying that if you are a first time cyb.ai, start with the below:
 
 1. Buy BOOT on osmosis dex (OSMO is not available on any CEX, only ATOM is available on CEX. Transfer ATOM and convert it to BOOT on OSMO).
    https://app.osmosis.zone/?from=OSMO&to=BOOT
@@ -180,7 +171,7 @@ You can cyberlink any information to each other. You can search on cyber or add 
 
 - [cyberlink](/search/cyberlink) >>|
 
-## Tokens
+## Tokenomics
 
 ---
 
@@ -192,15 +183,15 @@ There are several tokens in the Bostrom network: BOOT, HYDROGEN, VOLT, AMPERE. E
 
 With BOOT one can:
 
-- `stake` (delegate tokens to a validator), being paid rewards in return (risk fee);
-  - for each staked BOOT a HYDROGEN is produced (with a 1 to 1 ratio)
+- `hire a hero` (to stake or to delegate tokens to a validator), being paid rewards in return (risk fee);
+  - for each staked BOOT a HYDROGEN is minted (with a 1 to 1 ratio)
 - transfer to somebody (if BOOT is in a liquid state)
 - pay for network transactions (pay for gas). Though now, many validators accept transactions for free.
 - vote for protocol change and public goods.
 
 With HYDROGEN one can:
 
-- `investmint` for a limited period of time to produce VOLT and AMPERE tokens
+- `investmint` H for a limited period of time to produce VOLT and AMPERE tokens
 - exchange back for delegated BOOT in order to transfer BOOT into a liquid state
 - transfer to someone (if in liquid state)
 
@@ -209,11 +200,13 @@ VOLT, AMPERE:
 - are needed to create cyberlinks, to train Bostrom
 - may be transferred
 
-The token's name BOOT symbolizes the BOOTstraping nature of the Bostrom network for the future Cyber network. >>|
+The token's name BOOT symbolizes the BOOTloader nature of the Bostrom network for the future Cyber network. >>|
 
 ---
 
 ==> [cid](https://cyb.ai/ipfs/Qmc2s8u3uiNrhjYXNcJkpMtA8qYeuZJv46AnLbj1uPwFFD), by [author](https://cyb.ai/network/bostrom/contract/bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
+
+### Bostrom tokens - short explanation
 
 BOOT allow to hire heroes and mint [H](https://cyb.ai/token/H). H is a liquid staking token. You can use it to generate A and V in [HFR](https://cyb.ai/search/hfr) >>|
 
@@ -221,17 +214,21 @@ BOOT allow to hire heroes and mint [H](https://cyb.ai/token/H). H is a liquid st
 
 ==> [cid](https://cyb.ai/ipfs/Qmezuhrqm7P8u8PwHhoq5EjWmnk3VxGju9DVUT9pWmeNaV), by [author](https://cyb.ai/network/bostrom/contract/bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
 
-### Investminting
+### Investminting - definition and mechanics
 
 In order to obtain resource tokens: A (AMPERES) and V (VOLTS) one should investment H (HYDROGEN). The term `investminting` is composed of `minting` (producing new tokens) and `investing` (putting capital into something for a period of time in order to make a profit).
 
-After H tokens are investminted, the balance is replenished by a number of temporary `frozen` for transferring but ready to use A and V tokens. Tokens are `frozen` till the end of the investminting period.
+After H tokens are investminted, the neurons balance is replenished by a number of temporary `frozen` for transferring but ready to use A and V tokens. Both tokens of investminting pair (H and A or V) are `frozen` till the end of the investminting period.
+
+#### Meaning of V and A tokens
 
 Every 1 V token on the neuron's balance allows to can create 1 cyberlink per day. The ability to create cyberlinks is restored within a day.
 
 If the network is underloaded, one can produce more cyberlinks (up to 4 cyberlinks for each V on balance per day).
 
 The more A tokens the neuron has, the higher his cyberlinks would be ranked. Cyberrank is recalculated for each `cycle` so that the changes in the amount of A tokens on the neuron's balances that produced cyberlinks would influence the cyberrank of the whole graph.
+
+#### Investminting rules
 
 The following rules apply in investminting:
 
@@ -245,12 +242,6 @@ The following rules apply in investminting:
 A and V are finite due to fundamental constraints in computing resources. They cannot be replenished in case the investminting has been missed. So if you didn't investmint your H, you would miss the opportunity to have A and V.
 
 Halving occurs every 567 days, which means half as many tokens can be minted per time unit compared to the before halving amount. >>|
-
----
-
-==> [cid](https://cyb.ai/ipfs/QmSPazJdHsBX7MnFqs6Ms4N4hmxc5W6Xbme3MyyP3ExPTq), by [author](https://cyb.ai/network/bostrom/contract/bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
-
-You can get Volt by [investminting](https://cyb.ai/mint) [H token](https://cyb.ai/token/H) in HFR. >>|
 
 ---
 
