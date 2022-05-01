@@ -27,11 +27,11 @@ Bostrom is a superintelligence project based on blockchain (cosmos-SDK), consens
 - the social platform;
 - the economic environment;
 - the ground for AI;
-- and much more that can imagined and done.
+- and much more that can be imagined and done.
 
 Site [cyb.ai](https://cyb.ai) is an application built using the Bostrom Blockchain.
 
-On [cyb.ai](https://cyb.ai) you already can create [cyberlinks](/search/cyberlink), search on the [graph](/oracle), rank with the [Relevance machine](/search/rm), share and store information, [earn rewards](/halloffame), [investmint](/mint), and [tweet](/search/tweet). [Bostrom](/search/bostrom) is the [bootloader](/bootloader) for [Cyber](/search/cyber), with the same features. >>|
+On [cyb.ai](https://cyb.ai) you can already create [cyberlinks](/search/cyberlink), search the [graph](/oracle), rank using the [Relevance machine](/search/rm), share and store information, [earn rewards](/halloffame), [investmint](/mint), and [tweet](/search/tweet). [Bostrom](/search/bostrom) is the [bootloader](/bootloader) for [Cyber](/search/cyber), with the same features. >>|
 
 ---
 
@@ -75,7 +75,7 @@ IPFS does not guarantee the safety or accessibility of the files. >>|
 
 ### Bostrom is a full refactoring of the Euler network
 
-Bostrom is a full refactoring of the Euler network with a strong focus on Superintelligence. It includes a new distribution model, economics, improved ranking, and some superintelligent abilities. We think of a [Bostrom](https://cyb.ai/search/bostrom) as a canary network in the same way that Kusama relates to Polkadot. The knowledge graph of Bostrom tends to be a bootstrap hub for domain-specific networks of Cyber. The network works as a testbed for Interplanetary Knowlege Protocol communications and different experiments. Consider Bostrom as a network with high risks but which has a market value. The key differences within the Cyber network are being discussed [here](https://cyb.ai/search/bostrom%20vs%20cyber). The launch of the Bostrom network is the inception of the ecosystem. >>|
+Bostrom is a full refactoring of the Euler network with a strong focus on Superintelligence. It includes a new distribution model, economics, improved ranking, and some superintelligent abilities. We think of [Bostrom](https://cyb.ai/search/bostrom) as a canary network in the same way that Kusama relates to Polkadot. The knowledge graph of Bostrom tends to be a bootstrap hub for domain-specific networks of Cyber. The network works as a testbed for Interplanetary Knowlege Protocol communications and different experiments. Consider Bostrom as a network with high risks but which has a market value. The key differences within the Cyber network are being discussed [here](https://cyb.ai/search/bostrom%20vs%20cyber). The launch of the Bostrom network is the inception of the ecosystem. >>|
 
 ---
 
@@ -85,16 +85,18 @@ Bostrom is a full refactoring of the Euler network with a strong focus on Superi
 
 A bootloader, also known as a boot program or bootstrap loader, is a special operating system software that loads into the working memory of a computer after start-up. For this purpose, immediately after a device starts, a bootloader is generally launched by a bootable medium like a hard drive, a CD/DVD or a USB stick. The boot medium receives information from the computer’s firmware (e.g. BIOS) about where the bootloader is. The whole process is also described as “booting”.
 
-A summary of a bootloader’s functions
+A summary of a bootloader’s functions:
+
 Bootloaders serve as a mediator between hardware and the operating system. As soon as a bootloader has been initialized by the respective firmware, it has system responsibility to get the boot process going. The first task is to load the main memory, which is essential for the processor to work.
 
 In the second step, the bootloader loads the kernel of the operating system, that is, the primary component of the system software that controls all storage and processor permissions and contains all important drivers. The bootstrap loader also processes different routine tasks and commands, e.g. integrating data storage. Some bootloaders also perform tasks beyond starting up software, including:
 
-- Identifying and starting other available bootloaders
-- Launching application programs (frequently used in the 1980s to launch computer games directly from a disk)
-- Correcting or expanding missing functions and entries in the firmware
-- Loading alternative firmware
-- After successfully completing all tasks, the bootloader returns the system responsibility to the kernel.
+- identifying and starting other available bootloaders;
+- launching application programs (frequently used in the 1980s to launch computer games directly from a disk);
+- correcting or expanding missing functions and entries in the firmware;
+- loading alternative firmware.
+
+After successfully completing all tasks, the bootloader returns the system responsibility to the kernel.
 
 source:ionos.com >>|
 
@@ -128,7 +130,7 @@ Setup Keplr, then go to [My robot](https://cyb.ai/) and connect it. >>|
 
 ### Bostrom: How to start and navigate step by step
 
-Initially it might seem complex but as you dwell into it there is lot of fun exploring the whole process one by one. Of course even I have just started it and there is a lot for me to discover. Saying that if you are a first time cyb.ai, start with the below:
+Initially, it might seem complex but as you dwell into it there is lot of fun exploring the whole process one by one. Of course even I have just started it and there is a lot for me to discover. Saying that if you are a first time cyb.ai, start with the below:
 
 1. Buy BOOT on osmosis dex (OSMO is not available on any CEX, only ATOM is available on CEX. Transfer ATOM and convert it to BOOT on OSMO).
    https://app.osmosis.zone/?from=OSMO&to=BOOT
@@ -404,18 +406,6 @@ You can get H by delegating on Heroes in the [Dyson Sphere](/search/dyson%20shpe
 ==> [cid](https://cyb.ai/ipfs/Qme1ix9YrfjdQcAUT6gLHsqUwSyiJNAaqqesnDd2YS634L), by [author](https://cyb.ai/network/bostrom/contract/bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
 
 In this reactor, [amperes](/token/A) or [volts](/token/V) can be [extracted](/mint) from [hydrogen](/token/H) without burning the hydrogen itself. >>|
-
----
-
-==> [cid](https://cyb.ai/ipfs/QmcYoFe3ZrqPxKR58vWz3r5cYNncoHjtyNmKTcRsTjH8Bz), by [author](https://cyb.ai/network/bostrom/contract/bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
-
-### Teleport
-
-You can exchange your tokens on another by using swap, explore [existing pools](/teleport/pools) or add liquidity and sub liquidity
-
-- [swap](/teleport)
-- [add liquidity](/teleport/add-liquidity)
-- [sub liquidity](/teleport/add-liquidity) >>|
 
 ---
 
