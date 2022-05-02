@@ -140,9 +140,7 @@ To cyberlink - to create a cyberlink between two particles. >>|
 
 ### Relevance machine ==> [cid](https://cyb.ai/ipfs/QmQNunYEUqyj2KtSwPTtQFEu7zhnFHswe54ahB6soigkam), by [author](https://cyb.ai/network/bostrom/contract/bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
 
-You can cyberlink any information to each other. You can search on cyber or add content by yourself. To start cyberlinking you need A and V, which you can get by [investmint H](/mint) in [HFR](/search/hfr), or buy H in [Teleport](/teleport).
-
-- [cyberlink](/search/cyberlink) >>|
+You can cyberlink any information to each other. You can search on cyber or add content by yourself. To start cyberlinking you need A and V, which you can get by [investmint H](/mint) in [HFR](/search/hfr), or buy H in [Teleport](/teleport). >>|
 
 ---
 
