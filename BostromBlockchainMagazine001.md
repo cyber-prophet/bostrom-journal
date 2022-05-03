@@ -8,9 +8,11 @@ Issue 1, 20220414
 
 In this issue we collected particles from the founding team and the first users of Bostrom about using Bostrom. Those particles could have been edited to correct typos and grammar mistakes, to delete repeated information. Initial particle references are provided. >>|
 
+---
+
 ==>
 
-### About journal
+### About the journal
 
 This journal is a new phenomenon. We experiment here with Bostrom unique features and apply them to real world problems in a form resembling to modern scientific journals.
 
@@ -20,9 +22,11 @@ Bostrom journal created to be easyly parsable to enable users to work with it as
 
 We assembled the journal from the particles. >>|
 
+---
+
 ==>
 
-### Journals standard markup and tags
+### Journal's standard markup and tags
 
 - `==>` symbol marks the line with service tags. 2 lines after begins text content of particle.
 - `[cid]` - the tag with cid of the original particle
