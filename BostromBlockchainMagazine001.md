@@ -2,9 +2,15 @@
 
 Issue 1, 20220414
 
-==>
+---
 
 ## Preface
+
+---
+
+==>
+
+### Foreword
 
 In this issue we collected particles from the founding team and the first users of Bostrom about using Bostrom. Those particles could have been edited to correct typos and grammar mistakes, to delete repeated information. Initial particle references are provided. >>|
 
@@ -26,14 +32,17 @@ We assembled the journal from the particles. >>|
 
 ==>
 
-### Journal's standard markup and tags
+### Journal's standard formatting markup and tags
 
+All the particles was formatted using [Prettier](https://prettier.io/), an opinionated code formatter.
+
+- `##` chapter names start with 2 hashes
+- `###` 3 and more hashes are used in the particles (it means that number of hashes from the original particles is changed respectively)
 - `==>` symbol marks the line with service tags. 2 lines after begins text content of particle.
 - `[cid]` - the tag with cid of the original particle
 - `[author]` - the tag with url to the author of the original particle
 - `>>|` - marks the end of the particle
-
-All the particles was formatted using [Prettier](https://prettier.io/), an opinionated code formatter. >>|
+- `---` - 3 minuses used for creating space between particles (as otherwise Prettier will delete this space) >>|
 
 ---
 
