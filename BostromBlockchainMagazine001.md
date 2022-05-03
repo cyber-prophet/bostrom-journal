@@ -154,18 +154,6 @@ Setup Keplr, then go to [My robot](https://cyb.ai/) and connect it. >>|
 
 ---
 
-==> [cid](https://cyb.ai/ipfs/QmURCt4FhrK1nve4oGedJSPJ4ZvyZLaRojaM69wWBqVqyt), by [author](https://cyb.ai/network/bostrom/contract/bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
-
-### Main Quest
-
-1. [Get BOOT](https://cyb.ai/search/get%20BOOT)
-2. Go to [Dyson Sphere](https://cyb.ai/halloffame) and hire Heroes for stacking your BOOTs. You will start to earn BOOT and instantly get H.
-3. Put your H in [HFR](https://cyb.ai/mint) for some time and you receive A or V. Yeah, now you can cyberlink.
-4. Search for you nickname. Cyberlink it with some information about you.
-5. Profit >>|
-
----
-
 ==> [cid](https://cyb.ai/ipfs/QmS9P1BAYtGXHEq3q6WrGCVyfEVnDY6S63QXe9ZYuJkbwQ), by [author](https://cyb.ai/network/bostrom/contract/bostrom14tk96pwx6lk25f740m4jzx85pkhfvldg42te4p)
 
 ### Bostrom: How to start and navigate step by step
@@ -177,11 +165,13 @@ Initially, it might seem complex but as you dwell into it there is lot of fun ex
 2. Once you have BOOT in your account (Keplr Wallet) stake it. This will give you H token.
 3. Go to https://cyb.ai/, connect your Keplr Wallet.
 4. You have to mint V and A tokens by freezing H tokens that are liquid. Use the link https://cyb.ai/mint for this. A low number of H tokens might not get you any V and A tokens. Ensure by moving the H bar and the frozen bar (number of days) more than zero V and/or zero A appear in the notes. Only when the V and A tokens are above zero in the notes you will see the 'Investmint' button enabled. Click on the Investmint button to mint V and A tokens.
-5. Once you have V and A tokens your energy bar will progress. This will help you in further activities like adding avatar, tweets etc.,.
+5. Once you have V and A tokens your energy bar will progress. This will help you in further activities like adding avatar, tweets etc...
 6. As a first task add your avatar by clicking on 'My robot' and then clicking on the top box (at the bottom end you will see a box enabled to upload the image). Likewise once the image is added it will ask to publish your first tweet.
 7. When both avatar is added and you are done with the first tweet you will some Karma being populated for you. (click on avatar link to see this).
 
 More articles to follow explain the next steps of exploration. >>|
+
+---
 
 ## Knowledge graph
 
@@ -212,6 +202,8 @@ To cyberlink - to create a cyberlink between two particles. >>|
 You can cyberlink any information to each other. You can search on cyber or add content by yourself. To start cyberlinking you need A and V, which you can get by [investmint H](/mint) in [HFR](/search/hfr), or buy H in [Teleport](/teleport).
 
 - [cyberlink](/search/cyberlink) >>|
+
+---
 
 ## Tokenomics
 
@@ -436,16 +428,12 @@ You can delegate(stake) BOOT by hiring a Hero in the [Dyson Sphere](/search/dyso
 
 ### HFR
 
+In this reactor, [amperes](/token/A) or [volts](/token/V) can be [extracted](/mint) from [hydrogen](/token/H) without burning the hydrogen itself.
+
 You can mint [A](/token/A) and [V](/token/V) by locking your [H](/token/H).
 You can get H by delegating on Heroes in the [Dyson Sphere](/search/dyson%20shpere).
 
-- [nvestmint](/mint) >>|
-
----
-
-==> [cid](https://cyb.ai/ipfs/Qme1ix9YrfjdQcAUT6gLHsqUwSyiJNAaqqesnDd2YS634L), by [author](https://cyb.ai/network/bostrom/contract/bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
-
-In this reactor, [amperes](/token/A) or [volts](/token/V) can be [extracted](/mint) from [hydrogen](/token/H) without burning the hydrogen itself. >>|
+- [investmint](/mint) >>|
 
 ---
 
@@ -499,6 +487,10 @@ Please refer to [the code](https://github.com/cybercongress/go-cyber/blob/main/x
 
 ---
 
+## Bostrom Blockchain philosophy
+
+---
+
 ==> [cid](https://cyb.ai/ipfs/QmXQ4k4ciK5ieaSwtccmH9mm4QdPS6Spd21DTqLFrEwDWR), by [author](https://cyb.ai/network/bostrom/contract/bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
 
 ### Markdown
@@ -524,8 +516,6 @@ CRP renders the content of such files, so [Neurons](https://cyb.ai/search/neuron
 Nobody created cyberlinks for the query you entered (or you just followed some link on CRP with an already defined query). And you see this text, which cyberlinked to the query "[0](https://cyb.ai/search/0)". Cyber is created that queries with no cyberlinks display results from the query "[0](https://cyb.ai/search/0)".
 
 Btw, you can create relevant cyberlinks to your initial query, "[0](https://cyb.ai/search/0)" query, or any other query. Cyber is fantastic. Everything in cyber is hardcore and geeky but beautiful and powerful. Use your opportunity to explore the ways of using cyber. >>|
-
-## Bostrom Blockchain philosophy
 
 ---
 
@@ -581,6 +571,8 @@ The Great Web is built by connecting particles through cyberlinks. The result is
 5. lending
 6. accept: arbitrage-less e-commerce
 7. native <=> cw tokens wrappers >>|
+
+---
 
 ## Apps built on Bostrom, for Bostrom
 
@@ -642,6 +634,8 @@ To contribute - request write rights. >>|
 
 Search for the best arbitrage in Bostrom
 https://github.com/Snedashkovsky/cyber-arbitrage/blob/main/search_arbitrage.ipynb >>|
+
+---
 
 ## Bostrom cybernomics
 
