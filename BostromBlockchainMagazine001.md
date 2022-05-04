@@ -12,7 +12,7 @@ Issue 1, 20220414
 
 ### Foreword
 
-In this issue we collected particles from the founding team and the first users of Bostrom about using Bostrom. Those particles could have been edited to correct typos and grammar mistakes, to delete repeated information. Initial particle references are provided. >>|
+In this issue we collected particles from the founding team and the first users of Bostrom about using Bostrom. Those particles could have been edited to correct typos and grammar mistakes, to delete repeated information already present in other journal articles. Initial particle references are provided. >>|
 
 ---
 
@@ -26,7 +26,7 @@ Bostrom journal is created on top of the Bostrom Blockchain knowledge rank.
 
 Bostrom journal created to be easyly parsable to enable users to work with it as a knowledge graph (the subgraph of the main graph), and for convenience of reading.
 
-We assembled the journal from the particles. >>|
+We assembled this journal from the particles. >>|
 
 ---
 
@@ -42,7 +42,15 @@ All the particles was formatted using [Prettier](https://prettier.io/), an opini
 - `[cid]` - the tag with cid of the original particle
 - `[author]` - the tag with url to the author of the original particle
 - `>>|` - marks the end of the particle
-- `---` - 3 minuses used for creating space between particles (as otherwise Prettier will delete this space) >>|
+- `---` - 3 minuses used for creating space between particles (as otherwise Prettier will delete this space and make the text more dense) >>|
+
+---
+
+==>
+
+### Journal's design open questions
+
+Should there be a link on the edited particle? Should it replace the original link or they both needed to be together? Should there be a description of changes in the new particle from the old one? >>|
 
 ---
 
@@ -190,7 +198,9 @@ A neuron is a token holder who can provide valuable knowledge to the knowledge g
 ### Cyberlinks
 
 Cyberlink is a noun and a verb.
-Cyberlink is the link in Cyber between two particles.
+
+Cyberlink is the link in Cyber between two particles registered in Bostrom blockchain.
+
 To cyberlink - to create a cyberlink between two particles. >>|
 
 ---
@@ -431,6 +441,7 @@ You can delegate(stake) BOOT by hiring a Hero in the [Dyson Sphere](/search/dyso
 In this reactor, [amperes](/token/A) or [volts](/token/V) can be [extracted](/mint) from [hydrogen](/token/H) without burning the hydrogen itself.
 
 You can mint [A](/token/A) and [V](/token/V) by locking your [H](/token/H).
+
 You can get H by delegating on Heroes in the [Dyson Sphere](/search/dyson%20shpere).
 
 - [investmint](/mint) >>|
@@ -620,20 +631,21 @@ Implementation of [Cyber protocol](https://github.com/cybercongress/cyber) in Go
 
 ==> [cid](https://cyb.ai/ipfs/Qmdo6FeBhcu1rW3bC2eu62g9sQifgAZu1wBh47UKgnTdbN), by [author](https://cyb.ai/network/bostrom/contract/bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
 
-### cyber CLI helper
+### [cyber CLI helper](https://docs.google.com/spreadsheets/d/1S58novA61H9V0EgzToO3LSIZ0cFHCiGtmnUCYVE6ZC8/edit?usp=sharing)
 
 [Google sheets template](https://docs.google.com/spreadsheets/d/1S58novA61H9V0EgzToO3LSIZ0cFHCiGtmnUCYVE6ZC8/edit?usp=sharing) for cli cyber configuration.
+
 Make a copy and fill in blue cells with your data.
+
 To contribute - request write rights. >>|
 
 ---
 
 ==> [cid](https://cyb.ai/ipfs/QmNyxAQcozrkb2Ekr9EMUVZUXQduUGazYwfRTZtvxnjUwd), by [author](https://cyb.ai/network/bostrom/contract/bostrom135ca8hdpy9sk0ntwqzpzsvatyl48ptx5j359lz)
 
-### Cyber arbitrage
+### [Cyber arbitrage](https://github.com/Snedashkovsky/cyber-arbitrage/blob/main/search_arbitrage.ipynb)
 
-Search for the best arbitrage in Bostrom
-https://github.com/Snedashkovsky/cyber-arbitrage/blob/main/search_arbitrage.ipynb >>|
+Search for the best arbitrage options in Bostrom. Ipython notebook retrieves data about state of pools from cli and display it in a form of table. >>|
 
 ---
 
@@ -647,42 +659,27 @@ https://github.com/Snedashkovsky/cyber-arbitrage/blob/main/search_arbitrage.ipyn
 
 @groovybear, @mastercyb
 
-The purpose of this research is to inspire at least 100k power-users of web3 to join the force of learning
-Superintelligence. To achieve this, we are going to gift 70% of the Bostrom genesis tokens BOOT to agents of Ethereum
-and Cosmos who are capable to contribute their best to the quality of the knowledge graph. First, we started
-by highlighting key audiences for establishing network effects and tackling basic chicken and eggs. Next, we balance
-out the participation of key actors by splitting them into grades and adjusting allocations within the groups.
-Then we apply a filter in order to remove toxic fiat brains from the collective thought process. Finally, we add
-a crucial incentive to hurry up.
+The purpose of this research is to inspire at least 100k power-users of web3 to join the force of learning Superintelligence. To achieve this, we are going to gift 70% of the Bostrom genesis tokens BOOT to agents of Ethereum and Cosmos who are capable to contribute their best to the quality of the knowledge graph. First, we started by highlighting key audiences for establishing network effects and tackling basic chicken and eggs. Next, we balance out the participation of key actors by splitting them into grades and adjusting allocations within the groups. Then we apply a filter in order to remove toxic fiat brains from the collective thought process. Finally, we add a crucial incentive to hurry up.
 
-The research results are represented by reproducible scripts which output addresses and balances which will be loaded
-to the claim CosmWasm contract after the launch of Bostrom.
+The research results are represented by reproducible scripts which output addresses and balances which will be loaded to the claim CosmWasm contract after the launch of Bostrom.
 
-Data source is [BigQuery crypto-ethereum dataset](https://console.cloud.google.com/bigquery?d=crypto_ethereum&p=bigquery-public-data&page=dataset&project=cosmic-keep-223223)
-by [Blockchain ETL](https://github.com/blockchain-etl).
+Data source is [BigQuery crypto-ethereum dataset](https://console.cloud.google.com/bigquery?d=crypto_ethereum&p=bigquery-public-data&page=dataset&project=cosmic-keep-223223) by [Blockchain ETL](https://github.com/blockchain-etl).
 
-Research is done on the [proposal](https://cyber.page/governance/20) basis. We hope this research can help pioneer
-a new wave of thinking in decentralized marketing.
+Research is done on the [proposal](https://cyber.page/governance/20) basis. We hope this research can help pioneer a new wave of thinking in decentralized marketing.
 
 #### Connecting the Dots
 
-The biggest problem in bootstrapping a blockchain ecosystem from scratch is that it is not enough to attract just users.
-Established network effects exist between four key groups:
+The biggest problem in bootstrapping a blockchain ecosystem from scratch is that it is not enough to attract just users. Established network effects exist between four key groups:
 
 ![Network effects](https://ipfs.io/ipfs/Qmf2ARvyZ1gu5HJmsPjnWQdhyfmvaEVxnz9vvp5KUt3Lgo)
 
 Hence we have to understand how to attract all these guys simultaneously in order to target healthy organic growth.
 
-In our case that would not be enough. First, Cyber is a content-oriented project. We need to understand how
-to add content creators to the soup. Second, information on the project has to be propagated somehow to all these guys,
-so key opinion leaders have to be incentivized. Third, as the Cyber project heavily relies on the interchain idea we
-have to attract the community behind IBC technology. We also want to add some fun giving the power to the guys behind
-weird cyberpunk ideas. Finally, we want to check the credibility of the most trusted liquidity hubs.
+In our case that would not be enough. First, Cyber is a content-oriented project. We need to understand how to add content creators to the soup. Second, information on the project has to be propagated somehow to all these guys, so key opinion leaders have to be incentivized. Third, as the Cyber project heavily relies on the interchain idea we have to attract the community behind IBC technology. We also want to add some fun giving the power to the guys behind weird cyberpunk ideas. Finally, we want to check the credibility of the most trusted liquidity hubs.
 
 #### Distribution between Grades
 
-An amount of distributed BOOT tokens should be equal for each grade within an audience.  
-The amount of addresses should also be divided into grades for each audience as
+An amount of distributed BOOT tokens should be equal for each grade within an audience. The amount of addresses should also be divided into grades for each audience as
 
 ![Distribution between grades](https://ipfs.io/ipfs/QmWcyKgUAqtbubrmXyrP8ufXLmLoWMksF32ZzdGRYvCa3b)
 
@@ -728,9 +725,7 @@ These audiences were highlighted because their participation is necessary to for
 
 #### Audience Rules
 
-The initial conditions for the allocation of classes were selected based on the analysis of web3 user activity and the
-need to cover the most web3 power-users.  
-All distribution rules between grades are calculated in the respective jupyter notebooks.
+The initial conditions for the allocation of classes were selected based on the analysis of web3 user activity and the need to cover the most web3 power-users. All distribution rules between grades are calculated in the respective jupyter notebooks.
 
 | Audience                 | Rule                                                                           | Grade 1    | Grade 2     | Grade 3                         | Calculations(Jupyter notebooks)                                                                                       |
 | :----------------------- | :----------------------------------------------------------------------------- | :--------- | :---------- | :------------------------------ | :-------------------------------------------------------------------------------------------------------------------- |
@@ -764,8 +759,7 @@ All distribution rules between grades are calculated in the respective jupyter n
 
 #### Distribution between Audiences
 
-Based on counting the number of addresses and determining the fair reward of the participants of each audience,
-the following balanced distribution between them is proposed:
+Based on counting the number of addresses and determining the fair reward of the participants of each audience, the following balanced distribution between them is proposed:
 
 ![Distribution between Audiences](https://ipfs.io/ipfs/QmS5z9wW53Rj7sUxb8mJsnp5JqFrUzHRhhwBvJ6YZjc2Yk)
 
@@ -773,17 +767,14 @@ When an address hits multiple audiences, its reward is cumulative.
 
 #### Excluding Fiat Brains
 
-Addresses based on the fiat system will not be included,
-namely those that satisfy these two conditions:
+Addresses based on the fiat system will not be included, namely those that satisfy these two conditions:
 
 1. Stablecoin balance is more than sum of ETH and [selected ERC20 tokens](https://github.com/cybercongress/cybergift/blob/main/erc20__investors_and_cyberpunks.ipynb) balances
 2. Stablecoin balance is more than 0.1 ETH
 
 #### Prize to be the First
 
-We've added an incentive to claim gift early.  
-There are about `4M` addresses in Gift, but at the same time we expect that only the first `1/10` accounts can
-claim them.
+We've added an incentive to claim gift early. There are about `4M` addresses in Gift, but at the same time we expect that only the first `1/10` accounts can claim them.
 
 There will be incentive `13x` for those who claim first reducing to `7x` who came last.
 
@@ -860,11 +851,15 @@ So we came to an understanding of the main input parameters for a contract facto
       Amount of farming tokens *
       Reward coefficient defined by supplied curve and amount of time >>|
 
+---
+
 ## Miscellanious
 
 ---
 
 ==> [cid](https://cyb.ai/ipfs/QmPdxQViTssbywaaEFSWBLHjexHqUAzsgqX3bEThpfZRry), by [author](https://cyb.ai/network/bostrom/contract/bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
+
+### Earthish language
 
 Earthish - It is a common language for inhabitants of Earth.
 
@@ -912,7 +907,7 @@ I am going to reward those who recommend successful magicians with 10 GBOOT. Con
 
 ==> [cid](https://cyb.ai/ipfs/QmZBQ3vwkBqCEJ9vRJ9bsRTVd2Yu2Fp9v2jBu51o3bA81f), by [author](https://cyb.ai/network/bostrom/contract/bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
 
-### Leading behavioral science in blockchain
+### Bostroms - Leading behavioral science in blockchain
 
 Friends! Probably not all of you know that our project is the leader in behavioral analysis in the blockchain industry.
 
@@ -936,15 +931,13 @@ More charts can be found at [cybernode.ai](https://cybernode.ai/grafana/d/SdWCR0
 
 ==> [cid](https://cyb.ai/ipfs/QmeEetgtWWUhASsaXjgcLGGCDS8pZRPNybzXZRv4o4u59p), by [author](https://cyb.ai/network/bostrom/contract/bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
 
-`Work in progress (you can help to contribute via an issue or a PR)`
-
-### TL;DR
+### Urbit + Cyber
 
 In our [white paper](https://ipfs.io/ipfs/QmQ1Vong13MDNxixDyUdjniqqEj8sjuNEBYMyhQU4gQgq3) cyber~Congress allocates 1% of the total CYB supply to the [Urbit](https://urbit.org/) community - because Urbit is awesome. However, if you are familiar with Urbit, you know its not a trivial project. Hence, I would like to propose the steps for gifting Urbit with CYB tokens.|
 
 UPDATE: As promised in our WP, we have gifted the Urbit aliens with 1% of the supply. To check the balance of your gift, simply follow the ~white rabbit~ [link](https://cyber.page/search/0x742d35cc6634c0532925a3b844bc454e4438f44e), and swap the address for your own to see if you were lucky (use the ETH address that held the planet/star/galaxy).
 
-### Milestones
+#### Milestones
 
 1. Write this proposition
 2. Review this proposition
@@ -953,17 +946,17 @@ UPDATE: As promised in our WP, we have gifted the Urbit aliens with 1% of the su
 5. Propose a grant for hacking cyber~Urbit app
 6. Propose the ways to get this info to the Urbit community
 
-### But why Urbit
+#### But why Urbit
 
-Urbit is awesome. Urbit is the last frontier of the Great Web. It is THE new computer science. A new, written from scratch,
-tech-stack that completely changes the game. We believe in Urbit (not less than we believe in ourselves - that's a lot. Really).
+Urbit is awesome. Urbit is the last frontier of the Great Web. It is THE new computer science. A new, written from scratch, tech-stack that completely changes the game. We believe in Urbit (not less than we believe in ourselves - that's a lot. Really).
+
 We share Urbits values. It is utterly silly to believe in decentralization without Urbit. If cyber is the last answering and relevance machine you'll ever need, then Urbit is the last computer you'll ever need.
+
 For any further information [please visit here](https://urbit.org/docs/).
 
-### The gift
+#### The gift
 
-We need to gather information about Urbit addresses to gift Urbit. We propose to divide the 1% (which is 10 TCYB or ten trillion CYB)
-into 3 categories: 30% to galaxies, 30% to stars and 40% to planets.
+We need to gather information about Urbit addresses to gift Urbit. We propose to divide the 1% (which is 10 TCYB or ten trillion CYB) into 3 categories: 30% to galaxies, 30% to stars and 40% to planets.
 
 Hence, here are the steps that we propose to follow:
 
@@ -972,13 +965,11 @@ Hence, here are the steps that we propose to follow:
 - Convert the ETH addresses to Cyber addresses (extracting and converting the pub. keys)
 - Include this information in Cybers' Genesis block
 
-This will give anyone owing Azimuth points the possibility to securely import their ETH private key into Cyber and claim CYB tokens.
-No need to disclose Urbits master key at any point.
+This will give anyone owing Azimuth points the possibility to securely import their ETH private key into Cyber and claim CYB tokens. No need to disclose Urbits master key at any point.
 
-### The grant
+#### The grant
 
-Urbit has a cool open-source [grant program](https://grants.urbit.org/). What we want to achieve is to create a cyber~Urbit app, which will
-essentially create a connection between Urbit and Cyber. At a very basic version, it should allow someone to:
+Urbit has a cool open-source [grant program](https://grants.urbit.org/). What we want to achieve is to create a cyber~Urbit app, which will essentially create a connection between Urbit and Cyber. At a very basic version, it should allow someone to:
 
 - View their balance
 - Manage their keys
@@ -988,11 +979,10 @@ essentially create a connection between Urbit and Cyber. At a very basic version
 - Be able to upload an [IPFS](https://ipfs.io/) hash from Urbit
 
 Our inspiration comes from [this video](https://www.youtube.com/watch?v=k-TjZfMLqOc).
-At a more advanced stage, I would imagine the wrapper can control a cyber~Node from an Urbit, I mean - participate in validating blocks.
-Wrap any other calls that will be available. At a very later stage - participate in all of the governance modules of Cyber.
 
-The grant system at Urbit is usually funded by Tlon, the company that develops Urbit. We propose to fund the project ourselves
-(if Tlon decides to add to our funding, we will be glad, as we believe that our idea benefits both projects) with the following:
+At a more advanced stage, I would imagine the wrapper can control a cyber~Node from an Urbit, I mean - participate in validating blocks. Wrap any other calls that will be available. At a very later stage - participate in all of the governance modules of Cyber.
+
+The grant system at Urbit is usually funded by Tlon, the company that develops Urbit. We propose to fund the project ourselves (if Tlon decides to add to our funding, we will be glad, as we believe that our idea benefits both projects) with the following:
 
 - A liquid payment of 1500$ in ETH to the day of payment (to be payed out upon completion of the task)
 - A stake in Cyber in CYB Tokens equals to: 1.5 GCYB (to be payed out after the launch of the mainnet)
@@ -1011,9 +1001,10 @@ We assume that the work on such a solution should take between 1 - 3 weeks. The 
 - Should be submitted as a PR into a separate repo on our GitHub
 - Should be reviewed by Tlon
 
-### Why would this be beneficial to both projects
+#### Why would this be beneficial to both projects
 
 I think the benefit to Cyber is obvious, hence there is no need to describe it (however it is pretty much similar to Urbits benefit). Our vision and reasons behind this can be found in the above part of this document "But why Urbit".
+
 To our belief Urbit will benefit in the following ways:
 
 - Such a drop can increase the speed of the claim of the planets/stars/galaxies
@@ -1026,7 +1017,7 @@ To our belief Urbit will benefit in the following ways:
 - Urbit can work on state of the art ML mechanisms with the help of Arvo and Cyber that can help to showcase the powers of Urbit
 - This can create a showcase for both projects and provide Urbit aliens with further gifts /drops, etc from other communities
 
-### Conclusion
+#### Conclusion
 
 To our belief the cyber~Urbit app and this gift to the Urbit community can help both projects to grow exponentially in the future.
 To achieve this, we will review this document (as can any community member). When this is done, we will proceed with an email of intentions to Tlon, followed by a proposal and some more community announcements. >>|
