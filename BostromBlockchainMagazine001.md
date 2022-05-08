@@ -10,9 +10,9 @@ Issue 1, 20220414
 
 ==>
 
-### {~~Foreword~>Introduction~~}{>>Обычно правило такое: 1 - foreword = написано не автором работы, 2 - preface = обращение автора к читателю, зачем он вообще все это написал и тд, 3 - introduction = вступление уже по существу материала/текста<<}
+### Introduction
 
-In this issue we collected particles from the founding team and the first users of Bostrom {~~about~>regarding~~} using Bostrom. Those particles could have been edited to correct typos and grammar mistakes, to delete repeated information already presented in other journal articles. Initial particle references are provided. >>|
+In this issue we collected particles from the founding team and the first users of Bostrom regarding using Bostrom. Those particles could have been edited to correct typos and grammar mistakes, to delete repeated information already presented in other journal articles. Initial particle references are provided. >>|
 
 ---
 
@@ -24,9 +24,9 @@ This journal is a new phenomenon. We experiment here with Bostrom's unique featu
 
 Bostrom journal is created on top of the Bostrom Blockchain knowledge rank.
 
-Bostrom journal is created to be easily parsable to enable users to {~~work with~>use~~} it as a knowledge graph (the subgraph of the main graph), and for convenience of reading.
+Bostrom journal is created to be easily parsable to enable users to use it as a knowledge graph (the subgraph of the main graph), and for convenience of reading.
 
-We assembled this journal from {--the--} particles. >>|
+We assembled this journal from particles. >>|
 
 ---
 
@@ -37,9 +37,9 @@ We assembled this journal from {--the--} particles. >>|
 All the particles were formatted using [Prettier](https://prettier.io/), an opinionated code formatter.
 
 - `##` chapter names start with 2 hashes
-- `###` 3 and more hashes are used in {--the--} particles (it means that number of hashes from the original particle is changed respectively)
-- `==>` symbol marks the line with service tags. 2 lines after begins text content of particle.{>>не поняла эту строчку<<}
-- `[cid]` - {~~the tag with cid~>cid tag~~} of the original particle
+- `###` 3 and more hashes are used in particles (it means that number of hashes from the original particle is changed respectively)
+- `==>` symbol marks the line with service tags. 2 lines below the symbol begins the text content of a particle.
+- `[cid]` - cid tag of the original particle
 - `[author]` - the tag with url to the author of the original particle
 - `>>|` - marks the end of the particle
 - `---` - 3 minuses are used to create space between particles (as otherwise Prettier will delete this space and make the text more dense) >>|
@@ -50,7 +50,7 @@ All the particles were formatted using [Prettier](https://prettier.io/), an opin
 
 ### Journal's design open questions
 
-Should there be a link to the edited particle? Should it replace the original link or {~~they both needed to be together~>should both links be present~~}? {~~Should there be a description of changes in the new particle from the old one?~>Should we provide a list of alterations to highlight differences between the old and the new particle?~~} >>|
+Should there be a link to the edited particle? Should it replace the original link or should both links be present? Should we provide a describtion of alterations to highlight and clarify differences between the old and the new particle? >>|
 
 ---
 
@@ -70,11 +70,11 @@ Bostrom is a superintelligence project based on blockchain (cosmos-SDK), consens
 
 ### Capabilities of the Bostrom Blockchain
 
-- {--the--} new way of sharing, storing, ranking, and searching for information;
-- {--the--} platform for building on top of these ☝;
-- {--the--} social platform;
-- {--the--} economic environment;
-- {--the--} ground for AI;
+- new way of sharing, storing, ranking, and searching for information;
+- platform for building on top of these ☝;
+- social platform;
+- economic environment;
+- ground for AI;
 - and much more that can be imagined and done.
 
 Site [cyb.ai](https://cyb.ai) is an application built using the Bostrom Blockchain.
@@ -123,7 +123,7 @@ IPFS does not guarantee the safety or accessibility of the files. >>|
 
 ### Bostrom is a full refactoring of the Euler network
 
-Bostrom is a full refactoring of the Euler network with a strong focus on Superintelligence. It includes a new distribution model, economics, improved ranking, and some superintelligent abilities. We {~~think of~>perceive~~} [Bostrom](https://cyb.ai/search/bostrom) as a canary network in the same way that Kusama relates to Polkadot. The {++Bostrom ++}knowledge graph{-- of Bostrom--} tends to be a bootstrap hub for domain-specific networks of Cyber. The network works as a testbed for Interplanetary Knowlege Protocol communications and different experiments. Consider Bostrom {--as--} a network with high risks but {~~which has a~>of~~} market value. The key differences within the Cyber network are being discussed [here](https://cyb.ai/search/bostrom%20vs%20cyber). The launch of the Bostrom network is the inception of {~~the~>an~~} ecosystem. >>|
+Bostrom is a full refactoring of the Euler network with a strong focus on Superintelligence. It includes a new distribution model, economics, improved ranking, and some superintelligent abilities. We perceive [Bostrom](https://cyb.ai/search/bostrom) as a canary network in the same way that Kusama relates to Polkadot. The Bostrom knowledge graph tends to be a bootstrap hub for domain-specific networks of Cyber. The network works as a testbed for Interplanetary Knowlege Protocol communications and different experiments. Consider Bostrom a network with high risks but of market value. The key differences within the Cyber network are being discussed [here](https://cyb.ai/search/bostrom%20vs%20cyber). The launch of the Bostrom network is the inception of an ecosystem. >>|
 
 ---
 
@@ -166,7 +166,7 @@ Setup Keplr, then go to [My robot](https://cyb.ai/) and connect it. >>|
 
 ### Bostrom: How to start and navigate step by step{>>Все шаги нужно переписать. Максим, пожалуйста, не удаляй этот коммент<<}
 
-Initially, it might seem complex but as you dwell in it there is lots of fun exploring the whole process step by step. {~~Of course even I have just started it and there is a lot for me to discover.~>Obviously, I myself have just started this exploration and there is a lot for me to discover.~~} Saying that, if you are a {~~first time cyb.ai~>first-time cyb.ai-er~~}, start with the below:
+Initially, it might seem complex but as you dwell in it there is lots of fun exploring the whole process step by step. Obviously, I myself have just started this exploration and there is a lot for me to discover. Saying that, if you are a first-time cyb.ai-er, start with the below:
 
 1. Buy BOOT on osmosis dex (OSMO is not available on any CEX, only ATOM is available on CEX. Transfer ATOM and convert it to BOOT on OSMO).
    https://app.osmosis.zone/?from=OSMO&to=BOOT
@@ -209,7 +209,7 @@ To cyberlink - to create a cyberlink between two particles. >>|
 
 ### Relevance machine
 
-You can cyberlink any {++pieces of ++}information to each other. You can search {--on--} cyber or add content yourself. To start cyberlinking you need A and V, which you can get by [investminting H](/mint) in [HFR](/search/hfr), or {++you can ++}buy H in [Teleport](/teleport).
+You can cyberlink any pieces of information to each other. You can search on cyber or add content yourself. To start cyberlinking you need A and V, which you can get by [investminting H](/mint) in [HFR](/search/hfr), or you can buy H in [Teleport](/teleport).
 
 - [cyberlink](/search/cyberlink) >>|
 
@@ -252,7 +252,7 @@ The token's name BOOT symbolizes the BOOTloader nature of the Bostrom network fo
 
 ### Bostrom tokens - short explanation
 
-BOOT{++ tokens++} allow to hire heroes and mint [H](https://cyb.ai/token/H). H is a liquid staking token. You can use it to generate A and V in [HFR](https://cyb.ai/search/hfr) >>|
+BOOT tokens allow to hire heroes and mint [H](https://cyb.ai/token/H). H is a liquid staking token. You can use it to generate A and V in [HFR](https://cyb.ai/search/hfr) >>|
 
 ---
 
@@ -270,7 +270,7 @@ Every 1 V token on the neuron's balance allows to create 1 cyberlink per day. Th
 
 If the network is underloaded, one can produce more cyberlinks (up to 4 cyberlinks for each V on balance per day).
 
-The more A tokens the neuron has, the higher his cyberlinks would be ranked. Cyberrank is recalculated for each `cycle` so that the changes in the amount of A tokens on the neuron's balances{>>тут должен быть один баланс одного нейрона, или несколько балансов, или несколько тнейронов?<<} that produced cyberlinks would influence the cyberrank of the whole graph.
+The more A tokens the neuron has, the higher his cyberlinks would be ranked. Cyberrank is recalculated for each `cycle` so that the changes in the amount of A tokens on the neurons' balances that produced cyberlinks would influence the cyberrank of the whole graph.
 
 #### Investminting rules
 
