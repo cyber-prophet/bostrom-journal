@@ -10,9 +10,9 @@ Issue 1, 20220414
 
 ==>
 
-### Foreword
+### {~~Foreword~>Introduction~~}{>>Обычно правило такое: 1 - foreword = написано не автором работы, 2 - preface = обращение автора к читателю, зачем он вообще все это написал и тд, 3 - introduction = вступление уже по существу материала/текста<<}
 
-In this issue we collected particles from the founding team and the first users of Bostrom about using Bostrom. Those particles could have been edited to correct typos and grammar mistakes, to delete repeated information already present in other journal articles. Initial particle references are provided. >>|
+In this issue we collected particles from the founding team and the first users of Bostrom {~~about~>regarding~~} using Bostrom. Those particles could have been edited to correct typos and grammar mistakes, to delete repeated information already presented in other journal articles. Initial particle references are provided. >>|
 
 ---
 
@@ -20,13 +20,13 @@ In this issue we collected particles from the founding team and the first users 
 
 ### About the journal
 
-This journal is a new phenomenon. We experiment here with Bostrom unique features and apply them to real world problems in a form resembling to modern scientific journals.
+This journal is a new phenomenon. We experiment here with Bostrom's unique features and apply them to real world problems in a form resembling modern scientific journals.
 
 Bostrom journal is created on top of the Bostrom Blockchain knowledge rank.
 
-Bostrom journal created to be easyly parsable to enable users to work with it as a knowledge graph (the subgraph of the main graph), and for convenience of reading.
+Bostrom journal is created to be easily parsable to enable users to {~~work with~>use~~} it as a knowledge graph (the subgraph of the main graph), and for convenience of reading.
 
-We assembled this journal from the particles. >>|
+We assembled this journal from {--the--} particles. >>|
 
 ---
 
@@ -34,15 +34,15 @@ We assembled this journal from the particles. >>|
 
 ### Journal's standard formatting markup and tags
 
-All the particles was formatted using [Prettier](https://prettier.io/), an opinionated code formatter.
+All the particles were formatted using [Prettier](https://prettier.io/), an opinionated code formatter.
 
 - `##` chapter names start with 2 hashes
-- `###` 3 and more hashes are used in the particles (it means that number of hashes from the original particles is changed respectively)
-- `==>` symbol marks the line with service tags. 2 lines after begins text content of particle.
-- `[cid]` - the tag with cid of the original particle
+- `###` 3 and more hashes are used in {--the--} particles (it means that number of hashes from the original particle is changed respectively)
+- `==>` symbol marks the line with service tags. 2 lines after begins text content of particle.{>>не поняла эту строчку<<}
+- `[cid]` - {~~the tag with cid~>cid tag~~} of the original particle
 - `[author]` - the tag with url to the author of the original particle
 - `>>|` - marks the end of the particle
-- `---` - 3 minuses used for creating space between particles (as otherwise Prettier will delete this space and make the text more dense) >>|
+- `---` - 3 minuses are used to create space between particles (as otherwise Prettier will delete this space and make the text more dense) >>|
 
 ---
 
@@ -50,7 +50,7 @@ All the particles was formatted using [Prettier](https://prettier.io/), an opini
 
 ### Journal's design open questions
 
-Should there be a link on the edited particle? Should it replace the original link or they both needed to be together? Should there be a description of changes in the new particle from the old one? >>|
+Should there be a link to the edited particle? Should it replace the original link or {~~they both needed to be together~>should both links be present~~}? {~~Should there be a description of changes in the new particle from the old one?~>Should we provide a list of alterations to highlight differences between the old and the new particle?~~} >>|
 
 ---
 
@@ -70,11 +70,11 @@ Bostrom is a superintelligence project based on blockchain (cosmos-SDK), consens
 
 ### Capabilities of the Bostrom Blockchain
 
-- the new way of sharing, storing, ranking, and searching for information;
-- the platform for building on top of these ☝;
-- the social platform;
-- the economic environment;
-- the ground for AI;
+- {--the--} new way of sharing, storing, ranking, and searching for information;
+- {--the--} platform for building on top of these ☝;
+- {--the--} social platform;
+- {--the--} economic environment;
+- {--the--} ground for AI;
 - and much more that can be imagined and done.
 
 Site [cyb.ai](https://cyb.ai) is an application built using the Bostrom Blockchain.
@@ -123,7 +123,7 @@ IPFS does not guarantee the safety or accessibility of the files. >>|
 
 ### Bostrom is a full refactoring of the Euler network
 
-Bostrom is a full refactoring of the Euler network with a strong focus on Superintelligence. It includes a new distribution model, economics, improved ranking, and some superintelligent abilities. We think of [Bostrom](https://cyb.ai/search/bostrom) as a canary network in the same way that Kusama relates to Polkadot. The knowledge graph of Bostrom tends to be a bootstrap hub for domain-specific networks of Cyber. The network works as a testbed for Interplanetary Knowlege Protocol communications and different experiments. Consider Bostrom as a network with high risks but which has a market value. The key differences within the Cyber network are being discussed [here](https://cyb.ai/search/bostrom%20vs%20cyber). The launch of the Bostrom network is the inception of the ecosystem. >>|
+Bostrom is a full refactoring of the Euler network with a strong focus on Superintelligence. It includes a new distribution model, economics, improved ranking, and some superintelligent abilities. We {~~think of~>perceive~~} [Bostrom](https://cyb.ai/search/bostrom) as a canary network in the same way that Kusama relates to Polkadot. The {++Bostrom ++}knowledge graph{-- of Bostrom--} tends to be a bootstrap hub for domain-specific networks of Cyber. The network works as a testbed for Interplanetary Knowlege Protocol communications and different experiments. Consider Bostrom {--as--} a network with high risks but {~~which has a~>of~~} market value. The key differences within the Cyber network are being discussed [here](https://cyb.ai/search/bostrom%20vs%20cyber). The launch of the Bostrom network is the inception of {~~the~>an~~} ecosystem. >>|
 
 ---
 
@@ -164,9 +164,9 @@ Setup Keplr, then go to [My robot](https://cyb.ai/) and connect it. >>|
 
 ==> [cid](https://cyb.ai/ipfs/QmS9P1BAYtGXHEq3q6WrGCVyfEVnDY6S63QXe9ZYuJkbwQ), by [author](https://cyb.ai/network/bostrom/contract/bostrom14tk96pwx6lk25f740m4jzx85pkhfvldg42te4p)
 
-### Bostrom: How to start and navigate step by step
+### Bostrom: How to start and navigate step by step{>>Все шаги нужно переписать. Максим, пожалуйста, не удаляй этот коммент<<}
 
-Initially, it might seem complex but as you dwell into it there is lot of fun exploring the whole process one by one. Of course even I have just started it and there is a lot for me to discover. Saying that if you are a first time cyb.ai, start with the below:
+Initially, it might seem complex but as you dwell in it there is lots of fun exploring the whole process step by step. {~~Of course even I have just started it and there is a lot for me to discover.~>Obviously, I myself have just started this exploration and there is a lot for me to discover.~~} Saying that, if you are a {~~first time cyb.ai~>first-time cyb.ai-er~~}, start with the below:
 
 1. Buy BOOT on osmosis dex (OSMO is not available on any CEX, only ATOM is available on CEX. Transfer ATOM and convert it to BOOT on OSMO).
    https://app.osmosis.zone/?from=OSMO&to=BOOT
@@ -177,7 +177,7 @@ Initially, it might seem complex but as you dwell into it there is lot of fun ex
 6. As a first task add your avatar by clicking on 'My robot' and then clicking on the top box (at the bottom end you will see a box enabled to upload the image). Likewise once the image is added it will ask to publish your first tweet.
 7. When both avatar is added and you are done with the first tweet you will some Karma being populated for you. (click on avatar link to see this).
 
-More articles to follow explain the next steps of exploration. >>|
+More articles to follow explaining the next steps of exploration. >>|
 
 ---
 
@@ -199,7 +199,7 @@ A neuron is a token holder who can provide valuable knowledge to the knowledge g
 
 Cyberlink is a noun and a verb.
 
-Cyberlink is the link in Cyber between two particles registered in Bostrom blockchain.
+A cyberlink is the link in Cyber between two particles registered in Bostrom blockchain.
 
 To cyberlink - to create a cyberlink between two particles. >>|
 
@@ -209,7 +209,7 @@ To cyberlink - to create a cyberlink between two particles. >>|
 
 ### Relevance machine
 
-You can cyberlink any information to each other. You can search on cyber or add content by yourself. To start cyberlinking you need A and V, which you can get by [investmint H](/mint) in [HFR](/search/hfr), or buy H in [Teleport](/teleport).
+You can cyberlink any {++pieces of ++}information to each other. You can search {--on--} cyber or add content yourself. To start cyberlinking you need A and V, which you can get by [investminting H](/mint) in [HFR](/search/hfr), or {++you can ++}buy H in [Teleport](/teleport).
 
 - [cyberlink](/search/cyberlink) >>|
 
@@ -229,20 +229,20 @@ With BOOT one can:
 
 - `hire a hero` (to stake or to delegate tokens to a validator), being paid rewards in return (risk fee);
   - for each staked BOOT a HYDROGEN is minted (with a 1 to 1 ratio)
-- transfer to somebody (if BOOT is in a liquid state)
-- pay for network transactions (pay for gas). Though now, many validators accept transactions for free.
+- transfer to somebody (if BOOT is in a liquid state);
+- pay for network transactions (pay for gas). Though now, many validators accept transactions for free;
 - vote for protocol change and public goods.
 
 With HYDROGEN one can:
 
-- `investmint` H for a limited period of time to produce VOLT and AMPERE tokens
-- exchange back for delegated BOOT in order to transfer BOOT into a liquid state
-- transfer to someone (if in liquid state)
+- `investmint` H for a limited period of time to produce VOLT and AMPERE tokens;
+- exchange back for delegated BOOT in order to transfer BOOT into a liquid state;
+- transfer to someone (if in liquid state).
 
 VOLT, AMPERE:
 
-- are needed to create cyberlinks, to train Bostrom
-- may be transferred
+- are needed to create cyberlinks, to train Bostrom;
+- may be transferred.
 
 The token's name BOOT symbolizes the BOOTloader nature of the Bostrom network for the future Cyber network. >>|
 
@@ -252,7 +252,7 @@ The token's name BOOT symbolizes the BOOTloader nature of the Bostrom network fo
 
 ### Bostrom tokens - short explanation
 
-BOOT allow to hire heroes and mint [H](https://cyb.ai/token/H). H is a liquid staking token. You can use it to generate A and V in [HFR](https://cyb.ai/search/hfr) >>|
+BOOT{++ tokens++} allow to hire heroes and mint [H](https://cyb.ai/token/H). H is a liquid staking token. You can use it to generate A and V in [HFR](https://cyb.ai/search/hfr) >>|
 
 ---
 
@@ -266,11 +266,11 @@ After H tokens are investminted, the neurons balance is replenished by a number 
 
 #### Meaning of V and A tokens
 
-Every 1 V token on the neuron's balance allows to can create 1 cyberlink per day. The ability to create cyberlinks is restored within a day.
+Every 1 V token on the neuron's balance allows to create 1 cyberlink per day. The ability to create cyberlinks is restored within a day.
 
 If the network is underloaded, one can produce more cyberlinks (up to 4 cyberlinks for each V on balance per day).
 
-The more A tokens the neuron has, the higher his cyberlinks would be ranked. Cyberrank is recalculated for each `cycle` so that the changes in the amount of A tokens on the neuron's balances that produced cyberlinks would influence the cyberrank of the whole graph.
+The more A tokens the neuron has, the higher his cyberlinks would be ranked. Cyberrank is recalculated for each `cycle` so that the changes in the amount of A tokens on the neuron's balances{>>тут должен быть один баланс одного нейрона, или несколько балансов, или несколько тнейронов?<<} that produced cyberlinks would influence the cyberrank of the whole graph.
 
 #### Investminting rules
 
