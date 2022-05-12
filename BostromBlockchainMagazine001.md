@@ -79,7 +79,7 @@ Bostrom is a superintelligence project based on blockchain (cosmos-SDK), consens
 
 Site [cyb.ai](https://cyb.ai) is an application built using the Bostrom Blockchain.
 
-On [cyb.ai](https://cyb.ai) you can already create [cyberlinks](/search/cyberlink), search the [graph](/oracle), rank using the [Relevance machine](/search/rm), share and store information, [earn rewards](/halloffame), [investmint](/mint), and [tweet](/search/tweet). [Bostrom](/search/bostrom) is the [bootloader](/bootloader) for [Cyber](/search/cyber), with the same features. >>|
+On [cyb.ai](https://cyb.ai) you can already create [cyberlinks](https://cyb.ai/search/cyberlink), search the [graph](https://cyb.ai/oracle), rank using the [Relevance machine](https://cyb.ai/search/rm), share and store information, [earn rewards](https://cyb.ai/halloffame), [investmint](https://cyb.ai/mint), and [tweet](https://cyb.ai/search/tweet). [Bostrom](https://cyb.ai/search/bostrom) is the [bootloader](https://cyb.ai/bootloader) for [Cyber](https://cyb.ai/search/cyber), with the same features. >>|
 
 ---
 
@@ -103,7 +103,9 @@ By definition, created cyberlinks cannot be deleted. This means, among other thi
 
 ### Superintelligence
 
-The term superintelligence was introduced by the modern philosopher Nick Bostrom (the blockchain Bostrom is named after him). Nick Bostrom defines superintelligence as "any intellect that greatly exceeds the cognitive performance of humans in virtually all domains of interest". For instance, nowadays, there are programs that play chess better than any person. However, those programs cannot manage tasks in other fields of knowledge. Superintelligence is considered to be capable of understanding various areas of expertise. >>|
+The term superintelligence was introduced by the modern philosopher Nick Bostrom (the blockchain Bostrom is named after him). Nick Bostrom defines superintelligence as "any intellect that greatly exceeds the cognitive performance of humans in virtually all domains of interest".
+
+We expect that the knowledge graph of Bostrom blockchain can become provider of knowledge to superintelligence machines. >>|
 
 ---
 
@@ -209,9 +211,9 @@ To cyberlink - to create a cyberlink between two particles. >>|
 
 ### Relevance machine
 
-You can cyberlink any pieces of information to each other. You can search on cyber or add content yourself. To start cyberlinking you need A and V, which you can get by [investminting H](/mint) in [HFR](/search/hfr), or you can buy H in [Teleport](/teleport).
+You can cyberlink any pieces of information to each other. You can search on cyber or add content yourself. To start cyberlinking you need Amperes and Volts, which you can get by [investminting H](https://cyb.ai/mint) in [HFR](https://cyb.ai/search/hfr), or you can buy H in [Teleport](https://cyb.ai/teleport).
 
-- [cyberlink](/search/cyberlink) >>|
+- [cyberlink](https://cyb.ai/search/cyberlink) >>|
 
 ---
 
@@ -248,14 +250,6 @@ The token's name BOOT symbolizes the BOOTloader nature of the Bostrom network fo
 
 ---
 
-==> [cid](https://cyb.ai/ipfs/Qmc2s8u3uiNrhjYXNcJkpMtA8qYeuZJv46AnLbj1uPwFFD), by [author](https://cyb.ai/network/bostrom/contract/bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
-
-### Bostrom tokens - short explanation
-
-BOOT tokens allow to hire heroes and mint [H](https://cyb.ai/token/H). H is a liquid staking token. You can use it to generate A and V in [HFR](https://cyb.ai/search/hfr) >>|
-
----
-
 ==> [cid](https://cyb.ai/ipfs/Qmezuhrqm7P8u8PwHhoq5EjWmnk3VxGju9DVUT9pWmeNaV), by [author](https://cyb.ai/network/bostrom/contract/bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
 
 ### Investminting - definition and mechanics
@@ -264,26 +258,26 @@ In order to obtain resource tokens: A (AMPERES) and V (VOLTS) one should investm
 
 After H tokens are investminted, the neurons balance is replenished by a number of temporary `frozen` for transferring but ready to use A and V tokens. Both tokens of investminting pair (H and A or V) are `frozen` till the end of the investminting period.
 
-#### Meaning of V and A tokens
+#### Meaning of Volt and Ampere tokens
 
-Every 1 V token on the neuron's balance allows to create 1 cyberlink per day. The ability to create cyberlinks is restored within a day.
+Every 1 Volt token on the neuron's balance allows to create 1 cyberlink per day. The ability to create cyberlinks is restored within a day.
 
-If the network is underloaded, one can produce more cyberlinks (up to 4 cyberlinks for each V on balance per day).
+If the network is underloaded, one can produce more cyberlinks (up to 4 cyberlinks for each Volt on balance per day).
 
-The more A tokens the neuron has, the higher his cyberlinks would be ranked. Cyberrank is recalculated for each `cycle` so that the changes in the amount of A tokens on the neurons' balances that produced cyberlinks would influence the cyberrank of the whole graph.
+The more Ampere tokens the neuron has, the higher his cyberlinks would be ranked. Cyberrank is recalculated for each `cycle` so that the changes in the amount of Amperes tokens on the neurons' balances that produced cyberlinks would influence the cyberrank of the whole graph.
 
 #### Investminting rules
 
 The following rules apply in investminting:
 
-1. The period chosen for investminting H tokens has a proportionate effect on the amount of A and V tokens received.
-2. The amount of H tokens investminted has a proportionate effect on the amount of A and V tokens received.
-3. H, A, and V tokens become liquid after the investminting period has ended.
-4. Before the tokens are unlocked, they perform their resource function for the account - As increase links' rank (their place in the search result), Vs may be used for producing cyberlinks.
+1. The period chosen for investminting H tokens has a proportionate effect on the amount of Ampere and Volt tokens received.
+2. The amount of H tokens investminted has a proportionate effect on the amount of Amperes and Volt tokens received.
+3. H, A, and Volt tokens become liquid after the investminting period has ended.
+4. Before the tokens are unlocked, they perform their resource function for the account - Amperes increase links' rank (their place in the search result), Volts may be used for producing cyberlinks.
 5. Maximum investminting period (`investmint_max_period`) is limited. However, it increases every 547 days (`horizon_period_init`).
-6. The amount of A and V available for investminting per time unit is determined by the following parameters `ampere_mint_rate` and `volt_mint_rate`. These parameters' values are halved every 18 months to align with Moors law(~547 days). (`ampere_base_halving_period`, `volt_base_halving_period`). At the beginning of the network's lifecycle, one can investmint more A and V than later.
+6. The amount of Amperes and Volts available for investminting per time unit is determined by the following parameters `ampere_mint_rate` and `volt_mint_rate`. These parameters' values are halved every 18 months to align with Moors law(~547 days). (`ampere_base_halving_period`, `volt_base_halving_period`). At the beginning of the network's lifecycle, one can investmint more Amperes and Volts than later.
 
-A and V are finite due to fundamental constraints in computing resources. They cannot be replenished in case the investminting has been missed. So if you didn't investmint your H, you would miss the opportunity to have A and V.
+Amperes and Volts are finite due to fundamental constraints in computing resources. They cannot be replenished in case the investminting has been missed. So if you didn't investmint your H, you would miss the opportunity to have Amperes and Volts.
 
 Halving occurs every 567 days, which means half as many tokens can be minted per time unit compared to the before halving amount. >>|
 
@@ -342,7 +336,7 @@ Neurons' useful functions are:
 
 - maintaining desired balance between `staked` and `liquid` tokens (`goal_bonded` parameter in the senate which is `80%` at the moment of writing)
 - distributing `staked` tokens to validators who perform their functions properly thus preventing `slashing`
-- using H token (HYDROGEN), which can be obtained in exchange for a `staked` BOOT, for investminting A and V tokens (and then using As and Vs for creating сyberlinks, i.e. training Bostrom).
+- using H token (HYDROGEN), which can be obtained in exchange for a `staked` BOOT, for investminting Ampere and Volt tokens (and then using As and Vs for creating сyberlinks, i.e. training Bostrom).
 - deciding on the evolution of the network using the governance portal (`senate`)
 
 #### The economic incentivization mechanism of agents in Bostrom
@@ -375,6 +369,8 @@ As of now (2022-01-14), there is no publicly available services for monitoring h
 
 In order to hedge `slashing` risks one may distribute `stakes` between several heroes. >>|
 
+---
+
 ## [Cyb.ai](https://cyb.ai) functionality
 
 ---
@@ -397,7 +393,7 @@ If no cyberlinks are created for a text file hash of a particular search query, 
 
 Account avatar is an image file in IPFS. The hash of the image file is cyberlinked by a text file "avatar"'s hash by the current neuron.
 
-A message in a particular Twitter account's feed is a cyberlink between the text "tweet" and the IPFS hash of the message file. >>|
+Amperes message in a particular Twitter account's feed is a cyberlink between the text "tweet" and the IPFS hash of the message file. >>|
 
 ---
 
@@ -407,8 +403,8 @@ A message in a particular Twitter account's feed is a cyberlink between the text
 
 Once you will get a bostrom address, then you will have a robot page, which will show your avatars and balances
 
-- [check balances](/)
-- [manage accounts](/) >>|
+- [check balances](https://cyb.ai/)
+- [manage accounts](https://cyb.ai/) >>|
 
 ---
 
@@ -416,11 +412,11 @@ Once you will get a bostrom address, then you will have a robot page, which will
 
 ### Teleport
 
-You can exchange your tokens on another by using swap, explore [existing pools](/teleport/pools) or add liquidity and sub liquidity
+You can exchange your tokens on another by using swap, explore [existing pools](https://cyb.ai/teleport/pools) or add liquidity and sub liquidity
 
-- [swap](/teleport)
-- [add liquidity](/teleport/add-liquidity)
-- [sub liquidity](/teleport/sub-liquidity) >>|
+- [swap](https://cyb.ai/teleport)
+- [add liquidity](https://cyb.ai/teleport/add-liquidity)
+- [sub liquidity](https://cyb.ai/teleport/sub-liquidity) >>|
 
 ---
 
@@ -428,9 +424,9 @@ You can exchange your tokens on another by using swap, explore [existing pools](
 
 ### Dyson Sphere
 
-You can delegate(stake) BOOT by hiring a Hero in the [Dyson Sphere](/search/dyson%20shpere) and get H in equal amounts of staked BOOT.
+You can delegate (stake) BOOT by hiring a Hero in the [Dyson Sphere](https://cyb.ai/search/dyson%20shpere) and get H in equal amounts of staked BOOT.
 
-- [hire & fire Heros](/halloffame) >>|
+- [hire & fire Heros](https://cyb.ai/halloffame) >>|
 
 ---
 
@@ -438,13 +434,13 @@ You can delegate(stake) BOOT by hiring a Hero in the [Dyson Sphere](/search/dyso
 
 ### HFR
 
-In this reactor, [amperes](/token/A) or [volts](/token/V) can be [extracted](/mint) from [hydrogen](/token/H) without burning the hydrogen itself.
+In this reactor, [Amperes](https://cyb.ai/token/A) or [Volts](https://cyb.ai/token/V) can be [extracted](https://cyb.ai/mint) from [hydrogen](https://cyb.ai/token/H) without burning the hydrogen itself.
 
-You can mint [A](/token/A) and [V](/token/V) by locking your [H](/token/H).
+You can mint [Amperes](https://cyb.ai/token/A) and [Volts](https://cyb.ai/token/V) by locking your [Hydrogen](https://cyb.ai/token/H).
 
-You can get H by delegating on Heroes in the [Dyson Sphere](/search/dyson%20shpere).
+You can get Hydrogen by delegating on Heroes in the [Dyson Sphere](https://cyb.ai/search/dyson%20shpere).
 
-- [investmint](/mint) >>|
+- [investmint](https://cyb.ai/mint) >>|
 
 ---
 
@@ -452,10 +448,10 @@ You can get H by delegating on Heroes in the [Dyson Sphere](/search/dyson%20shpe
 
 ### Grid
 
-Here you can check your energy, route A and V to your friends
+Here you can check your energy, route Amperes and Volts to your friends
 
-- [check energy](/grid)
-- [route](/grid/outcome) >>|
+- [check energy](https://cyb.ai/grid)
+- [route](https://cyb.ai/grid/outcome) >>|
 
 ---
 
@@ -463,10 +459,10 @@ Here you can check your energy, route A and V to your friends
 
 ### Senate
 
-You can participate in community life by voting for proposals in [senate](/senate)
+You can participate in community life by voting for proposals in [senate](https://cyb.ai/senate)
 
-- [vote](/senate)
-- [propose](/senate) >>|
+- [vote](https://cyb.ai/senate)
+- [propose](https://cyb.ai/senate) >>|
 
 ---
 
@@ -502,11 +498,31 @@ Please refer to [the code](https://github.com/cybercongress/go-cyber/blob/main/x
 
 ---
 
+==> [cid](https://cyb.ai/ipfs/QmUamt7diQP54eRnmzqMZNEtXNTzbgkQvZuBsgM6qvbd57), by [author](https://cyb.ai/network/bostrom/contract/bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
+
+### The Great Web
+
+The Great Web is a web that lasts. It is based on three simple ideas.
+
+#### Access
+
+Anyone who can store secret and compute digital signatures can use the Great Web. Humans, robots, animals, plants, and even mycelium can use it without discrimination and limits.
+
+#### Immutability
+
+Particles in the Great Web can survive through spacetime thanks to content addressing mechanism. So the Great Web can last indefinitely.
+
+#### Universality
+
+The Great Web is built by connecting particles through cyberlinks. The result is universally acceptable language, dynamic but understandable and acceptable by anyone. >>|
+
+---
+
 ==> [cid](https://cyb.ai/ipfs/QmXQ4k4ciK5ieaSwtccmH9mm4QdPS6Spd21DTqLFrEwDWR), by [author](https://cyb.ai/network/bostrom/contract/bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
 
 ### Markdown
 
-The content of text particles is rendered as a Markdown. Cyb.ai uses this JS packages to render markdown: [ReactMarkdown](https://www.npmjs.com/package/react-markdown), [remarkGfm](https://www.npmjs.com/package/remark-gfm).
+The content of text particles is rendered as a Markdown. Cyb.ai uses these JS packages to render markdown: [ReactMarkdown](https://www.npmjs.com/package/react-markdown), [remarkGfm](https://www.npmjs.com/package/remark-gfm).
 
 Nearly all Markdown applications support the basic syntax outlined in John Gruber’s original design document. There are minor variations and discrepancies between Markdown processors — those are noted inline wherever possible.
 
@@ -527,26 +543,6 @@ CRP renders the content of such files, so [Neurons](https://cyb.ai/search/neuron
 Nobody created cyberlinks for the query you entered (or you just followed some link on CRP with an already defined query). And you see this text, which cyberlinked to the query "[0](https://cyb.ai/search/0)". Cyber is created that queries with no cyberlinks display results from the query "[0](https://cyb.ai/search/0)".
 
 Btw, you can create relevant cyberlinks to your initial query, "[0](https://cyb.ai/search/0)" query, or any other query. Cyber is fantastic. Everything in cyber is hardcore and geeky but beautiful and powerful. Use your opportunity to explore the ways of using cyber. >>|
-
----
-
-==> [cid](https://cyb.ai/ipfs/QmUamt7diQP54eRnmzqMZNEtXNTzbgkQvZuBsgM6qvbd57), by [author](https://cyb.ai/network/bostrom/contract/bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
-
-### The Great Web
-
-The Great Web is a web that lasts. It is based on three simple ideas.
-
-#### Access
-
-Anyone who can store secret and compute digital signatures can use the Great Web. Humans, robots, animals, plants, and even mycelium can use it without discrimination and limits.
-
-#### Immutability
-
-Particles in the Great Web can survive through spacetime thanks to frozen content addressing. So the Great Web can last indefinitely.
-
-#### Universality
-
-The Great Web is built by connecting particles through cyberlinks. The result is universally acceptable language, dynamic but understandable and acceptable by anyone. >>|
 
 ---
 
@@ -790,8 +786,9 @@ There will be incentive `13x` for those who claim first reducing to `7x` who cam
 
 #### Final Distribution
 
-[Final Distribution Table](https://console.cloud.google.com/bigquery?project=cosmic-keep-223223&p=cosmic-keep-223223&d=final&t=final_distribution&page=table&ws=!1m5!1m4!4m3!1scosmic-keep-223223!2sfinal!3sfinal_distribution)  
-`Check your address in the [Dashboard](https://datastudio.google.com/u/0/reporting/53e1c28b-9f10-497c-9b5b-9f2a4749450b)`
+[Final Distribution Table](https://console.cloud.google.com/bigquery?project=cosmic-keep-223223&p=cosmic-keep-223223&d=final&t=final_distribution&page=table&ws=!1m5!1m4!4m3!1scosmic-keep-223223!2sfinal!3sfinal_distribution)
+
+Check your address in the [Dashboard](https://datastudio.google.com/u/0/reporting/53e1c28b-9f10-497c-9b5b-9f2a4749450b)
 
 ### Result Validation
 
