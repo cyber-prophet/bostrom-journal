@@ -12,7 +12,7 @@ Issue 1, 20220414
 
 ### Introduction
 
-In this issue we collected particles from the founding team and the first users of Bostrom regarding using Bostrom. Those particles could have been edited to correct typos and grammar mistakes, to delete repeated information already presented in other journal articles. Initial particle references are provided. >>|
+In this issue we collected particles from the founding team and the first users of Bostrom regarding using Bostrom. Those particles could have been edited to correct typos and grammar mistakes, to delete repeated information already presented in other journal articles{++ and to make them as a whole more readable++}. Initial particle references are provided. >>|
 
 ---
 
@@ -172,9 +172,9 @@ Initially, it might seem complex but as you dwell in it there is lots of fun exp
 
 1. Buy BOOT on osmosis dex (OSMO is not available on any CEX, only ATOM is available on CEX. Transfer ATOM and convert it to BOOT on OSMO).
    https://app.osmosis.zone/?from=OSMO&to=BOOT
-2. Once you have BOOT in your account (Keplr Wallet) stake it. This will give you H tokens.
+2. Once you have BOOT in your account (Keplr Wallet) stake it. This will give you Hydrogen tokens.
 3. Go to https://cyb.ai/, connect your Keplr Wallet.
-4. You have to mint Volt and Ampere tokens by freezing liquid H tokens. Minting is available via the following link https://cyb.ai/mint. A low number of frozen H tokens might not get you any Volt and Ampere tokens. Adjust the H and the frozen (number of days) bars so that a number greater than zero appears above. It indicates the quantity of Volt or Ampere tokens you will get. The 'Investmint' button is active only when the number of Volt or Ampere tokens is not equal to zero. Click on the Investmint button to mint Volt and Ampere tokens.
+4. You have to mint Volt and Ampere tokens by freezing liquid Hydrogen tokens. Minting is available via the following link https://cyb.ai/mint. A low number of frozen Hydrogen tokens might not get you any Volt and Ampere tokens. Adjust the Hydrogen and the frozen (number of days) bars so that a number greater than zero appears above. It indicates the quantity of Volt or Ampere tokens you will get. The 'Investmint' button is active only when the number of Volt or Ampere tokens is not equal to zero. Click on the Investmint button to mint Volt and Ampere tokens.
 5. Once you have Volt and Ampere tokens your energy bar will be charging. You need energy to perform different activities such as adding avatar, tweeting etc...
 6. As a first task add your avatar by clicking on 'My robot' and then clicking on the box suggesting adding an avatar (at the bottom you will see a box enabled to upload the image). Once the image is added you will be asked to publish your first tweet.
 7. When both your avatar and your first tweet are published you will gain some Karma. (click on the avatar link to check it).>>|
@@ -209,7 +209,7 @@ To cyberlink - to create a cyberlink between two particles. >>|
 
 ### Relevance machine
 
-You can cyberlink any pieces of information to each other. You can search on cyber or add content yourself. To start cyberlinking you need Amperes and Volts, which you can get by [investminting H](https://cyb.ai/mint) in [HFR](https://cyb.ai/search/hfr), or you can buy H{>>ты везде V и A поменял на полное наименование, нужно ли заменить по такому же принципу H? - Да, нужно<<} in [Teleport](https://cyb.ai/teleport).
+You can cyberlink any pieces of information to each other. You can search on cyber or add content yourself. To start cyberlinking you need Amperes and Volts, which you can get by [investminting H](https://cyb.ai/mint) in [HFR](https://cyb.ai/search/hfr), or you can buy Hydrogen in [Teleport](https://cyb.ai/teleport).
 
 - [cyberlink](https://cyb.ai/search/cyberlink) >>|
 
@@ -235,7 +235,7 @@ With BOOT one can:
 
 With HYDROGEN one can:
 
-- `investmint` H for a limited period of time to produce VOLT and AMPERE tokens;
+- `investmint` HYDROGEN for a limited period of time to produce VOLT and AMPERE tokens;
 - exchange back for delegated BOOT in order to transfer BOOT into a liquid state;
 - transfer to someone (if in liquid state).
 
@@ -254,7 +254,7 @@ The token's name BOOT symbolizes the BOOTloader nature of the Bostrom network fo
 
 In order to obtain resource tokens: A (AMPERES) and V (VOLTS) one should investmint H (HYDROGEN). The term `investminting` is composed of `minting` (producing new tokens) and `investing` (putting capital into something for a period of time in order to make a profit).
 
-After H tokens are investminted, the neurons balance is replenished by a number of temporary `frozen` for transferring but ready to use A and V tokens. Both tokens of the investminting pair (H and A or V) are `frozen` till the end of the investminting period.
+After Hydrogen tokens are investminted, the neurons balance is replenished by a number of temporary `frozen` for transferring but ready to use A and V tokens. Both tokens of the investminting pair (H and A or V) are `frozen` till the end of the investminting period.
 
 #### Meaning of Volt and Ampere tokens
 
@@ -268,8 +268,8 @@ The more Ampere tokens the neuron has, the higher his cyberlinks would be ranked
 
 The following rules apply to investminting:
 
-1. The period chosen for investminting H tokens has a proportionate effect on the amount of Ampere and Volt tokens received.
-2. The amount of H tokens investminted has a proportionate effect on the amount of Ampere and Volt tokens received.
+1. The period chosen for investminting Hydrogen tokens has a proportionate effect on the amount of Ampere and Volt tokens received.
+2. The amount of Hydrogen tokens investminted has a proportionate effect on the amount of Ampere and Volt tokens received.
 3. H, Ampere, and Volt tokens become liquid after the investminting period has ended.
 4. Before the tokens become liquid, they perform their resource functions for the account - Amperes increase links' rank (their place in the search result), Volts may be used for producing cyberlinks.
 5. Maximum investminting period (`investmint_max_period`) is limited. However, it increases every 547 days (`horizon_period_init`).
@@ -363,11 +363,9 @@ When a particular hero is caught violating rules, that hero is put into the `jai
 
 All the violations and the penalties are noted in the blockchain settings and are executed according to the Tenderimnt consensus protocol.
 
-As of now (2022-01-14), there is no publicly available services for monitoring heroes' violation statistics. Therefore neurons have to make decisions based only on their own statistics. In order to make it easier to track heroes’ performance, one can use a hack: if only the integer values are deligated to heroes' balances, `slashing` is easily tracked in case it did occur.
+As of now (2022-01-14), there is no publicly available services for monitoring heroes' violation statistics. Therefore neurons have to make decisions based only on their own statistics. In order to make it easier to track heroes’ performance, one can use a hack: if only {~~the integer values~>multiples of 10~~} are deligated to heroes' balances, `slashing` is easily tracked in case it did occur.
 
-For example we can delegate `153 298 189` BOOTs to hero or we can delegate `153 000 000`, and with the latter example we will be able to see the violation. 
-
-{>>по хаку уточнить у Максима<<}
+For example{++,++} we can delegate `153 298 189` BOOTs to {++a ++}hero{++. In this case we'll have to remember the exact amount deligated and constantly recheck for potential changes. It can become problematic as one bonds to more heroes.++} {~~or~>On the other hand,~~} we can delegate `153 000 000`{~~, and with the latter example we will be able to see the violation.~>making the violation easily traceable.~~}{++ Simply browse through your stakes and any non-zero digit at the end will give away the violating hero.++}
 
 In order to hedge `slashing` risks one may distribute `stakes` between several heroes. >>|
 
@@ -426,7 +424,7 @@ You can exchange your tokens using swap, explore [existing pools](https://cyb.ai
 
 ### Dyson Sphere
 
-You can delegate (stake) BOOT by hiring a Hero in the [Dyson Sphere](https://cyb.ai/search/dyson%20shpere). That will grant you H in amount equal to staked BOOT.
+You can delegate (stake) BOOT by hiring a Hero in the [Dyson Sphere](https://cyb.ai/search/dyson%20shpere). That will grant you Hydrogen in amount equal to staked BOOT.
 
 - [hire & fire Heros](https://cyb.ai/halloffame) >>|
 
@@ -442,7 +440,7 @@ You can mint [Amperes](https://cyb.ai/token/A) and [Volts](https://cyb.ai/token/
 
 You can get Hydrogen by delegating BOOTs to Heroes in the [Dyson Sphere](https://cyb.ai/search/dyson%20shpere).
 
-- [investmint](https://cyb.ai/mint){>>не вижу логической привязки этого куска, можно перенести в конец предыдущего предложения<<} >>|
+- {++Use HFR menu to adjust freezing parameters and ++}[investmint](https://cyb.ai/mint) >>|
 
 ---
 
@@ -470,9 +468,7 @@ You can participate in community life by voting for proposals in [senate](https:
 
 ==> [cid](https://cyb.ai/ipfs/QmY4X4SkVBkoUGZdTzdcW7SKY8t4ULj5GJBRcRr4UMyahp), by [author](https://cyb.ai/network/bostrom/contract/bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
 
-### Bostrom's Governance{>>может сделать это заголовком следующего уровня? Потому что остальные заголовки в этом разделе соответствуют пунктам в мено слева
-
-Неплохо было бы, да. Я думал на тему, как сжать эти заголовки cid, by author, так чтобы отдельные particles можно было вставлять в абзацы, чтобы они так не выделялись, но так ничего и не выдумал. Если прятать cid, by author, то история несколько теряется<<}
+### Bostrom's Governance{>>если не сдвигать заголовки на уровень ниже, а просто дописать пояснительные подводки, как их оформлять?)<<}
 
 Governance process of [Cyber networks](https://cyb.ai/search/computing%20knowledge) is focused on the [evolution](https://cyb.ai/search/cyber%20evolution) of its code and is based on 3 methods:
 
@@ -490,7 +486,7 @@ During [voting period](https://cyb.ai/network/bostrom/parameters/gov) proposal h
 
 ==> [cid](https://cyb.ai/ipfs/QmWxDGihyZBUsZ97yToWeK35hftvKnxPzeaNqPwRCCecYH), by [author](https://cyb.ai/network/bostrom/contract/bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
 
-### Thoughts{>>может это тоже куда-то переместить, либо сдвинуть на один уровень вниз, как я предлагала с Governance<<}
+### Thoughts
 
 Thoughts are completely autonomous programs. Program can schedule the execution of itself.
 
@@ -659,7 +655,7 @@ Search for the best arbitrage options in Bostrom. Ipython notebook retrieves dat
 
 @groovybear, @mastercyb
 
-The purpose of this research is to inspire at least 100k power-users of web3 to join the force of learning Superintelligence. To achieve this, we are going to gift 70% of the Bostrom genesis tokens BOOT to agents of Ethereum and Cosmos who are capable of contributing their best to the quality of the knowledge graph. First, we started by highlighting key audiences for establishing network effects and tackling basic chicken and eggs situation. Next, we {~~balance~>balanced~~} out the participation of key actors by splitting them into grades and adjusting allocations within the groups. Then we {~~apply~>applied~~} a filter in order to remove toxic fiat brains from the collective thought process. Finally, we {~~add~>added~~} a crucial incentive to hurry up.
+The purpose of this research is to inspire at least 100k power-users of web3 to join the force of learning Superintelligence. To achieve this, we are going to gift 70% of the Bostrom genesis tokens BOOT to agents of Ethereum and Cosmos who are capable of contributing their best to the quality of the knowledge graph. First, we start by highlighting key audiences for establishing network effects and tackling basic chicken and eggs situation. Next, we balance out the participation of key actors by splitting them into grades and adjusting allocations within the groups. Then we apply a filter in order to remove toxic fiat brains from the collective thought process. Finally, we add a crucial incentive to hurry up.
 
 The research results are represented by reproducible scripts that output addresses and balances which will be loaded to the claim CosmWasm contract after the launch of Bostrom.
 
@@ -669,7 +665,7 @@ Research is done on the [proposal](https://cyber.page/governance/20) basis. We h
 
 #### Connecting the Dots
 
-The biggest problem in bootstrapping a blockchain ecosystem from scratch is that it is not enough to attract just users. Established network effects exist between four key groups:{>>можно их еще и текстом перечислить, на случай использования партикла, или его рочтения без отображения / использования изображения<<}
+The biggest problem in bootstrapping a blockchain ecosystem from scratch is that it is not enough to attract just users. Established network effects exist between four key groups:{>>можно их еще и текстом перечислить, на случай использования партикла, или его прочтения без отображения / использования изображения<<}
 
 ![Network effects](https://ipfs.io/ipfs/Qmf2ARvyZ1gu5HJmsPjnWQdhyfmvaEVxnz9vvp5KUt3Lgo)
 
