@@ -34,8 +34,6 @@ We assembled this journal from particles. >>|
 
 ### Journal's standard formatting markup and tags
 
-{>>обсудить: 1) стоит ли заменить все числа (не в нумерованных списках) на текстовое написание. 2) можем ди мы в некоторых местах дописать подводки и надо ли<<}
-
 All the particles were formatted using [Prettier](https://prettier.io/), an opinionated code formatter.
 
 - `##` chapter names start with 2 hashes
@@ -345,10 +343,10 @@ The economic incentivization mechanism of heroes and neurons in Bostrom includes
 
 Blockchain is programmed to mint new BOOT tokens in each block to pay rewards. The `inflation_rate` coefficient determines the amount of new tokens to be produced. `Inflation_rate` coefficient depends on the share of `staked` BOOTs:
 
-- if {~~there are~>the~~} `staked` percentage of BOOTs is less than the `goal_bonded` parameter, then the `inflation_rate` coefficient will be increasing for each block till it hits the `inflation_rate_max` value. The higher the `inflation_rate`, the more rewarding is the `stake`;
-- if {~~there are~>the~~} `staked` percentage of BOOTs is more than the `goal_bonded` parameter, then the `inflation_rate` coefficient will be decreasing for each block till it hits the `inflation_rate_min` value, thus signaling to search for another way of profiting from BOOTs
+- if the `staked` percentage of BOOTs is less than the `goal_bonded` parameter, then the `inflation_rate` coefficient will be increasing for each block till it hits the `inflation_rate_max` value. The higher the `inflation_rate`, the more rewarding is the `stake`;
+- if the `staked` percentage of BOOTs is more than the `goal_bonded` parameter, then the `inflation_rate` coefficient will be decreasing for each block till it hits the `inflation_rate_min` value, thus signaling to search for another way of profiting from BOOTs
 
-New tokens are distributed between neurons{--,--} who `staked` their tokens{--,--} and heroes proportionally to their `staked` tokens.
+New tokens are distributed between neurons who `staked` their tokens and heroes proportionally to their `staked` tokens.
 
 Heroes receive a set fee.
 
@@ -365,7 +363,11 @@ When a particular hero is caught violating rules, that hero is put into the `jai
 
 All the violations and the penalties are noted in the blockchain settings and are executed according to the Tenderimnt consensus protocol.
 
-As of now (2022-01-14), there is no publicly available services for monitoring heroes' violation statistics. Therefore neurons have to make decisions based only on their own statistics. In order to make it easier to track heroes’ performance, one can use a hack: if only the integer values are deligated to heroes' balances, `slashing` is easily tracked in case it did occur.{>>по хаку уточнить у Максима<<}
+As of now (2022-01-14), there is no publicly available services for monitoring heroes' violation statistics. Therefore neurons have to make decisions based only on their own statistics. In order to make it easier to track heroes’ performance, one can use a hack: if only the integer values are deligated to heroes' balances, `slashing` is easily tracked in case it did occur.
+
+For example we can delegate `153 298 189` BOOTs to hero or we can delegate `153 000 000`, and with the latter example we will be able to see the violation. 
+
+{>>по хаку уточнить у Максима<<}
 
 In order to hedge `slashing` risks one may distribute `stakes` between several heroes. >>|
 
@@ -436,7 +438,7 @@ You can delegate (stake) BOOT by hiring a Hero in the [Dyson Sphere](https://cyb
 
 In this reactor, [Amperes](https://cyb.ai/token/A) or [Volts](https://cyb.ai/token/V) can be [extracted](https://cyb.ai/mint) from [hydrogen](https://cyb.ai/token/H) without burning the hydrogen itself.
 
-You can mint [Amperes](https://cyb.ai/token/A) and [Volts](https://cyb.ai/token/V) by {~~locking~>freezing~~} your [Hydrogen](https://cyb.ai/token/H).
+You can mint [Amperes](https://cyb.ai/token/A) and [Volts](https://cyb.ai/token/V) by locking (freezing) your [Hydrogen](https://cyb.ai/token/H).
 
 You can get Hydrogen by delegating BOOTs to Heroes in the [Dyson Sphere](https://cyb.ai/search/dyson%20shpere).
 
