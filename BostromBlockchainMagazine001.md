@@ -43,7 +43,7 @@ All the particles were formatted using [Prettier](https://prettier.io/), an opin
 - `[author]` - the tag with url to the author of the original particle
 - `>>|` - marks the end of the particle
 - `---` - 3 minuses are used to create space between particles (as otherwise Prettier will delete this space and make the text more dense)
-  {++- `-|` and `|-` - indicate the beginning and the end of the editorial note that was not originally a part of the particle ++}>>|
+- `-|` and `|-` - indicate the beginning and the end of the editorial note that was not originally a part of the particle>>|
 
 ---
 
@@ -147,21 +147,20 @@ In the second step, the bootloader loads the kernel of the operating system, tha
 - correcting or expanding missing functions and entries in the firmware;
 - loading alternative firmware.
 
-After successfully completing all tasks, the bootloader returns the system responsibility to the kernel.
-
-{--source:ionos.com--} >>|
+After successfully completing all tasks, the bootloader returns the system responsibility to the kernel.>>|
 
 ---
 
 ==> [cid](https://cyb.ai/ipfs/QmT59aK8dcqoVJZjgGsvgBG91eU2d1zGj67m4JSk9BhdaY), by [author](https://cyb.ai/network/bostrom/contract/bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
 
-### Get Bostrom address{>>Нам бы сюда прикрутить ссылки на видосы<<}
+### Get Bostrom address{>>Нам бы сюда прикрутить ссылки на видосы. > Ага, надо<<}
 
 First of all, you need a Bostrom address. For that, you need a Keplr extension.
 
-{~~- ~>1. Download ~~}[extension for chrome](https://chrome.google.com/webstore/detail/keplr/dmkamcknogkgcdfhhbddcghachkejeap)
+1. Download [extension for chrome](https://chrome.google.com/webstore/detail/keplr/dmkamcknogkgcdfhhbddcghachkejeap)
 
-{++2. ++}Setup Keplr{~~, then go to [My robot](https://cyb.ai/) and connect it.~> 3. Go to [My robot](https://cyb.ai/) to connect your Keplr wallet.~~} >>|
+2. Setup Keplr
+3. Go to [My robot](https://cyb.ai/) to connect your Keplr wallet. >>|
 
 ---
 
@@ -186,7 +185,7 @@ Initially, it might seem complex but as you dwell in it there is lots of fun exp
 
 ---
 
-{++Cyber knowledge graph is comprised of neurons and cyberlinks. The Graph (as well as any subgraph) is created and augmented by neurons while creating new cyberlinks. The definitions and the mechanism are described below.++}{>>Может добавим картинку?<<}
+Cyber knowledge graph is comprised of particles and cyberlinks between them. The Graph (as well as any subgraph) is created and augmented by neurons while creating new cyberlinks. The definitions and the mechanism are described below.{>>Может добавим картинку? > Какую?<<}
 
 ---
 
@@ -216,7 +215,7 @@ To cyberlink - to create a cyberlink between two particles. >>|
 
 You can cyberlink any pieces of information to each other. You can search on cyber or add content yourself. To start cyberlinking you need Amperes and Volts, which you can get by [investminting H](https://cyb.ai/mint) in [HFR](https://cyb.ai/search/hfr), or you can buy Hydrogen in [Teleport](https://cyb.ai/teleport).
 
-- {++For more information use Cyber to search for ++}[cyberlink](https://cyb.ai/search/cyberlink) >>|
+- For more information use Cyber to search for [cyberlink](https://cyb.ai/search/cyberlink) >>|
 
 ---
 
@@ -230,7 +229,7 @@ You can cyberlink any pieces of information to each other. You can search on cyb
 
 There are several tokens in the Bostrom network: BOOT, HYDROGEN, VOLT, AMPERE. Each of its own usage.
 
-{++BOOT is the main token of Bostrom. The token's name BOOT symbolizes the BOOTloader nature of the Bostrom network for the future Cyber network.++}
+BOOT is the main token of Bostrom. The token's name BOOT symbolizes the BOOTloader nature of the Bostrom network for the future Cyber network.
 
 With BOOT one can:
 
@@ -249,9 +248,7 @@ With HYDROGEN one can:
 VOLT, AMPERE:
 
 - are needed to create cyberlinks, to train Bostrom;
-- may be transferred.
-
-{--The token's name BOOT symbolizes the BOOTloader nature of the Bostrom network for the future Cyber network.--} >>|
+- may be transferred.>>|
 
 ---
 
@@ -408,10 +405,7 @@ Amperes message in a particular Twitter account's feed is a cyberlink between th
 
 ### My Robot
 
-Once you get your bostrom address, you will have a robot page, which will show your avatars and balances
-
-- [check balances](https://cyb.ai/)
-- [manage accounts](https://cyb.ai/) {>>Мне не нраится, что тут по сути на оба клика ты попадаешь на одну страницу. Может переписать в формате: To manage your accounts and check balances visit your [My robot](https://cyb.ai/) page.<<}>>|
+On My Robot page you can see the information about the state of your IPFS local node (that uses cache of your browser), connected accounts, their addresses and balances of tokens on them. 
 
 ---
 
@@ -419,7 +413,7 @@ Once you get your bostrom address, you will have a robot page, which will show y
 
 ### Teleport
 
-You can exchange your tokens using swap, explore [existing pools](https://cyb.ai/teleport/pools) or add liquidity and sub liquidity{++. Refer to the links below:++}
+On teleport page you can exchange your tokens using swap, explore [existing pools](https://cyb.ai/teleport/pools) or add  and sub liquidity to liquidity pools. Refer to the links below:
 
 - [swap](https://cyb.ai/teleport)
 - [add liquidity](https://cyb.ai/teleport/add-liquidity)
@@ -431,7 +425,7 @@ You can exchange your tokens using swap, explore [existing pools](https://cyb.ai
 
 ### Dyson Sphere
 
-You can delegate (stake) BOOT by hiring a Hero in the [Dyson Sphere](https://cyb.ai/search/dyson%20shpere). That will grant you Hydrogen in amount equal to staked BOOT.
+You can delegate (stake) BOOT by hiring a Hero in the [Dyson Sphere](https://cyb.ai/search/dyson%20shpere). That will grant you Hydrogen in amount equal to staked BOOT. Also, you can see the information regarding heroes. 
 
 - [hire & fire Heros](https://cyb.ai/halloffame) >>|
 
@@ -466,18 +460,17 @@ Here you can check your energy, route Amperes and Volts to your friends:
 
 ### Senate
 
-You can participate in community life by voting for proposals in [senate](https://cyb.ai/senate)
+Senate is the main arena for performing and improving Bostrom's governance.
 
-- [vote](https://cyb.ai/senate)
-- [propose](https://cyb.ai/senate) {>>Тоже не нравится, что просто дублируется ссылка на сенат. Вариант: -|You can submit your own proposals and/or vote on existing ones on the [senate](https://cyb.ai/senate) page. All active, accepted and rejected proposals are also listed there. You can check for more information and statistics by clicking on each of the proposals.|-<<}>>|
+You can submit your own proposals and/or vote on existing ones on the [senate](https://cyb.ai/senate) page. All active, accepted and rejected proposals are also listed there. You can check for more information and statistics by clicking on each of the proposals.
 
 ---
 
 ==> [cid](https://cyb.ai/ipfs/QmY4X4SkVBkoUGZdTzdcW7SKY8t4ULj5GJBRcRr4UMyahp), by [author](https://cyb.ai/network/bostrom/contract/bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
 
-### Bostrom's Governance
+#### Bostrom's Governance
 
-{++Senate is the main arena for performing and improving Bostrom's governance. ++}Governance process of [Cyber networks](https://cyb.ai/search/computing%20knowledge) is focused on the [evolution](https://cyb.ai/search/cyber%20evolution) of its code and is based on 3 methods:
+Governance process of [Cyber networks](https://cyb.ai/search/computing%20knowledge) is focused on the [evolution](https://cyb.ai/search/cyber%20evolution) of its code and is based on 3 methods:
 
 - [self-reflection](https://cyb.ai/search/cyber%20self-reflection)
 - [investments](https://cyb.ai/search/cyber%20investments)
@@ -509,7 +502,7 @@ Please refer to [the code](https://github.com/cybercongress/go-cyber/blob/main/x
 
 ### The Great Web
 
-The Great Web is a web that lasts. It is based on three simple ideas{~~.~>: access, immutability, universality.~~}
+The Great Web is a web that lasts. It is based on three simple ideas: access, immutability, universality.
 
 #### Access
 
@@ -550,43 +543,6 @@ CRP renders the content of such files, so [Neurons](https://cyb.ai/search/neuron
 Nobody created cyberlinks for the query you entered (or you just followed some link on CRP with an already defined query). And you see this text, which is cyberlinked to the query "[0](https://cyb.ai/search/0)". Cyber has created those queries with no cyberlinks display results from the query "[0](https://cyb.ai/search/0)".
 
 Btw, you can create relevant cyberlinks to your initial query, "[0](https://cyb.ai/search/0)" query, or any other query. Cyber is fantastic. Everything in cyber is hardcore and geeky but beautiful and powerful. Use your opportunity to explore the ways of using cyber. >>|
-
----
-
-==> [cid](https://cyb.ai/ipfs/QmXw62z4fgCUnoQsoT5tLHu8QsbB3DqQ5kpmuNRaPJxawJ), by [author](https://cyb.ai/network/bostrom/contract/bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
-
-### Strategic Plan of Contracts Development{>>пока не понятный для меня кусок, не знаю, планируешь ли ты с ним что-то делать. В любом случае, может какую-то подводку к самому тексту партикла сделать<<}
-
-{++-|Cyber is a work in progress improving constantly based on community's proposals and voting activities. Below are listed the main directions for development as seen by Cyber creators.|-++}
-
-#### Cybercongress
-
-1. investmint contract
-2. staking contract
-3. fungible token factory
-4. nft factory
-
-#### Deuslabs
-
-1. gift
-2. namespaces
-3. passport
-
-#### HackJuno
-
-1. liquidity incentives
-2. conditional tokens
-3. option with price oracles
-
-#### Research
-
-1. exodus
-2. dao contract
-3. nonfungible particle token
-4. fungible particle token
-5. lending
-6. accept: arbitrage-less e-commerce
-7. native <=> cw tokens wrappers >>|
 
 ---
 
@@ -662,8 +618,6 @@ Search for the best arbitrage options in Bostrom. Ipython notebook retrieves dat
 
 ### cyberGift
 
-@groovybear, @mastercyb{>>Это нам надо или можно убрать?<<}
-
 The purpose of this research is to inspire at least 100k power-users of web3 to join the force of learning Superintelligence. To achieve this, we are going to gift 70% of the Bostrom genesis tokens BOOT to agents of Ethereum and Cosmos who are capable of contributing their best to the quality of the knowledge graph. First, we start by highlighting key audiences for establishing network effects and tackling basic chicken and eggs situation. Next, we balance out the participation of key actors by splitting them into grades and adjusting allocations within the groups. Then we apply a filter in order to remove toxic fiat brains from the collective thought process. Finally, we add a crucial incentive to hurry up.
 
 The research results are represented by reproducible scripts that output addresses and balances which will be loaded to the claim CosmWasm contract after the launch of Bostrom.
@@ -674,7 +628,7 @@ Research is done on the [proposal](https://cyber.page/governance/20) basis. We h
 
 #### Connecting the Dots
 
-The biggest problem in bootstrapping a blockchain ecosystem from scratch is that it is not enough to attract just users. Established network effects exist between four key groups:{++ users, investors, validators, developers.++}
+The biggest problem in bootstrapping a blockchain ecosystem from scratch is that it is not enough to attract just users. Established network effects exist between four key groups: users, investors, validators, developers.
 
 ![Network effects](https://ipfs.io/ipfs/Qmf2ARvyZ1gu5HJmsPjnWQdhyfmvaEVxnz9vvp5KUt3Lgo)
 
@@ -865,18 +819,6 @@ So we came to an understanding of the main input parameters for a contract facto
 
 ---
 
-==> [cid](https://cyb.ai/ipfs/QmPdxQViTssbywaaEFSWBLHjexHqUAzsgqX3bEThpfZRry), by [author](https://cyb.ai/network/bostrom/contract/bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
-
-### Earthish language
-
-Earthish - {--It--} is a common language for inhabitants of Earth.
-
-It is formed by the top object in the [Content Oracle](https://cyb.ai/oracle).
-
-It is in embryo {--stage--}. You can define{>>не совсем поняла, что имелось ввиду. It is in embryo as you ca see?<<} >>|
-
----
-
 ==> [cid](https://cyb.ai/ipfs/QmRAhg4j38y7Ldf85MRj97LBXp9eQgSnz25e9wivFrH5Ho), by [author](https://cyb.ai/network/bostrom/contract/bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
 
 ### Looking for cyb magicians
@@ -931,7 +873,7 @@ Here you can see how deeply citizens arrived in a different week used the blockc
 
 ![cohort-analysis](https://ipfs.io/ipfs/QmUnpQFhi5cXPqqhXB97njnt3gyqgBsmh36cRrk4HPt1uK)
 
-This information allows us {++to ++}better understand our collaborative behavior, provide better feedback to a high-level organism, and improve our decision-making.
+This information allows us to better understand our collaborative behavior, provide better feedback to a high-level organism, and improve our decision-making.
 
 More charts can be found at [cybernode.ai](https://cybernode.ai/grafana/d/SdWCR028z/analytics?orgId=2) >>|
 
@@ -1018,9 +960,9 @@ To our belief Urbit will benefit in the following ways:
 - Such a drop can increase the speed of the claim of the planets/stars/galaxies;
 - Urbit will have a wider introduction to more communities (what's important is that those are communities that share the same vision and are technical);
 - Urbit is your last computer that currently lacks indexing and a ranking mechanism - cyber provides this;
-- An interplanetary system like Urbit needs an awesome base of knowledge inbuild into its machines and an ability{++ to++} search trough it - cyber provides this;
-- We see in Urbit a strategic ally in our mission to overthrow megacorps. Hopefully, Urbit can share this view and see us as equal. This in turn{--s--} adds to the beneficial values of both;
-- As Cyber grows, the Urbit community will have {++a ++}rather {--a--} serious bag of assets in the form of CYB tokens. This will give the Urbit community more power on every scale imaginary;
+- An interplanetary system like Urbit needs an awesome base of knowledge inbuild into its machines and an ability to search trough it - cyber provides this;
+- We see in Urbit a strategic ally in our mission to overthrow megacorps. Hopefully, Urbit can share this view and see us as equal. This in turn adds to the beneficial values of both;
+- As Cyber grows, the Urbit community will have a rather serious bag of assets in the form of CYB tokens. This will give the Urbit community more power on every scale imaginary;
 - Via the cyber~Urbit app the users of Urbit (and Cyber) will be able to promote Urbit by ranking the required information for this (SEO);
 - Urbit can work on state of the art ML mechanisms with the help of Arvo and Cyber that can help to showcase the powers of Urbit;
 - This can create a showcase for both projects and provide Urbit aliens with further gifts /drops, etc from other communities.
@@ -1036,6 +978,6 @@ To achieve this, we will review this document (as can any community member). Whe
 
 ### First steps of cyber~University
 
-On one hand, a lot of humans ask about use cases {~~for~>of~~} cyber. {~~From another~>On the other hand~~}, a lot of humans {~~asks~>ask~~} what content they have to cyberlink.
+On one hand, a lot of humans ask about use cases {~~for~>of~~} cyber. On the other hand, a lot of humans ask what content they have to cyberlink.
 
 [This project](https://github.com/orgs/cybercongress/projects/28/views/1) is a result of the brainstorming of cyber~Congress community. Some community members want to be involved in some issues. Some issues still don't have defined resources. Hope this roadmap will help everyone involved bootstrap the beast. >>|
