@@ -185,7 +185,23 @@ Initially, it might seem complex but as you dwell in it there is lots of fun exp
 
 ---
 
-Cyber knowledge graph is comprised of particles and cyberlinks between them. The Graph (as well as any subgraph) is created and augmented by neurons while creating new cyberlinks. The definitions and the mechanism are described below.{>>Может добавим картинку? > Какую?<<}
+==> 
+
+Cyber knowledge graph is comprised of particles and cyberlinks between them. The Graph (as well as any subgraph) is created and augmented by neurons while creating new cyberlinks. The definitions and the mechanism are described below.>>|
+
+---
+
+==> [cid](https://cyb.ai/ipfs/QmewU6pKFtGc3Fm8XsMxS3bA2xf3swQwuPuepxebp2WNMH), by [author](https://cyb.ai/network/bostrom/contract/bostrom1959r3zp37k9yuz8kjtc4feayyfkkxpcv43mu0w)
+
+### Particles and Cyberlinks
+
+Particle is a file in IPFS network. It can be retreived by it's hash (cid). In Bostrom blockchain we work (write and read) with hashes. But, cyb.ai application is built to show cyberlinked files, not their hashes. 
+
+Cyberlink is a noun and a verb.
+
+A cyberlink is the link in Cyber between two particles registered in Bostrom blockchain.
+
+To cyberlink - to create a cyberlink between two particles. >>|
 
 ---
 
@@ -194,18 +210,6 @@ Cyber knowledge graph is comprised of particles and cyberlinks between them. The
 ### Neuron
 
 A neuron is a token holder who can provide valuable knowledge to the knowledge graph. >>|
-
----
-
-==> [cid](https://cyb.ai/ipfs/QmewU6pKFtGc3Fm8XsMxS3bA2xf3swQwuPuepxebp2WNMH), by [author](https://cyb.ai/network/bostrom/contract/bostrom1959r3zp37k9yuz8kjtc4feayyfkkxpcv43mu0w)
-
-### Cyberlinks
-
-Cyberlink is a noun and a verb.
-
-A cyberlink is the link in Cyber between two particles registered in Bostrom blockchain.
-
-To cyberlink - to create a cyberlink between two particles. >>|
 
 ---
 
@@ -642,7 +646,7 @@ An amount of distributed BOOT tokens should be equal for each grade within an au
 
 ![Distribution between grades](https://ipfs.io/ipfs/QmWcyKgUAqtbubrmXyrP8ufXLmLoWMksF32ZzdGRYvCa3b)
 
-{++-|Cyber ecosystem consists of a number of different audiences. They are divided depending on their backgrounds and roles played in the community. Main audiences and their short characteristics are listed below.|-++}
+Cyber ecosystem consists of a number of different audiences. They are divided depending on their backgrounds and roles played in the community. Main audiences and their short characteristics are listed below.
 
 #### Average Citizens
 
@@ -978,6 +982,6 @@ To achieve this, we will review this document (as can any community member). Whe
 
 ### First steps of cyber~University
 
-On one hand, a lot of humans ask about use cases {~~for~>of~~} cyber. On the other hand, a lot of humans ask what content they have to cyberlink.
+On one hand, a lot of humans ask about use cases of cyber. On the other hand, a lot of humans ask what content they have to cyberlink.
 
 [This project](https://github.com/orgs/cybercongress/projects/28/views/1) is a result of the brainstorming of cyber~Congress community. Some community members want to be involved in some issues. Some issues still don't have defined resources. Hope this roadmap will help everyone involved bootstrap the beast. >>|
