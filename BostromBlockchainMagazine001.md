@@ -126,6 +126,8 @@ IPFS does not guarantee the safety or accessibility of the files. >>|
 
 ### Bostrom is a full refactoring of the Euler network
 
+{~~To add the history ~~}
+
 Bostrom is a full refactoring of the Euler network with a strong focus on Superintelligence. It includes a new distribution model, economics, improved ranking, and some superintelligent abilities. We perceive [Bostrom](https://cyb.ai/search/bostrom) as a canary network in the same way that Kusama relates to Polkadot. The Bostrom knowledge graph tends to be a bootstrap hub for domain-specific networks of Cyber. The network works as a testbed for Interplanetary Knowlege Protocol communications and different experiments. Consider Bostrom a network with high risks but of market value. The key differences within the Cyber network are being discussed [here](https://cyb.ai/search/bostrom%20vs%20cyber). The launch of the Bostrom network is the inception of an ecosystem. >>|
 
 ---
@@ -209,14 +211,6 @@ To cyberlink - to create a cyberlink between two particles. >>|
 ### Neuron
 
 A neuron is a token holder who can provide valuable knowledge to the knowledge graph. >>|
-
----
-
-==> [cid](https://cyb.ai/ipfs/QmQNunYEUqyj2KtSwPTtQFEu7zhnFHswe54ahB6soigkam), by [author](https://cyb.ai/network/bostrom/contract/bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
-
-### Relevance machine
-
-You can cyberlink any pieces of information to each other. You can search on cyber or add content yourself. To start cyberlinking you need Amperes and Volts, which you can get by [investminting H](https://cyb.ai/mint) in [HFR](https://cyb.ai/search/hfr), or you can buy Hydrogen in [Teleport](https://cyb.ai/teleport).>>|
 
 ---
 
@@ -528,22 +522,6 @@ The content of text particles is rendered in Markdown. Cyb.ai uses these JS pack
 Nearly all Markdown applications support the basic syntax outlined in John Gruber’s original design document. There are minor variations and discrepancies between Markdown processors — those are noted inline wherever possible.
 
 If you want your posts look beautiful, use [markdown syntax](https://www.markdownguide.org/basic-syntax/) and [test it here](https://markdown-it.github.io/) before posting. >>|
-
----
-
-==> [cid](https://cyb.ai/ipfs/QmSMFYqexjmnkUNTqsSfnuYTuDm6dhAPrD33dg4Ugsmzoc), by [author](https://cyb.ai/network/bostrom/contract/bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
-
-### Particle "0" - the default answer to unnkown queries
-
-This text can be seen on [Cyber Results Page](https://cyb.ai/search/Cyber%20Results%20Page) ([CRP](https://cyb.ai/search/CRP)). Cyber Results Page contains a number of particles, which are the destination of [cyberlinks](https://cyb.ai/search/cyberlink) from your query.
-
-This text is a [Particle](https://cyb.ai/search/particle) (in terms of Cyber). Particle is a file that has an IPFS hash and that somebody has on his device with IPFS software installed, so other users can download this file using IPFS protocol.
-
-CRP renders the content of such files, so [Neurons](https://cyb.ai/search/neuron) (the users like you in terms of Cyber) can see it right in their browser.
-
-Nobody created cyberlinks for the query you entered (or you just followed some link on CRP with an already defined query). And you see this text, which is cyberlinked to the query "[0](https://cyb.ai/search/0)". Cyber has created those queries with no cyberlinks display results from the query "[0](https://cyb.ai/search/0)".
-
-Btw, you can create relevant cyberlinks to your initial query, "[0](https://cyb.ai/search/0)" query, or any other query. Cyber is fantastic. Everything in cyber is hardcore and geeky but beautiful and powerful. Use your opportunity to explore the ways of using cyber. >>|
 
 ---
 
