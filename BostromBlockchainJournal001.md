@@ -1,4 +1,4 @@
-# Bostrom Blockchain Journal
+# Bostrom Journal
 
 Issue 1, 20220606
 
@@ -7,7 +7,7 @@ Issue 1, 20220606
 1. [Preface ~ [@]()](#preface--)
    1. [Introduction ~ [@]()](#introduction--)
    2. [About the journal ~ [@]()](#about-the-journal--)
-   3. [Submissions to the Bostrom Blockchain Journal (BBJ)](#submissions-to-the-bostrom-blockchain-journal-bbj)
+   3. [Submissions to the Bostrom Journal (BJ)](#submissions-to-the-bostrom-blockchain-journal-bbj)
    4. [Focus and Scope](#focus-and-scope)
    5. [Publication Frequency](#publication-frequency)
    6. [Journal's standard formatting markup and tags ~ [@]()](#journals-standard-formatting-markup-and-tags--)
@@ -78,17 +78,25 @@ Bostrom journal is designed to be easily parsable to enable users to use it as a
 
 We assembled this journal from files of Bostrom's knowledge graph.
 
-### Submissions to the Bostrom Blockchain Journal (BBJ)
+### Evolution of the first issue of journal
 
-To submit a particle to the [Bostrom Blockchain Journal (BBJ)](https://cyb.ai/network/bostrom/contract/bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa), comment on it with the text `submit to BBJ` (or cyberlink it to particle: `QmWveSDqGgERb1qE7A6nzCFEPcUu96KXUcixhqheGEwSbX`). The editorial team will review submissions on occasion.
+At the very beginning future editor-in-chief gathered all particles created by founders and trusted pioneer neurons from [swagger service]() of Bostrom's. I collected JSON from there and parsed it using Python. Further I downloaded the particles' files from IPFS and read them almost completely. I guess, it was about 1500 texts, most of which was 1-4 words long. I extracted cyberlinks and particles table to MS Excel. There I marked particles about cyber, filterd them. So I was able to sort and filter them. There I filtered most precise particles and classified them on chapters.
+Further I recieved those particles to Python. Python helped me to generate the first version of this journal in Markdown.
+There I found that some texts on Bostrom that I wrote before also relevant to topic, but needed to be some how adopted to the journal format.
+
+So we have diffrent versions of detalisation articles on topics. And we allow switching between those level of detalisation.
+
+### Submissions to the Bostrom Journal (BJ)
+
+To submit a particle to the [Bostrom Journal (BJ)](https://cyb.ai/network/bostrom/contract/bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa), comment on it with the text `submit to BJ` (or cyberlink it to particle: ``). The editorial team will review submissions on occasion.
 
 ### Focus and Scope
 
-The Bostrom Blockchain Journal (BBJ) is an experimental electronic magazine, publishing particles of substantial content and interest in all aspects of using the Bostrom blockchain.
+The Bostrom Journal (BJ) is an experimental electronic magazine, publishing particles of substantial content and interest in all aspects of using the Bostrom blockchain.
 
 ### Publication Frequency
 
-BBJ publishes irregularly.
+BJ publishes irregularly.
 
 ### Journal's standard formatting markup and tags [~]() [@]()
 
@@ -101,13 +109,20 @@ All the particles were formatted using [Prettier](https://prettier.io/), an opin
 
 ### Journal's design open questions [~]() [@]()
 
-Should there be a link to the edited particle? Should it replace the original link or should both links be present? Should we provide a describtion of alterations to highlight and clarify differences between the old and the new particle?
+Q: Should there be a link to the edited particle?
+A: Yes, it should. But edited particle should contain original particle in grey matter.
+
+Q: Should it replace the original link or should both links be present?
+A: Seems like not
+
+Q: Should we provide a describtion of alterations to highlight and clarify differences between the old and the new particle?
+A: It would be great, though might me unnecessary.
 
 ## Intro to Bostrom Blockchain [~]() [@]()
 
 ### Bostrom - the short definition [~](QmbvXoTA8nqZGzzCtQtw7rrrNrTRxyRSHsJPa5ZsPLHDG7) [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
 
-Bostrom is a superintelligence project based on blockchain (cosmos-SDK), consensus protocol Tendermint and content addressing mechanism (with the current IPFS implementation).
+Bostrom is a superintelligence project based on blockchain (cosmos-SDK), consensus protocol Tendermint and content addressing mechanism (with the current implementation of IPFS protocol).
 
 ### Capabilities of the Bostrom Blockchain [~](QmREDsSSALhBnPCPXKYSi9piknyqEvCErTAGvpWyMCWAmZ) [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
 
@@ -169,7 +184,7 @@ In the second step, the bootloader loads the kernel of the operating system, tha
 - correcting or expanding missing functions and entries in the firmware;
 - loading alternative firmware.
 
-After successfully completing all tasks, the bootloader returns the system responsibility to the kernel.>>|
+After successfully completing all tasks, the bootloader returns the system responsibility to the kernel.
 
 ### Get Bostrom address{>>Нам бы сюда прикрутить ссылки на видосы. > Ага, надо<<} [~](QmT59aK8dcqoVJZjgGsvgBG91eU2d1zGj67m4JSk9BhdaY) [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
 
@@ -190,7 +205,7 @@ Initially, it might seem complex but as you dwell in it there is lots of fun exp
 4. You have to mint Volt and Ampere tokens by freezing liquid Hydrogen tokens. Minting is available via the following link https://cyb.ai/mint. A low number of frozen Hydrogen tokens might not get you any Volt and Ampere tokens. Adjust the Hydrogen and the frozen (number of days) bars so that a number greater than zero appears above. It indicates the quantity of Volt or Ampere tokens you will get. The 'Investmint' button is active only when the number of Volt or Ampere tokens is not equal to zero. Click on the Investmint button to mint Volt and Ampere tokens.
 5. Once you have Volt and Ampere tokens your energy bar will be charging. You need energy to perform different activities such as adding avatar, tweeting etc...
 6. As a first task add your avatar by clicking on 'My robot' and then clicking on the box suggesting adding an avatar (at the bottom you will see a box enabled to upload the image). Once the image is added you will be asked to publish your first tweet.
-7. When both your avatar and your first tweet are published you will gain some Karma. (click on the avatar link to check it).>>|
+7. When both your avatar and your first tweet are published you will gain some Karma. (click on the avatar link to check it).
 
 ## Knowledge graph [~]() [@]()
 
@@ -214,6 +229,8 @@ A neuron is a token holder who can provide valuable knowledge to the knowledge g
 
 There are several tokens in the Bostrom network: BOOT, HYDROGEN, VOLT, AMPERE. Each of its own usage.
 
+#### BOOT token
+
 BOOT is the main token of Bostrom. The token's name BOOT symbolizes the BOOTloader nature of the Bostrom network for the future Cyber network.
 
 With BOOT one can:
@@ -224,6 +241,8 @@ With BOOT one can:
 - pay for network transactions (pay for gas). Though now, many validators accept transactions for free;
 - vote for protocol change and public goods.
 
+#### Hydrogen token
+
 With HYDROGEN one can:
 
 - `investmint` HYDROGEN for a limited period of time to produce VOLT and AMPERE tokens;
@@ -233,7 +252,7 @@ With HYDROGEN one can:
 VOLT, AMPERE:
 
 - are needed to create cyberlinks, to train Bostrom;
-- may be transferred.>>|
+- may be transferred.
 
 ### Investminting - definition and mechanics [~](Qmezuhrqm7P8u8PwHhoq5EjWmnk3VxGju9DVUT9pWmeNaV) [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
 
@@ -352,7 +371,7 @@ In order to hedge `slashing` risks one may distribute `stakes` between several h
 - sending transactions to Bostrom when cyberlinks are created (and signed by a particular address in keplr extension);
 - receiving and sharing objects in the IPFS network using library [ipfs-js](https://github.com/ipfs/js-ipfs).
 
-There is a search bar in cyb.ai. When a user enters a query in the search bar cyb.ai computes the ipfs hash of a text file with the search query contents. After that, cyb.ai queries the database where data on cyberlinks recorded in Bostrom is replicated. If there are cyberlinks originating from the search query's IPFS hash, then the database returns hashes of output files sorted by cyberrank and cyb.ai presents these results.
+There is a search bar in cyb.ai. When a user enters a query in the search bar cyb.ai computes the ipfs hash of a text file with the search query contents. After that, cyb.ai requests for node with go cyber installed. If there are cyberlinks originating from the search query's IPFS hash, then the node returns particles sorted by cyberrank, cyb.ai using IPFS-JS node retrieves files from IPFS and presents these results.
 
 Thus, the search results in cyb.ai are the files stored in IPFS (received by the browser and rendered on the page) with the IPFS hashes that were cyberlinked to the IPFS hash of the text entered into the search bar.
 
