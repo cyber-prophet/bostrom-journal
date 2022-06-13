@@ -4,63 +4,65 @@ Issue 1, 20220606
 
 ## Table of contents
 
-1. [Preface ~ [@]()](#preface--)
-   1. [Introduction ~ [@]()](#introduction--)
-   2. [About the journal ~ [@]()](#about-the-journal--)
-   3. [Submissions to the Bostrom Journal (BJ)](#submissions-to-the-bostrom-blockchain-journal-bbj)
-   4. [Focus and Scope](#focus-and-scope)
-   5. [Publication Frequency](#publication-frequency)
-   6. [Journal's standard formatting markup and tags ~ [@]()](#journals-standard-formatting-markup-and-tags--)
-   7. [Journal's design open questions ~ [@]()](#journals-design-open-questions--)
-2. [Intro to Bostrom Blockchain ~ [@]()](#intro-to-bostrom-blockchain--)
-   1. [Bostrom - the short definition ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)](#bostrom---the-short-definition--)
-   2. [Capabilities of the Bostrom Blockchain ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)](#capabilities-of-the-bostrom-blockchain--)
-   3. [Purpose of the Bostrom network ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)](#purpose-of-the-bostrom-network--)
-   4. [Superintelligence ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)](#superintelligence--)
-   5. [IPFS, Content-addressing mechanism ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)](#ipfs-content-addressing-mechanism--)
-   6. [Bostrom is a full refactoring of the Euler network ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)](#bostrom-is-a-full-refactoring-of-the-euler-network--)
-   7. [Bootloader meaning ~ [@](bostrom1jtmdnure6hvjew2fdsrg4g6vlmd87ky4uvzaus)](#bootloader-meaning--)
-   8. [Get Bostrom address{>>Нам бы сюда прикрутить ссылки на видосы. > Ага, надо<<} ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)](#get-bostrom-addressнам-бы-сюда-прикрутить-ссылки-на-видосы--ага-надо--)
-   9. [Bostrom: How to start and navigate step by step ~ [@](bostrom14tk96pwx6lk25f740m4jzx85pkhfvldg42te4p)](#bostrom-how-to-start-and-navigate-step-by-step--)
-3. [Knowledge graph ~ [@]()](#knowledge-graph--)
-   1. [Particles and Cyberlinks ~ [@](bostrom1959r3zp37k9yuz8kjtc4feayyfkkxpcv43mu0w)](#particles-and-cyberlinks--)
-   2. [Neuron ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)](#neuron--)
-4. [Tokenomics ~ [@]()](#tokenomics--)
-   1. [Bostrom tokens ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)](#bostrom-tokens--)
-   2. [Investminting - definition and mechanics ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)](#investminting---definition-and-mechanics--)
-   3. [CYB token ~ [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)](#cyb-token--)
-   4. [The transaction cost in Bostrom ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)](#the-transaction-cost-in-bostrom--)
-   5. [Stacking mechanism - encouraging desired behavior in agents (heroes and neurons) ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)](#stacking-mechanism---encouraging-desired-behavior-in-agents-heroes-and-neurons--)
-5. [Cyb.ai functionality [~]() [@]()](#cybai-functionality--)
-   1. [Cyb.ai: intro, mechanics ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)](#cybai-intro-mechanics--)
-   2. [My Robot ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)](#my-robot--)
-   3. [Teleport ~ [@](https://cyb.ai/network/bostrom/contract/bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)](#teleport--)
-   4. [Dyson Sphere ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)](#dyson-sphere--)
-   5. [HFR ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)](#hfr--)
-   6. [Grid (My Energy) ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)](#grid-my-energy--)
-   7. [Senate ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)](#senate--)
-   8. [Thoughts ~ [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)](#thoughts--)
-6. [Bostrom Blockchain philosophy ~ [@]()](#bostrom-blockchain-philosophy--)
-   1. [The Great Web ~ [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)](#the-great-web--)
-   2. [Markdown ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)](#markdown--)
-7. [Apps built on Bostrom, for Bostrom ~ [@]()](#apps-built-on-bostrom-for-bostrom--)
-   1. [Cyb [~](QmSDCFfY1S2UxoDkhbAtFbnm2vp97eefNyb5NQKpXENwDj) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)](#cyb--)
-   2. [cyberdbot [~](QmWjcFRoVPeYXWug6NsoWFGA8PWqfFWcJ6G2HFNLf5QyXR) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)](#cyberdbot--)
-   3. [Cybernode.ai [~](QmRBxwqwNhLUjnsKwm8giYNVv4wwa77XUk51bYoo67tbah) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)](#cybernodeai--)
-   4. [go-cyber [~](Qmd4suKEMpRKuFkEeGbsHqDAKJfSQdNkkxPie6cfVacm8X) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)](#go-cyber--)
-   5. [cyber-js [~](QmcwgfBG21fQ3sqiQhwnvFmadijd2GYZDF81QyQLXoJtEM) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)](#cyber-js--)
-   6. [cyber CLI helper [~](Qmdo6FeBhcu1rW3bC2eu62g9sQifgAZu1wBh47UKgnTdbN) [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)](#cyber-cli-helper--)
-   7. [Cyber arbitrage [~](QmNyxAQcozrkb2Ekr9EMUVZUXQduUGazYwfRTZtvxnjUwd) [@](bostrom135ca8hdpy9sk0ntwqzpzsvatyl48ptx5j359lz)](#cyber-arbitrage--)
-8. [Bostrom cybernomics ~ [@]()](#bostrom-cybernomics--)
-   1. [cyberGift ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)](#cybergift--)
-   2. [Result Validation](#result-validation)
-   3. [Warp Investment Engine ~ [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)](#warp-investment-engine--)
-   4. [Rewarding scheme](#rewarding-scheme)
-   5. [Rewarding Formula](#rewarding-formula)
-9. [Miscellanious ~ [@]()](#miscellanious--)
-   1. [Looking for cyb magicians ~ [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)](#looking-for-cyb-magicians--)
-   2. [Bostroms - Leading behavioral science in blockchain ~ [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)](#bostroms---leading-behavioral-science-in-blockchain--)
-   3. [First steps of cyber~University ~ [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)](#first-steps-of-cyberuniversity--)
+1. Table of contents
+2. Preface ~ [@]()
+   1. Introduction ~ [@]()
+   2. About the journal ~ [@]()
+   3. Evolution of the first issue of journal
+   4. Submissions to the Bostrom Journal (BJ)
+   5. Focus and Scope
+   6. Publication Frequency
+   7. Journal's standard formatting markup and tags ~ [@]()
+   8. Journal's design open questions ~ [@]()
+3. Intro to Bostrom Blockchain ~ [@]()
+   1. Bostrom - the short definition ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
+   2. Capabilities of the Bostrom Blockchain ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
+   3. Purpose of the Bostrom network ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
+   4. Superintelligence ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
+   5. IPFS, Content-addressing mechanism ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
+   6. Bostrom is a full refactoring of the Euler network ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
+   7. Bootloader meaning ~ [@](bostrom1jtmdnure6hvjew2fdsrg4g6vlmd87ky4uvzaus)
+   8. Get Bostrom address~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
+   9. Bostrom: How to start and navigate step by step ~ [@](bostrom14tk96pwx6lk25f740m4jzx85pkhfvldg42te4p)
+4. Knowledge graph ~ [@]()
+   1. Particles and Cyberlinks ~ [@](bostrom1959r3zp37k9yuz8kjtc4feayyfkkxpcv43mu0w)
+   2. Neuron ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
+5. Tokenomics ~ [@]()
+   1. Bostrom tokens ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
+   2. Investminting - definition and mechanics ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
+   3. CYB token ~ [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
+   4. The transaction cost in Bostrom ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
+   5. Stacking mechanism - encouraging desired behavior in agents (heroes and neurons) ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
+6. Cyb.ai functionality [~]() [@]()
+   1. Cyb.ai: intro, mechanics ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
+   2. My Robot ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
+   3. Teleport ~ [@](https://cyb.ai/network/bostrom/contract/bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
+   4. Dyson Sphere ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
+   5. HFR ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
+   6. Grid (My Energy) ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
+   7. Senate ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
+   8. Thoughts ~ [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
+7. Bostrom Blockchain philosophy ~ [@]()
+   1. The Great Web ~ [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
+   2. Markdown ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
+8. Apps built on Bostrom, for Bostrom ~ [@]()
+   1. Cyb [~](QmSDCFfY1S2UxoDkhbAtFbnm2vp97eefNyb5NQKpXENwDj) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
+   2. cyberdbot [~](QmWjcFRoVPeYXWug6NsoWFGA8PWqfFWcJ6G2HFNLf5QyXR) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
+   3. Cybernode.ai [~](QmRBxwqwNhLUjnsKwm8giYNVv4wwa77XUk51bYoo67tbah) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
+   4. go-cyber [~](Qmd4suKEMpRKuFkEeGbsHqDAKJfSQdNkkxPie6cfVacm8X) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
+   5. cyber-js [~](QmcwgfBG21fQ3sqiQhwnvFmadijd2GYZDF81QyQLXoJtEM) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
+   6. cyber CLI helper [~](Qmdo6FeBhcu1rW3bC2eu62g9sQifgAZu1wBh47UKgnTdbN) [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
+   7. Cyber arbitrage [~](QmNyxAQcozrkb2Ekr9EMUVZUXQduUGazYwfRTZtvxnjUwd) [@](bostrom135ca8hdpy9sk0ntwqzpzsvatyl48ptx5j359lz)
+9. Bostrom cybernomics ~ [@]()
+   1. cyberGift ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
+   2. Result Validation
+   3. Warp Investment Engine ~ [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
+   4. Rewarding scheme
+   5. Rewarding Formula
+10. Miscellanious ~ [@]()
+   1. Looking for cyb magicians ~ [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
+   2. Bostroms - Leading behavioral science in blockchain ~ [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
+   3. First steps of cyber~University ~ [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
 
 ## Preface [~]() [@]()
 
@@ -88,7 +90,7 @@ So we have diffrent versions of detalisation articles on topics. And we allow sw
 
 ### Submissions to the Bostrom Journal (BJ)
 
-To submit a particle to the [Bostrom Journal (BJ)](https://cyb.ai/network/bostrom/contract/bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa), comment on it with the text `submit to BJ` (or cyberlink it to particle: ``). The editorial team will review submissions on occasion.
+To submit a particle to the [Bostrom Journal (BJ)](https://cyb.ai/network/bostrom/contract/bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa), comment on it with the text `submit to BJ` (or cyberlink it to particle: `QmPzSGvrsiNSasPPMdHx4cT12fa1LSaftqSXHqurqxeAC3`). The editorial team will review submissions on occasion.
 
 ### Focus and Scope
 
@@ -110,12 +112,15 @@ All the particles were formatted using [Prettier](https://prettier.io/), an opin
 ### Journal's design open questions [~]() [@]()
 
 Q: Should there be a link to the edited particle?
+
 A: Yes, it should. But edited particle should contain original particle in grey matter.
 
 Q: Should it replace the original link or should both links be present?
+
 A: Seems like not
 
 Q: Should we provide a describtion of alterations to highlight and clarify differences between the old and the new particle?
+
 A: It would be great, though might me unnecessary.
 
 ## Intro to Bostrom Blockchain [~]() [@]()
@@ -186,7 +191,7 @@ In the second step, the bootloader loads the kernel of the operating system, tha
 
 After successfully completing all tasks, the bootloader returns the system responsibility to the kernel.
 
-### Get Bostrom address{>>Нам бы сюда прикрутить ссылки на видосы. > Ага, надо<<} [~](QmT59aK8dcqoVJZjgGsvgBG91eU2d1zGj67m4JSk9BhdaY) [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
+### Get Bostrom address[~](QmT59aK8dcqoVJZjgGsvgBG91eU2d1zGj67m4JSk9BhdaY) [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
 
 First of all, you need a Bostrom address. For that, you need a Keplr extension.
 
