@@ -8,11 +8,11 @@ Issue 1, 20220606
 2. Preface ~ [@]()
    1. Introduction ~ [@]()
    2. About the journal ~ [@]()
-   3. Evolution of the first issue of journal
-   4. Submissions to the Bostrom Journal (BJ)
-   5. Focus and Scope
-   6. Publication Frequency
-   7. Journal's standard formatting markup and tags ~ [@]()
+   3. Submissions to the Bostrom Journal (BJ)
+   4. Focus and Scope
+   5. Publication Frequency
+   6. Journal's standard formatting markup and tags ~ [@]()
+   7. Evolution of the first issue of journal
    8. Journal's design open questions ~ [@]()
 3. Intro to Bostrom Blockchain ~ [@]()
    1. Bostrom - the short definition ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
@@ -74,27 +74,13 @@ In this issue we collected particles from the founding team and the first users 
 
 This journal is a new phenomenon. We experiment here with Bostrom's unique features and apply them to real world problems in a form resembling modern scientific journals.
 
-Bostrom journal is created on top of the Bostrom Blockchain knowledge graph.
+Bostrom journal is created on top of the Bostrom Blockchain knowledge graph (we assembled this journal from files of Bostrom's knowledge graph).
 
 Bostrom journal is designed to be easily parsable to enable users to use it as a knowledge graph (the subgraph of the main graph), and for convenience of reading.
 
-We assembled this journal from files of Bostrom's knowledge graph.
-
-### Evolution of the first issue of journal
-
-At the very beginning future editor-in-chief gathered all particles created by founders and trusted pioneer neurons from [swagger service]() of Bostrom's. I collected JSON from there and parsed it using Python. Further I downloaded the particles' files from IPFS and read them almost completely. I guess, it was about 1500 texts, most of which was 1-4 words long. I extracted cyberlinks and particles table to MS Excel. There I marked particles about cyber, filterd them. So I was able to sort and filter them. There I filtered most precise particles and classified them on chapters.
-Further I recieved those particles to Python. Python helped me to generate the first version of this journal in Markdown.
-There I found that some texts on Bostrom that I wrote before also relevant to topic, but needed to be some how adopted to the journal format.
-
-So we have diffrent versions of detalisation articles on topics. And we allow switching between those level of detalisation.
-
-### Submissions to the Bostrom Journal (BJ)
+### Submissions to the Bostrom Journal (BJ) [~]() [@]()
 
 To submit a particle to the [Bostrom Journal (BJ)](https://cyb.ai/network/bostrom/contract/bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa), comment on it with the text `submit to BJ` (or cyberlink it to particle: `QmPzSGvrsiNSasPPMdHx4cT12fa1LSaftqSXHqurqxeAC3`). The editorial team will review submissions on occasion.
-
-### Focus and Scope
-
-The Bostrom Journal (BJ) is an experimental electronic magazine, publishing particles of substantial content and interest in all aspects of using the Bostrom blockchain.
 
 ### Publication Frequency
 
@@ -108,6 +94,14 @@ All the particles were formatted using [Prettier](https://prettier.io/), an opin
 - `###` 3 and more hashes are used in particles (it means that number of hashes from the original particle is changed respectively)
 - `[~]` - the tag of the original particle
 - `[@]` - the tag of the address of neuron-author of the original particle
+
+### Evolution of the first issue of journal
+
+At the very beginning I (future editor-in-chief) gathered all particles created by founders and trusted pioneer neurons from [swagger service]() of Bostrom's. I collected JSON from there and parsed it using Python. Further I downloaded the particles' files from IPFS and read them almost completely. I guess, it was about 1500 texts, most of which was 1-4 words long. I extracted cyberlinks and particles table to MS Excel. There I marked particles about cyber, filterd them. So I was able to sort and filter them. There I filtered most precise particles and classified them on chapters.
+Further I recieved those particles to Python. Python helped me to generate the first version of this journal in Markdown.
+There I found that some texts on Bostrom that I wrote before also relevant to topic, but needed to be some how adopted to the journal format.
+
+So we have diffrent versions of detalisation articles on topics. And we allow switching between those level of detalisation.
 
 ### Journal's design open questions [~]() [@]()
 
@@ -212,7 +206,7 @@ Initially, it might seem complex but as you dwell in it there is lots of fun exp
 6. As a first task add your avatar by clicking on 'My robot' and then clicking on the box suggesting adding an avatar (at the bottom you will see a box enabled to upload the image). Once the image is added you will be asked to publish your first tweet.
 7. When both your avatar and your first tweet are published you will gain some Karma. (click on the avatar link to check it).
 
-## Knowledge graph [~]() [@]()
+## Knowledge graph [~](QmYPEehJdgxfTK3x5KQt56HbFEk8RXUmceqaTaseoPMUR6) [@](bostrom15xx4xh3p7f773ssyz25ydrk27g09cl7qfh75mh)
 
 ### Particles and Cyberlinks [~](QmewU6pKFtGc3Fm8XsMxS3bA2xf3swQwuPuepxebp2WNMH) [@](bostrom1959r3zp37k9yuz8kjtc4feayyfkkxpcv43mu0w)
 
@@ -390,7 +384,7 @@ Amperes message in a particular Twitter account's feed is a cyberlink between th
 
 On My Robot page you can see the information about the state of your IPFS local node (that uses cache of your browser), connected accounts, their addresses and balances of tokens on them.
 
-### Teleport [~](https://cyb.ai/ipfs/QmSBDA7qQEbV6sQRmzbj3VuiXGG9g9vpbLWC9DWFtzq9mh) [@](https://cyb.ai/network/bostrom/contract/bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
+### Teleport [~](QmSBDA7qQEbV6sQRmzbj3VuiXGG9g9vpbLWC9DWFtzq9mh) [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
 
 On teleport page you can exchange your tokens using swap, explore [existing pools](https://cyb.ai/teleport/pools) or add and sub liquidity to liquidity pools. Refer to the links below:
 
