@@ -121,7 +121,19 @@ A: It would be great, though might me unnecessary.
 
 ### Bostrom - the short definition [~](QmbvXoTA8nqZGzzCtQtw7rrrNrTRxyRSHsJPa5ZsPLHDG7) [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
 
-Bostrom is a superintelligence project based on blockchain (cosmos-SDK), consensus protocol Tendermint and content addressing mechanism (with the current implementation of IPFS protocol).
+Bostrom is a superintelligence project with knowledge graph at its core built on blockchain (cosmos-SDK), consensus protocol Tendermint and content addressing mechanism (with the current implementation of IPFS protocol).
+
+### Purpose of the Bostrom network [~](QmX3owfDdvVUAr2J58nrdBQShBH8be6iwv9NZwnTAjTdjf) [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
+
+Bostrom allows adding knowledge to the knowledge graph verifiably. By "verifiably" we mean that it is guaranteed by blockchain design that a particular address added specific content into the blockchain at the known time.
+
+The knowledge graph is a directed weighted graph between particles (CIDs or Content-ID of files, also known as content addresses, IPFS-hashes, IPFS-links).
+
+Cyberlinks are the edges of the knowledge graph, particles are the vertexes (aka nodes).
+
+In order to create cyberlinks in Bostrom, user accounts (so-called neurons) must have VOLT and AMPERE tokens.
+
+By definition, created cyberlinks cannot be deleted. This means, among other things, that they will always be taken into account in cyberrank (until "forgetting" or "pruning" functions are introduced).
 
 ### Capabilities of the Bostrom Blockchain [~](QmREDsSSALhBnPCPXKYSi9piknyqEvCErTAGvpWyMCWAmZ) [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
 
@@ -135,18 +147,6 @@ Bostrom is a superintelligence project based on blockchain (cosmos-SDK), consens
 Site [cyb.ai](https://cyb.ai) is an application built using the Bostrom Blockchain.
 
 On [cyb.ai](https://cyb.ai) you can already create [cyberlinks](https://cyb.ai/search/cyberlink), search the [graph](https://cyb.ai/oracle), rank using the [Relevance machine](https://cyb.ai/search/rm), share and store information, [earn rewards](https://cyb.ai/halloffame), [investmint](https://cyb.ai/mint), and [tweet](https://cyb.ai/search/tweet). [Bostrom](https://cyb.ai/search/bostrom) is the [bootloader](https://cyb.ai/bootloader) for [Cyber](https://cyb.ai/search/cyber), with the same features.
-
-### Purpose of the Bostrom network [~](QmX3owfDdvVUAr2J58nrdBQShBH8be6iwv9NZwnTAjTdjf) [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
-
-Bostrom allows adding knowledge to the knowledge graph verifiably. By "verifiably" we mean that it is guaranteed by blockchain design that a particular address added specific content into the blockchain at the known time.
-
-The knowledge graph is a directed weighted graph between particles (CIDs or Content-ID of files, also known as content addresses, IPFS-hashes, IPFS-links).
-
-Cyberlinks are the edges of the knowledge graph, particles are the vertexes (aka nodes).
-
-In order to create cyberlinks in Bostrom, user accounts (so-called neurons) must have VOLT and AMPERE tokens.
-
-By definition, created cyberlinks cannot be deleted. This means, among other things, that they will always be taken into account in cyberrank (until "forgetting" or "pruning" functions are introduced).
 
 ### Superintelligence [~](QmbwxWGjfe1X7hWibkDii6fDdUqn8toMNEzsJdQuubqmhh) [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
 
@@ -461,9 +461,7 @@ The Great Web is built by connecting particles through cyberlinks. The result is
 
 ### Markdown [~](QmXQ4k4ciK5ieaSwtccmH9mm4QdPS6Spd21DTqLFrEwDWR) [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
 
-The content of text particles is rendered in Markdown. Cyb.ai uses these JS packages to render markdown: [ReactMarkdown](https://www.npmjs.com/package/react-markdown), [remarkGfm](https://www.npmjs.com/package/remark-gfm).
-
-Nearly all Markdown applications support the basic syntax outlined in John Gruber’s original design document. There are minor variations and discrepancies between Markdown processors — those are noted inline wherever possible.
+The content of text particles is rendered in Markdown. Cyb.ai uses [ReactMarkdown](https://www.npmjs.com/package/react-markdown), [remarkGfm](https://www.npmjs.com/package/remark-gfm) JS packages to render markdown.
 
 If you want your posts look beautiful, use [markdown syntax](https://www.markdownguide.org/basic-syntax/) and [test it here](https://markdown-it.github.io/) before posting.
 
@@ -472,6 +470,13 @@ If you want your posts look beautiful, use [markdown syntax](https://www.markdow
 ### [Cyb](https://cyb.ai) [~](QmSDCFfY1S2UxoDkhbAtFbnm2vp97eefNyb5NQKpXENwDj) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
 
 Your [open source](https://github.com/cybercongress/cyb) immortal robot for the Great Web
+
+### [Bostrom stats on Grafana by cyber-congress team](https://cybernode.ai/grafana/d/cyber_stats/computer?orgId=2&from=now-30d&to=now) [~]() [@]()
+
+- [Users by cohorts by activity](https://cybernode.ai/grafana/d/SdWCR028z/analytics?orgId=2)
+- [Nodes technical statistics](https://cybernode.ai/grafana/d/cyber_stats/computer?orgId=2&from=now-30d&to=now)
+
+### [Bostrom stats with price of token dynamics on Grafana by Bro-n-Bro hero](https://monitor.bronbro.io/d/bostrom-stats/bostrom-stats?orgId=2&from=now-30d&to=now) [~]() [@]()
 
 ### [cyberdbot](https://github.com/Snedashkovsky/cyberdBot) [~](QmWjcFRoVPeYXWug6NsoWFGA8PWqfFWcJ6G2HFNLf5QyXR) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
 
