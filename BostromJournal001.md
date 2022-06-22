@@ -69,7 +69,7 @@ Issue 1, 20220606
 
 ### Introduction [~]() [@]()
 
-In this issue we collected particles from the founding team and the first users of Bostrom regarding using Bostrom. Those particles could have been edited to correct typos and grammar mistakes, to delete repeated information already presented in other journal articles and to make them as a whole more readable. Initial particle references are provided.
+In this issue we collected particles from the founding team and the first users of Bostrom regarding using Bostrom. Those particles could have been edited to correct typos and grammar mistakes, to delete repeated information already presented in other journal particles and to make them as a whole more readable. Initial particle references are provided.
 
 ### About the journal [~]() [@]()
 
@@ -98,7 +98,7 @@ All the particles were formatted using [Prettier](https://prettier.io/), an opin
 
 ### Evolution of the first issue of journal
 
-At the very beginning I (future editor-in-chief) gathered all particles created by founders and trusted pioneer neurons from [swagger service]() of Bostrom's. I collected JSON from there and parsed it using Python. Further I downloaded the particles' files from IPFS and read them almost completely. I guess, it was about 1500 texts, most of which was 1-4 words long. I extracted cyberlinks and particles table to MS Excel. There I marked particles about cyber, filterd them. So I was able to sort and filter them. There I filtered most precise particles and classified them on chapters.
+At the very beginning I (future editor-in-chief) gathered all particles created by founders and trusted pioneer neurons from [swagger service]() of Bostrom's. I collected JSON from there and parsed it using Python. Further I downloaded the particles' files from IPFS and read them almost completely. I guess, it was about 1500 texts, most of which was 1-4 words long. I extracted cyberlinks and particles table to MS Excel. There I marked particles about cyber. So I was able to sort and filter them. There I filtered most precise particles and classified them on chapters.
 Further I recieved those particles to Python. Python helped me to generate the first version of this journal in Markdown.
 There I found that some texts on Bostrom that I wrote before also relevant to topic, but needed to be some how adopted to the journal format.
 
