@@ -8,23 +8,22 @@ Issue 1, 20220606
 2. Preface ~ [@]()
    1. Introduction ~ [@]()
    2. About the journal ~ [@]()
-   3. Submissions to the Bostrom Journal (BJ)
-   4. Focus and Scope
-   5. Publication Frequency
-   6. Journal's standard formatting markup and tags ~ [@]()
-   7. Evolution of the first issue of journal
-   8. Journal's design open questions ~ [@]()
+   3. Submissions to the Bostrom Journal (BJ) ~ [@]()
+   4. Publication Frequency
+   5. Journal's standard formatting markup and tags ~ [@]()
+   6. Evolution of the first issue of journal
+   7. Journal's design open questions ~ [@]()
 3. Intro to Bostrom Blockchain ~ [@]()
    1. Bostrom - the short definition ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
-   2. Capabilities of the Bostrom Blockchain ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
-   3. Purpose of the Bostrom network ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
+   2. Purpose of the Bostrom network ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
+   3. Capabilities of the Bostrom Blockchain ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
    4. Superintelligence ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
    5. IPFS, Content-addressing mechanism ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
    6. Bostrom is a full refactoring of the Euler network ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
    7. Bootloader meaning ~ [@](bostrom1jtmdnure6hvjew2fdsrg4g6vlmd87ky4uvzaus)
    8. Get Bostrom address~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
    9. Bostrom: How to start and navigate step by step ~ [@](bostrom14tk96pwx6lk25f740m4jzx85pkhfvldg42te4p)
-4. Knowledge graph ~ [@]()
+4. Knowledge graph ~ [@](bostrom15xx4xh3p7f773ssyz25ydrk27g09cl7qfh75mh)
    1. Particles and Cyberlinks ~ [@](bostrom1959r3zp37k9yuz8kjtc4feayyfkkxpcv43mu0w)
    2. Neuron ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
 5. Tokenomics ~ [@]()
@@ -36,7 +35,7 @@ Issue 1, 20220606
 6. Cyb.ai functionality [~]() [@]()
    1. Cyb.ai: intro, mechanics ~ [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
    2. My Robot ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
-   3. Teleport ~ [@](https://cyb.ai/network/bostrom/contract/bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
+   3. Teleport ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
    4. Dyson Sphere ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
    5. HFR ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
    6. Grid (My Energy) ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
@@ -47,12 +46,14 @@ Issue 1, 20220606
    2. Markdown ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
 8. Apps built on Bostrom, for Bostrom ~ [@]()
    1. Cyb [~](QmSDCFfY1S2UxoDkhbAtFbnm2vp97eefNyb5NQKpXENwDj) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
-   2. cyberdbot [~](QmWjcFRoVPeYXWug6NsoWFGA8PWqfFWcJ6G2HFNLf5QyXR) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
-   3. Cybernode.ai [~](QmRBxwqwNhLUjnsKwm8giYNVv4wwa77XUk51bYoo67tbah) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
-   4. go-cyber [~](Qmd4suKEMpRKuFkEeGbsHqDAKJfSQdNkkxPie6cfVacm8X) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
-   5. cyber-js [~](QmcwgfBG21fQ3sqiQhwnvFmadijd2GYZDF81QyQLXoJtEM) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
-   6. cyber CLI helper [~](Qmdo6FeBhcu1rW3bC2eu62g9sQifgAZu1wBh47UKgnTdbN) [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
-   7. Cyber arbitrage [~](QmNyxAQcozrkb2Ekr9EMUVZUXQduUGazYwfRTZtvxnjUwd) [@](bostrom135ca8hdpy9sk0ntwqzpzsvatyl48ptx5j359lz)
+   2. Bostrom stats on Grafana by cyber-congress team [~]() [@]()
+   3. Bostrom stats with price of token dynamics on Grafana by Bro-n-Bro hero [~]() [@]()
+   4. cyberdbot [~](QmWjcFRoVPeYXWug6NsoWFGA8PWqfFWcJ6G2HFNLf5QyXR) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
+   5. Cybernode.ai [~](QmRBxwqwNhLUjnsKwm8giYNVv4wwa77XUk51bYoo67tbah) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
+   6. go-cyber [~](Qmd4suKEMpRKuFkEeGbsHqDAKJfSQdNkkxPie6cfVacm8X) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
+   7. cyber-js [~](QmcwgfBG21fQ3sqiQhwnvFmadijd2GYZDF81QyQLXoJtEM) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
+   8. cyber CLI helper [~](Qmdo6FeBhcu1rW3bC2eu62g9sQifgAZu1wBh47UKgnTdbN) [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
+   9. Cyber arbitrage [~](QmNyxAQcozrkb2Ekr9EMUVZUXQduUGazYwfRTZtvxnjUwd) [@](bostrom135ca8hdpy9sk0ntwqzpzsvatyl48ptx5j359lz)
 9. Bostrom cybernomics ~ [@]()
    1. cyberGift ~ [@](bostrom1ay267fakkrgfy9lf2m7wsj8uez2dgylhtkdf9k)
    2. Result Validation
@@ -72,7 +73,7 @@ In this issue we collected particles from the founding team and the first users 
 
 ### About the journal [~]() [@]()
 
-This journal is a new phenomenon. We experiment here with Bostrom's unique features and apply them to real world problems in a form resembling modern scientific journals.
+This journal is a new phenomenon. Journal's team experiment here with Bostrom's unique features and apply them to real world problems in a form resembling modern scientific journals.
 
 Bostrom journal is created on top of the Bostrom Blockchain knowledge graph (we assembled this journal from files of Bostrom's knowledge graph).
 
@@ -125,7 +126,7 @@ Bostrom is a superintelligence project with knowledge graph at its core built on
 
 ### Purpose of the Bostrom network [~](QmX3owfDdvVUAr2J58nrdBQShBH8be6iwv9NZwnTAjTdjf) [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
 
-Bostrom allows adding knowledge to the knowledge graph verifiably. By "verifiably" we mean that it is guaranteed by blockchain design that a particular address added specific content into the blockchain at the known time.
+Bostrom allows adding knowledge (creating cyberlinks between particles) to the knowledge graph verifiably. By "verifiably" we mean that it is guaranteed by blockchain design that a particular address added specific content into the blockchain at the known time.
 
 The knowledge graph is a directed weighted graph between particles (CIDs or Content-ID of files, also known as content addresses, IPFS-hashes, IPFS-links).
 
@@ -284,7 +285,7 @@ Halving occurs every 567 days, which means half as many tokens can be minted per
 
 ### CYB token [~](QmfGPCSpPCRTsBw2g6wqrLkHaCwtFChXeHADju5RrYu9EB) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
 
-CYB token is a token of [Cyber](https://cyb.ai/search/cyber). Everyone who have [TOCYB](https://cyb.ai/token/TOCYB) will be able to convert it into CYB tokens through private exodus. The contract will be developed by [cyber~Congress](https://cyb.ai/search/cybercongress)
+CYB token is a token of [Cyber](https://cyb.ai/search/cyber). Everyone who have [TOCYB](https://cyb.ai/token/TOCYB) will be able to convert it into CYB tokens through private exodus. The contract will be developed by [cyber~Congress](https://cyb.ai/search/cybercongress).
 
 ### The transaction cost in Bostrom [~](QmYYB4EEb9KUagqotDWFYtCUsmsFqhNtneqALdTTrKut1t) [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
 
