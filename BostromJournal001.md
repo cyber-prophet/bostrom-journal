@@ -4,8 +4,6 @@ Issue 1, 20220606
 
 ## Preface [~]() [@]()
 
-### Introduction [~]() [@]()
-
 In this issue we collected particles from the founding team and the first users of Bostrom regarding using Bostrom. Those particles could have been edited to correct typos and grammar mistakes, to delete repeated information already presented in other journal particles and to make them as a whole more readable. Initial particle references are provided.
 
 ## Intro to Bostrom Blockchain [~]() [@]()
@@ -59,6 +57,8 @@ The key differences within the Cyber network are being discussed [here](https://
 
 ## Knowledge graph [~](QmYPEehJdgxfTK3x5KQt56HbFEk8RXUmceqaTaseoPMUR6) [@](bostrom15xx4xh3p7f773ssyz25ydrk27g09cl7qfh75mh)
 
+Knowledge graph of Bostrom blockchain consists of couples: source particle connected to destination particle via cyberlink. So it can be encoded in form of `source_particle - destination_particle`, which reduces the complexity of entering data. But simple cyberlinks in combinantion with markdown files, where could be used various conventions of connections between particles, gives the necessary flexibility to Bostrom's knowledge graph, adopting it diffrent usecases.  
+
 ### Particles [~]() [@]
 
 Particle is a hash of the file in IPFS network. Having its hash the file can be retreived from IPFS network. Particles are written into Bostrom blockchain. But, cyb.ai application is built to render content of cyberlinked files.
@@ -75,17 +75,15 @@ A neuron is a token holder who can provide valuable knowledge to the knowledge g
 
 ### Cyberrank [~]()
 
-Cyberrank is a default rank calculated on each particle. It's calculated as a weighted pagerank, where every cyberlink has weight of amper-per-link. Ampere-per-link calculated for each neuron by dividing his ampere balance on number of his cyberlinks.
+Cyberrank is a default rank calculated on each particle. It's calculated as a weighted Pagerank, where every cyberlink has the weight of ampere-per-cyberlink. Ampere-per-cyberlink calculated for each neuron by dividing his ampere balance on count of his cyberlinks.
 
-Cyberrank calculated on GPU of node. Cyberrank is deterministic, so it is used as a consensus.
+Cyberrank calculated using GPU of node. Cyberrank is deterministic, so it is used in a Bostrom's blockchain consensus.
 
-## Bostrom economics [~]() [@]()
-
-### Bostrom tokens [~](QmbiZAm2QV5AXg6kW74hsavU4QtVc98AyPzu9VP7Fd6YQR) [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
+## Bostrom tokens [~](QmbiZAm2QV5AXg6kW74hsavU4QtVc98AyPzu9VP7Fd6YQR) [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
 
 There are several tokens in the Bostrom network: BOOT, HYDROGEN, VOLT, AMPERE. Each of its own usage.
 
-#### BOOT token
+### BOOT token
 
 BOOT is the main token of Bostrom. The token's name BOOT symbolizes the BOOTloader nature of the Bostrom network for the future Cyber network.
 
@@ -97,7 +95,7 @@ With BOOT one can:
 - pay for network transactions (pay for gas). Though now, many validators accept transactions for free;
 - vote for protocol change and public goods.
 
-#### HYDROGEN token
+### HYDROGEN token
 
 With HYDROGEN one can:
 
@@ -105,35 +103,34 @@ With HYDROGEN one can:
 - exchange back for delegated BOOT in order to transfer BOOT into a liquid state;
 - transfer to someone (if in liquid state).
 
-#### VOLT token
+### VOLT token
 
 - is needed to create cyberlinks;
 - amount of Volt tokens on a balance of selected neuron regulates how many cyberlinks per day the neuron can submit;
 - may be transferred in a liquid state
 
-#### AMPERE token
+Each Volt token on the neuron's balance allows to create 1 cyberlink per day. The ability to create cyberlinks is restored within a day.
+
+If the network is underloaded, one can produce more cyberlinks (up to 4 cyberlinks for each Volt on balance per day).
+
+### AMPERE token
 
 - is needed to create cyberlinks;
-- amount of Ampere tokens on a balance of selecte neuron characterizes the power of its impact on the cyberrank;
+- amount of Ampere tokens on a balance of selected neuron characterizes the power of its impact on the cyberrank;
 - may be transfered in a liquid state
+
+The more Ampere tokens the neuron has, the higher his cyberlinks would be ranked. Cyberrank is recalculated for each `cycle` so that the changes in the amount of Amperes tokens on the neurons' balances that produced cyberlinks would influence the cyberrank of the whole graph. It's reasonable to think about of Ampere tokens as a measure that characterises the impact of cyberlinks creacted from account on the knowledge graph.
 
 ### TOCYB token [~](QmfGPCSpPCRTsBw2g6wqrLkHaCwtFChXeHADju5RrYu9EB) [@](bostrom1d8754xqa9245pctlfcyv8eah468neqzn3a0y0t)
 
 TOCYB token is a token of a future [Cyber](https://cyb.ai/search/cyber) network. Everyone who have [TOCYB](https://cyb.ai/token/TOCYB) will be able to convert it into CYB tokens through private exodus. The contract will be developed by [cyber~Congress](https://cyb.ai/search/cybercongress).
+
 
 ### Investminting - definition and mechanics [~](Qmezuhrqm7P8u8PwHhoq5EjWmnk3VxGju9DVUT9pWmeNaV) [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
 
 In order to obtain resource tokens: A (AMPERES) and V (VOLTS) one should investmint H (HYDROGEN). The term `investminting` is composed of `minting` (producing new tokens) and `investing` (putting capital into something for a period of time in order to make a profit).
 
 After Hydrogen tokens are investminted, the neurons balance is immediately replenished by a number of temporary `frozen` for transferring but ready to use A and V tokens. Both tokens of the investminting pair (H and A or V) are `frozen` till the end of the investminting period. After investminting period both tokens become liquid.
-
-#### Meaning of Volt and Ampere tokens
-
-Each Volt token on the neuron's balance allows to create 1 cyberlink per day. The ability to create cyberlinks is restored within a day.
-
-If the network is underloaded, one can produce more cyberlinks (up to 4 cyberlinks for each Volt on balance per day).
-
-The more Ampere tokens the neuron has, the higher his cyberlinks would be ranked. Cyberrank is recalculated for each `cycle` so that the changes in the amount of Amperes tokens on the neurons' balances that produced cyberlinks would influence the cyberrank of the whole graph. It's reasonable to think about of Ampere tokens as a measure that characterises the impact of cyberlinks creacted from account on the knowledge graph.
 
 #### Investminting features
 
@@ -169,7 +166,7 @@ Examples of actions in Bostrom:
 
 When signing a transaction, the neuron should set an amount of gas for executing the transaction and the cost of the gas in BOOT. In case of a large number of transactions (high network load), heroes may set their servers to accept those transactions of higher fee with higher priority. As for now (the network is still underloaded), many heroes accept transactions at a zero-cost gas.
 
-### Stacking mechanism - encouraging desired behavior in agents (heroes and neurons) [~](Qma2tQuYBhM5vGFq1cpUhyXPU57UVcvLiUNuw9hH63m9Cb) [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
+### Staking mechanism - encouraging desired behavior in agents (heroes and neurons) [~](Qma2tQuYBhM5vGFq1cpUhyXPU57UVcvLiUNuw9hH63m9Cb) [@](bostrom1nngr5aj3gcvphlhnvtqth8k3sl4asq3n6r76m8)
 
 Bostrom is a proof-of-stake blockchain. Validators ensure proof-of-stake blockchain functioning. A validator (the hero in Bostrom terminology) is a server with installed blockchain software (node).
 
@@ -183,7 +180,7 @@ Heroes' valuable functions are:
 
 - computing each blockchain block;
 - checking and signing transaction messages from other nodes (thus reaching a consensus on the present state of the blockchain);
-- distributing state of a blockchain via api.
+- distributing state of a blockchain via various apis.
 
 Neurons' useful functions are:
 
