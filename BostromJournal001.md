@@ -31,6 +31,8 @@ Issue 1, 20220606
 - [Apps built on Bostrom, for Bostrom ~](#apps-built-on-bostrom-for-bostrom-)
   - [go-cyber ~](#go-cyber-)
   - [Cyb.ai ~](#cybai-)
+  - [cyberindex [~]](#cyberindex-)
+  - [Cybernode](#cybernode)
   - [Cybernode.ai ~](#cybernodeai-)
   - [Bostrom dashboard by Bro-n-Bro ~](#bostrom-dashboard-by-bro-n-bro-)
   - [cyberdbot ~](#cyberdbot-)
@@ -51,7 +53,6 @@ Issue 1, 20220606
   - [Markdown ~](#markdown-)
 - [Bostrom cybernomics ~](#bostrom-cybernomics-)
   - [cyberGift ~](#cybergift-)
-  - [Result Validation](#result-validation)
 
 <!-- /TOC -->
 
@@ -277,17 +278,51 @@ In order to hedge `slashing` risks one may distribute `stakes` between several h
 
 ### go-cyber [~](Qmd4suKEMpRKuFkEeGbsHqDAKJfSQdNkkxPie6cfVacm8X)
 
-[go-cyber](https://github.com/cybercongress/go-cyber) - implementation of [cyber protocol](https://github.com/cybercongress/cyber) in Go. It can be used as a command line interface (CLI) for interacting with local or remote node.
+[go-cyber](https://github.com/cybercongress/go-cyber) - implementation of [cyber protocol](https://github.com/cybercongress/cyber) in Go. It is node app itself. And it can be used as a command line interface (CLI) for interacting with local or remote node.
 
 Each hero runs own node of go-cyber.
 
-### Cyb.ai [~](QmSDCFfY1S2UxoDkhbAtFbnm2vp97eefNyb5NQKpXENwDj)
+### cyb.ai [~](QmSDCFfY1S2UxoDkhbAtFbnm2vp97eefNyb5NQKpXENwDj)
 
-[cyb.ai](https://cyb.ai) - most functional application built on Bostrom.
+[Cyb.ai](https://cyb.ai) - most functional application built on Bostrom for interacting with Bostrom.
 
 Code is availible on the [github](https://github.com/cybercongress/cyb).
 
 Cyb.ai functionality is explained in the section below.
+
+### cyberindex [~]
+
+Indexer on go for Cyber's networks. [Github](https://github.com/cybercongress/cyberindex)
+
+Supported:
+
+- blocks and precommits
+- transactions and messages
+- validators and their uptime
+- accounts and their balances
+- cyberlinks and particles
+- resources and supply
+- grid routes
+- wasm contracts
+- advanced views for analytics
+
+### cybernode
+
+Cybernode is the tool to deploy, operate, maintain, and monitor major protocols required for next-generation browsers. [Github](https://github.com/cybercongress/cybernode)
+
+#### Backend services provided by cybernode.ai
+
+- Bostrom [RPC](https://rpc.bostrom.cybernode.ai)
+- Bostrom [REST](https://lcd.bostrom.cybernode.ai)
+- Bostrom [index](https://index.bostrom.cybernode.ai)
+- Bostrom [websocket](wss://rpc.bostrom.cybernode.ai/websocket)
+- Cosmoshub-4 [RPC](https://rpc.cosmoshub-4.cybernode.ai)
+- Cosmoshub-4 [REST](https://lcd.cosmoshub-4.cybernode.ai)
+- Ethereum [RPC](https://rpc.ethereum.cybernode.ai)
+- Ethereum [websocket](wss://ws.ethereum.cybernode.ai)
+- Ethereum rinkeby [RPC](https://rpc-rinkeby.ethereum.cybernode.ai)
+- Ethereum rinkeby [websocket](wss://ws-rinkeby.ethereum.cybernode.ai)
+- IPFS [gateway](https://gateway.ipfs.cybernode.ai)
 
 ### Cybernode.ai [~](QmRBxwqwNhLUjnsKwm8giYNVv4wwa77XUk51bYoo67tbah)
 
@@ -298,15 +333,21 @@ Cyb.ai functionality is explained in the section below.
 
 ### Bostrom dashboard by Bro-n-Bro [~]()
 
-[Bostrom stats with price of token dynamics on Grafana by Bro-n-Bro hero](https://monitor.bronbro.io/d/bostrom-stats/bostrom-stats?orgId=2&from=now-30d&to=now)
+Bostrom stats with price of token dynamics on [Grafana](https://monitor.bronbro.io/d/bostrom-stats/bostrom-stats?orgId=2&from=now-30d&to=now) by Bro-n-Bro hero.
 
 ### cyberdbot [~](QmWjcFRoVPeYXWug6NsoWFGA8PWqfFWcJ6G2HFNLf5QyXR)
 
-[Open source](https://github.com/Snedashkovsky/cyberdBot) telegram bot for Cyber
+[Open source](https://github.com/Snedashkovsky/cyberdBot) telegram bot for Cyber.
 
 ### cyber-js [~](QmcwgfBG21fQ3sqiQhwnvFmadijd2GYZDF81QyQLXoJtEM)
 
 [Javascript library](https://github.com/cybercongress/cyber-js) for [cyber protocol](https://github.com/cybercongress/cyber)
+
+### Cyber arbitrage py [~](QmNyxAQcozrkb2Ekr9EMUVZUXQduUGazYwfRTZtvxnjUwd)
+
+[Cyber arbitrage](https://github.com/Snedashkovsky/cyber-arbitrage/blob/main/search_arbitrage.ipynb) is jupyter notebook, that interacts with cli to obtain information on the state of liquidity pools balances on Bostrom.
+
+There you can search for the best arbitrage options in Bostrom. Ipython notebook retrieves data on pools' state from CLI and display it in a table form.
 
 ### cyber CLI helper [~](Qmdo6FeBhcu1rW3bC2eu62g9sQifgAZu1wBh47UKgnTdbN)
 
@@ -315,12 +356,6 @@ Cyb.ai functionality is explained in the section below.
 You can make a copy of the spreadsheet and fill in blue cells with your inputs.
 
 To contribute - request write rights.
-
-### Cyber arbitrage py [~](QmNyxAQcozrkb2Ekr9EMUVZUXQduUGazYwfRTZtvxnjUwd)
-
-[Cyber arbitrage](https://github.com/Snedashkovsky/cyber-arbitrage/blob/main/search_arbitrage.ipynb) is jupyter notebook, that interacts with cli to obtain information on the state of liquidity pools balances on Bostrom.
-
-There you can search for the best arbitrage options in Bostrom. Ipython notebook retrieves data on pools' state from CLI and display it in a table form.
 
 ## Cyb.ai functionality [~]()
 
@@ -538,7 +573,7 @@ There will be incentive `13x` for those who claim first reducing to `7x` who cam
 
 Check your address in the [Dashboard](https://datastudio.google.com/u/0/reporting/53e1c28b-9f10-497c-9b5b-9f2a4749450b)
 
-### Result Validation
+#### Result Validation
 
 My name is Maxim Razhev (@ninjascant). I'm a software engineer with 3+ years of experience in blockchain analytics development. I made a manual re-check of queries used here e.g.
 
