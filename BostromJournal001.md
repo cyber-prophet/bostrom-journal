@@ -58,7 +58,7 @@ Issue 1, 20220606
 
 ## Preface [~]()
 
-In this issue we collected particles from the founding team and the first users of Bostrom regarding using Bostrom. Those particles could have been edited to correct typos and grammar mistakes, to delete repeated information already presented in other journal particles and to make them as a whole more readable. Initial particle references are provided.
+In this issue we collected particles from the founding team and the first users of Bostrom regarding using Bostrom. Those particles could have been edited to correct typos and grammar mistakes, to delete repeated information already presented in other journal particles, and to make them more readable. Initial particle references are provided.
 
 ## Intro to Bostrom Blockchain [~]()
 
@@ -111,15 +111,15 @@ The key differences within the Cyber network are being discussed [here](https://
 
 ## Knowledge graph [~](QmYPEehJdgxfTK3x5KQt56HbFEk8RXUmceqaTaseoPMUR6)
 
-Knowledge graph of Bostrom blockchain consists of couples: source particle connected to destination particle via cyberlink. So it can be encoded in form of `source_particle - destination_particle`, which reduces the complexity of entering data. But simple cyberlinks in combinantion with markdown files, where could be used various conventions of connections between particles, gives the necessary flexibility to Bostrom's knowledge graph, adopting it diffrent usecases.
+The knowledge graph of Bostrom blockchain consists of couples: source particle connected to destination particle via cyberlink. So it can be encoded in the form of `source_particle - destination_particle`, which reduces the complexity of entering data. But simple cyberlinks in combination with markdown files, where various conventions of connections between particles could be used, give the necessary flexibility to Bostrom's knowledge graph, adopting it to different use cases.
 
 ### Particles [~]()
 
-Particle is a hash of the file in IPFS network. Having its hash the file can be retreived from IPFS network. Particles are written into Bostrom blockchain. But, cyb.ai application is built to render content of cyberlinked files.
+A particle is a hash of the file in IPFS network. Having its hash the file can be retrieved from IPFS network. Particles are written into Bostrom blockchain. But, cyb.ai application is built to render the content of cyberlinked files.
 
 ### Cyberlinks [~](QmewU6pKFtGc3Fm8XsMxS3bA2xf3swQwuPuepxebp2WNMH)
 
-A cyberlink is the link between two particles registered in Bostrom blockchain by particular neuron.
+A cyberlink is the link between two particles registered in Bostrom blockchain by a particular neuron.
 
 To cyberlink - to create a cyberlink between two particles.
 
@@ -129,9 +129,9 @@ A neuron is a token holder who can provide valuable knowledge to the knowledge g
 
 ### Cyberrank [~]()
 
-Cyberrank is a default rank calculated on each particle. It's calculated as a weighted Pagerank, where every cyberlink has the weight of ampere-per-cyberlink. Ampere-per-cyberlink calculated for each neuron by dividing his ampere balance on count of his cyberlinks.
+Cyberrank is a default rank calculated on each particle. It's calculated as a weighted Pagerank, where every cyberlink has the weight of ampere-per-cyberlink. Ampere-per-cyberlink is calculated for each neuron by dividing his ampere balance by count of his cyberlinks.
 
-Cyberrank calculated using GPU of node. Cyberrank is deterministic, so it is used in a Bostrom's blockchain consensus.
+Cyberrank calculated using GPU of the node. Cyberrank is deterministic, so it is used in Bostrom's blockchain consensus.
 
 ## Bostrom tokens [~](QmbiZAm2QV5AXg6kW74hsavU4QtVc98AyPzu9VP7Fd6YQR)
 
@@ -153,37 +153,37 @@ With BOOT one can:
 
 With HYDROGEN one can:
 
-- `investmint` HYDROGEN for a limited period of time to produce VOLT and AMPERE tokens;
-- exchange back for delegated BOOT in order to transfer BOOT into a liquid state;
-- transfer to someone (if in liquid state).
+- `investmint` HYDROGEN for a limited period to produce VOLT and AMPERE tokens;
+- exchange back for delegated BOOT to transfer BOOT into a liquid state;
+- transfer to someone (if it is in a liquid state).
 
 ### VOLT token
 
 - is needed to create cyberlinks;
-- amount of Volt tokens on a balance of selected neuron regulates how many cyberlinks per day the neuron can submit;
+- amount of Volt tokens on a balance of the selected neuron regulates how many cyberlinks per day the neuron can submit;
 - may be transferred in a liquid state
 
-Each Volt token on the neuron's balance allows to create 1 cyberlink per day. The ability to create cyberlinks is restored within a day.
+Each Volt token on the neuron's balance allows creating 1 cyberlink per day. The ability to create cyberlinks is restored within a day.
 
 If the network is underloaded, one can produce more cyberlinks (up to 4 cyberlinks for each Volt on balance per day).
 
 ### AMPERE token
 
 - is needed to create cyberlinks;
-- amount of Ampere tokens on a balance of selected neuron characterizes the power of its impact on the cyberrank;
-- may be transfered in a liquid state
+- amount of Ampere tokens on a balance of the selected neuron characterizes the power of its impact on the cyberrank;
+- may be transferred in a liquid state
 
-The more Ampere tokens the neuron has, the higher his cyberlinks would be ranked. Cyberrank is recalculated for each `cycle` so that the changes in the amount of Amperes tokens on the neurons' balances that produced cyberlinks would influence the cyberrank of the whole graph. It's reasonable to think about of Ampere tokens as a measure that characterises the impact of cyberlinks creacted from account on the knowledge graph.
+The more Ampere tokens the neuron has, the higher his cyberlinks would be ranked. Cyberrank is recalculated for each `cycle` so that the changes in the amount of Amperes tokens on the neurons' balances that produced cyberlinks would influence the cyberrank of the whole graph. It's reasonable to think about  Ampere tokens as a measure that characterizes the impact of cyberlinks created from the account on the knowledge graph.
 
 ### TOCYB token [~](QmfGPCSpPCRTsBw2g6wqrLkHaCwtFChXeHADju5RrYu9EB)
 
-TOCYB token is a token of a future [Cyber](https://cyb.ai/search/cyber) network. Everyone who have [TOCYB](https://cyb.ai/token/TOCYB) will be able to convert it into CYB tokens through private exodus. The contract will be developed by [cyber~Congress](https://cyb.ai/search/cybercongress).
+TOCYB token is a token of a future [Cyber](https://cyb.ai/search/cyber) network. Everyone who has [TOCYB](https://cyb.ai/token/TOCYB) will be able to convert it into CYB tokens through the private exodus. The contract will be developed by [cyber~Congress](https://cyb.ai/search/cybercongress).
 
 ### Investminting - definition and mechanics [~](Qmezuhrqm7P8u8PwHhoq5EjWmnk3VxGju9DVUT9pWmeNaV)
 
-In order to obtain resource tokens: A (AMPERES) and V (VOLTS) one should investmint H (HYDROGEN). The term `investminting` is composed of `minting` (producing new tokens) and `investing` (putting capital into something for a period of time in order to make a profit).
+In order to obtain resource tokens: A (AMPERES) and V (VOLTS) one should investmint H (HYDROGEN). The term `investminting` is composed of `minting` (producing new tokens) and `investing` (putting capital into something for a period of time to make a profit).
 
-After Hydrogen tokens are investminted, the neurons balance is immediately replenished by a number of temporary `frozen` for transferring but ready to use A and V tokens. Both tokens of the investminting pair (H and A or V) are `frozen` till the end of the investminting period. After investminting period both tokens become liquid.
+After Hydrogen tokens are investminted, the neuron’s balance is immediately replenished by a number of temporary `frozen` for transferring but ready to use A and V tokens. Both tokens of the investminting pair (H and A or V) are `frozen` till the end of the investminting period. After the investminting period both tokens become liquid.
 
 #### Investminting features
 
@@ -202,11 +202,11 @@ Halving occurs every 567 days, which means half as many tokens can be minted per
 
 ### The transaction cost in Bostrom [~](QmYYB4EEb9KUagqotDWFYtCUsmsFqhNtneqALdTTrKut1t)
 
-Any action changing state in a blockchain is a transaction. Each transaction has a cost. That cost is covered by an agent conducting the transaction.
+Any action changing the state in a blockchain is a transaction. Each transaction has a cost. That cost is covered by an agent conducting the transaction.
 
 Examples of actions in Bostrom:
 
-- adding knowledge to knowledge graph by creating cyberlinks
+- adding knowledge to the knowledge graph by creating cyberlinks
   - setting neuron's avatar on cyb.ai
   - sending neuron's tweet on cyb.ai
   - sending a comment on a particle on cyb.ai
@@ -223,7 +223,7 @@ When signing a transaction, the neuron should set an amount of gas for executing
 
 Bostrom is a proof-of-stake blockchain. Validators ensure proof-of-stake blockchain functioning. A validator (the hero in Bostrom terminology) is a server with installed blockchain software (node).
 
-Each node contains a blockchain replica (transaction log) that allows computing the current state of the system each block. Nodes agree among themselves on a common state of affairs according to the Tendermint consensus protocol as a guideline.
+Each node contains a blockchain replica (transaction log) that allows computing the system’s current state in each block. Nodes agree among themselves on a common state of affairs according to the Tendermint consensus protocol as a guideline.
 
 Bostrom is designed to economically encourage (incentivize) heroes and neurons to perform useful functions for the system.
 
@@ -233,11 +233,11 @@ Heroes' valuable functions are:
 
 - computing each blockchain block;
 - checking and signing transaction messages from other nodes (thus reaching a consensus on the present state of the blockchain);
-- distributing state of a blockchain via various apis.
+- distributing state of a blockchain via various APIs.
 
-Neurons' useful functions are:
+Neurons' valuable functions are:
 
-- maintaining desired balance between `staked` and `liquid` tokens (`goal_bonded` parameter in the senate which is `80%` at the moment of writing);
+- maintaining a desired balance between `staked` and `liquid` tokens (`goal_bonded` parameter in the senate which is `80%` at the moment of writing);
 - distributing `staked` tokens to validators who perform their functions properly thus preventing `slashing`;
 - using H token (HYDROGEN), which can be obtained in exchange for a `staked` BOOT, for investminting Ampere and Volt tokens (and then using As and Vs for creating сyberlinks, i.e. training Bostrom);
 - deciding on the evolution of the network using the governance portal (`senate`).
@@ -246,7 +246,7 @@ Neurons' useful functions are:
 
 The economic incentivization mechanism of heroes and neurons in Bostrom includes rewards and penalties.
 
-Blockchain is programmed to mint new BOOT tokens in each block to pay rewards. The `inflation_rate` coefficient determines the amount of new tokens to be produced. `Inflation_rate` coefficient depends on the share of `staked` BOOTs:
+Blockchain is programmed to mint new BOOT tokens in each block to pay rewards. The `inflation_rate` coefficient determines the number of new tokens produced. `Inflation_rate` coefficient depends on the share of `staked` BOOTs:
 
 - if the `staked` percentage of BOOTs is less than the `goal_bonded` parameter, then the `inflation_rate` coefficient will be increasing for each block till it hits the `inflation_rate_max` value. The higher the `inflation_rate`, the more rewarding is the `stake`;
 - if the `staked` percentage of BOOTs is more than the `goal_bonded` parameter, then the `inflation_rate` coefficient will be decreasing for each block till it hits the `inflation_rate_min` value, thus signaling to search for another way of profiting from BOOTs
@@ -255,12 +255,12 @@ New tokens are distributed between neurons who `staked` their tokens and heroes 
 
 Heroes receive a set fee.
 
-Neurons are rewarded for deligating (`staking`) tokens to heroes and bearing `slashing` risks (reducing `stake` by the penalty amount), and also risks of skipping blocks without getting any rewards (while the hero commited violation remains in the `jail` state).
+Neurons are rewarded for deligating (`staking`) tokens to heroes and bearing `slashing` risks (reducing `stake` by the penalty amount), and also risks of skipping blocks without getting any rewards (while the hero committed violation remains in the `jail` state).
 
 Neurons' risks are that the heroes, to whom the former have delegated their tokens, may commit a violation of two kinds:
 
 - Downtime (skipping new blocks computing).
-- Double sign (using the same private key of validator on two diffrenet servers).
+- Double sign (using the same private key of the validator on two different servers).
 
 `slashing` is a feedback mechanism from the blockchain to heroes, as it forces neurons to redistribute their `stakes` in favor of heroes, who perform their functions properly.
 
@@ -268,7 +268,7 @@ When a particular hero is caught violating rules, that hero is put into the `jai
 
 All the violations and the penalties are noted in the blockchain settings and are executed according to the Tenderimnt consensus protocol.
 
-As of now (2022-01-14), there is no publicly available services for monitoring heroes' violation statistics. Therefore neurons have to make decisions based only on their own statistics. In order to make it easier to track heroes’ performance, one can use a hack: if only multiples of 10 are deligated to heroes' balances, `slashing` is easily tracked in case it did occur.
+As of now (2022-01-14), there are no publicly available services monitoring heroes' violation statistics. Therefore neurons have to make decisions based only on their own statistics. In order to make it easier to track heroes’ performance, one can use a hack: if only multiples of 10 are deligated to heroes' balances, `slashing` is easily tracked in case it did occur.
 
 For example, we can delegate `153 298 189` BOOTs to a hero. In this case we'll have to remember the exact amount deligated and constantly recheck for potential changes. It can become problematic as one bonds to more heroes. On the other hand, we can delegate `153 000 000` making the violation easily traceable. Simply browse through your stakes and any non-zero digit at the end will give away the violating hero.
 
@@ -278,21 +278,21 @@ In order to hedge `slashing` risks one may distribute `stakes` between several h
 
 ### go-cyber [~](Qmd4suKEMpRKuFkEeGbsHqDAKJfSQdNkkxPie6cfVacm8X)
 
-[go-cyber](https://github.com/cybercongress/go-cyber) - implementation of [cyber protocol](https://github.com/cybercongress/cyber) in Go. It is node app itself. And it can be used as a command line interface (CLI) for interacting with local or remote node.
+[go-cyber](https://github.com/cybercongress/go-cyber) - implementation of [cyber protocol](https://github.com/cybercongress/cyber) in Go. It is the node app itself. And it can be used as a command-line interface (CLI) for interacting with the local or remote node.
 
-Each hero runs own node of go-cyber.
+Each hero runs his own node of go-cyber.
 
 ### cyb.ai [~](QmSDCFfY1S2UxoDkhbAtFbnm2vp97eefNyb5NQKpXENwDj)
 
 [Cyb.ai](https://cyb.ai) - most functional application built on Bostrom for interacting with Bostrom.
 
-Code is availible on the [github](https://github.com/cybercongress/cyb).
+Code is available on the [github](https://github.com/cybercongress/cyb).
 
 Cyb.ai functionality is explained in the section below.
 
-### cyberindex [~]
+### cyberindex [~]()
 
-Indexer on go for Cyber's networks. [Github](https://github.com/cybercongress/cyberindex)
+Indexer is written on go language for Cyber's networks. [Github](https://github.com/cybercongress/cyberindex)
 
 Supported:
 
@@ -333,7 +333,7 @@ Cybernode is the tool to deploy, operate, maintain, and monitor major protocols 
 
 ### Bostrom dashboard by Bro-n-Bro [~]()
 
-Bostrom stats with price of token dynamics on [Grafana](https://monitor.bronbro.io/d/bostrom-stats/bostrom-stats?orgId=2&from=now-30d&to=now) by Bro-n-Bro hero.
+Bostrom stats with the price of token dynamics on [Grafana](https://monitor.bronbro.io/d/bostrom-stats/bostrom-stats?orgId=2&from=now-30d&to=now) by Bro-n-Bro hero.
 
 ### cyberdbot [~](QmWjcFRoVPeYXWug6NsoWFGA8PWqfFWcJ6G2HFNLf5QyXR)
 
@@ -345,9 +345,9 @@ Bostrom stats with price of token dynamics on [Grafana](https://monitor.bronbro.
 
 ### Cyber arbitrage py [~](QmNyxAQcozrkb2Ekr9EMUVZUXQduUGazYwfRTZtvxnjUwd)
 
-[Cyber arbitrage](https://github.com/Snedashkovsky/cyber-arbitrage/blob/main/search_arbitrage.ipynb) is jupyter notebook, that interacts with cli to obtain information on the state of liquidity pools balances on Bostrom.
+[Cyber arbitrage](https://github.com/Snedashkovsky/cyber-arbitrage/blob/main/search_arbitrage.ipynb) is a jupyter notebook that interacts with cli to obtain information on the state of liquidity pools balances on Bostrom.
 
-There you can search for the best arbitrage options in Bostrom. Ipython notebook retrieves data on pools' state from CLI and display it in a table form.
+There you can search for the best arbitrage options in Bostrom. Jupyter notebook retrieves data on pools' state from CLI and displays it in a table form.
 
 ### cyber CLI helper [~](Qmdo6FeBhcu1rW3bC2eu62g9sQifgAZu1wBh47UKgnTdbN)
 
@@ -363,7 +363,7 @@ To contribute - request write rights.
 
 [Cyb.ai](https://cyb.ai) - is a WEB interface to the Bostrom blockchain developed by the Bostrom team. Among Cyb.ai's many functions are:
 
-- receiving data on cyberlinks recorded by Bostrom blockchain from node;
+- receiving data on cyberlinks recorded by Bostrom blockchain from the node;
 - creating cyberlinks;
 - receiving and sharing objects in the IPFS network using library [ipfs-js](https://github.com/ipfs/js-ipfs).
 
@@ -371,7 +371,7 @@ There is a search bar in cyb.ai. When a user enters a query in the search bar cy
 
 Thus, the search results in cyb.ai are the files stored in IPFS (received by the browser and rendered on the page) with the IPFS hashes that were cyberlinked to the IPFS hash of the text entered into the search bar.
 
-If no cyberlinks had been created for a text file hash of a particular search query, the cyb.ai displays particles linked to the hash of text file with content "0" in the search result page.
+If no cyberlinks had been created for a text file hash of a particular search query, the cyb.ai displays particles linked to the hash of the text file with content "0" on the search result page.
 
 Account avatar is an image file in IPFS. The hash of the image file is cyberlinked by a text file "avatar"'s hash by the current neuron.
 
@@ -379,11 +379,11 @@ Amperes message in a particular Twitter account's feed is a cyberlink between th
 
 ### My Robot [~](QmSfnbtVvAQxLBtD9wfkn5XexGPPkofcT7pS7379WoXqVW)
 
-On "My Robot" page you can see the information about the state of your IPFS local node (that uses cache of your browser), connected accounts, their addresses and balances of tokens on them.
+On the "My Robot" page you can see the information about the state of your IPFS local node (that uses the cache of your browser), connected accounts, their addresses and balances of tokens on them.
 
 ### Teleport [~](QmSBDA7qQEbV6sQRmzbj3VuiXGG9g9vpbLWC9DWFtzq9mh)
 
-On teleport page you can exchange your tokens using swap, explore [existing pools](https://cyb.ai/teleport/pools) or add and sub liquidity to liquidity pools. Refer to the links below:
+On the teleport page you can exchange your tokens using swap, explore [existing pools](https://cyb.ai/teleport/pools) or add and sub liquidity to liquidity pools. Refer to the links below:
 
 - [swap](https://cyb.ai/teleport)
 - [add liquidity](https://cyb.ai/teleport/add-liquidity)
@@ -391,7 +391,7 @@ On teleport page you can exchange your tokens using swap, explore [existing pool
 
 ### Dyson Sphere [~](QmS1jB9j7LHJo7iyYQc3MErKHEGvgXkt67xrqH44dzQdRt)
 
-You can delegate (stake) BOOT by hiring a Hero in the [Dyson Sphere](https://cyb.ai/search/dyson%20shpere). That will grant you Hydrogen in amount equal to staked BOOT. Also, you can see the information regarding heroes.
+You can delegate (stake) BOOT by hiring a Hero in the [Dyson Sphere](https://cyb.ai/search/dyson%20shpere). That will grant you Hydrogen in the amount equal to staked BOOT. Also, you can see the information regarding heroes.
 
 - [hire & fire Heros](https://cyb.ai/halloffame)
 
@@ -403,7 +403,7 @@ You can mint [Amperes](https://cyb.ai/token/A) and [Volts](https://cyb.ai/token/
 
 You can get Hydrogen by delegating BOOTs to Heroes in the [Dyson Sphere](https://cyb.ai/search/dyson%20shpere).
 
-- Use HFR menu to adjust freezing parameters and [investmint](https://cyb.ai/mint)
+- Use the HFR menu to adjust freezing parameters and [investmint](https://cyb.ai/mint)
 
 ### Grid (My Energy) [~](Qmdfb54D92tzTMLKNqVZuo74aN5yUHnk6kwcVK9Js6PTqn)
 
@@ -416,11 +416,11 @@ Here you can check your energy, route Amperes and Volts to your friends:
 
 Senate is the main arena for performing and improving Bostrom's governance.
 
-You can submit your own proposals and/or vote on existing ones on the [senate](https://cyb.ai/senate) page. All active, accepted and rejected proposals are also listed there. You can check for more information and statistics by clicking on each of the proposals.
+You can submit your proposals and/or vote on existing ones on the [senate](https://cyb.ai/senate) page. All active, accepted and rejected proposals are also listed there. You can check for more information and statistics by clicking on each of the proposals.
 
 #### Bostrom's Governance [~](QmY4X4SkVBkoUGZdTzdcW7SKY8t4ULj5GJBRcRr4UMyahp), by
 
-Governance process of [Cyber networks](https://cyb.ai/search/computing%20knowledge) is focused on the [evolution](https://cyb.ai/search/cyber%20evolution) of its code and is based on 3 methods:
+The governance process of [Cyber networks](https://cyb.ai/search/computing%20knowledge) is focused on the [evolution](https://cyb.ai/search/cyber%20evolution) of its code and is based on 3 methods:
 
 - [self-reflection](https://cyb.ai/search/cyber%20self-reflection)
 - [investments](https://cyb.ai/search/cyber%20investments)
@@ -434,7 +434,7 @@ During [voting period](https://cyb.ai/network/bostrom/parameters/gov) proposal h
 
 ### Thoughts [~](QmWxDGihyZBUsZ97yToWeK35hftvKnxPzeaNqPwRCCecYH)
 
-Thoughts are completely autonomous programs. Program can schedule the execution of itself.
+Thoughts are entirely autonomous programs. The program can schedule the execution of itself.
 
 Please refer to [the code](https://github.com/cybercongress/go-cyber/blob/main/x/dmn/client/cli/query.go) to understand how this works.
 
@@ -442,7 +442,7 @@ Please refer to [the code](https://github.com/cybercongress/go-cyber/blob/main/x
 
 ### The Great Web [~](QmUamt7diQP54eRnmzqMZNEtXNTzbgkQvZuBsgM6qvbd57)
 
-The Great Web is a web that lasts. It is based on three simple ideas: access, immutability, universality.
+The Great Web is a web that lasts. It is based on three simple ideas: access, immutability, and universality.
 
 #### Access
 
@@ -450,7 +450,7 @@ Anyone who can store secret and compute digital signatures can use the Great Web
 
 #### Immutability
 
-Particles in the Great Web can survive through spacetime thanks to content addressing mechanism. So the Great Web can last indefinitely.
+Particles in the Great Web can survive through spacetime thanks to the content addressing mechanism. So the Great Web can last indefinitely.
 
 #### Universality
 
@@ -460,37 +460,37 @@ The Great Web is built by connecting particles through cyberlinks. The result is
 
 The content of text particles in Cyb.ai is rendered in Markdown. Cyb.ai uses [ReactMarkdown](https://www.npmjs.com/package/react-markdown), [remarkGfm](https://www.npmjs.com/package/remark-gfm) JS packages to render markdown.
 
-If you want your posts look beautiful, use [markdown syntax](https://www.markdownguide.org/basic-syntax/) and [test it here](https://markdown-it.github.io/) before posting.
+If you want your posts to look beautiful, use [markdown syntax](https://www.markdownguide.org/basic-syntax/) and [test it here](https://markdown-it.github.io/) before posting.
 
 ## Bostrom cybernomics [~]()
 
 ### cyberGift [~](Qmcgoy9bV6zsqnzoLB4YunEWXadavKMXKgvmUdToh2Nr3E)
 
-The purpose of this research is to inspire at least 100k power-users of web3 to join the force of learning Superintelligence. To achieve this, we are going to gift 70% of the Bostrom genesis tokens BOOT to agents of Ethereum and Cosmos who are capable of contributing their best to the quality of the knowledge graph. First, we start by highlighting key audiences for establishing network effects and tackling basic chicken and eggs situation. Next, we balance out the participation of key actors by splitting them into grades and adjusting allocations within the groups. Then we apply a filter in order to remove toxic fiat brains from the collective thought process. Finally, we add a crucial incentive to hurry up.
+The purpose of this research is to inspire at least 100k power-users of web3 to join the force of learning Superintelligence. To achieve this, we are going to gift 70% of the Bostrom genesis tokens BOOT to agents of Ethereum and Cosmos who are capable of contributing their best to the quality of the knowledge graph. First, we start by highlighting key audiences for establishing network effects and tackling the basic chicken and eggs situation. Next, we balance out the participation of key actors by splitting them into grades and adjusting allocations within the groups. Then we apply a filter in order to remove toxic fiat brains from the collective thought process. Finally, we add a crucial incentive to hurry up.
 
 The research results are represented by reproducible scripts that output addresses and balances which will be loaded to the claim CosmWasm contract after the launch of Bostrom.
 
-Data source is [BigQuery crypto-ethereum dataset](https://console.cloud.google.com/bigquery?d=crypto_ethereum&p=bigquery-public-data&page=dataset&project=cosmic-keep-223223) by [Blockchain ETL](https://github.com/blockchain-etl).
+The data source is [BigQuery crypto-ethereum dataset](https://console.cloud.google.com/bigquery?d=crypto_ethereum&p=bigquery-public-data&page=dataset&project=cosmic-keep-223223) by [Blockchain ETL](https://github.com/blockchain-etl).
 
 Research is done on the [proposal](https://cyber.page/governance/20) basis. We hope this research can help pioneer a new wave of thinking in decentralized marketing.
 
 #### Connecting the Dots
 
-The biggest problem in bootstrapping a blockchain ecosystem from scratch is that it is not enough to attract just users. Established network effects exist between four key groups: users, investors, validators, developers.
+The biggest problem in bootstrapping a blockchain ecosystem from scratch is that it is not enough to attract just users. Established network effects exist between four key groups: users, investors, validators, and developers.
 
 ![Network effects](https://ipfs.io/ipfs/Qmf2ARvyZ1gu5HJmsPjnWQdhyfmvaEVxnz9vvp5KUt3Lgo)
 
 Hence we have to understand how to attract all these guys simultaneously in order to target healthy organic growth.
 
-In our case that would not be enough. Firstly, Cyber is a content-oriented project. We need to understand how to add content creators to the soup. Secondly, information on the project has to be propagated somehow to all these guys, so key opinion leaders have to be incentivized. Thirdly, as the Cyber project heavily relies on the interchain idea we have to attract the community behind IBC technology. We also want to add some fun giving the power to the guys behind weird cyberpunk ideas. Finally, we want to check the credibility of the most trusted liquidity hubs.
+In our case that would not be enough. Firstly, Cyber is a content-oriented project. We need to understand how to add content creators to the soup. Secondly, information on the project has to be propagated somehow to all these guys, so key opinion leaders have to be incentivized. Thirdly, as the Cyber project heavily relies on the interchain idea we have to attract the community behind IBC technology. We also want to add some fun by giving the power to the guys behind weird cyberpunk ideas. Finally, we want to check the credibility of the most trusted liquidity hubs.
 
 #### Distribution between Grades
 
-An amount of distributed BOOT tokens should be equal for each grade within an audience. The amount of addresses should also be divided into grades for each audience as
+The amount of distributed BOOT tokens should be equal for each grade within an audience. The number of addresses should also be divided into grades for each audience as
 
 ![Distribution between grades](https://ipfs.io/ipfs/QmWcyKgUAqtbubrmXyrP8ufXLmLoWMksF32ZzdGRYvCa3b)
 
-Cyber ecosystem consists of a number of different audiences. They are divided depending on their backgrounds and roles played in the community. Main audiences and their short characteristics are listed below.
+The cyber ecosystem consists of a number of different audiences. They are divided depending on their backgrounds and roles played in the community. Main audiences and their short characteristics are listed below.
 
 #### Average Citizens
 
