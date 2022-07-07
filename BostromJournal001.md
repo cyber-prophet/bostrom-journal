@@ -1,6 +1,6 @@
 # Bostrom Journal
 
-Issue 1, 20220606
+Issue 1, 1656576418 or 2022-06-30
 
 ## Table of contents
 
@@ -25,20 +25,22 @@ Issue 1, 20220606
   - [VOLT token](#volt-token)
   - [AMPERE token](#ampere-token)
   - [TOCYB token ~](#tocyb-token-)
+- [Token's related infomation](#tokens-related-infomation)
   - [Investminting - definition and mechanics ~](#investminting---definition-and-mechanics-)
+  - [State machine ~](#state-machine-)
   - [The transaction cost in Bostrom ~](#the-transaction-cost-in-bostrom-)
   - [Staking mechanism - encouraging desired behavior in agents heroes and neurons ~](#staking-mechanism---encouraging-desired-behavior-in-agents-heroes-and-neurons-)
 - [Apps built on Bostrom, for Bostrom ~](#apps-built-on-bostrom-for-bostrom-)
   - [go-cyber ~](#go-cyber-)
-  - [Cyb.ai ~](#cybai-)
-  - [cyberindex [~]](#cyberindex-)
-  - [Cybernode](#cybernode)
+  - [cyb.ai ~](#cybai-)
+  - [cyberindex ~](#cyberindex-)
+  - [cybernode](#cybernode)
   - [Cybernode.ai ~](#cybernodeai-)
   - [Bostrom dashboard by Bro-n-Bro ~](#bostrom-dashboard-by-bro-n-bro-)
   - [cyberdbot ~](#cyberdbot-)
   - [cyber-js ~](#cyber-js-)
-  - [cyber CLI helper ~](#cyber-cli-helper-)
   - [Cyber arbitrage py ~](#cyber-arbitrage-py-)
+  - [cyber CLI helper ~](#cyber-cli-helper-)
 - [Cyb.ai functionality ~](#cybai-functionality-)
   - [Cyb.ai: intro, mechanics ~](#cybai-intro-mechanics-)
   - [My Robot ~](#my-robot-)
@@ -58,7 +60,7 @@ Issue 1, 20220606
 
 ## Preface [~]()
 
-In this issue we collected particles from the founding team and the first users of Bostrom regarding using Bostrom. Those particles could have been edited to correct typos and grammar mistakes, to delete repeated information already presented in other journal particles, and to make them more readable. Initial particle references are provided.
+In this issue we collected particles from the founding team, the first users of Bostrom and the journals chief editor regarding using Bostrom. Those particles could have been edited to correct typos and grammar mistakes, to delete repeated information already presented in other journal particles, and to make them more readable. Initial particle references are provided.
 
 ## Intro to Bostrom Blockchain [~]()
 
@@ -89,7 +91,7 @@ By definition, created cyberlinks cannot be deleted. This means, among other thi
 
 Site [cyb.ai](https://cyb.ai) is an application built using the Bostrom Blockchain.
 
-On [cyb.ai](https://cyb.ai) you can already create [cyberlinks](https://cyb.ai/search/cyberlink), search the [graph](https://cyb.ai/oracle), rank using the [Relevance machine](https://cyb.ai/search/rm), share and store information, [earn rewards](https://cyb.ai/halloffame), [investmint](https://cyb.ai/mint), and [tweet](https://cyb.ai/search/tweet). [Bostrom](https://cyb.ai/search/bostrom) is the [bootloader](https://cyb.ai/bootloader) for [Cyber](https://cyb.ai/search/cyber), with the same features.
+On [cyb.ai](https://cyb.ai) you can already create [cyberlinks](https://cyb.ai/search/cyberlink), search the [graph](https://cyb.ai/oracle), rank using the [Relevance machine](https://cyb.ai/search/rm), share and store information, [earn rewards](https://cyb.ai/halloffame), [investmint](https://cyb.ai/mint), and [tweet](https://cyb.ai/search/tweet).
 
 ### IPFS, Content-addressing mechanism [~](QmQSDwNXZuLVoX5i9eUMbS5f6EYvX3miX9DUy6BCSH2Jh1)
 
@@ -97,7 +99,7 @@ IPFS (interplanetary file system) is a distributed (decentralized) file system w
 
 Files are downloaded from network participants' nodes. Therefore, the more devices have the file, the higher chances it can be downloaded (and potentially faster).
 
-IPFS does not guarantee the safety or accessibility of the files.
+IPFS does not guarantee the safety or retrievability of the files.
 
 ### Bostrom is a full refactoring of the Euler network [~](QmYaf3J118vExRV6gFv2CjwYCyHmzV6Z9ACV7avWb652XZ)
 
@@ -105,13 +107,13 @@ Before Bostrom network (which itself had 5 testnets), there were 6 testnets with
 
 Bostrom is a full refactoring of the Euler network with a strong focus on Superintelligence. It includes a new distribution model, economics, improved ranking, and some superintelligent abilities.
 
-Founders perceive [Bostrom](https://cyb.ai/search/bostrom) as a canary network in the same way that Kusama relates to Polkadot. The Bostrom knowledge graph tends to be a bootstrap hub for domain-specific networks of Cyber. The network works as a testbed for Interplanetary Knowlege Protocol communications and different experiments. Consider Bostrom a network with high risks but of market value.
+Founders perceive [Bostrom](https://cyb.ai/search/bostrom) as a canary network in the same way that Kusama relates to Polkadot. The Bostrom knowledge graph tends to be a bootstrap hub for domain-specific networks of Cyber. The network works as a testbed for Interplanetary Knowlege Protocol communications and different experiments, including Moon development. Consider Bostrom a network with high risks but of market value.
 
 The key differences within the Cyber network are being discussed [here](https://cyb.ai/search/bostrom%20vs%20cyber). The launch of the Bostrom network is the inception of an ecosystem.
 
 ## Knowledge graph [~](QmYPEehJdgxfTK3x5KQt56HbFEk8RXUmceqaTaseoPMUR6)
 
-The knowledge graph of Bostrom blockchain consists of couples: source particle connected to destination particle via cyberlink. So it can be encoded in the form of `source_particle - destination_particle`, which reduces the complexity of entering data. But simple cyberlinks in combination with markdown files, where various conventions of connections between particles could be used, give the necessary flexibility to Bostrom's knowledge graph, adopting it to different use cases.
+The knowledge graph of Bostrom blockchain consists of couples: source particle connected to destination particle via cyberlink. So it can be encoded in the form of `source_particle - destination_particle`, which reduces the complexity of entering data (versus using triples, as it is common between modern knowledge graph applications). Cyberlinks in combination with use of text files with markdown markup, where various conventions of connections between particles could be used, give the necessary flexibility to Bostrom's knowledge graph, adopting it to a vast variety of use cases.
 
 ### Particles [~]()
 
@@ -125,13 +127,16 @@ To cyberlink - to create a cyberlink between two particles.
 
 ### Neurons [~](QmV1JLxPMeWuZFYWYx9GGRQLJTRMuBCxxU6s1jEuShsFn4)
 
-A neuron is a token holder who can provide valuable knowledge to the knowledge graph.
+A neuron can be
+
+- a private key holder who can provide valuable knowledge to the knowledge graph. 
+- a contract (autonomus program)
 
 ### Cyberrank [~]()
 
 Cyberrank is a default rank calculated on each particle. It's calculated as a weighted Pagerank, where every cyberlink has the weight of ampere-per-cyberlink. Ampere-per-cyberlink is calculated for each neuron by dividing his ampere balance by count of his cyberlinks.
 
-Cyberrank calculated using GPU of the node. Cyberrank is deterministic, so it is used in Bostrom's blockchain consensus.
+Cyberrank is calculated by using GPU of the node. Cyberrank is deterministic, so it is used in Bostrom's blockchain consensus.
 
 ## Bostrom tokens [~](QmbiZAm2QV5AXg6kW74hsavU4QtVc98AyPzu9VP7Fd6YQR)
 
@@ -145,7 +150,7 @@ With BOOT one can:
 
 - `hire a hero` (to stake or to delegate tokens to a validator), being paid rewards in return (risk fee);
   - for each staked BOOT a HYDROGEN is minted (with a 1 to 1 ratio)
-- transfer to somebody (if BOOT is in a liquid state);
+- *transfer or traded* to somebody (if BOOT is in a liquid state);
 - pay for network transactions (pay for gas). Though now, many validators accept transactions for free;
 - vote for protocol change and public goods.
 
@@ -169,19 +174,23 @@ If the network is underloaded, one can produce more cyberlinks (up to 4 cyberlin
 
 ### AMPERE token
 
-- is needed to create cyberlinks;
+- any amount is needed to create cyberlinks;
 - amount of Ampere tokens on a balance of the selected neuron characterizes the power of its impact on the cyberrank;
 - may be transferred in a liquid state
 
-The more Ampere tokens the neuron has, the higher his cyberlinks would be ranked. Cyberrank is recalculated for each `cycle` so that the changes in the amount of Amperes tokens on the neurons' balances that produced cyberlinks would influence the cyberrank of the whole graph. It's reasonable to think about  Ampere tokens as a measure that characterizes the impact of cyberlinks created from the account on the knowledge graph.
+The more Ampere tokens the neuron has, the higher his cyberlinks would be ranked. Cyberrank is recalculated for each `cycle` so that the changes in the amount of Amperes tokens on the neurons' balances that produced cyberlinks would influence the cyberrank of the whole graph. It's reasonable to think about Ampere tokens as a measure that characterizes the impact of cyberlinks created from the account on the knowledge graph.
 
 ### TOCYB token [~](QmfGPCSpPCRTsBw2g6wqrLkHaCwtFChXeHADju5RrYu9EB)
 
-TOCYB token is a token of a future [Cyber](https://cyb.ai/search/cyber) network. Everyone who has [TOCYB](https://cyb.ai/token/TOCYB) will be able to convert it into CYB tokens through the private exodus. The contract will be developed by [cyber~Congress](https://cyb.ai/search/cybercongress).
+TOCYB token is a token of a future [Cyber](https://cyb.ai/search/cyber) network. Everyone who has [TOCYB](https://cyb.ai/token/TOCYB) will be able to convert it 1to1 into CYB tokens through the private exodus. The contract will be developed by [cyber~Congress](https://cyb.ai/search/cybercongress).
+
+## Token's related infomation
 
 ### Investminting - definition and mechanics [~](Qmezuhrqm7P8u8PwHhoq5EjWmnk3VxGju9DVUT9pWmeNaV)
 
-In order to obtain resource tokens: A (AMPERES) and V (VOLTS) one should investmint H (HYDROGEN). The term `investminting` is composed of `minting` (producing new tokens) and `investing` (putting capital into something for a period of time to make a profit).
+In order to obtain resource tokens: A (AMPERES) and V (VOLTS) one should investmint H (HYDROGEN).
+
+The term `investminting` is composed of `minting` (producing new tokens) and `investing` (putting capital into something for a period of time to make a profit).
 
 After Hydrogen tokens are investminted, the neuron’s balance is immediately replenished by a number of temporary `frozen` for transferring but ready to use A and V tokens. Both tokens of the investminting pair (H and A or V) are `frozen` till the end of the investminting period. After the investminting period both tokens become liquid.
 
@@ -200,11 +209,21 @@ Amperes and Volts are finite due to fundamental constraints in computing resourc
 
 Halving occurs every 567 days, which means half as many tokens can be minted per time unit compared to the before halving amount.
 
+### State machine [~]()
+
+At its core, a blockchain is a replicated deterministic state machine.
+
+A state machine is a computer science concept whereby a machine can have multiple states, but only one at any given time. There is a state, which describes the current state of the system, and transactions, that trigger state transitions.
+
+Given a state S and a transaction T, the state machine will return a new state S'.
+
+In a blockchain context, the state machine is deterministic. This means that if a node is started at a given state and replays the same sequence of transactions, it will always end up with the same final state.
+
 ### The transaction cost in Bostrom [~](QmYYB4EEb9KUagqotDWFYtCUsmsFqhNtneqALdTTrKut1t)
 
-Any action changing the state in a blockchain is a transaction. Each transaction has a cost. That cost is covered by an agent conducting the transaction.
+Any action changing the state in a blockchain is a transaction.
 
-Examples of actions in Bostrom:
+Examples of actions changing state in Bostrom:
 
 - adding knowledge to the knowledge graph by creating cyberlinks
   - setting neuron's avatar on cyb.ai
@@ -214,10 +233,21 @@ Examples of actions in Bostrom:
 - delegating BOOT to a hero
 - claiming delegation rewards
 - hydrogen investminting
+- call contracts
 - exchanging tokens using pools
 - etc
 
-When signing a transaction, the neuron should set an amount of gas for executing the transaction and the cost of the gas in BOOT. In case of a large number of transactions (high network load), heroes may set their servers to accept those transactions of higher fee with higher priority. As for now (the network is still underloaded), many heroes accept transactions at a zero-cost gas.
+When signing a transaction, the neuron should set an amount of `gas` for executing the transaction and the 'gasPrice' cost of the gas in BOOT.
+
+Gas is the smallest unit or pricing value required to perform a transaction. Different transactions require different amounts of gas. The gas amount for a transaction is calculated as it is being processed.
+
+Each hero sets a `min-gas-price` value, and will only include transactions that have a gasPrice greater than their `min-gas-price`.
+
+The transaction fees are the product of gas and gasPrice. The higher the gasPrice/fees, the higher the chance that a transaction will get included in a block.
+
+As for now (the network is still underloaded), many heroes accept transactions at a zero-cost gas.
+
+Bostrom programmed the way that transactions consist of cyberlinks, a fee check will not apply. But `gas` amount still needs be provided. This means that the creating cyberlinks is regulated only by VOLT tokens balance, and doesn't require of spending any BOOT tokens.
 
 ### Staking mechanism - encouraging desired behavior in agents (heroes and neurons) [~](Qma2tQuYBhM5vGFq1cpUhyXPU57UVcvLiUNuw9hH63m9Cb)
 
@@ -361,7 +391,7 @@ To contribute - request write rights.
 
 ### Cyb.ai: intro, mechanics [~](QmWysZirB2fbKeaNPZxfjY9M381WjyzbdG5FhcxysYhJ7m)
 
-[Cyb.ai](https://cyb.ai) - is a WEB interface to the Bostrom blockchain developed by the Bostrom team. Among Cyb.ai's many functions are:
+[Cyb.ai](https://cyb.ai) - is a WEB interface to the Bostrom blockchain developed by the cyberCongress team. Among Cyb.ai's many functions are:
 
 - receiving data on cyberlinks recorded by Bostrom blockchain from the node;
 - creating cyberlinks;
@@ -432,6 +462,12 @@ A proposal can become active if [minimum deposit](https://cyb.ai/network/bostrom
 
 During [voting period](https://cyb.ai/network/bostrom/parameters/gov) proposal have to reach [quorum](https://cyb.ai/network/bostrom/parameters/gov). The threshold is defined as the minimum proportion of Yes votes excluding Abstain votes for the proposal to be accepted. More details in [cosmos-sdk docs](https://docs.cosmos.network/master/modules/gov/).
 
+### Vision
+
+- whitepaper
+- story
+- roadmap
+
 ### Thoughts [~](QmWxDGihyZBUsZ97yToWeK35hftvKnxPzeaNqPwRCCecYH)
 
 Thoughts are entirely autonomous programs. The program can schedule the execution of itself.
@@ -463,6 +499,11 @@ The content of text particles in Cyb.ai is rendered in Markdown. Cyb.ai uses [Re
 If you want your posts to look beautiful, use [markdown syntax](https://www.markdownguide.org/basic-syntax/) and [test it here](https://markdown-it.github.io/) before posting.
 
 ## Bostrom cybernomics [~]()
+
+### Initial BOOT distribution
+
+- 70% cyberGift
+- 
 
 ### cyberGift [~](Qmcgoy9bV6zsqnzoLB4YunEWXadavKMXKgvmUdToh2Nr3E)
 
