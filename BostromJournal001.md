@@ -103,7 +103,7 @@ IPFS does not guarantee the safety or retrievability of the files.
 
 ### Bostrom is a full refactoring of the Euler network [~](QmYaf3J118vExRV6gFv2CjwYCyHmzV6Z9ACV7avWb652XZ)
 
-Before Bostrom network (which itself had 5 testnets), there were 6 {~~testnets with the name of Euler.~>Euler testnets OR there were 6 testnets known as Euler network~~}
+Before Bostrom network (which itself had 5 testnets), there were 6 testnets known as Euler network.
 
 Bostrom is a full refactoring of the Euler network with a strong focus on Superintelligence. It includes a new distribution model, economics, improved ranking, and some superintelligent abilities.
 
@@ -113,15 +113,15 @@ The key differences within the Cyber network are being discussed [here](https://
 
 ## Knowledge graph [~](QmYPEehJdgxfTK3x5KQt56HbFEk8RXUmceqaTaseoPMUR6)
 
-The knowledge graph of Bostrom blockchain consists of {~~couples~>pairs~~}: {++each ++}source particle {++is ++}connected to {++a ++}destination particle via cyberlink. So it can be encoded {~~in the form of~>as~~} `source_particle - destination_particle`, which reduces the complexity of entering data ({~~versus~>compared to~~} {--using--} triples,{~~ as it is common between~>commonly used in~~} modern knowledge graph applications). {~~Cyberlinks in combination with use of text files with markdown markup~>Cyberlinks combined with markdown marked up text files~~}, where various conventions {~~of~>on~~} connections between particles could be used, {~~give~>provide~~} the necessary flexibility to Bostrom's knowledge graph, {~~adopting~>adapting~~} it to a vast variety of {~~use cases~>possible usages~~}.
+The knowledge graph of Bostrom blockchain consists of pairs: each source particle is connected to a destination particle via cyberlink. So it can be encoded as `source_particle - destination_particle`, which reduces the complexity of entering data (compared to triples, commonly used in modern knowledge graph applications). Cyberlinks combined with markdown marked up text files, where various conventions on connections between particles could be used, provide the necessary flexibility to Bostrom's knowledge graph, adapting it to a vast variety of possible usages.
 
 ### Particles [~]()
 
-A particle is a hash of the file in IPFS network. {--Having its hash--} {~~the~>A~~} file can be retrieved from IPFS network{++ using its hash++}. Particles are written into Bostrom blockchain. But, cyb.ai application is built to render the content of cyberlinked files.
+A particle is a hash of the file in IPFS network. A file can be retrieved from IPFS network using its hash. Particles are written into Bostrom blockchain. But, cyb.ai application is built to render the content of cyberlinked files.
 
 ### Cyberlinks [~](QmewU6pKFtGc3Fm8XsMxS3bA2xf3swQwuPuepxebp2WNMH)
 
-A cyberlink is {~~the~>a~~} link between two particles registered in Bostrom blockchain by a particular neuron.
+A cyberlink is a link between two particles registered in Bostrom blockchain by a particular neuron.
 
 To cyberlink - to create a cyberlink between two particles.
 
@@ -134,7 +134,7 @@ A neuron can be:
 
 ### Cyberrank [~]()
 
-Cyberrank is a default rank calculated on each particle. It's calculated as a weighted Pagerank, where every cyberlink has the weight of ampere-per-cyberlink. Ampere-per-cyberlink is calculated for each neuron by dividing his ampere balance by {~~count~>number~~} of his cyberlinks.
+Cyberrank is a default rank calculated on each particle. It's calculated as a weighted Pagerank, where every cyberlink has the weight of ampere-per-cyberlink. Ampere-per-cyberlink is calculated for each neuron by dividing his ampere balance by number of his cyberlinks.
 
 Cyberrank is calculated by using GPU of the node. Cyberrank is deterministic, so it is used in Bostrom's blockchain consensus.
 
@@ -182,9 +182,9 @@ The more Ampere tokens the neuron has, the higher his cyberlinks would be ranked
 
 ### TOCYB token [~](QmfGPCSpPCRTsBw2g6wqrLkHaCwtFChXeHADju5RrYu9EB)
 
-TOCYB token is a token of a future [Cyber](https://cyb.ai/search/cyber) network. Everyone who has [TOCYB](https://cyb.ai/token/TOCYB) will be able to convert it {--1to1--} into CYB tokens through the private exodus. The contract will be developed by [cyber~Congress](https://cyb.ai/search/cybercongress).
+TOCYB token is a token of a future [Cyber](https://cyb.ai/search/cyber) network. Everyone who has [TOCYB](https://cyb.ai/token/TOCYB) will be able to convert it 1 to1 into CYB tokens through the private exodus. The contract will be developed by [cyber~Congress](https://cyb.ai/search/cybercongress).
 
-## Token{--'s--} related infomation
+## Token related infomation
 
 ### Investminting - definition and mechanics [~](Qmezuhrqm7P8u8PwHhoq5EjWmnk3VxGju9DVUT9pWmeNaV)
 
@@ -196,11 +196,11 @@ After Hydrogen tokens are investminted, the neuron’s balance is immediately re
 
 #### Investminting features
 
-Investminting has the {~~next~>following~~} features:
+Investminting has the following features:
 
 1. The period chosen for investminting Hydrogen tokens has a proportionate effect on the amount of Ampere and Volt tokens received.
 2. The amount of Hydrogen tokens investminted has a proportionate effect on the amount of Ampere and Volt tokens received.
-3. {~~H~>Hydrogen~~}, Ampere, and Volt tokens become liquid after the investminting period has ended.
+3. Hydrogen, Ampere, and Volt tokens become liquid after the investminting period has ended.
 4. Before the tokens become liquid, they perform their resource functions for the account - Amperes increase links' rank (their place in the search result), Volts may be used for producing cyberlinks.
 5. Maximum investminting period (`investmint_max_period`) is limited. However, it increases every 547 days (`horizon_period_init`).
 6. The amount of Amperes and Volts available for investminting per time unit is determined by the following parameters `ampere_mint_rate` and `volt_mint_rate`. These parameters' values are halved every 18 months to align with Moors law(~547 days). (`ampere_base_halving_period`, `volt_base_halving_period`). At the beginning of the network's lifecycle, one can investmint more Amperes and Volts than later.
@@ -221,9 +221,9 @@ In a blockchain context, the state machine is deterministic. This means that if 
 
 ### The transaction cost in Bostrom [~](QmYYB4EEb9KUagqotDWFYtCUsmsFqhNtneqALdTTrKut1t)
 
-Any action changing the state {~~in a~>of~~} blockchain is a transaction.
+Any action changing the state of blockchain is a transaction.
 
-Examples of actions changing state {~~in~>of~~} Bostrom:
+Examples of actions changing state of Bostrom:
 
 - adding knowledge to the knowledge graph by creating cyberlinks
   - setting neuron's avatar on cyb.ai
@@ -241,7 +241,7 @@ When signing a transaction, the neuron should set an amount of `gas` for executi
 
 Gas is the smallest unit or pricing value required to perform a transaction. Different transactions require different amounts of gas. The gas amount for a transaction is calculated as it is being processed.
 
-Each hero sets a `min-gas-price` value, and will only {~~include~>process~~} transactions that have a gasPrice greater than their `min-gas-price`.
+Each hero sets a `min-gas-price` value, and will only process transactions that have a gasPrice greater than their `min-gas-price`.
 
 The transaction fees are the product of gas and gasPrice. The higher the gasPrice/fees, the higher the chances that a transaction will get included in a block.
 
@@ -251,9 +251,9 @@ Bostrom programmed the way that transactions consist of cyberlinks, a fee check 
 
 ### Staking mechanism - encouraging desired behavior in agents (heroes and neurons) [~](Qma2tQuYBhM5vGFq1cpUhyXPU57UVcvLiUNuw9hH63m9Cb)
 
-Bostrom is a proof-of-stake blockchain. Validators ensure {~~proof-of-stake blockchain~>its~~} functioning. A validator (the hero in Bostrom terminology) is a server with installed blockchain software (node).
+Bostrom is a proof-of-stake blockchain. Validators ensure its functioning. A validator (the hero in Bostrom terminology) is a server with installed blockchain software (node).
 
-Each node contains a blockchain replica (transaction log) that allows computing the system’s current state {~~in~>for~~} each block. Nodes agree among themselves on a common state of affairs according to the Tendermint consensus protocol as a guideline.
+Each node contains a blockchain replica (transaction log) that allows computing the system’s current state for each block. Nodes agree among themselves on a common state of affairs according to the Tendermint consensus protocol as a guideline.
 
 Bostrom is designed to economically encourage (incentivize) heroes and neurons to perform useful functions for the system.
 
@@ -300,7 +300,7 @@ All the violations and the penalties are noted in the blockchain settings and ar
 
 As of now (2022-01-14), there are no publicly available services monitoring heroes' violation statistics. Therefore neurons have to make decisions based only on their own statistics. In order to make it easier to track heroes’ performance, one can use a hack: if only multiples of 10 are deligated to heroes' balances, `slashing` is easily tracked in case it did occur.
 
-For example, we can delegate `153 298 189` BOOTs to a hero. In this case we'll have to remember the exact amount deligated and constantly recheck for potential changes. It can become problematic as one bonds to more heroes. {~~On the other hand,~>Or~~} we can delegate `153 000 000` making the violation easily traceable. Simply browse through your stakes and any non-zero digit at the end will give away the violating hero.
+For example, we can delegate `153 298 189` BOOTs to a hero. In this case we'll have to remember the exact amount deligated and constantly recheck for potential changes. It can become problematic as one bonds to more heroes. Or we can delegate `153 000 000` making the violation easily traceable. Simply browse through your stakes and any non-zero digit at the end will give away the violating hero.
 
 In order to hedge `slashing` risks one may distribute `stakes` between several heroes.
 
@@ -397,7 +397,7 @@ To contribute - request write rights.
 - creating cyberlinks;
 - receiving and sharing objects in the IPFS network using library [ipfs-js](https://github.com/ipfs/js-ipfs).
 
-There is a search bar in cyb.ai. When a user enters a query in the search bar cyb.ai computes the {~~ipfs~>IPFS~~} hash of a text file with the search query contents. After that, cyb.ai requests the node with go-cyber installed. If there are cyberlinks originating from the search query's IPFS hash, then the node returns particles sorted by cyberrank, cyb.ai using IPFS-JS node retrieves files from IPFS and presents these results.
+There is a search bar in cyb.ai. When a user enters a query in the search bar cyb.ai computes the IPFS hash of a text file with the search query contents. After that, cyb.ai requests the node with go-cyber installed. If there are cyberlinks originating from the search query's IPFS hash, then the node returns particles sorted by cyberrank, cyb.ai using IPFS-JS node retrieves files from IPFS and presents these results.
 
 Thus, the search results in cyb.ai are the files stored in IPFS (received by the browser and rendered on the page) with the IPFS hashes that were cyberlinked to the IPFS hash of the text entered into the search bar.
 
@@ -435,7 +435,7 @@ You can get Hydrogen by delegating BOOTs to Heroes in the [Dyson Sphere](https:/
 
 - Use the HFR menu to adjust freezing parameters and [investmint](https://cyb.ai/mint)
 
-### {~~Grid (My Energy)~>My Energy (Grid)~~} [~](Qmdfb54D92tzTMLKNqVZuo74aN5yUHnk6kwcVK9Js6PTqn)
+### My Energy [~](Qmdfb54D92tzTMLKNqVZuo74aN5yUHnk6kwcVK9Js6PTqn)
 
 Here you can check your energy, route Amperes and Volts to your friends:
 
