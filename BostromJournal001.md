@@ -58,7 +58,7 @@ The latest version of Bostrom Journal can be found on [github](https://github.co
   - [The Great Web ~](#the-great-web-)
   - [Markdown ~](#markdown-)
 - [Bostrom cybernomics ~](#bostrom-cybernomics-)
-  - [Initial BOOT distribution](#initial-boot-distribution)
+  - [BOOT and TOCYB genesis allocation ~](#boot-and-tocyb-genesis-allocation-)
   - [cyberGift ~](#cybergift-)
 
 <!-- /TOC -->
@@ -524,123 +524,396 @@ You can check how your post will look like on cyb.ai before posting [here](https
 
 ## Bostrom cybernomics [~]()
 
-### Initial BOOT distribution [~]()
+### BOOT and TOCYB genesis allocation [~]()
 
-### cyberGift [~](Qmcgoy9bV6zsqnzoLB4YunEWXadavKMXKgvmUdToh2Nr3E)
+The following information is a concise rundown explaining
+how genesis BOOT and TOCYB have been allocated.
 
-The purpose of this research is to inspire at least 100k power-users of web3 to join the force of learning Superintelligence. To achieve this, we are going to gift 70% of the Bostrom genesis tokens BOOT to agents of Ethereum and Cosmos who are capable of contributing their best to the quality of the knowledge graph. First, we start by highlighting key audiences for establishing network effects and tackling the basic chicken and eggs situation. Next, we balance out the participation of key actors by splitting them into grades and adjusting allocations within the groups. Then we apply a filter in order to remove toxic fiat brains from the collective thought process. Finally, we add a crucial incentive to hurry up.
+![genesis-by-audience](https://ipfs.io/ipfs/QmcVU9ifetBuaZ6dfwAbEqSBeyNxCvAs4tfAXfehcpasK2)
 
-The research results are represented by reproducible scripts that output addresses and balances which will be loaded to the claim CosmWasm contract after the launch of Bostrom.
+#### Details
 
-The data source is [BigQuery crypto-ethereum dataset](https://console.cloud.google.com/bigquery?d=crypto_ethereum&p=bigquery-public-data&page=dataset&project=cosmic-keep-223223) by [Blockchain ETL](https://github.com/blockchain-etl).
+![genesis-details](https://ipfs.io/ipfs/QmbfnQpkSH3AJoG8mVtGMVxPNspvxSkzFu5zcpRKusjS8P)
 
-Research is done on the [proposal](https://cyber.page/governance/20) basis. We hope this research can help pioneer a new wave of thinking in decentralized marketing.
+#### Gift
 
-#### Connecting the Dots
+70% of supply is allocated to the [Gift](https://cyb.ai/network/bostrom/contract/bostrom1qs9w7ry45axfxjgxa4jmuhjthzfvj78sxh5p6e). It is claimable in the [portal](https://cyb.ai/portal).
 
-The biggest problem in bootstrapping a blockchain ecosystem from scratch is that it is not enough to attract just users. Established network effects exist between four key groups: users, investors, validators, and developers.
+- [presentation](https://cyb.ai/ipfs/QmQd2migYNL1Mb7CHhPEdz99we2a5SeRf3kUuV1Lx1muVE)
+- [research](https://github.com/cybercongress/cybergift)
+- [implementation](https://github.com/cybercongress/cw-cybergift)
 
-![Network effects](https://ipfs.io/ipfs/Qmf2ARvyZ1gu5HJmsPjnWQdhyfmvaEVxnz9vvp5KUt3Lgo)
+#### cyberCongress
 
-Hence we have to understand how to attract all these guys simultaneously in order to target healthy organic growth.
+cyberCongress is supranational community. 11.6% is owned by cyberCongress.
 
-In our case that would not be enough. Firstly, Cyber is a content-oriented project. We need to understand how to add content creators to the soup. Secondly, information on the project has to be propagated somehow to all these guys, so key opinion leaders have to be incentivized. Thirdly, as the Cyber project heavily relies on the interchain idea we have to attract the community behind IBC technology. We also want to add some fun by giving the power to the guys behind weird cyberpunk ideas. Finally, we want to check the credibility of the most trusted liquidity hubs.
+cyberCongress operations are public:
 
-#### Distribution between Grades
+- [multisig in Bostrom](https://cyb.ai/network/bostrom/contract/bostrom1xszmhkfjs3s00z2nvtn7evqxw3dtus6yr8e4pw)
+- [Aragon in Ethereum](https://client.aragon.org/#/cybercongress/0xa0a55e68dc52b47f8a9d5d05329fab5bdabffb14/)
 
-The amount of distributed BOOT tokens should be equal for each grade within an audience. The number of addresses should also be divided into grades for each audience as
+cyberCongress as a community led launch of Bostrom. A detailed strategy of cyberCongress fund management will be published soon.
 
-![Distribution between grades](https://ipfs.io/ipfs/QmWcyKgUAqtbubrmXyrP8ufXLmLoWMksF32ZzdGRYvCa3b)
+#### Investors
 
-The cyber ecosystem consists of a number of different audiences. They are divided depending on their backgrounds and roles played in the community. Main audiences and their short characteristics are listed below.
+5 public rounds attracted 91 individuals. Thanks to them the project was able to flourish during the 5 years prior to launch. More than ~5000 ETH has been spent on the project.
 
-#### Average Citizens
+#### Senate
 
-- ETH owners and senders of outgoing transactions
-
-#### Masters of the Great Web
-
-- ERC721 owners and creators of contracts using factories
-
-#### Astronauts
-
-- ATOM owners
-- OSMO owners and liquidity providers
-- LUNA owners
-
-#### Extraordinary Hackers
-
-- contract creators
-
-#### Heroes of the Great Web
-
-- participants of Genesis and ETH 2.0 stackers
-
-#### Passionate Investors
-
-- owners of the selected ERC20 tokens
-
-#### Key Opinion Leaders
-
-- TOP holders by the selected ERC20 tokens
+5.1% lives in the common goods pool of the [Senate](https://cyb.ai/senate). Every BOOT holder decides where these funds could be allocated.
 
 #### Cyberpunks
 
-- owners of the cyberpunk tokens
+During Game of Links the [Euler foundation](https://client.aragon.org/#/eulerfoundation/0x34291feae53ad4e155a20de02585eb115ef5d373/) was created. Those who created it got [GOL tokens](https://etherscan.io/address/0xF4ecdBa8ba4144Ff3a2d8792Cad9051431Aa4F64).
 
-#### Leeches
+The Euler foundation will transform into the Great Web Foundation. 5% of BOOT and TOCYB genesis stake is under management of GOL token holders. Currently cyberCongress is a [key holder](https://cyb.ai/network/bostrom/contract/bostrom1ha4pw9w2qgc2ce9jwfrwrmaft5fneus58nqwev), but only GOL holders can decide on the future of these funds.
 
-- manual assigned addresses of top CEXes
+Those who create The Great Web foundation are true cyberpunks.
 
-These audiences were highlighted because their participation is necessary to form a full-fledged ecosystem of the project.
+#### Inventors
+
+The project exists thanks to the passions of [@mastercyb](https://cyb.ai/network/bostrom/contract/bostrom1gxhs5wzam5rlgf6cs0lkme400ut64d4ncpfs2h) and [@cyberhead](bostrom16230lc9r27vrxlzd4wlvcz2l66quzj84vlkxc5). They got 1% each.
+
+#### Heroes
+
+Before Genesis, a group of heroes helped to run and test 6 euler and 6 bostrom tesnets. Overall 142 individuals got 0.6% from genesis for their work.
+
+#### Hackers
+
+9 individuals earned different grants and bounties for outside code colaboration.
+
+#### Masters
+
+During Game of Links 332 individuals helped to test key mechanics of superintelligence. Thanks to their work cyberCongress was able to identify a lot of design problems.
+
+### cyberGift [~](Qmcgoy9bV6zsqnzoLB4YunEWXadavKMXKgvmUdToh2Nr3E)
+
+The purpose of this research is to inspire at least 100k power-users of web3 to join the force of learning
+Superintelligence. To achieve this, we are going to gift 70% of the Bostrom genesis tokens BOOT to agents of Ethereum
+and Cosmos who are capable of contributing their best to the quality of the knowledge graph. First, we started
+by highlighting key audiences for establishing network effects and tackling basic chicken and eggs. Next, we balanced
+out the participation of key actors by splitting them into levels and adjusting allocations within the groups.
+Then we applied a filter in order to remove toxic fiat brains from the collective thought process. Finally, we added
+a crucial incentive to act quickly.
+
+The research results are represented by reproducible scripts which output addresses and balances which will be loaded
+to the claim CosmWasm contract after the launch of Bostrom.
+
+Data source is [BigQuery crypto-ethereum dataset](https://console.cloud.google.com/bigquery?d=crypto_ethereum&p=bigquery-public-data&page=dataset&project=cosmic-keep-223223)
+by [Blockchain ETL](https://github.com/blockchain-etl).
+
+Research is done on the proposal basis. We hope this research can help pioneer
+a new wave of thinking in decentralized marketing.
+
+#### Connecting the Dots
+
+The biggest problem in bootstrapping a blockchain ecosystem from scratch is that it is not enough to attract just users.
+Established network effects exist between four key groups:
+
+<img src="img/network_effects.png" width="50%" height="50%" alt="Network Effects">
+
+Hence we have to understand how to attract all these citizens simultaneously in order to target healthy organic growth.
+
+In our case that would not be enough. First, Cyber is a content-oriented project. We need to understand how
+to add content creators to the soup. Second, information on the project has to be propagated somehow to all these guys,
+so key opinion leaders have to be incentivized. Third, as the Cyber project heavily relies on the interchain idea we
+have to attract the community behind IBC technology. We also want to add some fun by giving the power to the guys behind
+weird cyberpunk ideas. Finally, we want to check the credibility of the most trusted liquidity hubs.
 
 #### Audience Rules
 
-The initial conditions for the allocation of classes were selected based on the analysis of web3 user activity and the need to cover the most web3 power-users. All distribution rules between grades are calculated in the respective jupyter notebooks.
+The initial conditions for the allocation of classes were selected based on the analysis of web3 user activity and the need to cover the most web3 power-users.  
+All distribution rules between levels are calculated in the respective jupyter notebooks.
 
-#### Distribution between Audiences
+These audiences were highlighted because their participation is necessary to form a full-fledged ecosystem of the project.
+
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <td colspan=5 style="text-align: left"> Final Distribution </td>
+            <td style="text-align: center"> <a href="final_distribution.ipynb">Final Distribution</a></td>
+        </tr>
+    </tbody>
+</table>
 
 Based on counting the number of addresses and determining the fair reward of the participants of each audience, the following balanced distribution between them is proposed:
 
-![Distribution between Audiences](https://ipfs.io/ipfs/QmS5z9wW53Rj7sUxb8mJsnp5JqFrUzHRhhwBvJ6YZjc2Yk)
+<img src="img/audiences_distribution.png" width="75%" height="75%" alt="Distribution between Audiences">
 
 When an address hits multiple audiences, its reward is cumulative.
 
+An amount of distributed BOOT tokens should be equal for each level within an audience.  
+The amount of addresses should also be divided into levels for each audience as
+
+<img src="img/levels_distribution.png" width="50%" height="50%" alt="Distribution between Levels">
+
+#### Getting the Crowd
+
+The most crowded audience is ETH holders and users. We identified 2 audiences: those who hold, and those who hold and transact. Following the Pareto Principle, our target was to exclude the majority of the most either inactive addresses or addresses with insignificant holdings:
+
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <th rowspan=2>Audience</th>
+            <th rowspan=2>Rule</th>
+            <th colspan=3>Level</th>
+            <th rowspan=2>Calculations</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2 style="text-align: left"> Average Citizens </td>
+            <td style="text-align: left"> ETH balance > 0.12 ETH and Amount of outgoing tx</td>
+            <td style="text-align: center"> > 4 tx </td>
+            <td style="text-align: center"> > 125 tx </td>
+            <td style="text-align: center"> > 1,531 tx </td>
+            <td rowspan=2 style="text-align: center"> <a href="eth_and_tx__citizens.ipynb">ETH Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> ETH balance</td>
+            <td style="text-align: center"> > 1 ETH</td>
+            <td style="text-align: center"> > 29 ETH</td>
+            <td style="text-align: center"> > 485 ETH</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Hunting for Content Creators
+
+The key assumption is that NFT related actions will increase the chance of using cyberlinks because picture owners would love to make them searchable. We decided that all NFT owners deserve attention becasue they are on the edge of web3 technology.
+
+Another important sub-audience is ENS and decentraLAND holders. This group is special because they value ENS and LAND. The only utility of ENS and LAND is to bind content hash. Hence they are the most desired as they prove the intention to create non trivial content.
+
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <td rowspan=3 style="text-align: left"> Masters of the Great Web </td>
+            <td style="text-align: left"> Amount of ERC721 tokens </td>
+            <td style="text-align: center"> > 0 NFT </td>
+            <td style="text-align: center"> > 12 NFT </td>
+            <td style="text-align: center"> > 160 NFT </td>
+            <td rowspan=2 style="text-align: center"> <a href="erc721__masters_and_cyberpunks.ipynb">ERC721 Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Owners of the Selected ERC721 tokens </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> ENS </td>
+            <td style="text-align: center" style="text-align: center"> Gitcoin Kudos or LAND </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Fee spending to contracts<sup>4</sup>, by contract creators, ETH </td>
+            <td style="text-align: center"> > 0 ETH </td>
+            <td style="text-align: center"> > 0.004 ETH </td>
+            <td style="text-align: center"> > 0.477 ETH </td>
+            <td style="text-align: center"> <a href="gas__hackers_and_masters.ipynb">Gas Analysis</a>       </td>
+        </tr>
+  </tbody>
+</table>
+<i>
+<sup>4</sup> including contracts created by factories only<br>
+</i>
+
+#### Attracting Astronauts
+
+Bostrom is built using Cosmos-sdk, so attracting Cosmonauts is essential for the project health and interchain expansion. The most crowded and useful chains are Cosmos Hub, Osmosis and Terra. We followed the same Pareto Principle while filtering agents with insignificant holdings.
+
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <td rowspan=3 style="text-align: left"> Astronauts </td>
+            <td style="text-align: left"> ATOM Balance </td>
+            <td style="text-align: center"> > 1 ATOM </td>
+            <td style="text-align: center"> > 180 ATOM </td>
+            <td style="text-align: center"> > 4,352 ATOM </td>
+            <td rowspan=3 style="text-align: center"> <a href="atom_osmo_luna__astronauts.ipynb">ATOM, OSMO and LUNA Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> OSMO Balance </td>
+            <td style="text-align: center"> > 1 OSMO </td>
+            <td style="text-align: center"> > 752 OSMO </td>
+            <td style="text-align: center"> > 24,352 OSMO </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> LUNA Balance </td>
+            <td style="text-align: center"> > 1 LUNA </td>
+            <td style="text-align: center"> > 568 LUNA </td>
+            <td style="text-align: center"> > 12,364 LUNA </td>
+        </tr>
+    </tbody>
+</table>
+
+#### Praying for Hackers
+
+Developers, developers, developers... Success of any protocol is defined by it's ability to attract developers. Luckily Ethereum laid an amazing foundation for the identification of succesfull developers. The gas fee drop method is an unambiguous and provable way to give tokens to the mighty hands.
+
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <td rowspan=2 style="text-align: left"> Extraordinary Hackers </td>
+            <td> Fee spending to created contracts<sup>1</sup> by contract creators<sup>2</sup> </td>
+            <td style="text-align: center"> > 0 ETH </td>
+            <td style="text-align: center"> > 4 ETH </td>
+            <td style="text-align: center"> > 254 ETH </td>
+            <td rowspan=2 style="text-align: center"> <a href="gas__hackers_and_masters.ipynb">Gas Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Fee spending to created contracts<sup>1</sup> by factory creators<sup>3</sup> </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> > 0 ETH </td>
+            <td style="text-align: center"> > 10 ETH </td>
+        </tr>
+    </tbody>
+</table>
+<i>
+<sup>1</sup>  excluding fee from a contract creator address<br>
+<sup>2</sup>  excluding contracts created by factories<br>
+<sup>3</sup>  excluding factories that only created contracts when called from the creator of that factory<br>
+
+</i>
+
+#### Formation of Heroes Corpus
+
+Any PoS network is run by validators. We need to attract the best validators to become heroes for us. We decided to focus on two groups. The first group is genesis Ethereum investors as they were practically successful in building the biggest GPU mining infrustructure on the planet. The second group is Eth2 stakers as they exactly match the profile we need: patience, technical skills and risk appetite.
+
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <td rowspan=2 style="text-align: left"> Heroes of the Great Web </td>
+            <td style="text-align: left"> Genesis </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> only here </td>
+            <td rowspan=2 style="text-align: center"> <a href="genesis_and_eth2__heroes.ipynb">Genesis and ETH2 Stakers</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> ETH 2.0 Stakers </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> only here </td>
+        </tr>
+    </tbody>
+</table>
+
+#### Focusing Investors
+
+We need to bring capital to the table. We decided to narrow the scope to those who invested in at least 2 meaningful ERC-20 tokens we are aware of. Surprisingly there are not so many folks out there with this trait. We assume that this is a profile of the investors we need for success.
+
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <td style="text-align: left"> Passionate Investors </td>
+            <td style="text-align: left"> Number of selected ERC20 tokens >= 2 and balance of it </td>
+            <td style="text-align: center"> > 0.01 ETH </td>
+            <td style="text-align: center"> > 3 ETH </td>
+            <td style="text-align: center"> > 55 ETH </td>
+            <td style="text-align: center"> <a href="erc20__investors_and_cyberpunks.ipynb">ERC20 Analysis</a> </td>
+        </tr>
+    </tbody>
+</table>
+
+#### Inspiring Key Opinion Leaders
+
+Key figures who connect Ethereum to different audiences are projects that are building on top of Ethereum. Hence giving tokens to those who are able to lead these groups is likely a good idea. So we included into the scope top token holders of selected projects. To our surprise, we found that there is very little overlap between these people, which adds to our hypothesis.
+
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <td style="text-align: left"> Key Opinion Leaders </td>
+            <td style="text-align: left"> Top 100 Holders by selected ERC20 Tokens </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> only here </td>
+            <td style="text-align: center"> <a href="erc20__leaders.ipynb">Top ERC20 Holders</a> </td>
+        </tr>
+    </tbody>
+</table>
+
+#### Cyberpunks
+
+There are groups that create a revolution without regard to trends. These groups include Urbit, Foam and Dragonereum. Another interesting group is Donors of Ethereum foundation. We decided to reward them for fun.
+
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <td rowspan=3 style="text-align: left"> Cyberpunks </td>
+            <td style="text-align: left"> Owners of the Selected ERC20 tokens </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> FOAM or GOLD </td>
+            <td style="text-align: center"> <a href="erc20__investors_and_cyberpunks.ipynb">ERC20 Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Owners of the Selected ERC721 tokens </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> Unicorns, DRAGON or Cryptopunks </td>
+            <td style="text-align: center"> <a href="erc721__masters_and_cyberpunks.ipynb">ERC721 Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Urbit Owners </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> here </td>
+            <td style="text-align: center"> <a href="urbit__cyberpunks.ipynb">Urbit Analysis</a> </td>
+        </tr>
+    </tbody>
+</table>
+
+#### Understanding Devils
+
+We included the top 10 centralized exchanges to the gift because we want to better understand their behavior.
+
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <td style="text-align: left"> Leeches </td>
+            <td style="text-align: left"> 10 CEXes addresses </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> only here </td>
+            <td style="text-align: center"> <a href="manual_assigned_addresses__cexes.ipynb">Assigning Addresses</a> </td>
+        </tr>
+    </tbody>
+</table>
+
 #### Excluding Fiat Brains
 
-Addresses based on the fiat system will not be included, namely those that satisfy these two conditions:
+Addresses based on the fiat system will not be included,
+namely those that satisfy these two conditions:
 
-1. Stablecoin balance is more than sum of ETH and [selected ERC20 tokens](https://github.com/cybercongress/cybergift/blob/main/erc20__investors_and_cyberpunks.ipynb) balances.
-2. Stablecoin balance is more than 0.1 ETH.
+1. Stablecoin balance is more than sum of ETH and [selected ERC20 tokens](erc20__investors_and_cyberpunks.ipynb) balances
+2. Stablecoin balance is more than 0.1 ETH
 
 #### Prize to be the First
 
-We've added an incentive to claim gift early. There are about `4M` addresses in Gift, but at the same time we expect that only the first `1/10` accounts can claim them.
+We've added an incentive to claim the gift early.  
+There are about **4M** addresses in Gift, but we expect that only the first **~1/10** accounts can
+claim them.
 
-There will be incentive `13x` for those who claim first reducing to `7x` who came last.
+There will be an incentive of **13x** for those who claim first, reducing to **7x** for those who come last.
 
-![Incetive nchart](https://ipfs.io/ipfs/Qmc4dGDvHqj2KGWZXxSLServ8Hz8Fch2ZyQa57DZ7FAFYd)
+<img src="img/incentive_chart.png" width="50%" height="50%" alt="Incentive chart">
 
 #### Data Pipeline
 
-![Data Pipeline](https://ipfs.io/ipfs/QmWUWSHsbFp7tmxjeehCuEFpSz6w5pTPyJcvRvj5M4bUip)
+<img src="img/data_pipeline.png" width="75%" height="75%" alt="Data Pipeline">
 
 #### Gift Execution
 
-![cyberGift Execution](https://ipfs.io/ipfs/QmZY1jWqceiCaUK1keoaXWkRNBPhga7g5jrYdsPvFxosdt)
+<img src="img/gift_execution.png" alt="cyberGift Execution">
 
 #### Final Distribution
 
 [Final Distribution Table](https://console.cloud.google.com/bigquery?project=cosmic-keep-223223&p=cosmic-keep-223223&d=final&t=final_distribution&page=table&ws=!1m5!1m4!4m3!1scosmic-keep-223223!2sfinal!3sfinal_distribution)
 
-Check your address in the [Dashboard](https://datastudio.google.com/u/0/reporting/53e1c28b-9f10-497c-9b5b-9f2a4749450b)
+**Check your address in:**
 
-#### Result Validation
-
-My name is Maxim Razhev (@ninjascant). I'm a software engineer with 3+ years of experience in blockchain analytics development. I made a manual re-check of queries used here e.g.
-
-- re-calculating balances on a subset of wallets and comparing with a node output;
-- comparing the list of NFTs and other entities with open sources like Etherscan and OpenSea;
-- verifying that the data presented in the final tables are consistent with query logic.
-
-So, by making this commit, I confirm that the results of the analysis presented in this repository are checked by me and correct.
+- **web2** by the [Dashboard](https://datastudio.google.com/u/0/reporting/53e1c28b-9f10-497c-9b5b-9f2a4749450b)
+- **web3** by IPFS link
+  `gateway.ipfs.cybernode.ai/ipfs/QmWvynJ9yrfU5ju8dRSDBY7SmfEugoTyhtA5YmvSqE6Q1c/<your address>.json`  
+  for example [gateway.ipfs.cybernode.ai/ipfs/QmWvynJ9yrfU5ju8dRSDBY7SmfEugoTyhtA5YmvSqE6Q1c/0x91170c80ce048e00202e7ad72f8cfab86ec9004d.json](https://gateway.ipfs.cybernode.ai/ipfs/QmWvynJ9yrfU5ju8dRSDBY7SmfEugoTyhtA5YmvSqE6Q1c/0x91170c80ce048e00202e7ad72f8cfab86ec9004d.json)
