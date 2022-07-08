@@ -114,13 +114,9 @@ IPFS does not guarantee the safety or retrievability of the files.
 
 ### Bostrom is a full refactoring of the Euler network [~](QmYaf3J118vExRV6gFv2CjwYCyHmzV6Z9ACV7avWb652XZ)
 
-<<<<<<< Updated upstream
-Before Bostrom network (which itself had 5 testnets), there were 6 testnets known as Euler network.
-=======
 Bostrom blockchain is the result of 5 year's work and research of [cyber~congress](https://github.com/cybercongress/) team.
 
-Before Bostrom network (which itself had 5 testnets), there were 6 testnets with the name of Euler.
->>>>>>> Stashed changes
+Before Bostrom network (which itself had 5 testnets), there were 6 testnets known as Euler network.
 
 Bostrom is a full refactoring of the Euler network with a strong focus on Superintelligence. It includes a new distribution model, economics, improved ranking, and some superintelligent abilities.
 
@@ -130,11 +126,7 @@ The key differences within the Bostrom and Cyber network are to be discussed [he
 
 ## Knowledge graph [~](QmYPEehJdgxfTK3x5KQt56HbFEk8RXUmceqaTaseoPMUR6)
 
-<<<<<<< Updated upstream
 The knowledge graph of Bostrom blockchain consists of pairs: each source particle is connected to a destination particle via cyberlink. So it can be encoded as `source_particle - destination_particle`, which reduces the complexity of entering data (compared to triples, commonly used in modern knowledge graph applications). Cyberlinks combined with markdown marked up text files, where various conventions on connections between particles could be used, provide the necessary flexibility to Bostrom's knowledge graph, adapting it to a vast variety of possible usages.
-=======
-The knowledge graph of Bostrom blockchain consists of couples: source particle connected to destination particle via cyberlink. So it can be encoded in the form of `source_particle - destination_particle`, which reduces the complexity of entering data (versus using triples, as it is common between modern knowledge graph applications). Cyberlinks in combination with the use of text files with markdown markup, where various conventions of connections between particles could be used, give the necessary flexibility to Bostrom's knowledge graph, adopting it to a vast variety of use cases.
->>>>>>> Stashed changes
 
 ### Particles [~]()
 
@@ -150,21 +142,12 @@ To cyberlink - to create a cyberlink between two particles.
 
 A neuron can be:
 
-<<<<<<< Updated upstream
-- a private key holder who can provide valuable knowledge to the knowledge graph;
-- a contract (autonomus program).
-
-### Cyberrank [~]()
-
-Cyberrank is a default rank calculated on each particle. It's calculated as a weighted Pagerank, where every cyberlink has the weight of ampere-per-cyberlink. Ampere-per-cyberlink is calculated for each neuron by dividing his ampere balance by number of his cyberlinks.
-=======
 - a private key holder (who can create cyberlinks in the knowledge graph)
 - a cosm-wasm contract (autonomus program)
 
 ### Cyberrank [~]()
 
-Cyberrank is a default rank calculated on each particle. It's calculated as a weighted Pagerank, where every cyberlink has the weight of `ampere-per-cyberlink`. `ampere-per-cyberlink` is calculated for each neuron by dividing his ampere balance by count of his cyberlinks.
->>>>>>> Stashed changes
+Cyberrank is a default rank calculated on each particle. It's calculated as a weighted Pagerank, where every cyberlink has the weight of `ampere-per-cyberlink`. `ampere-per-cyberlink` is calculated for each neuron by dividing his ampere balance by number of his cyberlinks.
 
 Cyberrank is calculated by using GPU of the node. Cyberrank is deterministic, so it is used in Bostrom's blockchain consensus.
 
@@ -185,16 +168,9 @@ BOOT is the main token of Bostrom. The token's name BOOT symbolizes the BOOTload
 
 With BOOT one can:
 
-<<<<<<< Updated upstream
-- `hire a hero` (to stake or to delegate tokens to a validator), being paid rewards in return (risk fee);
-  - for each staked BOOT a HYDROGEN is minted (with a 1 to 1 ratio);
-- _transfer or trade_ {++it ++}to somebody (if BOOT is in a liquid state);
-- pay for network transactions (pay for gas). Though now, many validators accept transactions for free;
-=======
 - `hire a hero` (to delegate tokens to a validator), being paid rewards in return (risk fee);
   - for each staked BOOT a HYDROGEN is minted (with a 1 to 1 ratio);
 - pay for network transactions (pay for gas). Though now, many validators accept transactions with 0 gas fee;
->>>>>>> Stashed changes
 - vote for protocol change and public goods.
 
 ### HYDROGEN token
@@ -202,22 +178,12 @@ With BOOT one can:
 With HYDROGEN one can:
 
 - `investmint` HYDROGEN for a limited period to produce VOLT and AMPERE tokens;
-<<<<<<< Updated upstream
-- exchange {++it ++}back for delegated BOOT to transfer BOOT into a liquid state;
-- transfer {++it ++}to someone (if it is in a liquid state).
-=======
-- exchange back for delegated BOOT to transfer BOOT into a liquid state.
->>>>>>> Stashed changes
+- exchange it back for delegated BOOT to transfer BOOT into a liquid state.
 
 ### VOLT token
 
 - is needed to create cyberlinks;
-<<<<<<< Updated upstream
-- amount of Volt tokens on a balance of the selected neuron regulates how many cyberlinks per day the neuron can submit;
-- may be transferred in a liquid state.
-=======
 - amount of Volt tokens on a balance of the selected neuron regulates how many cyberlinks per day the neuron can submit.
->>>>>>> Stashed changes
 
 Each Volt token on the neuron's balance allows creating 1 cyberlink per day. The ability to create cyberlinks is restored within a day.
 
@@ -225,14 +191,8 @@ If the network is underloaded, one can produce more cyberlinks (up to 4 cyberlin
 
 ### AMPERE token
 
-<<<<<<< Updated upstream
-- any amount is needed to create cyberlinks;
-- amount of Ampere tokens on a balance of the selected neuron characterizes the power of its impact on the cyberrank;
-- may be transferred in a liquid state.
-=======
 - is needed to create cyberlinks;
 - amount of Ampere tokens on a balance of the selected neuron is used for `ampere-per-cyberlink` metric, which is used in cyberrank algorithm.
->>>>>>> Stashed changes
 
 The more Ampere tokens the neuron has, the higher his cyberlinks would be ranked. Cyberrank is recalculated for each `cycle` so that the changes in the amount of Ampere tokens on the neurons' balances that produced cyberlinks would influence the cyberrank of the whole graph. It's reasonable to think about Ampere tokens as a measure that characterizes the impact of cyberlinks created from the account on the knowledge graph.
 
@@ -297,23 +257,13 @@ When signing a transaction, the neuron should set an amount of `gas` for executi
 
 Gas is the smallest unit or pricing value required to perform a transaction. Different transactions require different amounts of gas. The gas amount for a transaction is calculated as it is being processed.
 
-<<<<<<< Updated upstream
-Each hero sets a `min-gas-price` value, and will only process transactions that have a gasPrice greater than their `min-gas-price`.
-
-The transaction fees are the product of gas and gasPrice. The higher the gasPrice/fees, the higher the chances that a transaction will get included in a block.
-
-As for now (the network is still underloaded), many heroes accept transactions at a zero-cost gas.
-
-Bostrom programmed the way that transactions consist of cyberlinks, a fee check will not apply.{>>не поняла предыдущее предложение<<} But `gas` amount still needs{++ to++} be provided. This means that {--the--} creating cyberlinks is regulated only by VOLT tokens balance, and doesn't require {--of--} spending any BOOT tokens.
-=======
 Each hero sets a `min-gas-price` value, and will only include transactions that have a `gasPrice` greater than their `min-gas-price`.
 
-The transaction fees are the product of gas and `gasPrice`. The higher the `gasPrice` fees, the higher the chance that a transaction will get included in a block.
+The transaction fees are the product of gas and `gasPrice`. The higher the `gasPrice` fees, the higher the chances that a transaction will get included in a block.
 
 As for now (the network is still underloaded), many heroes accept transactions at a zero-cost gas.
 
 There is no fee check for transactions that consist of cyberlinks. Though `gas` amount still needs be provided. This means that the creating cyberlinks is regulated only by VOLT tokens balance, and doesn't require of spending any BOOT tokens.
->>>>>>> Stashed changes
 
 ### Staking mechanism - encouraging desired behavior in agents (heroes and neurons) [~](Qma2tQuYBhM5vGFq1cpUhyXPU57UVcvLiUNuw9hH63m9Cb)
 
@@ -463,12 +413,9 @@ To contribute - request write rights.
 - creating cyberlinks;
 - receiving and sharing objects in the IPFS network using library [ipfs-js](https://github.com/ipfs/js-ipfs).
 
-<<<<<<< Updated upstream
-There is a search bar in cyb.ai. When a user enters a query in the search bar cyb.ai computes the IPFS hash of a text file with the search query contents. After that, cyb.ai requests the node with go-cyber installed. If there are cyberlinks originating from the search query's IPFS hash, then the node returns particles sorted by cyberrank, cyb.ai using IPFS-JS node retrieves files from IPFS and presents these results.
-=======
 ### Search on Cyb.ai [~](QmWysZirB2fbKeaNPZxfjY9M381WjyzbdG5FhcxysYhJ7m)
 
-There is a search bar in cyb.ai. When a user enters a query in the search bar cyb.ai computes the `IPFS CID v0` of the text file with the search query contents. `IPFS CID v0` is `sha-256` hash with prefix `Qm` and here is the example: `QmWysZirB2fbKeaNPZxfjY9M381WjyzbdG5FhcxysYhJ7m`. Further, cyb.ai requests the node with go-cyber installed, which response with the results
+There is a search bar in cyb.ai. When a user enters a query in the search bar cyb.ai computes the `IPFS CID v0` of a text file with the search query contents. `IPFS CID v0` is `sha-256` hash with prefix `Qm` and here is the example: `QmWysZirB2fbKeaNPZxfjY9M381WjyzbdG5FhcxysYhJ7m`. After that, cyb.ai requests the node with go-cyber installed, which response with the results
 
 `https://lcd.bostrom.cybernode.ai/cyber/rank/v1beta1/rank/search/QmWysZirB2fbKeaNPZxfjY9M381WjyzbdG5FhcxysYhJ7m`.
 
@@ -477,7 +424,6 @@ Similar results might be recieved by using go-bostrom cli:
 `cyber query rank search QmWysZirB2fbKeaNPZxfjY9M381WjyzbdG5FhcxysYhJ7m --chain-id bostrom --node https://rpc.bostrom.cybernode.ai:443`
 
 If there are cyberlinks originating from the search query's IPFS hash, then the node returns particles sorted by cyberrank, cyb.ai using IPFS-JS node retrieves files from IPFS and presents these results.
->>>>>>> Stashed changes
 
 Thus, the search results in cyb.ai are the files stored in IPFS (received by the browser and rendered on the page) with the IPFS hashes that were cyberlinked to the IPFS hash of the text entered into the search bar.
 
@@ -542,15 +488,6 @@ A proposal can become active if [minimum deposit](https://cyb.ai/network/bostrom
 
 During [voting period](https://cyb.ai/network/bostrom/parameters/gov) proposal have to reach [quorum](https://cyb.ai/network/bostrom/parameters/gov). The threshold is defined as the minimum proportion of Yes votes excluding Abstain votes for the proposal to be accepted. More details in [cosmos-sdk docs](https://docs.cosmos.network/master/modules/gov/).
 
-<<<<<<< Updated upstream
-### Vision{>>тут будут ссылки на доки?<<}
-
-- whitepaper
-- story
-- roadmap
-
-=======
->>>>>>> Stashed changes
 ### Thoughts [~](QmWxDGihyZBUsZ97yToWeK35hftvKnxPzeaNqPwRCCecYH)
 
 Thoughts are entirely autonomous programs. The program can schedule the execution of itself.
@@ -586,11 +523,7 @@ If you want your posts to look beautiful, use [markdown syntax](https://www.mark
 ### Initial BOOT distribution
 
 - 70% cyberGift
-<<<<<<< Updated upstream
-- {>>тут надо с картинки дозаполнить?<<}
-=======
 -
->>>>>>> Stashed changes
 
 ### cyberGift [~](Qmcgoy9bV6zsqnzoLB4YunEWXadavKMXKgvmUdToh2Nr3E)
 
