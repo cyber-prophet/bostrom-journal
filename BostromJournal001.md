@@ -125,7 +125,7 @@ Before Bostrom network (which itself had 5 testnets), there were 6 testnets know
 
 Bostrom is a full refactoring of the Euler network with a strong focus on Superintelligence. It includes a new distribution model, economics, improved ranking, and some superintelligent abilities.
 
-Founders perceive [Bostrom](https://cyb.ai/search/bostrom) as a canary network in the same way that Kusama relates to Polkadot. The Bostrom knowledge graph tends to be a bootstrap hub for domain-specific networks of Cyber. The network works as a testbed for Interplanetary Knowlege Protocol communications and different experiments, including Moon development. Consider Bostrom a network with high risks but of market value.
+Founders perceive Bostrom as a canary network in the same way that Kusama relates to Polkadot. The Bostrom knowledge graph tends to be a bootstrap hub for domain-specific networks of Cyber. The network works as a testbed for Interplanetary Knowlege Protocol communications and different experiments, including Moon development. Consider Bostrom a network with high risks but of market value.
 
 The key differences within the Bostrom and Cyber network are to be discussed [here](https://cyb.ai/search/bostrom%20vs%20cyber). The launch of the Bostrom network is the inception of an ecosystem.
 
@@ -433,6 +433,14 @@ Account avatar is an image file in IPFS. The hash of the image file is cyberlink
 
 Neurons message in a particular Sense account's feed is a cyberlink between the text "tweet" and the IPFS hash of the message file.
 
+### Creating cyberlinks on cyb.ai [~]()
+
+To create a cyberlink on cyb.ai:
+
+1. Enter the text of the source particle (or IPFS hash of the source particle) into the search bar and press enter
+2. Enter the text of the destination particle (or IPFS hash of the destination particle, or attach file of the destination particle using the clip button) into the field at the bottom of the screen ("add keywords, hash or file" field) and hit "Cyberlink" button.
+3. Keplr chrome extension should pop up, where you need to confirm creating cyberlink.
+
 ### My Robot [~](QmSfnbtVvAQxLBtD9wfkn5XexGPPkofcT7pS7379WoXqVW)
 
 On the "My Robot" page you can see the information about the state of your IPFS local node (that uses the cache of your browser), connected accounts, their addresses and balances of tokens on them.
@@ -443,7 +451,7 @@ On the teleport page you can exchange your tokens using swap, explore [existing 
 
 ### Dyson Sphere [~](QmS1jB9j7LHJo7iyYQc3MErKHEGvgXkt67xrqH44dzQdRt)
 
-You can delegate (stake) BOOT by hiring a Hero in the [Dyson Sphere](https://cyb.ai/search/dyson%20shpere). That will grant you Hydrogen in the amount equal to staked BOOT. Also, you can see the information regarding heroes.
+You can delegate (stake) BOOT by hiring a Hero in the [Dyson Sphere](https://cyb.ai/halloffame). That will grant you Hydrogen in the amount equal to staked BOOT. Also, you can see the information regarding heroes.
 
 - [hire & fire Heros](https://cyb.ai/halloffame)
 
@@ -453,7 +461,7 @@ In this reactor, [Amperes](https://cyb.ai/token/A) or [Volts](https://cyb.ai/tok
 
 You can mint [Amperes](https://cyb.ai/token/A) and [Volts](https://cyb.ai/token/V) by locking (freezing) your [Hydrogen](https://cyb.ai/token/H).
 
-You can get Hydrogen by delegating BOOTs to Heroes in the [Dyson Sphere](https://cyb.ai/search/dyson%20shpere).
+You can get Hydrogen by delegating BOOTs to Heroes in the [Dyson Sphere](https://cyb.ai/halloffame).
 
 - Use the HFR menu to adjust freezing parameters and [investmint](https://cyb.ai/mint)
 
@@ -524,7 +532,7 @@ You can check how your post will look like on cyb.ai before posting [here](https
 
 ## Bostrom cybernomics [~]()
 
-### BOOT and TOCYB genesis allocation [~]()
+### BOOT and TOCYB genesis allocation [~](QmVPgNeay23Ae5itAamMcr4iEAUKuhw5qD9U1zNqN4gpew)
 
 The following information is a concise rundown explaining
 how genesis BOOT and TOCYB have been allocated.
