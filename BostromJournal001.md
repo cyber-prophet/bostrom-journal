@@ -23,10 +23,10 @@ The latest version of Bostrom Journal can be found on [github](https://github.co
   - [Neurons ~](#neurons-)
   - [Cyberrank ~](#cyberrank-)
 - [Bostrom tokens ~](#bostrom-tokens-)
-  - [BOOT token](#boot-token)
-  - [HYDROGEN token](#hydrogen-token)
-  - [VOLT token](#volt-token)
-  - [AMPERE token](#ampere-token)
+  - [BOOT token ~](#boot-token-)
+  - [HYDROGEN token ~](#hydrogen-token-)
+  - [VOLT token ~](#volt-token-)
+  - [AMPERE token ~](#ampere-token-)
   - [TOCYB token ~](#tocyb-token-)
   - [Investminting - definition and mechanics ~](#investminting---definition-and-mechanics-)
 - [Important blockchain concepts and their meaning ~](#important-blockchain-concepts-and-their-meaning-)
@@ -37,7 +37,7 @@ The latest version of Bostrom Journal can be found on [github](https://github.co
   - [go-cyber ~](#go-cyber-)
   - [cyb.ai ~](#cybai-)
   - [cyberindex ~](#cyberindex-)
-  - [cybernode](#cybernode)
+  - [cybernode ~](#cybernode-)
   - [cyberdbot ~](#cyberdbot-)
   - [cyber-js ~](#cyber-js-)
   - [cyber arbitrage py ~](#cyber-arbitrage-py-)
@@ -47,6 +47,7 @@ The latest version of Bostrom Journal can be found on [github](https://github.co
 - [Cyb.ai functionality ~](#cybai-functionality-)
   - [Cyb.ai: intro, mechanics ~](#cybai-intro-mechanics-)
   - [Search on Cyb.ai ~](#search-on-cybai-)
+  - [Creating cyberlinks on cyb.ai ~](#creating-cyberlinks-on-cybai-)
   - [My Robot ~](#my-robot-)
   - [Teleport ~](#teleport-)
   - [Dyson Sphere ~](#dyson-sphere-)
@@ -135,7 +136,7 @@ The knowledge graph of Bostrom blockchain consists of pairs: each source particl
 
 ### Particles [~]()
 
-A particle is a hash of the file in IPFS network. A file can be retrieved from IPFS network using its hash. Particles are written into Bostrom blockchain. But, cyb.ai application is built to render the content of cyberlinked files.
+A particle is a hash of the file in IPFS network (`cid` in IPFS terminology). A file can be retrieved from IPFS network using its hash. Particles are written into Bostrom blockchain. But, cyb.ai application is built to render the content of cyberlinked files.
 
 ### Cyberlinks [~](QmewU6pKFtGc3Fm8XsMxS3bA2xf3swQwuPuepxebp2WNMH)
 
@@ -167,7 +168,7 @@ When tokens are in liquid state they can be:
 - transferred to other addresses in the Bostrom or other blockchains of Cosmos network;
 - swapped to other tokens using liquidity pools. Other tokens can be non-native Bostrom tokens transferred by IBC protocol from other blockchains of the Cosmos network
 
-### BOOT token
+### BOOT token [~]()
 
 BOOT is the main token of Bostrom. The token's name BOOT symbolizes the BOOTloader nature of the Bostrom network for the future Cyber network.
 
@@ -178,14 +179,14 @@ With BOOT one can:
 - pay for network transactions (pay for gas). Though now, many validators accept transactions with 0 gas fee;
 - vote for protocol change and public goods.
 
-### HYDROGEN token
+### HYDROGEN token [~]()
 
 With HYDROGEN one can:
 
 - `investmint` HYDROGEN for a limited period to produce VOLT and AMPERE tokens;
 - exchange it back for delegated BOOT to transfer BOOT into a liquid state.
 
-### VOLT token
+### VOLT token [~]()
 
 - is needed to create cyberlinks;
 - amount of Volt tokens on a balance of the selected neuron regulates how many cyberlinks per day the neuron can submit.
@@ -194,7 +195,7 @@ Each Volt token on the neuron's balance allows creating 1 cyberlink per day. The
 
 If the network is underloaded, one can produce more cyberlinks (up to 4 cyberlinks for each Volt on balance per day).
 
-### AMPERE token
+### AMPERE token [~]()
 
 - is needed to create cyberlinks;
 - amount of Ampere tokens on a balance of the selected neuron is used for `ampere-per-cyberlink` metric, which is used in cyberrank algorithm.
@@ -276,7 +277,7 @@ Bostrom is a proof-of-stake blockchain. Validators ensure its functioning.
 
 Bostrom is designed to economically encourage (incentivize) heroes and neurons to perform useful functions for the system.
 
-#### Valuable functions of Bostrom's agents (Heroes and Neurons)
+#### Valuable functions of Bostrom's agents (Heroes and Neurons) [~]()
 
 Heroes are responsible for :
 
@@ -290,7 +291,7 @@ Neurons' valuable functions are:
 - using H token (HYDROGEN), which can be obtained in exchange for a `staked` BOOT, for investminting Ampere and Volt tokens (and then using As and Vs for creating сyberlinks, i.e. training Bostrom);
 - deciding on the evolution of the network using the governance portal (`senate`).
 
-#### The economic incentivization mechanism of agents in Bostrom
+#### The economic incentivization mechanism of agents in Bostrom [~]()
 
 The economic incentivization mechanism of heroes and neurons in Bostrom includes rewards and penalties.
 
@@ -352,7 +353,7 @@ Supported:
 - wasm contracts
 - advanced views for analytics
 
-### cybernode
+### cybernode [~]()
 
 Cybernode is the tool to deploy, operate, maintain, and monitor major protocols required for next-generation browsers. [Github](https://github.com/cybercongress/cybernode)
 
