@@ -10,7 +10,6 @@ The latest version of Bostrom Journal can be found on [github](https://github.co
 
 <!-- TOC -->
 
-- [Table of contents](#table-of-contents)
 - [Preface ~](#preface-)
 - [Intro to Bostrom Blockchain ~](#intro-to-bostrom-blockchain-)
   - [Bostrom - the short definition ~](#bostrom---the-short-definition-)
@@ -59,24 +58,15 @@ The latest version of Bostrom Journal can be found on [github](https://github.co
 - [Bostrom Blockchain philosophy ~](#bostrom-blockchain-philosophy-)
   - [The Great Web ~](#the-great-web-)
   - [Markdown ~](#markdown-)
-- [Bostrom cybernomics ~](#bostrom-cybernomics-)
+- [Bostrom tokenomics ~](#bostrom-tokenomics-)
   - [BOOT and TOCYB genesis allocation ~](#boot-and-tocyb-genesis-allocation-)
-- [Connecting the Dots](#connecting-the-dots)
-- [Audience Rules](#audience-rules)
-- [Getting the Crowd](#getting-the-crowd)
-- [Hunting for Content Creators](#hunting-for-content-creators)
-- [Attracting Astronauts](#attracting-astronauts)
-- [Praying for Hackers](#praying-for-hackers)
-- [Formation of Heroes Corpus](#formation-of-heroes-corpus)
-- [Focusing Investors](#focusing-investors)
-- [Inspiring Key Opinion Leaders](#inspiring-key-opinion-leaders)
-- [Cyberpunks](#cyberpunks)
-- [Understanding Devils](#understanding-devils)
-- [Excluding Fiat Brains](#excluding-fiat-brains)
-- [Prize to be the First](#prize-to-be-the-first)
-- [Data Pipeline](#data-pipeline)
-- [Gift Execution](#gift-execution)
-- [Final Distribution](#final-distribution)
+  - [cyberGift ~](#cybergift-)
+- [About the journal ~](#about-the-journal-)
+  - [Editors note ~](#editors-note-)
+  - [Submissions to the Bostrom Journal BJ ~](#submissions-to-the-bostrom-journal-bj-)
+  - [Publication Frequency](#publication-frequency)
+  - [Journal's standard formatting markup and tags ~](#journals-standard-formatting-markup-and-tags-)
+  - [Evolution of the first issue of journal](#evolution-of-the-first-issue-of-journal)
 
 <!-- /TOC -->
 
@@ -778,3 +768,35 @@ There will be an incentive of **13x** for those who claim first, reducing to **7
 - **web2** by the [Dashboard](https://datastudio.google.com/u/0/reporting/53e1c28b-9f10-497c-9b5b-9f2a4749450b)
 - **web3** by IPFS link `gateway.ipfs.cybernode.ai/ipfs/QmWvynJ9yrfU5ju8dRSDBY7SmfEugoTyhtA5YmvSqE6Q1c/<your address>.json`  
   for example [gateway.ipfs.cybernode.ai/ipfs/QmWvynJ9yrfU5ju8dRSDBY7SmfEugoTyhtA5YmvSqE6Q1c/0x91170c80ce048e00202e7ad72f8cfab86ec9004d.json](https://gateway.ipfs.cybernode.ai/ipfs/QmWvynJ9yrfU5ju8dRSDBY7SmfEugoTyhtA5YmvSqE6Q1c/0x91170c80ce048e00202e7ad72f8cfab86ec9004d.json)
+
+## About Bostrom Journal [~]()
+
+### Editor's note [~]()
+
+This journal is a new phenomenon. Journal's team experiment here with Bostrom's unique features and apply them to real world problems in a form resembling modern scientific journals.
+
+Bostrom journal is created on top of the Bostrom Blockchain knowledge graph (we assembled this journal from files of Bostrom's knowledge graph).
+
+Bostrom journal is designed to be easily parsable to enable users to use it as a knowledge graph (the subgraph of the main graph), and for convenience of reading.
+
+### Submissions to the Bostrom Journal (BJ) [~]()
+
+To submit a particle to the [Bostrom Journal (BJ)](https://cyb.ai/network/bostrom/contract/bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa), comment on it with the text `submit to bj` (or cyberlink it to particle: `QmPzSGvrsiNSasPPMdHx4cT12fa1LSaftqSXHqurqxeAC3`). The editorial team will review submissions on occasion.
+
+### Publication Frequency
+
+BJ publishes irregularly.
+
+### Journal's standard formatting markup and tags [~]()
+
+All the particles were formatted using [Prettier](https://prettier.io/), an opinionated code formatter.
+
+- `[~]` - the tag of the original particle
+
+### Evolution of the first issue of Bostrom Journal [~]()
+
+At the very beginning I (future editor-in-chief) gathered all particles created by founders and trusted pioneer neurons from [swagger service]() of Bostrom's. I collected JSON from there and parsed it using Python. Further I downloaded the particles' files from IPFS and read them almost completely. I guess, it was about 1500 texts, most of which was 1-4 words long. I extracted cyberlinks and particles table to MS Excel. There I marked particles about Bostrom. So I was able to sort and filter them. There I filtered most precise particles and classified them on chapters.
+
+Further I recieved those particles to Python. Python helped me to generate the first version of this journal in Markdown.
+
+There I found that some texts on Bostrom that I wrote before also relevant to topic, but needed to be some how adopted to the journal format.
