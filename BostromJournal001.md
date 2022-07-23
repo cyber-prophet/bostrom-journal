@@ -1,6 +1,6 @@
 # [Bostrom Journal](https://cyb.ai/network/bostrom/contract/bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa)
 
-Issue 1, 1656576418 or 2022-06-30
+Issue 1, 1658551271 or 2022.07.23
 
 Editor-in-chief: [maxim-uvarov](https://cyb.ai/network/bostrom/contract/bostrom1h29u0h2y98rkhdrwsx0ejk5eq8wvslygexr7p8)
 
