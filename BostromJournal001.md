@@ -777,7 +777,7 @@ Bostrom journal is designed to be easily parsable to enable users to use it as a
 
 ### Submissions to the Bostrom Journal (BJ) [~]()
 
-To submit a particle to the [Bostrom Journal (BJ)](https://cyb.ai/network/bostrom/contract/bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa), comment on it with the text `submit to bj` (or cyberlink it to particle: `QmPzSGvrsiNSasPPMdHx4cT12fa1LSaftqSXHqurqxeAC3`). The editorial team will review submissions on occasion.
+To submit a particle to the [Bostrom Journal (BJ)](https://cyb.ai/network/bostrom/contract/bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa), comment on the chosen particle with the text `submit to bj` (or cyberlink it to particle: `QmPzSGvrsiNSasPPMdHx4cT12fa1LSaftqSXHqurqxeAC3`). The editorial team will review submissions on occasion.
 
 ### Publication Frequency
 
@@ -788,11 +788,3 @@ BJ publishes irregularly.
 All the particles were formatted using [Prettier](https://prettier.io/), an opinionated code formatter.
 
 - `[~]` - the tag of the original particle
-
-### Evolution of the first issue of Bostrom Journal [~]()
-
-At the very beginning I (future editor-in-chief) gathered all particles created by founders and trusted pioneer neurons from [swagger service]() of Bostrom. I collected JSON from there and parsed it using Python. Further I downloaded the particles' files from IPFS and read them almost completely. I guess, it was about 1500 texts, most of which were 1-4 words long. I extracted cyberlinks and particles table to MS Excel. There I marked particles about Bostrom. So I was able to sort and filter them. After selecting only the most precise and useful particles I divided them into themed chapters.
-
-At that point, I used Python as the tool to generate the first iteration of this journal in Markdown.
-
-In the process I discovered that some of my own previously written texts on Bostrom are also relevant to the topic. They just needed to be somehow adapted to the journal format. So after several alterations those texts were as well included in the issue.
