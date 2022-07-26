@@ -1,6 +1,10 @@
-# [Bostrom Journal](https://cyb.ai/network/bostrom/contract/bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa)
+# [Bostrom Journal](https://cyb.ai/network/bostrom/contract/bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa) [~]()
 
-Issue 1, 1658551271 or 2022-07-23
+## Issue 1: Bostrom blockchain manual [~]()
+
+### Some metadata [~]()
+
+1658551271 or 2022-07-23
 
 Editor-in-chief: [maxim-uvarov](https://cyb.ai/network/bostrom/contract/bostrom1h29u0h2y98rkhdrwsx0ejk5eq8wvslygexr7p8)
 
@@ -8,7 +12,6 @@ The latest version of Bostrom Journal can be found on [github](https://github.co
 
 ## Table of contents [~]()
 
-- [Table of contents ~](#table-of-contents-)
 - [Preface ~](#preface-)
 - [Intro to Bostrom Blockchain ~](#intro-to-bostrom-blockchain-)
   - [Bostrom - the short definition ~](#bostrom---the-short-definition-)
