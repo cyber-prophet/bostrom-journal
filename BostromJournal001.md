@@ -2,11 +2,11 @@
 
 ## Issue 1: Bostrom blockchain manual [~]()
 
-### Some metadata [~]()
+### Issue metadata [~]()
 
 1658551271 or 2022-07-23
 
-Editor-in-chief: [maxim-uvarov](https://cyb.ai/network/bostrom/contract/bostrom1h29u0h2y98rkhdrwsx0ejk5eq8wvslygexr7p8)
+Editor-in-chief: [maxim-uvarov aka cyber-prophet](https://cyb.ai/network/bostrom/contract/bostrom1h29u0h2y98rkhdrwsx0ejk5eq8wvslygexr7p8)
 
 The latest version of Bostrom Journal can be found on [github](https://github.com/learn-to-teach-cyber/bostrom-journal).
 
@@ -66,9 +66,8 @@ The latest version of Bostrom Journal can be found on [github](https://github.co
 - [About Bostrom Journal ~](#about-bostrom-journal-)
   - [Editor's note ~](#editors-note-)
   - [Submissions to the Bostrom Journal (BJ) ~](#submissions-to-the-bostrom-journal-bj-)
-  - [Publication Frequency](#publication-frequency)
+  - [Publication Frequency ~](#publication-frequency-)
   - [Journal's standard formatting markup and tags ~](#journals-standard-formatting-markup-and-tags-)
-  - [Evolution of the first issue of Bostrom Journal ~](#evolution-of-the-first-issue-of-bostrom-journal-)
 
 ## Preface [~]()
 
@@ -782,7 +781,7 @@ Bostrom journal is designed to be easily parsable to enable users to use it as a
 
 To submit a particle to the [Bostrom Journal (BJ)](https://cyb.ai/network/bostrom/contract/bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa), comment on the chosen particle with the text `submit to bj` (or cyberlink it to particle: `QmPzSGvrsiNSasPPMdHx4cT12fa1LSaftqSXHqurqxeAC3`). The editorial team will review submissions on occasion.
 
-### Publication Frequency
+### Publication Frequency [~]()
 
 BJ publishes irregularly.
 
