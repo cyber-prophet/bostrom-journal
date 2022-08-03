@@ -1,4 +1,4 @@
-# [Bostrom Journal](https://cyb.ai/network/bostrom/contract/bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa) [~]()
+# Bostrom Journal [~]()
 
 ## Issue 1: Bostrom blockchain manual [~]()
 
@@ -9,6 +9,8 @@
 Editor-in-chief: [maxim-uvarov aka cyber-prophet](https://cyb.ai/network/bostrom/contract/bostrom1h29u0h2y98rkhdrwsx0ejk5eq8wvslygexr7p8)
 
 The latest version of Bostrom Journal can be found on [github](https://github.com/learn-to-teach-cyber/bostrom-journal).
+
+Journal address: [Bostorm Journal](https://cyb.ai/network/bostrom/contract/bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa).
 
 ## Table of contents [~]()
 
@@ -42,8 +44,11 @@ The latest version of Bostrom Journal can be found on [github](https://github.co
   - [cybernode ~](#cybernode-)
   - [cyberdbot ~](#cyberdbot-)
   - [cyber-js ~](#cyber-js-)
+  - [cyber.py ~](#cyberpy-)
+  - [cyberpy ~](#cyberpy--1)
   - [cyber arbitrage py ~](#cyber-arbitrage-py-)
   - [Cybernode.ai ~](#cybernodeai-)
+  - [LocalBostrom ~](#localbostrom-)
   - [Bostrom dashboard by Bro-n-Bro ~](#bostrom-dashboard-by-bro-n-bro-)
   - [cyber CLI helper ~](#cyber-cli-helper-)
 - [Cyb.ai functionality ~](#cybai-functionality-)
@@ -242,7 +247,7 @@ Given a state S and a transaction T, the state machine will return a new state S
 
 In a blockchain context, the state machine is deterministic. This means that if a node is started at a given state and replays the same sequence of transactions, it will always end up with the same final state.
 
-A validator (the hero in Bostrom terminology) is a server with running blockchain software (node).{>>I suggest adding Hero=validator to the vocabulary part at the beginning of the journal.<<}
+A validator (the hero in Bostrom terminology) is a server with running blockchain software (node).
 
 Each node contains a blockchain replica (transaction log) that allows computing the system’s current state for each block. Nodes agree among themselves on a current state according to the Tendermint consensus protocol.
 
@@ -323,7 +328,6 @@ When a particular hero is caught violating rules, that hero is put into the `jai
 All the violations and the penalties are noted in the blockchain settings and are executed according to the Tendermint consensus protocol.
 
 In order to hedge `slashing` risks one may distribute `stakes` between several heroes.
-
 ## Apps built on Bostrom, for Bostrom [~]()
 
 ### go-cyber [~](Qmd4suKEMpRKuFkEeGbsHqDAKJfSQdNkkxPie6cfVacm8X)
@@ -336,11 +340,11 @@ On GitHub there is an informative [manual](https://github.com/cybercongress/go-c
 
 ### cyb.ai [~](QmSDCFfY1S2UxoDkhbAtFbnm2vp97eefNyb5NQKpXENwDj)
 
-[Cyb.ai](https://cyb.ai) - most functional application built on Bostrom for interacting with Bostrom.
+[Cyb.ai](https://cyb.ai) - most functional application built on Bostrom for interacting with Bostrom. It is built using react-js. 
 
-Code is available on the [github](https://github.com/cybercongress/cyb).
+Source code of Cyb.ai is available on the [github](https://github.com/cybercongress/cyb).
 
-Cyb.ai functionality is explained in a separate chapter below.
+Cyb.ai functionality was explained in a separate chapter behind.
 
 ### cyberindex [~]()
 
@@ -364,15 +368,30 @@ Cybernode is the tool to deploy, operate, maintain, and monitor major protocols 
 
 ### cyberdbot [~](QmWjcFRoVPeYXWug6NsoWFGA8PWqfFWcJ6G2HFNLf5QyXR)
 
-[Open source](https://github.com/Snedashkovsky/cyberdBot) telegram bot for Cyber.
+[Open source](https://github.com/Snedashkovsky/cyberdBot) telegram bot for Cyber. 
+
+The bot is alive and can be found on [telegram](https://t.me/cyberdbot). It has features:
+
+- searching on Bostrom
+- creating cyberlinks
+- creating tweets
+- uploading files to IPFS node and providing their cid
 
 ### cyber-js [~](QmcwgfBG21fQ3sqiQhwnvFmadijd2GYZDF81QyQLXoJtEM)
 
 [Javascript library](https://github.com/cybercongress/cyber-js) for [cyber protocol](https://github.com/cybercongress/cyber)
 
+### cyber.py [~]()
+
+Python SDK with rich functionality for interacting with Bostrom blockchain. Prefferable for the usage. Fork of terra money sdk. [Github](https://github.com/SaveTheAles/cyber.py).
+
+### cyberpy [~]()
+
+Python SDK for interacting with Bostrom blockchain. Fork of cosmospy. [Github](https://github.com/SaveTheAles/cyber.py).
+
 ### cyber arbitrage py [~](QmNyxAQcozrkb2Ekr9EMUVZUXQduUGazYwfRTZtvxnjUwd)
 
-[Cyber arbitrage](https://github.com/Snedashkovsky/cyber-arbitrage/blob/main/search_arbitrage.ipynb) is a jupyter notebook that interacts with CLI to obtain information on the state of liquidity pools balances {~~on~>in~~} Bostrom.
+[Cyber arbitrage](https://github.com/Snedashkovsky/cyber-arbitrage/blob/main/search_arbitrage.ipynb) is a jupyter notebook that interacts with CLI to obtain information on the state of liquidity pools balances in Bostrom.
 
 There you can search for the best arbitrage options in Bostrom. Jupyter notebook retrieves data on pools' state from CLI and displays it in a table form.
 
@@ -396,6 +415,18 @@ There you can search for the best arbitrage options in Bostrom. Jupyter notebook
 - Ethereum rinkeby [RPC](https://rpc-rinkeby.ethereum.cybernode.ai)
 - Ethereum rinkeby [websocket](wss://ws-rinkeby.ethereum.cybernode.ai)
 - IPFS [gateway](https://gateway.ipfs.cybernode.ai)
+
+### LocalBostrom [~]()
+
+Localbostrom ([github](https://github.com/cybercongress/localbostrom)) is a complete bostrom testnet containerized with Docker and orchestrated with a simple docker-compose file. It simplifies the way smart-contract developers test their contracts in a sandbox before they deploy them on a testnet or mainnet.
+
+Localbostrom comes preconfigured with opinionated, sensible defaults for standard testing environments. Also it comes with pre-configured cyberidex to alow fast and easy data manipulation and anlysis.
+
+Localbostrom has the following advantages over a public testnet:
+
+- Quick to reset for rapid iterations
+- Simple simulations of different scenarios
+- Controllable validator behavior
 
 ### Bostrom dashboard by Bro-n-Bro [~]()
 
