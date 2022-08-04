@@ -10,7 +10,7 @@ Editor-in-chief: [maxim-uvarov aka cyber-prophet](https://cyb.ai/network/bostrom
 
 The latest version of Bostrom Journal can be found on [github](https://github.com/learn-to-teach-cyber/bostrom-journal).
 
-Journal address: [Bostorm Journal](https://cyb.ai/network/bostrom/contract/bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa).
+Journal address: [Bostrom Journal](https://cyb.ai/network/bostrom/contract/bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa).
 
 ## Table of contents [~]()
 
@@ -247,7 +247,7 @@ Given a state S and a transaction T, the state machine will return a new state S
 
 In a blockchain context, the state machine is deterministic. This means that if a node is started at a given state and replays the same sequence of transactions, it will always end up with the same final state.
 
-A validator (the hero in Bostrom terminology) is a server with running blockchain software (node).
+A validator ({~~the~>a~~} hero in Bostrom terminology) is a server with running blockchain software (node).
 
 Each node contains a blockchain replica (transaction log) that allows computing the system’s current state for each block. Nodes agree among themselves on a current state according to the Tendermint consensus protocol.
 
@@ -448,7 +448,7 @@ On GitHub there is an informative [manual](https://github.com/cybercongress/go-c
 
 Source code of Cyb.ai is available on the [github](https://github.com/cybercongress/cyb).
 
-Cyb.ai functionality was explained in a separate chapter behind.
+Cyb.ai functionality {~~was~>is~~} explained in a separate chapter {~~behind~>above~~}.
 
 ### cyberindex [~]()
 
@@ -474,12 +474,12 @@ Cybernode is the tool to deploy, operate, maintain, and monitor major protocols 
 
 [Open source](https://github.com/Snedashkovsky/cyberdBot) telegram bot for Cyber.
 
-The bot is alive and can be found on [telegram](https://t.me/cyberdbot). It has features:
+The bot is {~~alive~>up and running~~} and can be found on [telegram](https://t.me/cyberdbot). It has {++the following ++}features:
 
 - searching on Bostrom
 - creating cyberlinks
 - creating tweets
-- uploading files to IPFS node and providing their cid
+- uploading files to IPFS node and providing their {~~cid~>CIDs~~}
 
 ### cyber-js [~](QmcwgfBG21fQ3sqiQhwnvFmadijd2GYZDF81QyQLXoJtEM)
 
@@ -487,7 +487,7 @@ The bot is alive and can be found on [telegram](https://t.me/cyberdbot). It has 
 
 ### cyber.py [~]()
 
-Python SDK with rich functionality for interacting with Bostrom blockchain. Prefferable for the usage. Fork of terra money sdk. [Github](https://github.com/SaveTheAles/cyber.py).
+Python SDK {~~with~>providing~~} rich functionality for interacting with Bostrom blockchain. {--Prefferable for the usage.--} Fork of terra money sdk. {++Using cyber.py is preferable.++} [Github](https://github.com/SaveTheAles/cyber.py).
 
 ### cyberpy [~]()
 
@@ -522,15 +522,15 @@ There you can search for the best arbitrage options in Bostrom. Jupyter notebook
 
 ### LocalBostrom [~]()
 
-Localbostrom ([github](https://github.com/cybercongress/localbostrom)) is a complete bostrom testnet containerized with Docker and orchestrated with a simple docker-compose file. It simplifies the way smart-contract developers test their contracts in a sandbox before they deploy them on a testnet or mainnet.
+Localbostrom ([github](https://github.com/cybercongress/localbostrom)) is a complete Bostrom testnet containerized with Docker and orchestrated {~~with~>by~~} a simple docker-compose file. It simplifies the way smart-contract developers test their contracts in a sandbox before they deploy them on a testnet or mainnet.
 
-Localbostrom comes preconfigured with opinionated, sensible defaults for standard testing environments. Also it comes with pre-configured cyberidex to alow fast and easy data manipulation and anlysis.
+Localbostrom comes preconfigured with opinionated, sensible defaults for standard testing environments. Also, it comes with {~~pre-configured~>preconfigured~~}{>>both preconfigured and pre-configured are correct. However, I suggest choosing one variant for the journal<<} {~~cyberidex~>cyberindex~~} to allow fast and easy data manipulation and anlysis.
 
 Localbostrom has the following advantages over a public testnet:
 
-- Quick to reset for rapid iterations
-- Simple simulations of different scenarios
-- Controllable validator behavior
+- quick to reset for rapid iterations
+- simple simulations of different scenarios
+- controllable validator behaviour
 
 ### Bostrom dashboard by Bro-n-Bro [~]()
 
