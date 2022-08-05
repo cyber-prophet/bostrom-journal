@@ -247,7 +247,7 @@ Given a state S and a transaction T, the state machine will return a new state S
 
 In a blockchain context, the state machine is deterministic. This means that if a node is started at a given state and replays the same sequence of transactions, it will always end up with the same final state.
 
-A validator ({~~the~>a~~} hero in Bostrom terminology) is a server with running blockchain software (node).
+A validator (a hero in Bostrom terminology) is a server with running blockchain software (node).
 
 Each node contains a blockchain replica (transaction log) that allows computing the system’s current state for each block. Nodes agree among themselves on a current state according to the Tendermint consensus protocol.
 
@@ -448,7 +448,7 @@ On GitHub there is an informative [manual](https://github.com/cybercongress/go-c
 
 Source code of Cyb.ai is available on the [github](https://github.com/cybercongress/cyb).
 
-Cyb.ai functionality {~~was~>is~~} explained in a separate chapter {~~behind~>above~~}.
+Cyb.ai functionality is explained in a separate chapter above.
 
 ### cyberindex [~]()
 
@@ -474,12 +474,12 @@ Cybernode is the tool to deploy, operate, maintain, and monitor major protocols 
 
 [Open source](https://github.com/Snedashkovsky/cyberdBot) telegram bot for Cyber.
 
-The bot is {~~alive~>up and running~~} and can be found on [telegram](https://t.me/cyberdbot). It has {++the following ++}features:
+The hosted by the developer bot is up and running and can be found on [telegram](https://t.me/cyberdbot). It has the following features:
 
 - searching on Bostrom
 - creating cyberlinks
 - creating tweets
-- uploading files to IPFS node and providing their {~~cid~>CIDs~~}
+- uploading files to IPFS node and providing their CIDs
 
 ### cyber-js [~](QmcwgfBG21fQ3sqiQhwnvFmadijd2GYZDF81QyQLXoJtEM)
 
@@ -487,7 +487,7 @@ The bot is {~~alive~>up and running~~} and can be found on [telegram](https://t.
 
 ### cyber.py [~]()
 
-Python SDK {~~with~>providing~~} rich functionality for interacting with Bostrom blockchain. {--Prefferable for the usage.--} Fork of terra money sdk. {++Using cyber.py is preferable.++} [Github](https://github.com/SaveTheAles/cyber.py).
+Python SDK providing rich functionality for interacting with Bostrom blockchain. Fork of terra money sdk. Using cyber.py is preferable. [Github](https://github.com/SaveTheAles/cyber.py).
 
 ### cyberpy [~]()
 
@@ -522,9 +522,9 @@ There you can search for the best arbitrage options in Bostrom. Jupyter notebook
 
 ### LocalBostrom [~]()
 
-Localbostrom ([github](https://github.com/cybercongress/localbostrom)) is a complete Bostrom testnet containerized with Docker and orchestrated {~~with~>by~~} a simple docker-compose file. It simplifies the way smart-contract developers test their contracts in a sandbox before they deploy them on a testnet or mainnet.
+Localbostrom ([github](https://github.com/cybercongress/localbostrom)) is a complete Bostrom testnet containerized with Docker and orchestrated by a simple docker-compose file. It simplifies the way smart-contract developers test their contracts in a sandbox before they deploy them on a testnet or mainnet.
 
-Localbostrom comes preconfigured with opinionated, sensible defaults for standard testing environments. Also, it comes with {~~pre-configured~>preconfigured~~}{>>both preconfigured and pre-configured are correct. However, I suggest choosing one variant for the journal<<} {~~cyberidex~>cyberindex~~} to allow fast and easy data manipulation and anlysis.
+Localbostrom comes preconfigured with opinionated, sensible defaults for standard testing environments. Also, it comes with preconfigured cyberindex to allow fast and easy data manipulation and anlysis.
 
 Localbostrom has the following advantages over a public testnet:
 
