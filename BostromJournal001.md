@@ -146,7 +146,7 @@ The knowledge graph of Bostrom blockchain consists of pairs: each source particl
 
 ### Particles [~](https://cyb.ai/ipfs/QmUneFYddsrQSkeGLFPs8oWxVVWmxsSJSFYMQW5uHgq3Rc)
 
-A particle is a hash of the file in IPFS network (`cid` in IPFS terminology). A file can be retrieved from IPFS network using its hash. Particles are written into Bostrom blockchain. But, cyb.ai application is built to render the content of cyberlinked files.
+A particle is a hash of the file in IPFS network (`cid` in IPFS terminology). A file can be retrieved from IPFS network using its `cid`. Particles are written into Bostrom blockchain. But, cyb.ai application is built to render the content of cyberlinked files.
 
 ### Cyberlinks [~](https://cyb.ai/ipfs/QmewU6pKFtGc3Fm8XsMxS3bA2xf3swQwuPuepxebp2WNMH)
 
