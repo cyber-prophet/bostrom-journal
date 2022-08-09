@@ -1,6 +1,6 @@
-# Bostrom Journal [~](https://cyb.ai/ipfs/QmTJBo8DKJ2irPr8gtKoverY1MjnhZY4pmbWqC3DNbynk9)
+# Bostrom Journal [~](https://cyb.ai/ipfs/QmVUdZRMuhuYUsyQfjzzwgjymdXsXzcgNeJ7bb6Eaeeave)
 
-## Issue 1: Bostrom blockchain manual [~](https://cyb.ai/ipfs/Qme43ykBcvg7gn2RMNh7qEwWQ4booLJj9muyptKTngNzjG)
+## Issue 1: Bostrom blockchain manual [~](https://cyb.ai/ipfs/QmXPzdmPG4sa6sT5vLQWUuZ2cQRLe8ubCeud1x9pQE1rHU)
 
 ### Issue metadata [~](https://cyb.ai/ipfs/QmefpoJTMkv9GE1TBMPpkNaASE9cyvX8hRTrwuCkr2Wv6C)
 
@@ -89,7 +89,7 @@ There are documents about Bostrom's blockchain written by Bostrom's founders or 
 
 If you are interested in researching Bostrom, all of these sources can give you a lot of information. Nevertheless, I believe that this manual is a good starting point.
 
-## Intro to Bostrom Blockchain [~](https://cyb.ai/ipfs/QmS8Pp9yt4xUrfJPTkViKopS16a4NBeNLLbdXX7Eprmcgk)
+## Intro to Bostrom Blockchain [~](https://cyb.ai/ipfs/Qmahxtp3r6PEHj5tpqf2cGeibou3ADkZwR6QVfxHU1urMe)
 
 ### Bostrom - the short definition [~](https://cyb.ai/ipfs/QmRZ5qnLpBK5br4qJDTJAUVn2ny5fnbSTP6u6U5zMqzeTi)
 
@@ -235,7 +235,7 @@ Amperes and Volts are finite due to fundamental constraints in computing resourc
 
 Halving occurs every 567 days, which means half as many tokens can be minted per time unit compared to the before halving amount.
 
-## Important blockchain concepts and their meaning [~](https://cyb.ai/ipfs/QmW2wYGtmpZifyQyqaBthB3XYpqMWeE4NE9wjBc3cebpHP)
+## Important blockchain concepts and their meaning [~](https://cyb.ai/ipfs/QmSa8JbvaY9ZWb2kUjJuWDM88jKDrEEm3qDfAMA7LDkUpp)
 
 ### State machine [~](https://cyb.ai/ipfs/QmZm47H5JkEisXAzdFT5GzeLBDnaXKUD2grUpBoEUy2ynj)
 
@@ -329,7 +329,7 @@ All the violations and the penalties are noted in the blockchain settings and ar
 
 In order to hedge `slashing` risks one may distribute `stakes` between several heroes.
 
-## Cyb.ai functionality [~](https://cyb.ai/ipfs/QmYZZQdk45evTxQ6tTbDN9PjeqdkpgvTjGVqJogpHQyoXz)
+## Cyb.ai functionality [~](https://cyb.ai/ipfs/QmavQb8Rx8gwsCUXejiWSFUXcE43bPysFCqyEEVkd5DGiV)
 
 ### Cyb.ai: intro, mechanics [~](https://cyb.ai/ipfs/QmdjtqR5XARE7dfyYzyP8y17gi7Zbru3PPmtDyFW3RMbde)
 
@@ -432,7 +432,7 @@ In Bostrom smart contracts earn 80% from spent gas. This gas remains on prog's b
 
 Default mode network or [dmn](/search/dmn) is highly experimental and of cutting edge functionality. You can check out [API](https://lcd.bostrom.cybernode.ai/swagger/#/Query/Thought) and [implementation](https://github.com/cybercongress/go-cyber/tree/main/x/dmn). Docs and examples are coming!
 
-## Apps built on Bostrom, for Bostrom [~](https://cyb.ai/ipfs/QmeorB2mfs5hp3qdzEHojUwWisUYNbaGXtS2wjKuxSKTAK)
+## Apps built on Bostrom, for Bostrom [~](https://cyb.ai/ipfs/QmPLpwwwj2Lpvi75uHM4RU35E2PC8vhSr1mEZ8fZezM4ZW)
 
 ### go-cyber [~](https://cyb.ai/ipfs/QmXc7yHfHgirR2dNERJKcfWKnHKBm9Ag6wyLJfe66jzEP6)
 
@@ -544,7 +544,7 @@ You can make a copy of the spreadsheet and fill in blue cells with your inputs.
 
 To contribute - request write rights.
 
-## Bostrom Blockchain philosophy [~](https://cyb.ai/ipfs/QmNzCSwQCV9Zx5erwtm4Y1C3PXDicGMoBwD4AkTPmBgECx)
+## Bostrom Blockchain philosophy [~](https://cyb.ai/ipfs/Qmbu96AqoHQ6uXcUhj82UGdpURSCgZFR2MehdE6jU47HiG)
 
 ### The Great Web [~](https://cyb.ai/ipfs/QmUKc2PLbVVWzER76TdBsZbJ3TCYUMWUAaQ72g2Cd5fYJR)
 
@@ -570,7 +570,7 @@ The content of text particles in Cyb.ai is rendered in Markdown. Cyb.ai uses [Re
 
 You can check how your post will look like on cyb.ai before posting [here](https://markdown-it.github.io/).
 
-## Bostrom tokenomics [~](https://cyb.ai/ipfs/QmXhrz7BZ7xQga3XDjY91EKxDtjfqAQuN1dH4NrDKxCsUe)
+## Bostrom tokenomics [~](https://cyb.ai/ipfs/QmaVPb1vU8a2JSxL7pUq8mfEduV7k4Bajoc49TUBVGNT4H)
 
 ### BOOT and TOCYB genesis allocation [~](https://cyb.ai/ipfs/QmTbdy4RKgHWY9NYQdYvbaRKNP6d2MUbC7MP3VfbdvTVJY)
 
@@ -799,7 +799,7 @@ There will be an incentive of **13x** for those who claim first, reducing to **7
 - **web3** by IPFS link `gateway.ipfs.cybernode.ai/ipfs/QmWvynJ9yrfU5ju8dRSDBY7SmfEugoTyhtA5YmvSqE6Q1c/<your address>.json`  
   for example [gateway.ipfs.cybernode.ai/ipfs/QmWvynJ9yrfU5ju8dRSDBY7SmfEugoTyhtA5YmvSqE6Q1c/0x91170c80ce048e00202e7ad72f8cfab86ec9004d.json](https://gateway.ipfs.cybernode.ai/ipfs/QmWvynJ9yrfU5ju8dRSDBY7SmfEugoTyhtA5YmvSqE6Q1c/0x91170c80ce048e00202e7ad72f8cfab86ec9004d.json)
 
-## About Bostrom Journal [~](https://cyb.ai/ipfs/Qmb7TdRHe3ewUTYbUN3SjUNz3xRm1MyT5oFnrXR63VxmDF)
+## About Bostrom Journal [~](https://cyb.ai/ipfs/QmPPihLToaWtA8HyKfs3QQ7eQhqddqH94QH4Wi76fNM6GY)
 
 ### Editor's note [~](https://cyb.ai/ipfs/QmYJuLNoptNMQ6tqsnyu1Aas9WBm2piphbf1i8SPAgp2vp)
 
