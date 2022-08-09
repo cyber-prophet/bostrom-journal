@@ -508,17 +508,17 @@ There you can search for the best arbitrage options in Bostrom. Jupyter notebook
 
 #### Backend services provided by cybernode.ai
 
-- Bostrom [RPC](https://rpc.bostrom.cybernode.ai)
-- Bostrom [REST](https://lcd.bostrom.cybernode.ai)
-- Bostrom [index](https://index.bostrom.cybernode.ai)
-- Bostrom [websocket](wss://rpc.bostrom.cybernode.ai/websocket)
-- Cosmoshub-4 [RPC](https://rpc.cosmoshub-4.cybernode.ai)
-- Cosmoshub-4 [REST](https://lcd.cosmoshub-4.cybernode.ai)
-- Ethereum [RPC](https://rpc.ethereum.cybernode.ai)
-- Ethereum [websocket](wss://ws.ethereum.cybernode.ai)
-- Ethereum rinkeby [RPC](https://rpc-rinkeby.ethereum.cybernode.ai)
-- Ethereum rinkeby [websocket](wss://ws-rinkeby.ethereum.cybernode.ai)
-- IPFS [gateway](https://gateway.ipfs.cybernode.ai)
+- Bostrom RPC `https://rpc.bostrom.cybernode.ai`
+- Bostrom REST `https://lcd.bostrom.cybernode.ai`
+- Bostrom index `https://index.bostrom.cybernode.ai`
+- Bostrom websocket `wss://rpc.bostrom.cybernode.ai/websocket`
+- Cosmoshub-4 RPC `https://rpc.cosmoshub-4.cybernode.ai`
+- Cosmoshub-4 REST `https://lcd.cosmoshub-4.cybernode.ai`
+- Ethereum RPC `https://rpc.ethereum.cybernode.ai`
+- Ethereum websocket `wss://ws.ethereum.cybernode.ai`
+- Ethereum rinkeby RPC `https://rpc-rinkeby.ethereum.cybernode.ai`
+- Ethereum rinkeby websocket `wss://ws-rinkeby.ethereum.cybernode.ai`
+- IPFS gateway `https://gateway.ipfs.cybernode.ai`
 
 ### LocalBostrom [~](https://cyb.ai/ipfs/Qmf4kFKoNCNombbHBFvcU16SxKbHd2EdxmcHnFmwMpvLoY)
 
