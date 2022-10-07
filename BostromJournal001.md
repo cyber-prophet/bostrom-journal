@@ -76,7 +76,7 @@ Journal address: [Bostrom Journal](https://cyb.ai/network/bostrom/contract/bostr
 
 ## Preface [~](https://cyb.ai/ipfs/QmcaG7sxaCuZJ82MRTsdvHcNHjMTqQxsfEiYXtCzbtbAEb)
 
-This document is intended to provide the brief and necessary information for understanding the potential of Bostrom's blockchain, explaining its features and capabilities. I am neither the founder nor the developer of Bostrom, though I had the luck to communicate with them and develop my understanding of Bostrom's mechanics, which I am sharing here.
+This document is intended to provide brief and necessary information for understanding the potential of Bostrom's blockchain, explaining its features and capabilities. I am neither the founder nor the developer of Bostrom, though I am lucky to communicate with them and develop my understanding of Bostrom's mechanics, which I am sharing here.
 
 There are documents about Bostrom's blockchain written by Bostrom's founders or the cyberCongress team:
 
@@ -87,17 +87,17 @@ There are documents about Bostrom's blockchain written by Bostrom's founders or 
 - [Cyber's story](https://cyb.ai/genesis)
 - Docs on go-cyber (`.md` files) scattered all over the folders of go-cyber repository on the [github](https://github.com/cybercongress/go-cyber)
 
-If you are interested in researching Bostrom, all of these sources can give you a lot of information. Nevertheless, I believe that this manual is a good starting point.
+If you are interested in researching Bostrom these sources can give you a lot of information. Nevertheless, I believe that this manual is a good starting point.
 
 ## Intro to Bostrom Blockchain [~](https://cyb.ai/ipfs/Qmahxtp3r6PEHj5tpqf2cGeibou3ADkZwR6QVfxHU1urMe)
 
 ### Bostrom - the short definition [~](https://cyb.ai/ipfs/QmRZ5qnLpBK5br4qJDTJAUVn2ny5fnbSTP6u6U5zMqzeTi)
 
-Bostrom is a superintelligence project with a permissionless knowledge graph at its core built on blockchain (cosmos-SDK) and content addressing mechanism (with the current implementation of IPFS protocol).
+Bostrom is a superintelligence project with a permissionless knowledge graph at its core built on blockchain (cosmos-SDK) and a content addressing mechanism (with the current implementation of IPFS protocol).
 
 ### Purpose of the Bostrom network [~](https://cyb.ai/ipfs/QmWnDz2eHQ2Lii42zkEuc3kgC1iLmg9vr2D6mjhkQfZT1P)
 
-Bostrom allows adding knowledge (creating cyberlinks between particles) to the knowledge graph verifiably. By "verifiably" we mean that it is guaranteed by blockchain design that the holder of a particular private key added specific content into the blockchain at the known time. And it is technically correct to say that the holder of the exact private key signed files (uniquely identified by their hashes) by writing this information into Bostrom blockchain.
+Bostrom allows for adding knowledge (creating cyberlinks between particles) to the knowledge graph verifiably. By "verifiably" we mean that it is guaranteed by blockchain design that the holder of a particular private key added specific content into the blockchain at the known time. It is technically correct to say that the holder of the exact private key signed files (uniquely identified by their hashes) by writing this information into the Bostrom blockchain.
 
 The knowledge graph is a directed weighted graph between particles (CIDs or Content-ID of files, also known as content addresses, IPFS-hashes, IPFS-links).
 
@@ -130,9 +130,9 @@ IPFS does not guarantee the safety or retrievability of the files.
 
 ### Bostrom is a full refactoring of the Euler network [~](https://cyb.ai/ipfs/Qmb9iL8JdJqRG1ioFAzes8MUWzJrxMWso8fW3fanVesL86)
 
-Bostrom blockchain is the result of 5 years' work and research of [cyber~congress](https://github.com/cybercongress/) team.
+Bostrom blockchain is the result of 5 years' work and research of the [cyber~congress](https://github.com/cybercongress/) team.
 
-Before Bostrom network (which itself had 5 testnets), there were 6 testnets known as Euler network.
+Before the Bostrom network (which itself had 5 testnets), there were 6 testnets known as the Euler network.
 
 Bostrom is a full refactoring of the Euler network with a strong focus on Superintelligence. It includes a new distribution model, economics, improved ranking, and some superintelligent abilities.
 
@@ -142,15 +142,15 @@ The key differences within the Bostrom and Cyber network are to be discussed [he
 
 ## Knowledge graph [~](https://cyb.ai/ipfs/QmY5GGToNJ7ZZEju5Q6n52qGLGti3wuLPAa5xNfFEjSjje)
 
-The knowledge graph of Bostrom blockchain consists of pairs: each source particle is connected to a destination particle via cyberlink (with additional information of neuron's address and the height info). So it can be encoded as `source_particle - destination_particle`, which reduces the complexity of entering data (compared to triples, commonly used in modern knowledge graph applications). Cyberlinks combined with markdown marked up text files, where various conventions on connections between particles could be used, provide the necessary flexibility to Bostrom's knowledge graph, adapting it to a vast variety of possible usages.
+The knowledge graph of the Bostrom blockchain consists of pairs: each source particle is connected to a destination particle via cyberlink (with additional information of the neuron's address and height info). So it can be encoded as `source_particle - destination_particle`, which reduces the complexity of entering data (compared to triples, commonly used in modern knowledge graph applications). Cyberlinks combined with markdown marked up text files, where various conventions on connections between particles could be used, provide the necessary flexibility to Bostrom's knowledge graph, adapting it to a vast variety of possible usages.
 
 ### Particles [~](https://cyb.ai/ipfs/QmSxizUKhJhyVjzXQJfwiUabsdCdHSSWfkiMRAPcmVjqSY)
 
-A particle is a hash of the file in IPFS network (`cid` in IPFS terminology). A file can be retrieved from IPFS network using its `cid`. Particles are written into Bostrom blockchain. But, cyb.ai application is built to render the content of cyberlinked files.
+A particle is a hash of the file in IPFS network (`cid` in IPFS terminology). A file can be retrieved from the IPFS network using its `cid`. Particles are written into the Bostrom blockchain. But, the cyb.ai application is built to render the content of cyberlinked files.
 
 ### Cyberlinks [~](https://cyb.ai/ipfs/QmZ21tAfZ4Yu2XCWDzMEFUQJFrMTVk8bAgt9GfLMXiYQhH)
 
-A cyberlink (noun) is a link between two particles registered in Bostrom blockchain by a particular neuron.
+A cyberlink (noun) is a link between two particles registered in the Bostrom blockchain by a particular neuron.
 
 To cyberlink (verb) - to create a cyberlink between two particles.
 
@@ -173,9 +173,9 @@ There are several native tokens in the Bostrom network: BOOT, HYDROGEN, VOLT, AM
 
 All the tokens can be in two states: frozen and liquid (except TOCYB which is always in liquid state).
 
-When tokens are in liquid state they can be:
+When tokens are in a liquid state they can be:
 
-- transferred to other addresses in the Bostrom or other blockchains of Cosmos network;
+- transferred to other addresses in Bostrom or other blockchains of the Cosmos network;
 - swapped to other tokens using liquidity pools. Other tokens can be non-native Bostrom tokens transferred by IBC protocol from other blockchains of the Cosmos network.
 
 ### BOOT token [~](https://cyb.ai/ipfs/QmQhvkpamvjqdCTk8qKT6dCb859Jc6Rsh2er41nMxFBYEy)
@@ -253,7 +253,7 @@ Each node contains a blockchain replica (transaction log) that allows computing 
 
 ### Transactions and their cost in Bostrom [~](https://cyb.ai/ipfs/QmYQQP2T23bcCrRqaTAV1cP5eZt2E5E1YUUW9q7Mk6ueFu)
 
-Any action changing the state of blockchain is a transaction.
+Any action changing the state of the blockchain is a transaction.
 
 Examples of actions changing state of Bostrom:
 
@@ -292,7 +292,7 @@ Bostrom is designed to economically encourage (incentivize) heroes and neurons t
 Heroes are responsible for:
 
 - adding blocks of transactions to the blockchain (and thus changing its state);
-- distributing state of a blockchain via various APIs.
+- distributing the state of a blockchain via various APIs.
 
 Neurons' valuable functions are:
 
@@ -305,16 +305,16 @@ Neurons' valuable functions are:
 
 The economic incentivization mechanism of heroes and neurons in Bostrom includes rewards and penalties.
 
-Blockchain is programmed to mint new BOOT tokens in each block to pay rewards. The `inflation_rate` coefficient determines the number of new tokens produced. `Inflation_rate` coefficient depends on the share of `staked` BOOTs:
+The blockchain is programmed to mint new BOOT tokens in each block to pay rewards. The `inflation_rate` coefficient determines the number of new tokens produced. `Inflation_rate` coefficient depends on the share of `staked` BOOTs:
 
-- if the `staked` percentage of BOOTs is less than the `goal_bonded` parameter, then the `inflation_rate` coefficient will be increasing for each block till it hits the `inflation_rate_max` value. The higher the `inflation_rate`, the more rewarding is the `stake`;
+- if the `staked` percentage of BOOTs is less than the `goal_bonded` parameter, then the `inflation_rate` coefficient will be increasing for each block till it hits the `inflation_rate_max` value. The higher the `inflation_rate`, the more rewarding the `stake`;
 - if the `staked` percentage of BOOTs is more than the `goal_bonded` parameter, then the `inflation_rate` coefficient will be decreasing for each block till it hits the `inflation_rate_min` value, thus signaling to search for another way of profiting from BOOTs.
 
 New tokens are distributed between neurons who `staked` their tokens and heroes proportionally to their `staked` tokens.
 
 Heroes receive a set fee.
 
-Neurons are rewarded for deligating (`staking`) tokens to heroes and bearing `slashing` risks (reducing `stake` by the penalty amount), and also risks of skipping blocks without getting any rewards (while the hero who committed violation remains in the `jail` state).
+Neurons are rewarded for delegating (`staking`) tokens to heroes and bearing `slashing` risks (reducing `stake` by the penalty amount), and also risks of skipping blocks without getting any rewards (while the hero who committed violation remains in the `jail` state).
 
 Neurons' risks are that the heroes, to whom the former have delegated their tokens, may commit a violation of two kinds:
 
@@ -335,7 +335,7 @@ In order to hedge `slashing` risks one may distribute `stakes` between several h
 
 [Cyb.ai](https://cyb.ai) - is a WEB interface to the Bostrom blockchain developed by the cyberCongress team. Among Cyb.ai's many functions are:
 
-- receiving data on cyberlinks recorded by Bostrom blockchain from the node;
+- receiving data on cyberlinks recorded by the Bostrom blockchain from the node;
 - creating cyberlinks;
 - receiving and sharing objects in the IPFS network using library [ipfs-js](https://github.com/ipfs/js-ipfs).
 
@@ -349,7 +349,7 @@ Similar results might be recieved by using go-cyber CLI:
 
 `cyber query rank search QmWysZirB2fbKeaNPZxfjY9M381WjyzbdG5FhcxysYhJ7m --chain-id bostrom --node https://rpc.bostrom.cybernode.ai:443`
 
-If there are cyberlinks originating from the search query's IPFS hash, then the node returns particles sorted by cyberrank, cyb.ai using IPFS-JS node retrieves files from IPFS and presents these results.
+If there are cyberlinks originating from the search query's IPFS hash, then the node returns particles sorted by cyberrank, cyb.ai, using IPFS-JS node retrieves files from IPFS and presents these results.
 
 Thus, the search results in cyb.ai are the files stored in IPFS (received by the browser and rendered on the page) with the IPFS hashes that were cyberlinked to the IPFS hash of the text entered into the search bar.
 
@@ -422,13 +422,13 @@ During [voting period](https://cyb.ai/network/bostrom/parameters/gov) proposal h
 
 ### Progs [~](https://cyb.ai/ipfs/QmNmG6zx4AXH2rK5wKM2JKB7VdWtFRkV1VBuFfiP513BrA)
 
-Progs are autonomous programs, that live in some metastable information environment such as blockchain and are able to act on their own behalf and in their own interest.
+Progs are autonomous programs, that live in some metastable information environment such as a blockchain and are able to act on their own behalf and in their own interest.
 
-Technically a prog is a smart contract without admin control which is able to schedule next call in a way to have gas for a scheduling the next call.
+Technically a prog is a smart contract without admin control which is able to schedule next call in a way to have gas for scheduling the next call.
 
 > Until a prog is able to prog a prog is living.
 
-In Bostrom smart contracts earn 80% from spent gas. This gas remains on prog's balance and is in possession of a smart contract logic. Bostom has default mode network that allows progs compete for computing space by bidding for scheduling calls.
+In Bostrom, smart contracts earn 80% from spent gas. This gas remains on a prog's balance and is in possession of a smart contract logic. Bostrom has default mode network that allows progs to compete for computing space by bidding for scheduling calls.
 
 Default mode network or [dmn](/search/dmn) is highly experimental and of cutting edge functionality. You can check out [API](https://lcd.bostrom.cybernode.ai/swagger/#/Query/Thought) and [implementation](https://github.com/cybercongress/go-cyber/tree/main/x/dmn). Docs and examples are coming!
 
@@ -452,7 +452,7 @@ Cyb.ai functionality is explained in a separate chapter above.
 
 ### cyberindex [~](https://cyb.ai/ipfs/QmYmSkdYB4AQma89zsKk34vH4p92VCB6wF3uHMPf5EQH3Y)
 
-Cyberindex is an indexer application, that extracts set of data from the blockchain and writes it to postgres database. Indexer is written on go language for Cyber's networks. [Github](https://github.com/cybercongress/cyberindex)
+Cyberindex is an indexer application, that extracts a set of data from the blockchain and writes it to postgres database. Indexer is written in go language for Cyber's networks. [Github](https://github.com/cybercongress/cyberindex)
 
 Supported:
 
@@ -474,7 +474,7 @@ Cybernode is the tool to deploy, operate, maintain, and monitor major protocols 
 
 [Open source](https://github.com/Snedashkovsky/cyberdBot) telegram bot for Cyber.
 
-The hosted by the developer bot is up and running and can be found on [telegram](https://t.me/cyberdbot). It has the following features:
+The developer-hosted bot is up and running and can be found on [telegram](https://t.me/cyberdbot). It has the following features:
 
 - searching on Bostrom
 - creating cyberlinks
@@ -487,7 +487,7 @@ The hosted by the developer bot is up and running and can be found on [telegram]
 
 ### cyber.py [~](https://cyb.ai/ipfs/QmXM7SNQUizxuttNbQ6YTfBnZvfWzWLCkDRnFbWp6bNN5i)
 
-Python SDK providing rich functionality for interacting with Bostrom blockchain. Fork of terra money sdk. Using cyber.py is preferable. [Github](https://github.com/SaveTheAles/cyber.py).
+Python SDK provides rich functionality for interacting with the Bostrom blockchain. Fork of terra money sdk. Using cyber.py is preferable. [Github](https://github.com/SaveTheAles/cyber.py).
 
 ### cyberpy [~](https://cyb.ai/ipfs/QmXeeovYeGgbft4WoRBCrArfqeRmnuJc2i7tZDj6oDMTKp)
 
@@ -552,7 +552,7 @@ The Great Web is a web that lasts. It is based on three simple ideas: access, im
 
 #### Access
 
-Anyone who can store secret and compute digital signatures can use the Great Web. Humans, robots, animals, plants, and even mycelium can use it without discrimination and limits.
+Anyone who can store secrets and compute digital signatures can use the Great Web. Humans, robots, animals, plants, and even mycelium can use it without discrimination and limits.
 
 #### Immutability
 
@@ -568,7 +568,7 @@ Markdown markup is readable by humans and easily parsable by machines. It can be
 
 The content of text particles in Cyb.ai is rendered in Markdown. Cyb.ai uses [ReactMarkdown](https://www.npmjs.com/package/react-markdown), [remarkGfm](https://www.npmjs.com/package/remark-gfm) JS packages to render markdown.
 
-You can check how your post will look like on cyb.ai before posting [here](https://markdown-it.github.io/).
+You can check how your post will look on cyb.ai before posting [here](https://markdown-it.github.io/).
 
 ## Bostrom tokenomics [~](https://cyb.ai/ipfs/QmaVPb1vU8a2JSxL7pUq8mfEduV7k4Bajoc49TUBVGNT4H)
 
@@ -643,7 +643,7 @@ The research results are represented by reproducible scripts which output addres
 
 Data source is [BigQuery crypto-ethereum dataset](https://console.cloud.google.com/bigquery?d=crypto_ethereum&p=bigquery-public-data&page=dataset&project=cosmic-keep-223223) by [Blockchain ETL](https://github.com/blockchain-etl).
 
-Research is done on the proposal basis. We hope this research can help pioneer a new wave of thinking in decentralized marketing.
+Research is done on a proposal basis. We hope this research can help pioneer a new wave of thinking in decentralized marketing.
 
 #### Connecting the Dots
 
@@ -711,7 +711,7 @@ Bostrom is built using Cosmos-sdk, so attracting Cosmonauts is essential for the
 
 #### Praying for Hackers
 
-Developers, developers, developers... Success of any protocol is defined by it's ability to attract developers. Luckily Ethereum laid an amazing foundation for the identification of succesfull developers. The gas fee drop method is an unambiguous and provable way to give tokens to the mighty hands.
+Developers, developers, developers... Success of any protocol is defined by it's ability to attract developers. Luckily Ethereum laid an amazing foundation for the identification of succesful developers. The gas fee drop method is an unambiguous and provable way to give tokens to the mighty hands.
 
 | Audience              | Rule                                                           | level 1  | level 2  | level 3    | Calculations                                                                                        |
 | --------------------- | -------------------------------------------------------------- | -------- | -------- | ---------- | --------------------------------------------------------------------------------------------------- |
@@ -775,7 +775,7 @@ Addresses based on the fiat system will not be included, namely those that satis
 #### Prize to be the First
 
 We've added an incentive to claim the gift early.  
-There are about **4M** addresses in Gift, but we expect that only the first **~1/10** accounts can claim them.
+There are about **4M** addresses included in the Gift, but we expect that only the first **~1/10** accounts can claim them.
 
 There will be an incentive of **13x** for those who claim first, reducing to **7x** for those who come last.
 
@@ -803,7 +803,7 @@ There will be an incentive of **13x** for those who claim first, reducing to **7
 
 ### Editor's note [~](https://cyb.ai/ipfs/QmYJuLNoptNMQ6tqsnyu1Aas9WBm2piphbf1i8SPAgp2vp)
 
-This journal is a new phenomenon. Journal's team experiment here with Bostrom's unique features and apply them to real world problems in a form resembling modern scientific journals.
+This journal is a new phenomenon. It is the journal's team experiment to combine with Bostrom's unique features and apply them to real world problems in a form resembling modern scientific journals.
 
 Bostrom journal is created on top of the Bostrom Blockchain knowledge graph (we assembled this journal from files of Bostrom's knowledge graph).
 
