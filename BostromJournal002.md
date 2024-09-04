@@ -1,12 +1,14 @@
 # Methods of publishing information into Cybergraph
 
-## Confirmation of cyberlink validity
+Cybergraph is a new phenomenon. It's hard to predict which way of writing information to Cybergraph is the most convenient or effective. In this journal, I simply imagine and reflect on possible ways.
+
+## Confirmation of a cyberlink validity
 
 Just create the same cyberlink
 
-## Denial of cyberlink validity
+## Denial of a cyberlink validity
 
-A - a cid of a document 
+A - a cid of a document
 B - a cid of a document
 A.B - a cid of cids A.B
 D - a cid of the word 'deny'
