@@ -2,6 +2,10 @@
 
 Cybergraph is a new phenomenon. It's hard to predict which way of writing information to Cybergraph is the most convenient or effective. In this journal, I simply imagine and reflect on possible ways.
 
+## Aknowledgment
+
+One of the first (if not the first) authors to publish ideas on this topic was @snedashkovsky in [semantic conventions](https://github.com/Snedashkovsky/cyber-semantic-conventions).
+
 ## Confirmation of a cyberlink validity
 
 Just create the same cyberlink
