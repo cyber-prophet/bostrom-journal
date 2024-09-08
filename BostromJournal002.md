@@ -6,6 +6,24 @@ Cybergraph is a new phenomenon. It's hard to predict which way of writing inform
 
 One of the first (if not the first) authors to publish ideas on this topic was @snedashkovsky in [semantic conventions](https://github.com/Snedashkovsky/cyber-semantic-conventions).
 
+## Fundamentals
+
+Technically Cybergraph is a data structure written in Blockchain with the next fields:
+
+- particle_from
+- particle_to
+- neuron
+- height
+
+And because it is written into cosmos-sdk based blockchain, we can retrieve the following fields:
+
+- tx hash
+- tx messages
+- tx memo
+- date time
+- account sequence
+- signatures of validators
+
 ## Confirmation of a cyberlink validity
 
 Just create the same cyberlink
