@@ -77,25 +77,25 @@ A.B -> B
 D -> A.B
 ```
 
-### Excerpts
+### Quotes
 
 ```
 A - a cid of a document
-B - a cid of an excerpt from the document A
+B - a cid of an quote from the document A
 B.A - a cid of cids B.A
-E - a cid of the word 'excerpt'
+Q - a cid of the word 'quote'
 
 Ways it can be cyberlinked
 
 B -> A
 B.A -> A
 B.A -> B
-E -> B.A
+Q -> B.A
 
 Document B might be a yaml file of a structure
 "
 text: some text
 parent_cid: A
-type: excerpt
+type: quote
 "
 ```
