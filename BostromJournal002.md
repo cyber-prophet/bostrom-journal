@@ -13,10 +13,12 @@ Technically, Cybergraph is a data structure written in Blockchain with the follo
 - particle_from
 - particle_to
 - neuron
+
+As of now, there are direct API methods in `go-cyber 0.3.1` to interact with those three fields, which do not involve parsing transactions. Namely, (`cyber query rank search`, `cyber query rank backlinks`, `cyber query rank is-exist`).
+
+Additionally, because Cybergraph is written into a Cosmos SDK-based blockchain, we can retrieve the following fields as a part of raw tranactions:
+
 - height
-
-And because it is written into a cosmos-sdk based blockchain, we can retrieve the following fields:
-
 - tx hash
 - tx messages
 - tx memo
