@@ -30,6 +30,7 @@ Just create the same cyberlink
 
 ## Update to previosly published cyberlink
 
+```
 A - a cid of a document from original cyberlink
 B - a cid of another document from original cyberlink
 A.B - a cid of cids A.B
@@ -48,8 +49,11 @@ U.A.B -> A.B    # meta cyberlink to make it discoverable from the original cyber
 A.B -> U.A.B    # meta cyberlink to make it discoverable from the original cyberlinks
 U -> U.A.B      # this is classificator, how to read that cyberlink
 
+```
+
 ## Denial of a cyberlink validity
 
+```
 A - a cid of a document
 B - a cid of a document
 A.B - a cid of cids A.B
@@ -60,9 +64,11 @@ Ways it can be cyberlinked
 A.B -> A
 A.B -> B
 D -> A.B
+```
 
 ## Excerpts
 
+```
 A - a cid of a document
 B - a cid of an excerpt from the document A
 B.A - a cid of cids B.A
@@ -81,3 +87,4 @@ text: some text
 parent_cid: A
 type: excerpt
 "
+```
