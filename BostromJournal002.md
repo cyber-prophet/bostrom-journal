@@ -2,20 +2,20 @@
 
 Cybergraph is a new phenomenon. It's hard to predict which way of writing information to Cybergraph is the most convenient or effective. In this journal, I simply imagine and reflect on possible ways.
 
-## Aknowledgment
+## Acknowledgment
 
 One of the first (if not the first) authors to publish ideas on this topic was @snedashkovsky in [semantic conventions](https://github.com/Snedashkovsky/cyber-semantic-conventions).
 
 ## Fundamentals
 
-Technically Cybergraph is a data structure written in Blockchain with the next fields:
+Technically, Cybergraph is a data structure written in Blockchain with the following fields:
 
 - particle_from
 - particle_to
 - neuron
 - height
 
-And because it is written into cosmos-sdk based blockchain, we can retrieve the following fields:
+And because it is written into a cosmos-sdk based blockchain, we can retrieve the following fields:
 
 - tx hash
 - tx messages
@@ -24,18 +24,18 @@ And because it is written into cosmos-sdk based blockchain, we can retrieve the 
 - account sequence
 - signatures of validators
 
-## Confirmation of a cyberlink validity
+## Confirmation of a cyberlink's validity
 
-Just create the same cyberlink
+Just create the same cyberlink.
 
-## Update to previosly published cyberlink
+## Update to a previously published cyberlink
 
 ```
-A - a cid of a document from original cyberlink
-B - a cid of another document from original cyberlink
+A - a cid of a document from an original cyberlink
+B - a cid of another document from the original cyberlink
 A.B - a cid of cids A.B
 
-C - the new document for updated cyberlink
+C - the new document for the updated cyberlink
 
 U - a cid of the word 'update'
 
@@ -47,11 +47,10 @@ U.A.B -> A.C    # cyberlink for instruction to update cyberlink
 U.A.B -> A.B    # meta cyberlink to make it discoverable from the original cyberlinks
 # or?
 A.B -> U.A.B    # meta cyberlink to make it discoverable from the original cyberlinks
-U -> U.A.B      # this is classificator, how to read that cyberlink
-
+U -> U.A.B      # this is a classifier, how to read that cyberlink
 ```
 
-## Denial of a cyberlink validity
+## Denial of a cyberlink's validity
 
 ```
 A - a cid of a document
@@ -81,7 +80,7 @@ B.A -> A
 B.A -> B
 E -> B.A
 
-Document B might be a yaml file of a structre
+Document B might be a yaml file of a structure
 "
 text: some text
 parent_cid: A
