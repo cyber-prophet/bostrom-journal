@@ -30,11 +30,13 @@ Additionally, because Cybergraph is written into a Cosmos SDK-based blockchain, 
 
 This enables the comparatively easy technical ability to have proofs of publishing information to Cybergraph from a neuron (and even to have proofs that a neuron didn't publish any other information to Cybergraph at a specific moment in time), which can be cryptographically verified on their own without interaction with the blockchain.
 
-## Confirmation of a cyberlink's validity
+## Types of instructions for applications that process cybergraphs
+
+### Confirmation of a cyberlink's validity
 
 Just create the same cyberlink.
 
-## Update to a previously published cyberlink
+### Update to a previously published cyberlink
 
 ```
 A - a cid of a document from an original cyberlink
@@ -56,7 +58,11 @@ A.B -> U.A.B    # meta cyberlink to make it discoverable from the original cyber
 U -> U.A.B      # this is a classifier, how to read that cyberlink
 ```
 
-## Denial of a cyberlink's validity
+Who can update the previous cyberlink?
+
+The author.
+
+### Denial of a cyberlink's validity
 
 ```
 A - a cid of a document
@@ -71,7 +77,7 @@ A.B -> B
 D -> A.B
 ```
 
-## Excerpts
+### Excerpts
 
 ```
 A - a cid of a document
