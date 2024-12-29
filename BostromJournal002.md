@@ -2,17 +2,17 @@
 { 
     h1: 'Methods of publishing information into Cybergraph'
     h2: 'with examples by @cyber-prophet' 
-##    version: (version) 
+    nu_version: (version) 
     timestamp: (date now) 
     version: 0
     soul: {
         authors: ['@cyber-prophet aka @nushell-prophet']
- ##       keys: [(cy keys-list)]
+        keys: []
         address: [
             {
                 github: {
                     url: 'https://github.com/cyber-prophet/bostrom-journal/'
-                    revision: {'git' : (git log --long | to md))
+                    revision: (git : (git log --long | to md))
                 }
             }
         ]
@@ -23,7 +23,7 @@
     }
 }
 
-```
+ ```
 
 # Draft
 
