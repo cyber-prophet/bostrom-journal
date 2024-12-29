@@ -59,6 +59,7 @@ U -> U.A.B      # this is a classifier, how to read that cyberlink
 ```
 
 Who can update the previous cyberlink?
+// it should do the contract
 
 The author.
 
