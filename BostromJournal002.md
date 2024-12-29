@@ -2,7 +2,7 @@
 { 
     h1: 'Methods of publishing information into Cybergraph'
     h2: 'with examples by @cyber-prophet' 
-    version: (version) 
+##    version: (version) 
     timestamp: (date now) 
     version: 0
     soul: {
