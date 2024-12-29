@@ -1,14 +1,22 @@
 ```nu
-{
+{ 
     h1: 'Methods of publishing information into Cybergraph'
-    h2: 'with examples by @cyber-prophet'
-    version: (version)
-    timestamp: (date now)
+    h2: 'with examples by @cyber-prophet' 
+    version: (version) 
+    timestamp: (date now) 
     version: 0
     soul: {
         authors: ['@cyber-prophet aka @nushell-prophet']
         keys: [(cy keys-list)]
-        address: []
+        address: [
+            {
+                github: {
+                    url: 'https://github.com/cyber-prophet/bostrom-journal/'
+                    revision: (git : (git log --long | to md))
+                }
+            }
+        ]
+
     }
     cybergraph: {
         signers: []
