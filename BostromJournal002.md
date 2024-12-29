@@ -1,3 +1,22 @@
+```nu
+{
+    h1: 'Methods of publishing information into Cybergraph'
+    h2: 'with examples by @cyber-prophet'
+    version: (version)
+    timestamp: (date now)
+    version: 0
+    soul: {
+        authors: ['@cyber-prophet aka @nushell-prophet']
+        keys: [(cy keys-list)]
+        address: []
+    }
+    cybergraph: {
+        signers: []
+    }
+}
+
+ ```
+
 # Draft
 
 # Methods of publishing information into Cybergraph
@@ -103,3 +122,7 @@ type: quote
 
 # Collaborating on information
 
+# Collective decision making
+
+```nu
+```
