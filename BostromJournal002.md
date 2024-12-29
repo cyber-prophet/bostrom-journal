@@ -7,12 +7,12 @@
     version: 0
     soul: {
         authors: ['@cyber-prophet aka @nushell-prophet']
-        keys: [(cy keys-list)]
+ ##       keys: [(cy keys-list)]
         address: [
             {
                 github: {
                     url: 'https://github.com/cyber-prophet/bostrom-journal/'
-                    revision: (git : (git log --long | to md))
+                    revision: {'git' : (git log --long | to md))
                 }
             }
         ]
