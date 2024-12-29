@@ -100,3 +100,6 @@ parent_cid: A
 type: quote
 "
 ```
+
+# Collaborating on information
+
