@@ -50,7 +50,7 @@ Additionally, because Cybergraph is written into a Cosmos SDK-based blockchain, 
 - tx hash
 - tx messages
 - tx memo
-- date time
+- timestamp
 - account sequence
 - signatures of validators
 
