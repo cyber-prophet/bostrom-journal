@@ -54,7 +54,7 @@ Additionally, because Cybergraph is written into a Cosmos SDK-based blockchain, 
 - tx memo
 - signatures of validators
 
-This enables the comparatively easy technical ability to have proofs of publishing information to Cybergraph from a neuron (and even to have proofs that a neuron didn't publish any other information to Cybergraph at a specific moment in time), which can be cryptographically verified on their own without interaction with the blockchain.
+This enables the comparatively easy technical ability to have proofs of publishing information to Cybergraph from a neuron (and even to have proofs that a neuron didn't publish any other information to Cybergraph at a specific moment in time), which can be cryptographically verified on its own without interaction with the blockchain.
 
 ## Types of instructions for applications that process cybergraphs
 
