@@ -1,10 +1,8 @@
 # Draft
 
-# Methods of publishing information into Cybergraph
+# Methods of publishing information into cybergraph
 
 Cybergraph is a uniform data structure where content and conventions for processing that content are both expressed as cyberlinks. The set of conventions is open-ended. When implemented on blockchain, cybergraph inherits its properties: immutability, cryptographic authorship, and deterministic ordering.
-
-It's hard to predict which way of writing information to Cybergraph is the most convenient or effective. In this journal, I simply imagine and reflect on possible ways.
 
 ## Acknowledgment
 
@@ -18,9 +16,7 @@ On Bostrom blockchain, each cyberlink is recorded with the following fields:
 - particle_to
 - neuron
 
-As of now, there are direct API methods in `go-cyber 0.7.1` to interact with those three fields, which do not involve parsing transactions. Namely, (`cyber query rank search`, `cyber query rank backlinks`, `cyber query rank is-exist`).
-
-Additionally, because Cybergraph is written into a Cosmos SDK-based blockchain, we can retrieve the following fields as a part of raw tranactions:
+Additionally, because cybergraph is written into a Cosmos SDK-based blockchain, we can retrieve the following fields from raw transactions:
 
 - height
 - timestamp
@@ -30,7 +26,7 @@ Additionally, because Cybergraph is written into a Cosmos SDK-based blockchain, 
 - tx memo
 - signatures of validators
 
-This enables the comparatively easy technical ability to have proofs of publishing information to Cybergraph from a neuron (and even to have proofs that a neuron didn't publish any other information to Cybergraph at a specific moment in time), which can be cryptographically verified on its own without interaction with the blockchain.
+This makes it possible to prove that a neuron published specific information to cybergraph — or that it published nothing else at a given moment — with cryptographic verification independent of the blockchain.
 
 ## Conventions for applications that process cybergraphs
 
