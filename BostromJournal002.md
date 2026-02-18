@@ -12,7 +12,7 @@ One of the first (if not the first) authors to publish ideas on this topic was @
 
 ## Fundamentals
 
-Technically, Cybergraph is a data structure written in Blockchain with the following fields:
+On Bostrom blockchain, each cyberlink is recorded with the following fields:
 
 - particle_from
 - particle_to
@@ -32,7 +32,7 @@ Additionally, because Cybergraph is written into a Cosmos SDK-based blockchain, 
 
 This enables the comparatively easy technical ability to have proofs of publishing information to Cybergraph from a neuron (and even to have proofs that a neuron didn't publish any other information to Cybergraph at a specific moment in time), which can be cryptographically verified on its own without interaction with the blockchain.
 
-## Types of instructions for applications that process cybergraphs
+## Conventions for applications that process cybergraphs
 
 ### Confirmation of a cyberlink's validity
 
@@ -41,27 +41,22 @@ Just create the same cyberlink.
 ### Update to a previously published cyberlink
 
 ```
-A - a cid of a document from an original cyberlink
-B - a cid of another document from the original cyberlink
+A - a particle from the original cyberlink
+B - another particle from the original cyberlink
 R = hash(A, B) - the relationship
 
-C - the new document for the updated cyberlink
+C - the new particle for the updated cyberlink
 
 A → B                       # original cyberlink
 A → C                       # updated version of the original cyberlink
 hash("update", R) → C      # instruction to update the relationship
 ```
 
-Who can update the previous cyberlink?
-// it should do the contract
-
-The author.
-
 ### Denial of a cyberlink's validity
 
 ```
-A - a cid of a document
-B - a cid of a document
+A - a particle
+B - a particle
 
 hash("deny") → hash(A, B)  # denial of the relationship
 hash("deny") → hash(row)   # denial of a specific cyberlink
@@ -74,8 +69,8 @@ Two targets of denial:
 ### Quotes
 
 ```
-A - a cid of a document
-B - a cid of a substring of document A (verifiable: content(B) ⊂ content(A))
+A - a particle
+B - a particle, substring of content(A) (verifiable: content(B) ⊂ content(A))
 
 hash("quote", A) → B       # "B is an excerpt of A"
 
@@ -84,7 +79,7 @@ R = hash(hash("quote", A), B)  # the relationship is addressable, so others can:
                                 # deny (hash("deny") → R) — "this quote is misleading out of context"
 ```
 
-# Collaborating on information
+## Collaborating on information
 
 Cyberlinks connect not just content but neurons through content:
 
@@ -127,7 +122,7 @@ Neurons who consistently create cyberlinks that others confirm gain implicit rep
 | **AI Alignment** | Human feedback as cyberlinks; quantifiable preference aggregation |
 | **Supply Chain** | Product claims; certification; audit trails |
 
-# Collective decision making
+## Collective decision making
 
 Instead of discrete votes:
 - Proposals are statements (cyberlinks)
