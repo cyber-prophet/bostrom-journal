@@ -102,6 +102,12 @@ No central authority decides validity. Instead:
 - Aggregation reveals consensus
 - Minority views remain visible (not censored, just outnumbered)
 
+```
+Consensus(statement) = f(confirms, denies, neuron_weights, time_decay)
+```
+
+The exact formula is a policy choice. The cybergraph provides the raw data.
+
 ### Applications
 
 | Domain | Application |
@@ -116,16 +122,3 @@ No central authority decides validity. Instead:
 
 Four conventions on one primitive — confirm, deny, update, quote — are sufficient to express complex collaborative workflows. Since neurons can be both humans and contracts (progs), the same conventions apply to AI agent interactions without any additional infrastructure.
 
-## Collective decision making
-
-Instead of discrete votes:
-- Proposals are statements (cyberlinks)
-- Support/opposition accumulates continuously
-- Consensus emerges from the graph
-- Minority positions remain on record
-
-```
-Consensus(statement) = f(confirms, denies, neuron_weights, time_decay)
-```
-
-The exact formula is a policy choice. The cybergraph provides the raw data.
