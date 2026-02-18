@@ -115,7 +115,7 @@ No central authority decides validity. Instead:
 | **Legal** | Contract terms; witness statements; evidence chains |
 | **Standards** | Technical specs; community agreement on conventions |
 | **Education** | Knowledge validation; peer review of explanations |
-| **AI Alignment** | Human feedback as cyberlinks; quantifiable preference aggregation |
+| **AI Alignment** | AI agents interact via cyberlinks; quantifiable preference aggregation |
 | **Supply Chain** | Product claims; certification; audit trails |
 
 ## Collective decision making
