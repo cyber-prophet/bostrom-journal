@@ -118,6 +118,8 @@ No central authority decides validity. Instead:
 | **AI Alignment** | AI agents interact via cyberlinks; quantifiable preference aggregation |
 | **Supply Chain** | Product claims; certification; audit trails |
 
+Four conventions on one primitive — confirm, deny, update, quote — are sufficient to express complex collaborative workflows. Since neurons can be both humans and contracts (progs), the same conventions apply to AI agent interactions without any additional infrastructure.
+
 ## Collective decision making
 
 Instead of discrete votes:
