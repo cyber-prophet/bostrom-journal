@@ -72,14 +72,8 @@ R = hash(A, B) - the relationship
 C - the new document for the updated cyberlink
 
 A → B                       # original cyberlink
-R → A                       # service cyberlink to make it discoverable from the original cyberlinks
-R → B                       # --//--
 A → C                       # updated version of the original cyberlink
 hash("update", R) → C      # instruction to update the relationship
-hash("update", R) → R      # meta cyberlink to make it discoverable from the original cyberlinks
-# or?
-R → hash("update", R)      # meta cyberlink to make it discoverable from the original cyberlinks
-hash("update") → hash("update", R)  # this is a classifier, how to read that cyberlink
 ```
 
 Who can update the previous cyberlink?
@@ -93,8 +87,6 @@ The author.
 A - a cid of a document
 B - a cid of a document
 
-hash(A, B) → A              # service cyberlink for discoverability
-hash(A, B) → B              # --//--
 hash("deny") → hash(A, B)  # denial of the relationship
 ```
 
