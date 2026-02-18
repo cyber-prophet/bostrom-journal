@@ -108,23 +108,15 @@ D -> A.B
 
 ```
 A - a cid of a document
-B - a cid of an quote from the document A
-B.A - a cid of cids B.A
+B - a cid of a substring of document A (verifiable: content(B) ⊂ content(A))
 Q - a cid of the word 'quote'
+Q.A - a cid of cids Q.A
 
-Ways it can be cyberlinked
+Q.A -> B        # "B is an excerpt of A"
 
-B -> A
-B.A -> A
-B.A -> B
-Q -> B.A
-
-Document B might be a yaml file of a structure
-"
-text: some text
-parent_cid: A
-type: quote
-"
+R = Q.A.B       # the relationship is addressable, so others can:
+                # confirm (same Q.A -> B from another signer) — "this quote is fair"
+                # deny (D -> R) — "this quote is misleading out of context"
 ```
 
 # Collaborating on information
