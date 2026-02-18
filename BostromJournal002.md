@@ -78,7 +78,7 @@ B - a cid of a substring of document A (verifiable: content(B) ⊂ content(A))
 hash("quote", A) → B       # "B is an excerpt of A"
 
 R = hash(hash("quote", A), B)  # the relationship is addressable, so others can:
-                                # confirm (same hash("quote", A) → B from another signer) — "this quote is fair"
+                                # confirm (same hash("quote", A) → B from another neuron) — "this quote is fair"
                                 # deny (hash("deny") → R) — "this quote is misleading out of context"
 ```
 
@@ -98,8 +98,8 @@ The graph encodes not just "what is linked" but "who believes what" — and that
 ### Quantifiable consensus
 
 For any statement `A → B`:
-- Count matching links from distinct neurons → support level
-- Count deny links → dispute level
+- Count matching cyberlinks from distinct neurons → support level
+- Count deny cyberlinks → dispute level
 - Weight by neuron reputation → weighted consensus
 - Track over time → consensus evolution
 
@@ -111,7 +111,7 @@ No central authority decides validity. Instead:
 
 ### Reputation
 
-Neurons who consistently make links that others confirm gain implicit reputation. Neurons whose claims are frequently denied lose credibility. All traceable, all verifiable.
+Neurons who consistently create cyberlinks that others confirm gain implicit reputation. Neurons whose claims are frequently denied lose credibility. All traceable, all verifiable.
 
 ### Applications
 
