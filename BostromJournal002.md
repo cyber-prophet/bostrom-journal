@@ -106,10 +106,6 @@ No central authority decides validity. Instead:
 - Aggregation reveals consensus
 - Minority views remain visible (not censored, just outnumbered)
 
-### Reputation
-
-Neurons who consistently create cyberlinks that others confirm gain implicit reputation. Neurons whose claims are frequently denied lose credibility. All traceable, all verifiable.
-
 ### Applications
 
 | Domain | Application |
