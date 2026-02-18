@@ -67,18 +67,19 @@ Just create the same cyberlink.
 ```
 A - a cid of a document from an original cyberlink
 B - a cid of another document from the original cyberlink
+R = hash(A, B) - the relationship
 
 C - the new document for the updated cyberlink
 
 A -> B                       # original cyberlink
-hash(A, B) -> A              # service cyberlink to make it discoverable from the original cyberlinks
-hash(A, B) -> B              # --//--
+R -> A                       # service cyberlink to make it discoverable from the original cyberlinks
+R -> B                       # --//--
 A -> C                       # updated version of the original cyberlink
-hash("update", A, B) -> hash(A, C)    # cyberlink for instruction to update cyberlink
-hash("update", A, B) -> hash(A, B)    # meta cyberlink to make it discoverable from the original cyberlinks
+hash("update", R) -> C       # instruction to update the relationship
+hash("update", R) -> R       # meta cyberlink to make it discoverable from the original cyberlinks
 # or?
-hash(A, B) -> hash("update", A, B)    # meta cyberlink to make it discoverable from the original cyberlinks
-hash("update") -> hash("update", A, B)  # this is a classifier, how to read that cyberlink
+R -> hash("update", R)       # meta cyberlink to make it discoverable from the original cyberlinks
+hash("update") -> hash("update", R)  # this is a classifier, how to read that cyberlink
 ```
 
 Who can update the previous cyberlink?
