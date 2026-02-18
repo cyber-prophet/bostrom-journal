@@ -2,7 +2,9 @@
 
 # Methods of publishing information into Cybergraph
 
-Cybergraph is a new phenomenon. It's hard to predict which way of writing information to Cybergraph is the most convenient or effective. In this journal, I simply imagine and reflect on possible ways.
+Cybergraph is a uniform data structure where content and conventions for processing that content are both expressed as cyberlinks. The set of conventions is open-ended. When implemented on blockchain, cybergraph inherits its properties: immutability, cryptographic authorship, and deterministic ordering.
+
+It's hard to predict which way of writing information to Cybergraph is the most convenient or effective. In this journal, I simply imagine and reflect on possible ways.
 
 ## Acknowledgment
 
