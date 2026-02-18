@@ -67,21 +67,18 @@ Just create the same cyberlink.
 ```
 A - a cid of a document from an original cyberlink
 B - a cid of another document from the original cyberlink
-A.B - a cid of cids A.B
 
 C - the new document for the updated cyberlink
 
-U - a cid of the word 'update'
-
-A -> B          # original cyberlink
-A.B -> A        # service cyberlink to make it discoverable from the original cyberlinks
-A.B -> B        # --//--
-A -> C          # updated version of the original cyberlink
-U.A.B -> A.C    # cyberlink for instruction to update cyberlink
-U.A.B -> A.B    # meta cyberlink to make it discoverable from the original cyberlinks
+A -> B                       # original cyberlink
+hash(A, B) -> A              # service cyberlink to make it discoverable from the original cyberlinks
+hash(A, B) -> B              # --//--
+A -> C                       # updated version of the original cyberlink
+hash("update", A, B) -> hash(A, C)    # cyberlink for instruction to update cyberlink
+hash("update", A, B) -> hash(A, B)    # meta cyberlink to make it discoverable from the original cyberlinks
 # or?
-A.B -> U.A.B    # meta cyberlink to make it discoverable from the original cyberlinks
-U -> U.A.B      # this is a classifier, how to read that cyberlink
+hash(A, B) -> hash("update", A, B)    # meta cyberlink to make it discoverable from the original cyberlinks
+hash("update") -> hash("update", A, B)  # this is a classifier, how to read that cyberlink
 ```
 
 Who can update the previous cyberlink?
@@ -94,14 +91,10 @@ The author.
 ```
 A - a cid of a document
 B - a cid of a document
-A.B - a cid of cids A.B
-D - a cid of the word 'deny'
 
-Ways it can be cyberlinked
-
-A.B -> A
-A.B -> B
-D -> A.B
+hash(A, B) -> A              # service cyberlink for discoverability
+hash(A, B) -> B              # --//--
+hash("deny") -> hash(A, B)   # denial of the relationship
 ```
 
 ### Quotes
@@ -109,14 +102,12 @@ D -> A.B
 ```
 A - a cid of a document
 B - a cid of a substring of document A (verifiable: content(B) ⊂ content(A))
-Q - a cid of the word 'quote'
-Q.A - a cid of cids Q.A
 
-Q.A -> B        # "B is an excerpt of A"
+hash("quote", A) -> B        # "B is an excerpt of A"
 
-R = Q.A.B       # the relationship is addressable, so others can:
-                # confirm (same Q.A -> B from another signer) — "this quote is fair"
-                # deny (D -> R) — "this quote is misleading out of context"
+R = hash(hash("quote", A), B)  # the relationship is addressable, so others can:
+                                # confirm (same hash("quote", A) -> B from another signer) — "this quote is fair"
+                                # deny (hash("deny") -> R) — "this quote is misleading out of context"
 ```
 
 # Collaborating on information
