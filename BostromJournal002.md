@@ -71,15 +71,15 @@ R = hash(A, B) - the relationship
 
 C - the new document for the updated cyberlink
 
-A -> B                       # original cyberlink
-R -> A                       # service cyberlink to make it discoverable from the original cyberlinks
-R -> B                       # --//--
-A -> C                       # updated version of the original cyberlink
-hash("update", R) -> C       # instruction to update the relationship
-hash("update", R) -> R       # meta cyberlink to make it discoverable from the original cyberlinks
+A → B                       # original cyberlink
+R → A                       # service cyberlink to make it discoverable from the original cyberlinks
+R → B                       # --//--
+A → C                       # updated version of the original cyberlink
+hash("update", R) → C      # instruction to update the relationship
+hash("update", R) → R      # meta cyberlink to make it discoverable from the original cyberlinks
 # or?
-R -> hash("update", R)       # meta cyberlink to make it discoverable from the original cyberlinks
-hash("update") -> hash("update", R)  # this is a classifier, how to read that cyberlink
+R → hash("update", R)      # meta cyberlink to make it discoverable from the original cyberlinks
+hash("update") → hash("update", R)  # this is a classifier, how to read that cyberlink
 ```
 
 Who can update the previous cyberlink?
@@ -93,9 +93,9 @@ The author.
 A - a cid of a document
 B - a cid of a document
 
-hash(A, B) -> A              # service cyberlink for discoverability
-hash(A, B) -> B              # --//--
-hash("deny") -> hash(A, B)   # denial of the relationship
+hash(A, B) → A              # service cyberlink for discoverability
+hash(A, B) → B              # --//--
+hash("deny") → hash(A, B)  # denial of the relationship
 ```
 
 ### Quotes
@@ -104,11 +104,11 @@ hash("deny") -> hash(A, B)   # denial of the relationship
 A - a cid of a document
 B - a cid of a substring of document A (verifiable: content(B) ⊂ content(A))
 
-hash("quote", A) -> B        # "B is an excerpt of A"
+hash("quote", A) → B       # "B is an excerpt of A"
 
 R = hash(hash("quote", A), B)  # the relationship is addressable, so others can:
-                                # confirm (same hash("quote", A) -> B from another signer) — "this quote is fair"
-                                # deny (hash("deny") -> R) — "this quote is misleading out of context"
+                                # confirm (same hash("quote", A) → B from another signer) — "this quote is fair"
+                                # deny (hash("deny") → R) — "this quote is misleading out of context"
 ```
 
 # Collaborating on information
