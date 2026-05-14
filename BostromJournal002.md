@@ -4,7 +4,7 @@
 
 Cybergraph is a uniform data structure where content and conventions for processing that content are both expressed as cyberlinks. The set of conventions is open-ended. When implemented on blockchain, cybergraph inherits its properties: immutability, cryptographic authorship, and deterministic ordering.
 
-A *particle* is an IPFS content hash. A *cyberlink* is a directed edge `A → B` between two particles, authored by a *neuron* — a private key holder or an autonomous contract (prog).
+A *particle* is an IPFS content hash. A *cyberlink* is a directed edge `A → B` between two particles, authored by a *neuron* — a private key holder or an autonomous contract.
 
 ## Acknowledgment
 
@@ -124,5 +124,5 @@ The exact formula is a policy choice. The cybergraph provides the raw data.
 | **AI Alignment** | AI agents interact via cyberlinks; quantifiable preference aggregation |
 | **Supply Chain** | Product claims; certification; audit trails |
 
-Four conventions on one primitive — confirm, deny, update, quote — are sufficient to express complex collaborative workflows. Since neurons can be both humans and contracts (progs), the same conventions apply to AI agent interactions without any additional infrastructure.
+Four conventions on one primitive — confirm, deny, update, quote — are sufficient to express complex collaborative workflows. Since neurons can be both humans and contracts, the same conventions apply to AI agent interactions without any additional infrastructure.
 
