@@ -4,6 +4,8 @@
 
 Cybergraph is a uniform data structure where content and conventions for processing that content are both expressed as cyberlinks. The set of conventions is open-ended. When implemented on blockchain, cybergraph inherits its properties: immutability, cryptographic authorship, and deterministic ordering.
 
+A *particle* is an IPFS content hash. A *cyberlink* is a directed edge `A → B` between two particles, authored by a *neuron* — a private key holder or an autonomous contract (prog).
+
 ## Acknowledgment
 
 One of the first (if not the first) authors to publish ideas on this topic was @snedashkovsky in [semantic conventions](https://github.com/Snedashkovsky/cyber-semantic-conventions).
@@ -29,6 +31,8 @@ Additionally, because cybergraph is written into a Cosmos SDK-based blockchain, 
 This makes it possible to prove that a neuron published specific information to cybergraph — or that it published nothing else at a given moment — with cryptographic verification independent of the blockchain.
 
 ## Conventions for applications that process cybergraphs
+
+Each convention below is itself expressed as a cyberlink. That is what keeps the set open-ended — and what lets conventions themselves be confirmed, denied, or quoted by the same primitives.
 
 ### Confirmation of a cyberlink's validity
 
