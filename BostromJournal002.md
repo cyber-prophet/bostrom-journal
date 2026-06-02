@@ -118,9 +118,9 @@ The exact formula is a policy choice. The cybergraph provides the raw data.
 
 #### Compound properties of cyberlinked particles
 
-Individual particles might be split into some basic claims that they make, and those basic claims might be verified separately by collectives of independent neurons.
+A particle need not be treated as a single unit. It can be decomposed into the basic claims it makes, and each claim verified separately by collectives of independent neurons.
 
-Having a set of all the particles, it becomes possible to operate on clusters that include them, to calculate what outlies the central tendencies and thus might be worth researching, which particles are contradictory or claim the same thing using different words, and so on.
+Over the full set of particles, this enables analysis beyond counting confirmations: clustering related particles, identifying the central tendencies and the outliers worth researching, and detecting particles that contradict one another or assert the same claim in different words.
 
 #### A worked example: what did the Buddha actually say?
 
