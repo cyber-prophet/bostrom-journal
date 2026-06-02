@@ -124,7 +124,7 @@ Over the full set of particles, this enables analysis beyond counting confirmati
 
 #### A worked example: what did the Buddha actually say?
 
-The Buddha wrote nothing. He taught for some forty-five years, died, and for some four to four-and-a-half centuries his words were carried by communal recitation — held in memory, not written. There was no original manuscript to check a claim against, and no central authority empowered to certify one. The methods the tradition used to preserve and verify his words are the conventions defined above. (What follows describes the structure the tradition records; whether each event happened exactly as told is debated — the point is the shape.)
+The Buddha wrote nothing. He taught for some forty-five years, died, and for four to four-and-a-half centuries his words were carried by communal recitation — held in memory, not written. There was no original manuscript to check a claim against, and no central authority empowered to certify one. The methods the tradition used to preserve and verify his words are the conventions defined above. (What follows describes the structure the tradition records; whether each event happened exactly as told is debated — the point is the shape.)
 
 **Authorship — "Thus have I heard" is a signed cyberlink.** Nearly every discourse in the canon opens with the same words: *Evaṃ me sutaṃ*, "Thus have I heard." By tradition these are Ananda's words — the Buddha's attendant, reciting what he personally heard. The formula does not claim authorship of the content; it attests provenance: *I, this identity, heard this from that source.*
 
