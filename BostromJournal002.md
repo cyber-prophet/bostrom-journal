@@ -28,7 +28,7 @@ Additionally, because cybergraph is written into a Cosmos SDK-based blockchain, 
 - tx memo
 - signatures of validators
 
-This makes it possible to prove that a neuron published specific information to cybergraph — or, because each of a neuron's transactions carries a strictly incrementing account sequence with no gaps, that it published nothing else between two of its own transactions — with cryptographic verification independent of the blockchain.
+This makes it possible to prove, with cryptographic verification independent of the blockchain, that a neuron published specific information to cybergraph. And because each of a neuron's transactions carries a strictly incrementing account sequence with no gaps, one can also prove it published nothing else between two of its own transactions.
 
 ### Conventions for applications that process cybergraphs
 
