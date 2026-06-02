@@ -122,7 +122,7 @@ A particle need not be treated as a single unit. It can be decomposed into the b
 
 Over the full set of particles, this enables analysis beyond counting confirmations: clustering related particles, identifying the central tendencies and the outliers worth researching, and detecting particles that contradict one another or assert the same claim in different words.
 
-#### A worked example: what did the Buddha actually say?
+### A worked example: what did the Buddha actually say?
 
 The Buddha wrote nothing. He taught for some forty-five years, died, and for four to four-and-a-half centuries his words were carried by communal recitation — held in memory, not written. There was no original manuscript to check a claim against, and no central authority empowered to certify one. The methods the tradition used to preserve and verify his words are the conventions defined above. (What follows describes the structure the tradition records; whether each event happened exactly as told is debated — the point is the shape.)
 
@@ -152,7 +152,7 @@ The canon, then, is a graph of signed provenance edges, governed by a convention
 
 And the dimensions for reading a neuron are open-ended in the same way the conventions above are: claims about its experience, links to outside services and the metrics imported from them — each itself a cyberlink that specialized neurons can recheck, confirm, or deny. The dimensions grow by convention, not by new machinery.
 
-#### Applications
+### Applications
 
 | Domain | Application |
 |--------|-------------|
