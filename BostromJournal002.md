@@ -132,11 +132,11 @@ The signature carries Ananda's identity; `content(B)` remains the Buddha's word.
 
 > "neither approve nor reject" it on the strength of who says it; instead, "having carefully memorized those words and phrases, you should make sure they fit in the discourse and are exhibited in the training. If they do not fit ... you should discard it." — AN 4.180
 
-Validity is decided by consistency with the existing corpus (the Sutta and the Vinaya — the established graph), not by the authority of the claimant. Even "I heard it face to face from the Buddha" is checked the same way. This is `confirm`/`deny` adjudicated by consistency — and it is itself a convention the Buddha published into the system, just as each convention above is itself a cyberlink.
+Validity is decided by consistency with the existing corpus (the Sutta and the Vinaya — the established graph), not by the authority of the claimant. Even "I heard it face to face from the Buddha" is checked the same way. This is validity-by-consistency — a different mechanism from the reputation-weighted head-count above, and notably resistant to it: a claim with many confirmations still fails if it contradicts the corpus. And it is itself a convention the Buddha published into the system, just as each convention above is itself a cyberlink.
 
-The *Kālāma Sutta* (AN 3.65) states the principle directly: do not go by oral tradition, by lineage, by hearsay, by scripture, by the seeming competence of a speaker, or by "the teacher is ours" — *know for yourselves.* Authority and reputation are an input to the weighting, never the arbiter.
+The *Kālāma Sutta* (AN 3.65) states the principle directly: do not go by oral tradition, by lineage, by hearsay, by scripture, by the seeming competence of a speaker, or by "the teacher is ours" — *know for yourselves.* Here the claimant's standing is excluded from validity entirely — the corpus, not the speaker, decides.
 
-The canon, then, is a graph of signed provenance edges, governed by a convention for confirming or denying them that the Buddha published into the graph itself. Cybergraph is the same arrangement with cryptographic signatures and content addressing — so that "what the Buddha actually said" becomes a queryable, cross-validated consensus rather than an article of faith.
+The canon, then, is a graph of signed provenance edges, governed by a convention for confirming or denying them that the Buddha published into the graph itself. Cybergraph is the same arrangement with cryptographic signatures and content addressing — so that "what the Buddha actually said" becomes queryable and cross-validated against the corpus rather than an article of faith.
 
 ### Applications
 
