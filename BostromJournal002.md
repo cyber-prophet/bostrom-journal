@@ -28,28 +28,30 @@ Additionally, because cybergraph is written into a Cosmos SDK-based blockchain, 
 - tx memo
 - signatures of validators
 
-This makes it possible to prove that a neuron published specific information to cybergraph — or that it published nothing else at a given moment — with cryptographic verification independent of the blockchain.
+This makes it possible to prove that a neuron published specific information to cybergraph — or, because each of a neuron's transactions carries a strictly incrementing account sequence with no gaps, that it published nothing else between two of its own transactions — with cryptographic verification independent of the blockchain.
 
 ## Conventions for applications that process cybergraphs
 
-Each convention below is itself expressed as a cyberlink. That is what keeps the set open-ended — and what lets conventions themselves be confirmed, denied, or quoted by the same primitives.
+Each convention below is itself a cyberlink — most place a verb particle such as `hash("deny")` or `hash("quote", A)` at the source of an ordinary edge. Because the resulting relationship `hash(...)` is itself a particle, and therefore addressable, each *use* of a convention can in turn be confirmed, denied, or quoted by the same primitives. That is what keeps the set open-ended.
 
 ### Confirmation of a cyberlink's validity
 
 Just create the same cyberlink.
+
+Unlike deny/update/quote, confirmation needs no verb particle — agreement is just the same edge re-created by another neuron, and the repetition itself is what aggregation counts (see Quantifiable consensus).
 
 ### Update to a previously published cyberlink
 
 ```
 A - a particle from the original cyberlink
 B - another particle from the original cyberlink
-R = hash(A, B) - the relationship
+R = hash(A, B) - the relationship (in general, hash(from, to) — this is what makes a cyberlink addressable)
 
 C - the new particle for the updated cyberlink
 
 A → B                       # original cyberlink
-A → C                       # updated version of the original cyberlink
-hash("update", R) → C      # instruction to update the relationship
+A → C                       # convenience edge — C reachable from A (optional, derived)
+hash("update", R) → C      # authoritative — marks C as the update of R
 ```
 
 ### Denial of a cyberlink's validity
@@ -58,19 +60,21 @@ hash("update", R) → C      # instruction to update the relationship
 A - a particle
 B - a particle
 
-hash("deny") → hash(A, B)  # denial of the relationship
-hash("deny") → hash(row)   # denial of a specific cyberlink
+hash("deny") → hash(A, B)                  # denial of the relationship
+hash("deny") → hash(A, B, neuron, height)  # denial of a specific cyberlink
 ```
 
 Two targets of denial:
 - `hash(A, B)` — disputes any cyberlink between A and B, regardless of which neuron created it
-- `hash(row)` — disputes a specific cyberlink by a specific neuron at a specific height
+- `hash(A, B, neuron, height)` — disputes a specific cyberlink by a specific neuron at a specific height
+
+Unlike `update` and `quote`, which bind their operand into the source marker, `hash("deny")` is a fixed marker — what is denied is whatever it points at.
 
 ### Quotes
 
 ```
 A - a particle
-B - a particle, substring of content(A) (verifiable: content(B) ⊂ content(A))
+B - a particle, substring of content(A) (independently verifiable)
 
 hash("quote", A) → B       # "B is an excerpt of A"
 
@@ -87,7 +91,7 @@ Cyberlinks connect not just content but neurons through content:
 Alice asserts:  A → B
 Bob confirms:   A → B
 Carol denies:   hash("deny") → R    (where R = hash(A, B))
-Dave quotes:    hash("quote", A) → B (B is substring of A)
+Dave quotes:    hash("quote", A) → B
 ```
 
 The graph encodes not just "what is linked" but "who believes what" — and that's queryable and analyzable.
@@ -114,7 +118,7 @@ The exact formula is a policy choice. The cybergraph provides the raw data.
 
 ### A worked example: what did the Buddha actually say?
 
-The Buddha wrote nothing. He taught for some forty-five years, died, and for roughly four centuries his words were carried only in memory — recited, not written. There was no original manuscript to check a claim against, and no central authority empowered to certify one. The methods the tradition used to preserve and verify his words are the conventions defined above. (What follows describes the structure the tradition records; whether each event happened exactly as told is debated — the point is the shape.)
+The Buddha wrote nothing. He taught for some forty-five years, died, and for some four to four-and-a-half centuries his words were carried by communal recitation — held in memory, not written. There was no original manuscript to check a claim against, and no central authority empowered to certify one. The methods the tradition used to preserve and verify his words are the conventions defined above. (What follows describes the structure the tradition records; whether each event happened exactly as told is debated — the point is the shape.)
 
 **Authorship — "Thus have I heard" is a signed cyberlink.** Nearly every discourse in the canon opens with the same words: *Evaṃ me sutaṃ*, "Thus have I heard." By tradition these are Ananda's words — the Buddha's attendant, reciting what he personally heard. The formula does not claim authorship of the content; it attests provenance: *I, this identity, heard this from that source.*
 
