@@ -136,7 +136,7 @@ B = hash(teaching)                    # the discourse, content-addressed
 Ananda:  A → B                        # "Thus have I heard"
 ```
 
-The signature carries Ananda's identity; `content(B)` remains the Buddha's word. The opening line of the entire canon is a provenance edge — exactly what a signed cyberlink is.
+The signature carries Ananda's identity; `content(B)` remains the Buddha's word. The opening formula of nearly every discourse is a provenance edge — exactly what a signed cyberlink is.
 
 The edge carries more than identity. Each discourse opens not only with "Thus have I heard" but with its setting — *"at one time the Blessed One was dwelling near Sāvatthī, in Jeta's Grove"* — naming place, audience, and occasion: the conditions under which the words were heard. Ananda's standing is on record too, remembered as the one foremost in what he had heard. A reader who knew none of this could still read these dimensions off the account and weigh it accordingly. That is what gives a bare "A said B" its depth — not the edge alone, but who signed it, under what recorded conditions, and what the corpus already says about that signer. Cybergraph exposes the same for any neuron: the act's own declaration (its transaction memo), the particles in context when it acted (prior cyberlinks, gap-free by account sequence — see *Fundamentals*), and whatever cyberlinks others have made about it.
 
