@@ -1,5 +1,3 @@
-# Draft
-
 # Methods of publishing information into cybergraph
 
 Cybergraph is a uniform data structure where content and conventions for processing that content are both expressed as cyberlinks. The set of conventions is open-ended. When implemented on blockchain, cybergraph inherits its properties: immutability, cryptographic authorship, and deterministic ordering.
