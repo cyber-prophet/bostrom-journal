@@ -112,6 +112,32 @@ Consensus(statement) = f(confirms, denies, neuron_weights, time_decay)
 
 The exact formula is a policy choice. The cybergraph provides the raw data.
 
+### A worked example: what did the Buddha actually say?
+
+The Buddha wrote nothing. He taught for some forty-five years, died, and for roughly four centuries his words were carried only in memory — recited, not written. There was no original manuscript to check a claim against, and no central authority empowered to certify one. The methods the tradition used to preserve and verify his words are the conventions defined above. (What follows describes the structure the tradition records; whether each event happened exactly as told is debated — the point is the shape.)
+
+**Authorship — "Thus have I heard" is a signed cyberlink.** Nearly every discourse in the canon opens with the same words: *Evaṃ me sutaṃ*, "Thus have I heard." By tradition these are Ananda's words — the Buddha's attendant, reciting what he personally heard. The formula does not claim authorship of the content; it attests provenance: *I, this identity, heard this from that source.*
+
+```
+neuron = Ananda
+A = hash("heard from the Buddha")     # the source / the act of hearing
+B = hash(teaching)                    # the discourse, content-addressed
+
+Ananda:  A → B                        # "Thus have I heard"
+```
+
+The signature carries Ananda's identity; `content(B)` remains the Buddha's word. The opening line of the entire canon is a provenance edge — exactly what a signed cyberlink is.
+
+**No central authority — the Buddha's own verification convention.** Anticipating his death, the Buddha left a procedure for testing any teaching later attributed to him — the *Mahāpadesa*, "Four Great References" (DN 16; AN 4.180). Given a claim "I heard this from the Buddha," one is to
+
+> "neither approve nor reject" it on the strength of who says it; instead, "having carefully memorized those words and phrases, you should make sure they fit in the discourse and are exhibited in the training. If they do not fit ... you should discard it." — AN 4.180
+
+Validity is decided by consistency with the existing corpus (the Sutta and the Vinaya — the established graph), not by the authority of the claimant. Even "I heard it face to face from the Buddha" is checked the same way. This is `confirm`/`deny` adjudicated by consistency — and it is itself a convention the Buddha published into the system, just as each convention above is itself a cyberlink.
+
+The *Kālāma Sutta* (AN 3.65) states the principle directly: do not go by oral tradition, by lineage, by hearsay, by scripture, by the seeming competence of a speaker, or by "the teacher is ours" — *know for yourselves.* Authority and reputation are an input to the weighting, never the arbiter.
+
+The canon, then, is a graph of signed provenance edges, governed by a convention for confirming or denying them that the Buddha published into the graph itself. Cybergraph is the same arrangement with cryptographic signatures and content addressing — so that "what the Buddha actually said" becomes a queryable, cross-validated consensus rather than an article of faith.
+
 ### Applications
 
 | Domain | Application |
