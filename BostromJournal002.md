@@ -68,7 +68,7 @@ Two targets of denial:
 - `hash(A, B)` — disputes any cyberlink between A and B, regardless of which neuron created it
 - `hash(A, B, neuron, height)` — disputes a specific cyberlink by a specific neuron at a specific height
 
-Unlike `update` and `quote`, which bind their operand into the source marker, `hash("deny")` is a fixed marker — what is denied is whatever it points at.
+Unlike `update` and `quote`, which bind their operand into the source verb particle, `hash("deny")` is a fixed verb particle — what is denied is whatever it points at.
 
 #### Quotes
 
