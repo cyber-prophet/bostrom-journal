@@ -1,14 +1,16 @@
-# Methods of publishing information into cybergraph
+# Bostrom Journal
+
+## Issue 2: Methods of publishing information into cybergraph
 
 Cybergraph is a uniform data structure where content and conventions for processing that content are both expressed as cyberlinks. The set of conventions is open-ended. When implemented on blockchain, cybergraph inherits its properties: immutability, cryptographic authorship, and deterministic ordering.
 
 A *particle* is an IPFS content hash. A *cyberlink* is a directed edge `A → B` between two particles, authored by a *neuron* — a private key holder or an autonomous contract.
 
-## Acknowledgment
+### Acknowledgment
 
 One of the first (if not the first) authors to publish ideas on this topic was @snedashkovsky in [semantic conventions](https://github.com/Snedashkovsky/cyber-semantic-conventions).
 
-## Fundamentals
+### Fundamentals
 
 On Bostrom blockchain, each cyberlink is recorded with the following fields:
 
@@ -28,17 +30,17 @@ Additionally, because cybergraph is written into a Cosmos SDK-based blockchain, 
 
 This makes it possible to prove that a neuron published specific information to cybergraph — or, because each of a neuron's transactions carries a strictly incrementing account sequence with no gaps, that it published nothing else between two of its own transactions — with cryptographic verification independent of the blockchain.
 
-## Conventions for applications that process cybergraphs
+### Conventions for applications that process cybergraphs
 
 Each convention below is itself a cyberlink — most place a verb particle such as `hash("deny")` or `hash("quote", A)` at the source of an ordinary edge. Because the resulting relationship `hash(...)` is itself a particle, and therefore addressable, each *use* of a convention can in turn be confirmed, denied, or quoted by the same primitives. That is what keeps the set open-ended.
 
-### Confirmation of a cyberlink's validity
+#### Confirmation of a cyberlink's validity
 
 Just create the same cyberlink.
 
 Unlike deny/update/quote, confirmation needs no verb particle — agreement is just the same edge re-created by another neuron, and the repetition itself is what aggregation counts (see Quantifiable consensus).
 
-### Update to a previously published cyberlink
+#### Update to a previously published cyberlink
 
 ```
 A - a particle from the original cyberlink
@@ -52,7 +54,7 @@ A → C                       # convenience edge — C reachable from A (optiona
 hash("update", R) → C      # authoritative — marks C as the update of R
 ```
 
-### Denial of a cyberlink's validity
+#### Denial of a cyberlink's validity
 
 ```
 A - a particle
@@ -68,7 +70,7 @@ Two targets of denial:
 
 Unlike `update` and `quote`, which bind their operand into the source marker, `hash("deny")` is a fixed marker — what is denied is whatever it points at.
 
-### Quotes
+#### Quotes
 
 ```
 A - a particle
@@ -81,7 +83,7 @@ R = hash(hash("quote", A), B)  # the relationship is addressable, so others can:
                                 # deny (hash("deny") → R) — "this quote is misleading out of context"
 ```
 
-## Collaborating on information
+### Collaborating on information
 
 Cyberlinks connect not just content but neurons through content:
 
@@ -94,7 +96,7 @@ Dave quotes:    hash("quote", A) → B
 
 The graph encodes not just "what is linked" but "who believes what" — and that's queryable and analyzable.
 
-### Quantifiable consensus
+#### Quantifiable consensus
 
 For any statement `A → B`:
 - Count matching cyberlinks from distinct neurons → support level
@@ -114,7 +116,7 @@ Consensus(statement) = f(confirms, denies, neuron_weights, time_decay)
 
 The exact formula is a policy choice. The cybergraph provides the raw data.
 
-### A worked example: what did the Buddha actually say?
+#### A worked example: what did the Buddha actually say?
 
 The Buddha wrote nothing. He taught for some forty-five years, died, and for some four to four-and-a-half centuries his words were carried by communal recitation — held in memory, not written. There was no original manuscript to check a claim against, and no central authority empowered to certify one. The methods the tradition used to preserve and verify his words are the conventions defined above. (What follows describes the structure the tradition records; whether each event happened exactly as told is debated — the point is the shape.)
 
@@ -140,7 +142,7 @@ The *Kālāma Sutta* (AN 3.65) states the principle directly: do not go by oral 
 
 The canon, then, is a graph of signed provenance edges, governed by a convention for confirming or denying them that the Buddha published into the graph itself. Cybergraph is the same arrangement with cryptographic signatures and content addressing — so that "what the Buddha actually said" becomes queryable and cross-validated against the corpus rather than an article of faith.
 
-### Applications
+#### Applications
 
 | Domain | Application |
 |--------|-------------|
