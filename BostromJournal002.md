@@ -146,7 +146,7 @@ The edge carries more than identity. Each discourse opens not only with "Thus ha
 
 Validity is decided by consistency with the existing corpus (the Sutta and the Vinaya — the established graph), not by the authority of the claimant. Even "I heard it face to face from the Buddha" is checked the same way. This is validity-by-consistency — a different mechanism from the reputation-weighted head-count above, and notably resistant to it: a claim with many confirmations still fails if it contradicts the corpus. And it is itself a convention the Buddha published into the system, just as each convention above is itself a cyberlink.
 
-The *Kālāma Sutta* (AN 3.65) states the principle directly: do not go by oral tradition, by lineage, by hearsay, by scripture, by the seeming competence of a speaker, or by "the teacher is ours" — *know for yourselves.* Here the claimant's standing is excluded from validity entirely — the corpus, not the speaker, decides.
+The *Kālāma Sutta* (AN 3.65) states the principle directly: do not go by oral tradition, by lineage, by hearsay, by scripture, by the seeming competence of a speaker, or by "the teacher is ours" — *know for yourselves.* Here the claimant's standing is excluded from validity entirely — the results, not the speaker, decide.
 
 The canon, then, is a graph of signed provenance edges, governed by a convention for confirming or denying them that the Buddha published into the graph itself. Cybergraph is the same arrangement with cryptographic signatures and content addressing — so that "what the Buddha actually said" becomes queryable and cross-validated against the corpus rather than an article of faith.
 
