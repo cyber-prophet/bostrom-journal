@@ -32,7 +32,7 @@ This makes it possible to prove that a neuron published specific information to 
 
 ### Conventions for applications that process cybergraphs
 
-Each convention below is itself a cyberlink — most place a verb particle such as `hash("deny")` or `hash("quote", A)` at the source of an ordinary edge. Because the resulting relationship `hash(...)` is itself a particle, and therefore addressable, each *use* of a convention can in turn be confirmed, denied, or quoted by the same primitives. That is what keeps the set open-ended.
+Each convention below is itself a cyberlink — most place a verb particle such as `hash("deny")` or `hash("quote", A)` at the source of an ordinary edge. Because the resulting relationship `hash(...)` is itself a particle, and therefore addressable, each *use* of a convention can in turn be confirmed, denied, or quoted by the same conventions. That is what keeps the set open-ended.
 
 #### Confirmation of a cyberlink's validity
 
