@@ -122,10 +122,6 @@ Individual particles might be split into some basic claims that they make, and t
 
 Having a set of all the particles, it becomes possible to operate on clusters that include them, to calculate what outlies the central tendencies and thus might be worth researching, which particles are contradictory or claim the same thing using different words, and so on.
 
-#### Additional dimension of neurons' properties
-
-Information about neurons' cyberlinks, their novelty, plus additional information that neurons can provide about themselves, gives additional dimensions for evaluating the properties of their cyberlinks.
-
 #### A worked example: what did the Buddha actually say?
 
 The Buddha wrote nothing. He taught for some forty-five years, died, and for some four to four-and-a-half centuries his words were carried by communal recitation — held in memory, not written. There was no original manuscript to check a claim against, and no central authority empowered to certify one. The methods the tradition used to preserve and verify his words are the conventions defined above. (What follows describes the structure the tradition records; whether each event happened exactly as told is debated — the point is the shape.)
