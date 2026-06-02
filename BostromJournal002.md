@@ -54,6 +54,8 @@ A → C                       # convenience edge — C reachable from A (optiona
 hash("update", R) → C      # authoritative — marks C as the update of R
 ```
 
+Updates re-point the same fixed verb particle `hash("update", R)`, so an update can itself be updated: the most recent edge from that marker is the current version.
+
 #### Denial of a cyberlink's validity
 
 ```
