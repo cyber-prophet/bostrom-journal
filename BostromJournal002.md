@@ -150,6 +150,8 @@ The *Kālāma Sutta* (AN 3.65) states the principle directly: do not go by oral 
 
 The canon, then, is a graph of signed provenance edges, governed by a convention for confirming or denying them that the Buddha published into the graph itself. Cybergraph is the same arrangement with cryptographic signatures and content addressing — so that "what the Buddha actually said" becomes queryable and cross-validated against the corpus rather than an article of faith.
 
+And the dimensions for reading a neuron are open-ended in the same way the conventions above are: claims about its experience, links to outside services and the metrics imported from them — each itself a cyberlink that specialized neurons can recheck, confirm, or deny. The dimensions grow by convention, not by new machinery.
+
 #### Applications
 
 | Domain | Application |
