@@ -40,22 +40,6 @@ Just create the same cyberlink.
 
 Unlike deny/update/quote, confirmation needs no verb particle — agreement is just the same edge re-created by another neuron, and the repetition itself is what aggregation counts (see Quantifiable consensus).
 
-#### Update to a previously published cyberlink
-
-```
-A - a particle from the original cyberlink
-B - another particle from the original cyberlink
-R = hash(A, B) - the relationship (in general, hash(from, to) — this is what makes a cyberlink addressable)
-
-C - the new particle for the updated cyberlink
-
-A → B                       # original cyberlink
-A → C                       # convenience edge — C reachable from A (optional, derived)
-hash("update", R) → C      # authoritative — marks C as the update of R
-```
-
-Updates re-point the same fixed verb particle `hash("update", R)`, so an update can itself be updated: the most recent edge from that marker is the current version. And like any cyberlink, the update edge is itself addressable — `hash("update", R) → C` can be confirmed or denied by another neuron.
-
 #### Denial of a cyberlink's validity
 
 ```
@@ -71,6 +55,22 @@ Two targets of denial:
 - `hash(A, B, neuron, height)` — disputes a specific cyberlink by a specific neuron at a specific height
 
 Unlike `update` and `quote`, which bind their operand into the source verb particle, `hash("deny")` is a fixed verb particle — what is denied is whatever it points at.
+
+#### Update to a previously published cyberlink
+
+```
+A - a particle from the original cyberlink
+B - another particle from the original cyberlink
+R = hash(A, B) - the relationship (in general, hash(from, to) — this is what makes a cyberlink addressable)
+
+C - the new particle for the updated cyberlink
+
+A → B                       # original cyberlink
+A → C                       # convenience edge — C reachable from A (optional, derived)
+hash("update", R) → C      # authoritative — marks C as the update of R
+```
+
+Updates re-point the same fixed verb particle `hash("update", R)`, so an update can itself be updated: the most recent edge from that marker is the current version. And like any cyberlink, the update edge is itself addressable — `hash("update", R) → C` can be confirmed or denied by another neuron.
 
 #### Quotes
 
