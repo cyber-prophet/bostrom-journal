@@ -8,7 +8,7 @@
 
 Editor-in-chief: [maxim-uvarov aka cyber-prophet](https://cyb.ai/network/bostrom/contract/bostrom1h29u0h2y98rkhdrwsx0ejk5eq8wvslygexr7p8)
 
-The latest version of Bostrom Journal can be found on [github](https://github.com/learn-to-teach-cyber/bostrom-journal).
+The latest version of Bostrom Journal can be found on [github](https://github.com/cyber-prophet/bostrom-journal).
 
 Journal address: [Bostrom Journal](https://cyb.ai/network/bostrom/contract/bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa).
 
