@@ -10,7 +10,7 @@ Two documents carry the content:
 
 - **Prefer small atomic diffs over regeneration.** Do not rewrite a whole document. One logical change per commit, so any single change can be reverted on its own.
 - **Name what is frozen.** In each task, say what may change and what may not — e.g. "grammar only, change no defined term" vs "you may restructure, but the definitions below are frozen; quote them back unchanged."
-- **The author reviews every commit.** Commit after each change. If in doubt, or something is missing — ask, do not guess.
+- **The author reviews every commit.** Commit after each change atomically. If in doubt, or something is missing — ask, do not guess.
 - **Review for fidelity, not only polish.** A clarity/consistency pass can approve a document that has drifted from its model. Check edits against the invariants below.
 
 ## Invariants (frozen definitions — do not redefine)
