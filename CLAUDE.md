@@ -8,8 +8,6 @@ Two documents carry the content:
 
 ## Editing the documents
 
-These documents encode a precise model. Wording that looks ordinary is often deliberate and load-bearing. Open-ended edits ("revise", "make it perfect", "anything subject for rewrite?") have repeatedly overwritten that wording and lost the author's point — the same correction then had to be repeated across several sessions.
-
 - **Prefer small atomic diffs over regeneration.** Do not rewrite a whole document. One logical change per commit, so any single change can be reverted on its own.
 - **Name what is frozen.** In each task, say what may change and what may not — e.g. "grammar only, change no defined term" vs "you may restructure, but the definitions below are frozen; quote them back unchanged."
 - **The author reviews every commit.** Commit after each change. If in doubt, or something is missing — ask, do not guess.
