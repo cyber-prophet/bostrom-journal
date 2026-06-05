@@ -10,6 +10,7 @@ Two documents carry the content:
 - **Name what is frozen.** In each task, say what may change and what may not — e.g. "grammar only, change no defined term" vs "you may restructure, but the definitions below are frozen; quote them back unchanged."
 - **The author reviews every commit.** Commit after each change atomically. If in doubt, or something is missing — ask, do not guess.
 - **Review for fidelity, not only polish.** A clarity/consistency pass can approve a document that has drifted from its model. Check edits against the invariants below.
+- **Review the git log for the reasoning behind choices.**
 
 ## Invariants (frozen definitions — do not redefine)
 
