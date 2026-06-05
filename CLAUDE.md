@@ -23,7 +23,7 @@ In the author's words:
 - A **particle** is an IPFS content hash (a CID).
 - **`hash(...)`** is always one operation: compute a particle's CID.
 - **`hash(A, B)`** is a convention for *referencing* a cyberlink — treating the edge as a particle you can point at. An addressable edge can then be hashed together with others into a **composite particle**.
-- **Conventions** are rules for *processing* the raw cybergraph (building an interpretation of it). They are **not** edges in the graph. Never write "a convention is a cyberlink."
+- A **convention** is an agreement about how to **issue** an instruction for processing the cybergraph — and how to **interpret** it. (`hash(A, B)` is the convention for *referencing* a cyberlink; `hash("deny") → hash(A, B)` is the convention for *expressing denial*.) A convention is the shared rule for encoding an instruction into the graph and reading it back; it is **not** an edge in the graph, and not the processing that consumes the instruction. Never write "a convention is a cyberlink."
 - An instruction is issued by placing a **verb particle** — e.g. `hash("deny")` or `hash("quote", A)` — at the source of an ordinary edge. Example: `hash("deny") → hash(A, B)`.
 - The cybergraph is permissionless and general-purpose: anyone can write into it their own way, and anyone can read and process it their own way.
 
