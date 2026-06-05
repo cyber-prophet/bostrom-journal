@@ -25,8 +25,3 @@ In the author's words:
 - This is an instruction example: `hash("deny") → hash(A, B)`.
 - The cybergraph is permissionless and general-purpose: anyone can write into it their own way, and anyone can read and process it their own way.
 
-## Terminology locks
-
-- **"verb particle"**, not "marker".
-- **"convention"** for confirm / deny / update / quote. **"primitive"** is reserved for the cyberlink itself ("four conventions on one primitive").
-- **Provenance markers**: `[~](cid)` inline in link content points to the source IPFS hash (used throughout BJ001).
