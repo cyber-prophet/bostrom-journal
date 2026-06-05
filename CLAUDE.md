@@ -1,7 +1,5 @@
 # CLAUDE.md — bostrom-journal
 
-Reference documentation for blockchain-based cybergraph patterns; predecessor to `open-knowledge-pack/`.
-
 Two documents carry the content:
 - `BostromJournal001.md` — hand-written and precise. The reference for tone and accuracy.
 - `BostromJournal002.md` — in active editing.
