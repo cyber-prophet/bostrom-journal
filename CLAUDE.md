@@ -1,5 +1,7 @@
 # CLAUDE.md — bostrom-journal
 
+This is not a coding project.
+
 Two documents carry the content:
 - `BostromJournal001.md` — hand-written and precise. The reference for tone and accuracy.
 - `BostromJournal002.md` — in active editing.
