@@ -99,7 +99,7 @@ I'm not sure if I'm going to update the separate particles and create new cyberl
 
 ### Bostrom - the short definition [~](particles/QmRZ5qnLpBK5br4qJDTJAUVn2ny5fnbSTP6u6U5zMqzeTi.md)
 
-Bostrom is a superintelligence project with a permissionless knowledge graph at its core built on blockchain (cosmos-SDK) and content addressing mechanism (with the current implementation of IPFS protocol).
+Bostrom is the first blockchain in the world to implement Cybergraph. Cybergraph can be represented as a directed graph, where content identifiers (IPFS hashes in the current implementation) are used as vertices (aka nodes). The edges between them are called cyberlinks.
 
 ### Purpose of the Bostrom network [~](particles/QmWnDz2eHQ2Lii42zkEuc3kgC1iLmg9vr2D6mjhkQfZT1P.md)
 
