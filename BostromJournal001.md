@@ -89,6 +89,12 @@ There are documents about Bostrom's blockchain written by Bostrom's founders or 
 
 If you are interested in researching Bostrom, all of these sources can give you a lot of information. Nevertheless, I believe that this manual is a good starting point.
 
+## Preface to version 1.1
+
+More than 4 years have passed since the launch of the network. The editor-in-chief decided to update this issue briefly, without digging too deep. So please consider these updates as an attempt to pick the low-hanging fruit.
+
+I'm not sure if I'm going to update the separate particles and create new cyberlinks on them. I still believe that this mechanism has something special to it — I just don't have the energy to do the updates properly.
+
 ## Intro to Bostrom Blockchain [~](particles/Qmahxtp3r6PEHj5tpqf2cGeibou3ADkZwR6QVfxHU1urMe.md)
 
 ### Bostrom - the short definition [~](particles/QmRZ5qnLpBK5br4qJDTJAUVn2ny5fnbSTP6u6U5zMqzeTi.md)
