@@ -36,7 +36,7 @@ But I would like to go step by step and start with simple things that are needed
 
 On the current branch I updated some chapters in `BostromJournal001.md` (see the diff against `main`).
 
-So with using plumbing commands we should be able to recieve the new particles in `particles/` with only one part from the old format of the kind:
+So, using plumbing commands, we should be able to receive the new particles in `particles/` with only one part from the old format, of this kind:
 
 <selected-text file="/Users/user/git/cy-container/bostrom-journal/particles/QmNSBAUQG5M5L233D8M9w3J5CV76Kwub4PKNSYs7EAHa1T.md" lines="5-9">---
 
@@ -45,8 +45,8 @@ So with using plumbing commands we should be able to recieve the new particles i
 cid: [QmeXv3wAdqXEanK12cPp24RTqV4a4AsWCHAPUX2rQ7sovN](https://cyb.ai/ipfs/QmeXv3wAdqXEanK12cPp24RTqV4a4AsWCHAPUX2rQ7sovN)  
 </selected-text>
 
-i.e. the h6 heading and the cid of the previous version.
+i.e. the h6 heading and the CID of the previous version.
 
-Later I guess we'll need to change whole the format but for now let's keep it as it was established (minus old fields that I don't want to support now).
+Later I guess we'll need to change the whole format, but for now let's keep it as it was established (minus the old fields that I don't want to support now).
 
-calculating cids is tricky, but the unchanged particles cids should match their old versions (if it is posible - research this).
+Calculating CIDs is tricky, but the unchanged particles' CIDs should match their old versions (if it is possible — research this).
