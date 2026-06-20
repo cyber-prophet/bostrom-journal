@@ -29,7 +29,7 @@ def "double genesis: positional rewire fills each link distinctly" [] {
     let doc = "# Alpha [~]()\n\nBody of alpha.\n\n# Beta [~]()\n\nBody of beta.\n"
     let cid_a = {cid: "" heading: "Alpha" body: "Body of alpha."} | build-particle | hash-particle
     let cid_b = {cid: "" heading: "Beta" body: "Body of beta."} | build-particle | hash-particle
-    assert (($cid_a != $cid_b)) "two distinct genesis CIDs"
+    assert ($cid_a != $cid_b) "two distinct genesis CIDs"
 
     let dir = mktemp --directory
     cd $dir

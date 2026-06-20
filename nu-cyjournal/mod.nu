@@ -33,7 +33,8 @@ export def parse-sections []: string -> table {
             null
         } else {
             let cid = $m.0.link | parse-marker-link
-            let body_lines = if ($hi + 1) >= $ni { [] } else { $lines | slice ($hi + 1)..<$ni }
+            # A heading-only section gives an empty range, which `slice` returns as [].
+            let body_lines = $lines | slice ($hi + 1)..<$ni
             {cid: $cid heading: $m.0.heading body: ($body_lines | strip-blank-edges) line: $hi}
         }
     } | compact
