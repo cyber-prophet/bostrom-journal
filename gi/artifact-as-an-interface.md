@@ -17,7 +17,11 @@ Ok, my friend, let's talk now. The brief history of bostrom journal for you:
 
 I created the first version of bj001 after the network's launch in 2022. It was mainly based on communications with founders and my own much poor at those times understanding of the technology.
 
-Time has passed, I switched to other projects, ai agents appeared on the stage, I decided to write the bj002 to explain cybergraph operations concepts. Together with agents we wrote bj002 in russian. But the sharpness of concepts in agent's writing is very unsatisfactory: I describe concepts and goals, and agents just rewrite huge portions addressing my previous concerns and creating new ones.
+Time has passed, I switched to other projects, ai agents appeared on the stage, I decided to write the bj002 to explain cybergraph operations concepts. Together with agents we started writing bj002 in english, but then I decided to switch to russian the later work advanced much further in bj002ru as my enlish is quite weak and russian is my mother tongue language.
+
+The main writing was done by agents: I describe some idea for the new chapter, or for editing the current one and agents write it. During the process, looking at the diffs  I felt like agents do what I imagine. Plus probably I often give agents tasks to write really big chunks that I didn't check completely with relationships to other parts.
+
+And at the end of the current stage I discovered that the sharpness of concepts in agent's writing was very unsatisfactory. Whe I tried to address those issues more precisely just rewrite portions addressing my previous concerns and creating new ones.
 
 With much of work and attempt of fixing this I decided to update the most important relevant information and definitions in the bj001, and to force agents to use them as a baseline.
 
