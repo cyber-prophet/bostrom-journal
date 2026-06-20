@@ -97,7 +97,7 @@ I'm not sure if I'm going to update the separate particles and create new cyberl
 
 I intend to rename the "knowledge graph" term to "Cybergraph" according to my beliefs about the concept's substantiality.
 
-And I intend to remove the information about Cyberrank (token weighted pagerank-like rank) mainly because of 2 reasons:
+And I intend to remove the information about Cyberrank (a token-weighted, PageRank-like ranking) mainly because of 2 reasons:
 
 1. The initial ideas about its usefulness were most often very wrong in real-life applications.
 2. I still believe that the concept of Cyberrank is very deep and fundamental to Cybergraphs, though I just don't understand those properties well, and thus this information is irrelevant to the whole cybergraph concept.
