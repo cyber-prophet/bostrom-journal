@@ -97,11 +97,6 @@ I'm not sure if I'm going to update the separate particles and create new cyberl
 
 I intend to rename the "knowledge graph" term to "Cybergraph" according to my beliefs about the concept's substantiality.
 
-And I intend to remove the information about Cyberrank (a token-weighted, PageRank-like ranking) mainly because of 2 reasons:
-
-1. The initial ideas about its usefulness were most often very wrong in real-life applications.
-2. I still believe that the concept of Cyberrank is very deep and fundamental to cybergraphs, though I just don't understand those properties well, and thus this information is irrelevant to the whole Cybergraph concept.
-
 ## Intro to Bostrom Blockchain [~](particles/Qmahxtp3r6PEHj5tpqf2cGeibou3ADkZwR6QVfxHU1urMe.md)
 
 ### Bostrom - the short definition [~](particles/QmXu22YpC93JCvm9RRYKttdr2Ge9W2aqvmdyNXKKitHhkt.md)
