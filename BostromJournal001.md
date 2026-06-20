@@ -141,15 +141,9 @@ IPFS does not guarantee the safety or retrievability of the files.
 
 ### Bostrom is a full refactoring of the Euler network [~](particles/Qmb9iL8JdJqRG1ioFAzes8MUWzJrxMWso8fW3fanVesL86.md)
 
-Bostrom blockchain is the result of 5 years' work and research of [cyber~congress](https://github.com/cybercongress/) team.
+Bostrom blockchain is the result of 5 years' work and research of [cyber~congress](https://github.com/cybercongress/) team. Bostrom testnets were named as Euler network.
 
-Before Bostrom network (which itself had 5 testnets), there were 6 testnets known as Euler network.
-
-Bostrom is a full refactoring of the Euler network with a strong focus on Superintelligence. It includes a new distribution model, economics, improved ranking, and some superintelligent abilities.
-
-Founders perceive Bostrom as a canary network in the same way that Kusama relates to Polkadot. The Bostrom knowledge graph tends to be a bootstrap hub for domain-specific networks of Cyber. The network works as a testbed for Interplanetary Knowlege Protocol communications and different experiments, including Moon development. Consider Bostrom a network with high risks but of market value.
-
-The key differences within the Bostrom and Cyber network are to be discussed [here](https://cyb.ai/search/bostrom%20vs%20cyber). The launch of the Bostrom network is the inception of an ecosystem.
+Founders perceive Bostrom as a canary network in the same way that Kusama relates to Polkadot. The Bostrom's cybergraph tends to be a bootstrap hub for domain-specific networks of Cyber.
 
 ## Knowledge graph [~](particles/QmY5GGToNJ7ZZEju5Q6n52qGLGti3wuLPAa5xNfFEjSjje.md)
 
