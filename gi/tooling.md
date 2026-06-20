@@ -50,3 +50,5 @@ i.e. the h6 heading and the CID of the previous version.
 Later I guess we'll need to change the whole format, but for now let's keep it as it was established (minus the old fields that I don't want to support now).
 
 Calculating CIDs is tricky, but the unchanged particles' CIDs should match their old versions (if it is possible — research this).
+
+!! spin an agent or do research yourself on achieving what I want. Write the most important findings back to this file, and the whole research into different artifact
