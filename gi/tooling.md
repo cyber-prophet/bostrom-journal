@@ -56,3 +56,15 @@ Per changed chapter:
 Leave unchanged chapters and their particles as-is. Chapters without `[~]` have no previous particle — out of scope.
 
 Details — how a CID is computed and the generator pipeline, plus (as background, not needed for new particles) the analysis of reproducing the legacy CIDs: `cid-reproduction-research.md`.
+
+## The `[~]()` genesis convention — new chapters
+
+A heading marker `[~]` has three states, and `regenerate` handles each differently:
+
+- `[~](particles/<cid>.md)` — an existing particle. Regenerate only if its body changed vs `main` (diff-driven).
+- `[~]()` — genesis: a new chapter with no parent yet. Generate its particle now, regardless of `main` (marker-driven, not diff-driven), then fill the marker to `[~](particles/<new-cid>.md)`.
+- no `[~]` marker — not a particle, ignored (e.g. `## Preface to version 1.1`).
+
+A genesis particle is a **bare body** — no frontmatter at all: the `# <heading>` line, the chapter text, and one trailing newline. The rule: a `parent:` frontmatter means the particle has a previous version; its absence means genesis. (Bare bodies also match how the original cyber particles were stored.) When such a chapter is later edited, its next version picks up `parent: <genesis-cid>` through the normal edited-chapter path — no special handling.
+
+The rewire of `[~]()` markers is positional, by heading line index. Multiple `[~]()` markers are byte-identical, so a document-wide string replace would mis-target; each marker is rewritten on its own line.
