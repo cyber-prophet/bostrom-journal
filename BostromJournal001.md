@@ -145,7 +145,7 @@ Bostrom blockchain is the result of 5 years' work and research of [cyber~congres
 
 Founders perceive Bostrom as a canary network in the same way that Kusama relates to Polkadot. Bostrom's cybergraph tends to be a bootstrap hub for domain-specific networks of Cyber.
 
-## Knowledge graph [~](particles/QmY5GGToNJ7ZZEju5Q6n52qGLGti3wuLPAa5xNfFEjSjje.md)
+## Cybergraph [~](particles/QmY5GGToNJ7ZZEju5Q6n52qGLGti3wuLPAa5xNfFEjSjje.md)
 
 The cybergraph of Bostrom blockchain consists of pairs: each source particle is connected to a destination particle via cyberlink (with additional information of neuron's address and the including block's info).
 
