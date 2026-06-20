@@ -59,6 +59,22 @@ Those 21 are the sections whose text never changed since the cyber era; the othe
 
 This is the format change `tooling.md` already anticipates ("Later I guess we'll need to change the whole format"). Recommendation: when that change happens, hash the body and treat lineage as sidecar metadata. Until then, accept that slimming the footer gives new CIDs.
 
+## Two classes of particle: carried in vs edited
+
+Every one of the 66 particles carries a "previous version" pointer in its footer, so lineage metadata exists for all of them. Whether that previous version is a *different* text or the *same* one is recorded by the footer's own metrics — `levenshtein similarity` and `cosine similarity`:
+
+- both `= 1` → the text is identical to the previous version; the particle entered the journal unchanged in this step. 30 of the 66.
+- either `< 1` → the text differs from the previous version; a real earlier version was edited. 36 of the 66.
+
+So the set splits into two classes, as suspected: about 30 particles were carried into the journal unchanged, and 36 were edited from a genuine prior version.
+
+Two cautions on reading this:
+
+- "Unchanged" means unchanged *relative to the recorded previous version*. It does not prove the particle was first written for the journal — only that this lineage step changed nothing. The footer attests "no change here", not origin.
+- The 21 body-hash matches above are a stricter subset of these 30. Those 21 had a bare-body predecessor (the cyber original), so the body hashes to the previous CID. The other 9 unchanged-text particles had a predecessor that was itself footer-wrapped, so the bare body does not hash to it even though the text never changed — the lineage is just one generation deeper.
+
+Reproduce the split by parsing each footer for `levenshtein similarity: (?<v>[0-9.]+)` and `cosine similarity: (?<v>[0-9.]+)`, then counting `v == 1` against `v < 1`.
+
 ## What the generator needs (once the format question is settled)
 
 - Parse `BostromJournal001.md` into sections by the heading anchors `## Heading [~](particles/<CID>.md)`. The CID in the anchor is the section's current particle, and becomes the new particle's "previous version".
