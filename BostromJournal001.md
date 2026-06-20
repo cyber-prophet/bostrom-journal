@@ -91,7 +91,7 @@ If you are interested in researching Bostrom, all of these sources can give you 
 
 ## Preface to version 1.1
 
-More than 4 years have passed since the launch of the network. I decided to update this issue briefly, without digging too deep. So please consider these updates as an attempt to pick the low-hanging fruit.
+More than 4 years have passed since the launch of the network. I decided to update some particles from this issue that I need for publishing Bostrom Journal 002. To save my energy I abstained from editing the other particles, which doesn't seem right to me anymore.
 
 I'm not sure if I'm going to update the separate particles and create new cyberlinks on them. I still believe that this mechanism has something special to it — I just don't have the energy to do the updates properly.
 
