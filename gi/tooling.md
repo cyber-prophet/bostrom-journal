@@ -53,4 +53,12 @@ Calculating CIDs is tricky, but the unchanged particles' CIDs should match their
 
 We have IPFS to check against, but import the algorithm to use i n general from /Users/user/git/ai-sandbox-dev-container/nu-multi proof/nu-multiproof/cid-v0.nu 55
 
-!! spin an agent or do research yourself on achieving what I want. Write the most important findings back to this file, and the whole research into different artifact
+## Findings (CID reproduction)
+
+Full research: `cid-reproduction-research.md`.
+
+- A particle's CID is the IPFS CID v0 of the **whole file's exact bytes** (body + `---` + footer). Verified on all 66 particles, with both `ipfs add --only-hash --quieter --cid-version=0 --raw-leaves=false` and the pure-Nushell `cid-v0.nu`. The two agree exactly, so we don't need the `ipfs` binary at runtime.
+- The hash is the easy part. The hard part is feeding it the **exact** original bytes: trailing two-space line breaks, the final blank line, the curly apostrophe `’` (U+2019, not ASCII), and LF endings all change the CID. The module only handles files under 256 KB (all current particles fit; largest is 18 KB).
+- **The two goals conflict.** Because the CID hashes the whole file, slimming the footer changes the CID — even for chapters whose text didn't change. So "unchanged particles keep their old CID" is **not** possible while we also drop the old footer fields. We can have one or the other, not both.
+- The clean fix is the format change already anticipated above: hash the **body only**, keep the footer/lineage as a sidecar outside the hashed bytes. Then unchanged text keeps a stable CID. This is also cyber's original model — 21 of the 66 current bodies already hash exactly to the CID their own footer names as "previous version".
+- Old particle bodies are **not** uniformly normalized (one keeps `# Heading`, another drops the `#`), so old bytes can't be regenerated from the document by one rule. Treat `particles/` as the authoritative legacy bytes.
