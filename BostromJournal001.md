@@ -12,9 +12,10 @@ The latest version of Bostrom Journal can be found on [github](https://github.co
 
 Journal address: [Bostrom Journal](https://cyb.ai/network/bostrom/contract/bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa).
 
-## Table of contents [~](particles/QmUwTGzoSLno1JjBLZ3QwEVv7EJUtYyv9hQzAYD4L2TRot.md)
+## Table of contents [~](particles/QmPMaNY2NYCyA3cDTWu1z2zNXFGXCNHLfGRUHbs3Eci5DK.md)
 
 - [Preface ~](#preface-)
+- [Preface to version 1.1 ~](#preface-to-version-11-)
 - [Intro to Bostrom Blockchain ~](#intro-to-bostrom-blockchain-)
   - [Bostrom - the short definition ~](#bostrom---the-short-definition-)
   - [Purpose of the Bostrom network ~](#purpose-of-the-bostrom-network-)
@@ -89,25 +90,33 @@ There are documents about Bostrom's blockchain written by Bostrom's founders or 
 
 If you are interested in researching Bostrom, all of these sources can give you a lot of information. Nevertheless, I believe that this manual is a good starting point.
 
+## Preface to version 1.1 [~](particles/QmbQYuxKK7ifnNbX2mwdAj5AdGHU2Vj4B2r5XFgV25Qsgd.md)
+
+More than 4 years have passed since the launch of the network. I decided to update some particles from this issue that I need for publishing Bostrom Journal 002. To save my energy I abstained from editing the other particles, which doesn't seem right to me anymore.
+
+The proper way to update a particle is to publish a new version and cyberlink it to the one it replaces. I still believe this mechanism has something special to it. So far I've only done this in the repository — the on-chain cyberlinks are not there yet, and I doubt I'll get to them soon.
+
+I intend to rename the "knowledge graph" term to "Cybergraph" according to my beliefs about the concept's substantiality.
+
 ## Intro to Bostrom Blockchain [~](particles/Qmahxtp3r6PEHj5tpqf2cGeibou3ADkZwR6QVfxHU1urMe.md)
 
-### Bostrom - the short definition [~](particles/QmRZ5qnLpBK5br4qJDTJAUVn2ny5fnbSTP6u6U5zMqzeTi.md)
+### Bostrom - the short definition [~](particles/QmXu22YpC93JCvm9RRYKttdr2Ge9W2aqvmdyNXKKitHhkt.md)
 
-Bostrom is a superintelligence project with a permissionless knowledge graph at its core built on blockchain (cosmos-SDK) and content addressing mechanism (with the current implementation of IPFS protocol).
+Bostrom is the first blockchain in the world to implement Cybergraph. Cybergraph can be represented as a directed graph, where content identifiers (IPFS hashes in the current implementation) are used as vertices (aka nodes). The edges between them are called cyberlinks.
 
-### Purpose of the Bostrom network [~](particles/QmWnDz2eHQ2Lii42zkEuc3kgC1iLmg9vr2D6mjhkQfZT1P.md)
+### Purpose of the Bostrom network [~](particles/QmPfe2tQQ9pHEMe3Qb8Mnkh6wwwv7vNo1KMbRBTSEYwBFZ.md)
 
-Bostrom allows adding knowledge (creating cyberlinks between particles) to the knowledge graph verifiably. By "verifiably" we mean that it is guaranteed by blockchain design that the holder of a particular private key added specific content into the blockchain at the known time. And it is technically correct to say that the holder of the exact private key signed files (uniquely identified by their hashes) by writing this information into Bostrom blockchain.
+Bostrom allows adding knowledge (creating cyberlinks between particles) to the cybergraph verifiably. By "verifiably" we mean that it is guaranteed by blockchain design that the holder of a particular private key added specific content into the blockchain at the known time.
 
-The knowledge graph is a directed weighted graph between particles (CIDs or Content-ID of files, also known as content addresses, IPFS-hashes, IPFS-links).
+The cybergraph is a directed weighted graph between particles (CIDs or Content-ID of files, also known as content addresses, IPFS-hashes, IPFS-links).
 
-Cyberlinks are the edges of the knowledge graph, particles are the vertexes (aka nodes).
+Cyberlinks are the edges of the cybergraph, particles are the vertexes (aka nodes).
 
 In order to create cyberlinks in Bostrom, user accounts (so-called neurons) must have VOLT and AMPERE tokens.
 
-By definition, created cyberlinks cannot be deleted. This means, among other things, that they will always be taken into account in cyberrank (until "forgetting" or "pruning" functions are introduced).
+By definition, created cyberlinks cannot be deleted, though neurons can issue instructions (see BostromJournal002) on how to deal with previously created cyberlinks.
 
-### Capabilities of the Bostrom Blockchain [~](particles/QmNUFQqQB3oRiB7FE2uJg7SX8sUqq6EozZbR73iJwtu5pK.md)
+### Capabilities of the Bostrom Blockchain [~](particles/QmeVwXKgKHatWwqHeKiGDQJxMrqkuBeibp2pR6Eaz6muHn.md)
 
 - new way of sharing, storing, ranking, and searching for information;
 - platform for building on top of these ☝;
@@ -118,31 +127,25 @@ By definition, created cyberlinks cannot be deleted. This means, among other thi
 
 Site [cyb.ai](https://cyb.ai) is an application built using the Bostrom Blockchain.
 
-On [cyb.ai](https://cyb.ai) you can already create [cyberlinks](https://cyb.ai/search/cyberlink), search the [graph](https://cyb.ai/oracle), rank using the [Relevance machine](https://cyb.ai/search/rm), share and store information, [earn rewards](https://cyb.ai/halloffame), [investmint](https://cyb.ai/mint), and [tweet](https://cyb.ai/search/tweet).
+### IPFS, Content-addressing mechanism [~](particles/QmQQ9PSqb3rw67WGLQNSMeFiXQNVFn3u9ubkaYhh3enEsX.md)
 
-### IPFS, Content-addressing mechanism [~](particles/QmRJCxdcFZkWCvbbEeBTW3ReYtfniiiKVqFVwK3zKzfhQd.md)
-
-IPFS (interplanetary file system) is a distributed (decentralized) file system within which files are stored on network members' computers. Files are received by their CID (cryptographic hash, particle in Bostrom's terminology) using software that supports IPFS protocol.
+IPFS (interplanetary file system) is a distributed (decentralized) file system within which files are stored on network members' computers. In the network, files can be addressed and received by their CID (cryptographic hash, particle in Bostrom's terminology) using software that supports IPFS protocol.
 
 Files are downloaded from network participants' nodes. Therefore, the more devices have the file, the higher chances it can be downloaded (and potentially faster).
 
 IPFS does not guarantee the safety or retrievability of the files.
 
-### Bostrom is a full refactoring of the Euler network [~](particles/Qmb9iL8JdJqRG1ioFAzes8MUWzJrxMWso8fW3fanVesL86.md)
+### Bostrom is a full refactoring of the Euler network [~](particles/QmPp3Fy4pZjrhgeksqzwrkBMGvz7XzmBkkhBjjwGDhef8J.md)
 
-Bostrom blockchain is the result of 5 years' work and research of [cyber~congress](https://github.com/cybercongress/) team.
+Bostrom blockchain is the result of 5 years' work and research of [cyber~congress](https://github.com/cybercongress/) team. Bostrom testnets were named the Euler network.
 
-Before Bostrom network (which itself had 5 testnets), there were 6 testnets known as Euler network.
+Founders perceive Bostrom as a canary network in the same way that Kusama relates to Polkadot. Bostrom's cybergraph tends to be a bootstrap hub for domain-specific networks of Cyber.
 
-Bostrom is a full refactoring of the Euler network with a strong focus on Superintelligence. It includes a new distribution model, economics, improved ranking, and some superintelligent abilities.
+## Cybergraph [~](particles/QmcK8QgSmsYQsVskQtGPWFSeGHXPcaJ7Lh6X1hrZGKQsVs.md)
 
-Founders perceive Bostrom as a canary network in the same way that Kusama relates to Polkadot. The Bostrom knowledge graph tends to be a bootstrap hub for domain-specific networks of Cyber. The network works as a testbed for Interplanetary Knowlege Protocol communications and different experiments, including Moon development. Consider Bostrom a network with high risks but of market value.
+The cybergraph of Bostrom blockchain consists of pairs: each source particle is connected to a destination particle via cyberlink (with additional information of neuron's address and the including block's info).
 
-The key differences within the Bostrom and Cyber network are to be discussed [here](https://cyb.ai/search/bostrom%20vs%20cyber). The launch of the Bostrom network is the inception of an ecosystem.
-
-## Knowledge graph [~](particles/QmY5GGToNJ7ZZEju5Q6n52qGLGti3wuLPAa5xNfFEjSjje.md)
-
-The knowledge graph of Bostrom blockchain consists of pairs: each source particle is connected to a destination particle via cyberlink (with additional information of neuron's address and the height info). So it can be encoded as `source_particle - destination_particle`, which reduces the complexity of entering data (compared to triples, commonly used in modern knowledge graph applications). Cyberlinks combined with markdown marked up text files, where various conventions on connections between particles could be used, provide the necessary flexibility to Bostrom's knowledge graph, adapting it to a vast variety of possible usages.
+Cyberlinks combined with markdown marked up text files, where various conventions on connections between particles could be used, provide the necessary flexibility to Bostrom's cybergraph, adapting it to a vast variety of possible usages.
 
 ### Particles [~](particles/QmSxizUKhJhyVjzXQJfwiUabsdCdHSSWfkiMRAPcmVjqSY.md)
 
@@ -154,11 +157,11 @@ A cyberlink (noun) is a link between two particles registered in Bostrom blockch
 
 To cyberlink (verb) - to create a cyberlink between two particles.
 
-### Neurons [~](particles/QmcTqhdMm2YbBBbidvsKr6HzrJAkzBWDDCpHtyBt97JgSz.md)
+### Neurons [~](particles/QmeEJ3WcY2mft2YTxG4XXAjJ2W8GiKNqakUChR9tNHDeVh.md)
 
 A neuron can be:
 
-- a private key holder (who can create cyberlinks in the knowledge graph);
+- a private key holder (who can create cyberlinks in the cybergraph);
 - a cosm-wasm contract (autonomus program).
 
 ### Cyberrank [~](particles/Qme4ssKjJHD8aZ7y9C9ys4hQTNqkxtuXDtMzLVH5mJgJZH.md)
@@ -817,8 +820,10 @@ To submit a particle to the [Bostrom Journal (BJ)](https://cyb.ai/network/bostro
 
 BJ publishes irregularly.
 
-### Journal's standard formatting markup and tags [~](particles/Qmd8C1vCR4KkfECE8SroHgtqJVmxvzbBbXtCMvm6n2AtYn.md)
+### Journal's standard formatting markup and tags [~](particles/QmUBqXc9yV8XYjFvhfJU2sn9ecmRMisExYUohBEjPpNkho.md)
 
 All the particles were formatted using [Prettier](https://prettier.io/), an opinionated code formatter.
 
-- `[~]` - the tag of the original particle
+- `[~]` - the tag that links a chapter to its particle. `[~](particles/<cid>.md)` points to the particle this chapter is based on; an empty `[~]()` marks a new chapter that has no particle yet (genesis).
+
+The `particles/` folder is a local mirror of the current version of each particle, so you can read them without fetching from IPFS. Each file name is a particle's CID, and the file is exactly the content that CID addresses. When a chapter has been updated since its first publication, its particle starts with a YAML `parent` field — the CID of the previous version — and the versions form a chain through it. Particles not yet updated keep their metadata in a footer at the bottom instead.
