@@ -38,11 +38,11 @@ Nushell plumbing, git-style, that for each chapter edited on this branch (diff `
 
 Per changed chapter:
 
-1. Build the new particle = a YAML frontmatter header carrying **only** the previous particle's CID as a plain string in `parent_cid` (drop author, epoch, similarity, cyberrank, cyberlink fields, and the old footer's markdown link), then the chapter body:
+1. Build the new particle = a YAML frontmatter header carrying **only** the previous particle's CID as a plain string in `parent` (drop author, epoch, similarity, cyberrank, cyberlink fields, and the old footer's markdown link), then the chapter body:
 
    ```
    ---
-   parent_cid: <prev-cid>
+   parent: <prev-cid>
    ---
 
    <chapter body>

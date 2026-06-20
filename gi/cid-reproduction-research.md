@@ -78,12 +78,12 @@ Reproduce the split by parsing each footer for `levenshtein similarity: (?<v>[0-
 ## What the generator needs (once the format question is settled)
 
 - Parse `BostromJournal001.md` into sections by the heading anchors `## Heading [~](particles/<CID>.md)`. The CID in the anchor is the section's current particle, and becomes the new particle's "previous version".
-- Build each particle's bytes exactly (see the byte-exactness list above), prepend the `parent_cid` frontmatter, hash with `cid-v0`, write `particles/<new-cid>.md`, and update the anchor in the document to the new CID.
+- Build each particle's bytes exactly (see the byte-exactness list above), prepend the `parent` frontmatter, hash with `cid-v0`, write `particles/<new-cid>.md`, and update the anchor in the document to the new CID.
 - The metadata, as established, is a YAML frontmatter header carrying only the parent CID as a plain string (no markdown link):
 
 ```
 ---
-parent_cid: <prev-cid>
+parent: <prev-cid>
 ---
 ```
 
