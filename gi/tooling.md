@@ -23,3 +23,17 @@ Currently the project:
 Plus the current file (git intent/scratchpad) is a new mechanic.
 
 But I believe we can have fun with it, and maybe even get something useful out of it. So let's jam.
+
+## Big goal
+
+I want to have tooling for working with BostromJournal like projects in nushell. Between others we need commands to parse journals, propagate changes, calculate cids and print them back into journals.
+
+We should draw our inspiration from `git` whenever is possible.
+
+But I would like to go step by step and start with simple things that are needed for the current moment.
+
+## Intermid goal
+
+In the current branch I updated some chapters in `BostromJournal001.md` (see the diff against `main`).
+
+
