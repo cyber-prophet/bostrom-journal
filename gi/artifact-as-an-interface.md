@@ -13,21 +13,20 @@ We invent rules along the way and just use common-sense logic to make our work c
 
 # Scratchpad
 
-Ok, my friend, let's talk now. The brief history of bostrom journal for you:
+Ok, my friend, let's talk. Here is a brief history of Bostrom Journal for you:
 
-I created the first version of bj001 after the network's launch in 2022. It was mainly based on communications with founders and my own much poor at those times understanding of the technology.
+I created the first version, bj001, after the network's launch in 2022. It was mainly based on talks with the founders and on my own understanding of the technology, which was quite poor back then.
 
-Time has passed, I switched to other projects, ai agents appeared on the stage, I decided to write the bj002 to explain cybergraph operations concepts. Together with agents we started writing bj002 in english, but then I decided to switch to russian the later work advanced much further in bj002ru as my enlish is quite weak and russian is my mother tongue language.
+Time passed. I switched to other projects, AI agents appeared, and I decided to write bj002 to explain the concepts of cybergraph operations. Together with agents we started writing bj002 in English, but then I switched to Russian — the work advanced much further in bj002ru, since my English is quite weak and Russian is my mother tongue.
 
-The main writing was done by agents: I describe some idea for the new chapter, or for editing the current one and agents write it. During the process, looking at the diffs  I felt like agents do what I imagine. Plus probably I often give agents tasks to write really big chunks that I didn't check completely with relationships to other parts.
+The main writing was done by agents: I describe an idea for a new chapter, or for editing the current one, and the agents write it. Looking at the diffs, I felt the agents did what I imagined. But I often gave them really big chunks to write, which I didn't fully check for how they fit the other parts.
 
-And at the end of the current stage I discovered that the sharpness of concepts in agent's writing was very unsatisfactory. Whe I tried to address those issues more precisely just rewrite portions addressing my previous concerns and creating new ones.
+And at the end of this stage I found that the sharpness of the concepts in the agents' writing was very unsatisfactory. When I tried to address those issues more precisely, we would just rewrite portions — fixing my earlier concerns but creating new ones.
 
-With much of work and attempt of fixing this I decided to update the most important relevant information and definitions in the bj001 (BostromJournal001.md - in the current branch - to identify updates see changes vs main), and to force agents to use them as a baseline.
+After a lot of work trying to fix this, I decided to update the most important information and definitions in bj001 (BostromJournal001.md, in the current branch — to see the updates, compare against main), and to force agents to use them as a baseline.
 
-After starting and implementing first changes I understood that rewriting the whole issue is a big work, and I just need to extract the relevant information as chapters into bj002 to make the new issue self contained, and just to use the extracted particles as an anchor.
+After starting and making the first changes, I realized that rewriting the whole issue is too much work. I just need to extract the relevant information as chapters into bj002 to make the new issue self-contained, and use the extracted particles as anchors.
 
-Another caveat is that in bj002 (current tip beedfda5bf78 of 
-science-examples) I switched to Russian language.
+Another caveat: in bj002 (current tip beedfda5bf78 of science-examples) I switched to Russian.
 
 So there are parallel threads happening in different branches. 
