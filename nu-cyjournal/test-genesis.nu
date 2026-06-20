@@ -74,6 +74,28 @@ def "existing unchanged particle is untouched" [] {
     assert equal (open --raw journal.md) $doc "journal byte-identical"
 }
 
+# An empty plan (nothing to regenerate) is a no-op: a non-dry-run must not
+# rewrite the file at all — its mtime stays put (minimal side effects).
+@test
+def "empty plan does not touch the file" [] {
+    let doc = "# Gamma [~](particles/QmExisting000000000000000000000000000000000000.md)\n\nUnchanged body.\n"
+    let dir = mktemp --directory
+    cd $dir
+    mkdir particles
+    ^git init --quiet
+    ^git config user.email t@t
+    ^git config user.name t
+    $doc | save --force --raw journal.md
+    ^git add -A
+    ^git commit --quiet -m init
+
+    let before = ls journal.md | get 0.modified
+    sleep 1100ms
+    regenerate journal.md --ref (^git rev-parse HEAD | str trim) | ignore
+    let after = ls journal.md | get 0.modified
+    assert equal $before $after "no write on empty plan"
+}
+
 # A heading `[~](...)` whose link is neither empty nor a particle path is an
 # authoring mistake — parse-sections fails fast rather than skipping it.
 @test

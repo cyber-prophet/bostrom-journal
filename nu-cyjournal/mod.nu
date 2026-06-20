@@ -135,7 +135,9 @@ export def regenerate [
             let bytes = $s | build-particle
             {heading: $s.heading old_cid: $s.cid new_cid: ($bytes | hash-particle) line: $s.line bytes: $bytes}
         }
-    if not $dry_run {
+    # Why: an empty plan is a no-op — skip the write entirely so a no-op
+    # regenerate touches nothing (no rewritten file, no mtime change).
+    if not $dry_run and ($plan | is-not-empty) {
         # Write particle files.
         $plan | each {|p| $p.bytes | save --force --raw $"($particles_dir)/($p.new_cid).md" }
         # Rewire markers positionally: rewrite the marker on each section's line.
