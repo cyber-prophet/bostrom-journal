@@ -38,15 +38,14 @@ Nushell plumbing, git-style, that for each chapter edited on this branch (diff `
 
 Per changed chapter:
 
-!! In the previous commit we started the refactoring of metadata, let's use frontmatter yaml with only one field for now `parent_cid` (or propose a better name for previous version). And cid should be just a string (not a link as it is now). update the task
-1. Build the new particle = chapter body + a slim footer carrying **only** the previous particle's CID (drop author, epoch, similarity, cyberrank, cyberlink fields):
+1. Build the new particle = a YAML frontmatter header carrying **only** the previous particle's CID as a plain string in `parent_cid` (drop author, epoch, similarity, cyberrank, cyberlink fields, and the old footer's markdown link), then the chapter body:
 
    ```
    ---
+   parent_cid: <prev-cid>
+   ---
 
-   ###### Information on the article's previous version  
-
-   cid: [<prev-cid>](https://cyb.ai/ipfs/<prev-cid>)  
+   <chapter body>
    ```
 
 2. Name it by its own CID, computed with `cid-v0.nu`.
@@ -54,4 +53,4 @@ Per changed chapter:
 
 Leave unchanged chapters and their particles as-is. Chapters without `[~]` have no previous particle — out of scope.
 
-Details — CID reproduction, the byte-exactness traps, why slimming the footer re-mints the CID even for unchanged text, and the generator pipeline: `cid-reproduction-research.md`.
+Details — CID reproduction, the byte-exactness traps, why re-wrapping the metadata re-mints the CID even for unchanged text, and the generator pipeline: `cid-reproduction-research.md`.

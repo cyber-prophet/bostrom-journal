@@ -78,15 +78,13 @@ Reproduce the split by parsing each footer for `levenshtein similarity: (?<v>[0-
 ## What the generator needs (once the format question is settled)
 
 - Parse `BostromJournal001.md` into sections by the heading anchors `## Heading [~](particles/<CID>.md)`. The CID in the anchor is the section's current particle, and becomes the new particle's "previous version".
-- Build each particle's bytes exactly (see the byte-exactness list above), append the slim footer, hash with `cid-v0`, write `particles/<new-cid>.md`, and update the anchor in the document to the new CID.
-- The slim footer, as established, keeping the trailing two spaces:
+- Build each particle's bytes exactly (see the byte-exactness list above), prepend the `parent_cid` frontmatter, hash with `cid-v0`, write `particles/<new-cid>.md`, and update the anchor in the document to the new CID.
+- The metadata, as established, is a YAML frontmatter header carrying only the parent CID as a plain string (no markdown link):
 
 ```
 ---
-
-###### Information on the article's previous version  
-
-cid: [<prev-cid>](https://cyb.ai/ipfs/<prev-cid>)  
+parent_cid: <prev-cid>
+---
 ```
 
-- This is plumbing, git-style: `cid-v0` is the equivalent of `git hash-object`; the generator is `write-tree`. Building these as small composable commands (parse → body → footer → hash → place) matches the `tooling.md` goal.
+- This is plumbing, git-style: `cid-v0` is the equivalent of `git hash-object`; the generator is `write-tree`. Building these as small composable commands (parse → body → frontmatter → hash → place) matches the `tooling.md` goal.
