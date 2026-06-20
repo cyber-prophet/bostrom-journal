@@ -51,4 +51,6 @@ Later I guess we'll need to change the whole format, but for now let's keep it a
 
 Calculating CIDs is tricky, but the unchanged particles' CIDs should match their old versions (if it is possible — research this).
 
+We have IPFS to check against, but import the algorithm to use i n general from /Users/user/git/ai-sandbox-dev-container/nu-multi proof/nu-multiproof/cid-v0.nu 55
+
 !! spin an agent or do research yourself on achieving what I want. Write the most important findings back to this file, and the whole research into different artifact
