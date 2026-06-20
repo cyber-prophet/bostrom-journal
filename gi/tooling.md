@@ -12,3 +12,14 @@ We invent rules along the way and just use common-sense logic to make our work c
 - If a reply would be large, write it to a file and commit that, instead of pasting it here.
 
 # Scratchpad
+
+## Preface
+
+Currently the project:
+
+1. I believe has huge potential for real-world usefulness
+2. Is a mess in this repo (initial tooling for producing the output is lost, there are several parallel branches with different types of work based on various ancestors).
+
+Plus the current file (git intent/scratchpad) is a new mechanic.
+
+But I believe we can have fun with it, and maybe even get something useful out of it. So let's jam.
