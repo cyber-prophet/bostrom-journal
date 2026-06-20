@@ -118,7 +118,7 @@ Cyberlinks are the edges of the cybergraph, particles are the vertexes (aka node
 
 In order to create cyberlinks in Bostrom, user accounts (so-called neurons) must have VOLT and AMPERE tokens.
 
-By definition, created cyberlinks cannot be deleted. This means, among other things, that they will always be taken into account in cyberrank (until "forgetting" or "pruning" functions are introduced).
+By definition, created cyberlinks cannot be deleted, though neurons can issue instructions (see BostromJournal002) how to deal with previously created cyberlinks.
 
 ### Capabilities of the Bostrom Blockchain [~](particles/QmNUFQqQB3oRiB7FE2uJg7SX8sUqq6EozZbR73iJwtu5pK.md)
 
