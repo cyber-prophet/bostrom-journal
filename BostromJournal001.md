@@ -131,8 +131,6 @@ By definition, created cyberlinks cannot be deleted, though neurons can issue in
 
 Site [cyb.ai](https://cyb.ai) is an application built using the Bostrom Blockchain.
 
-On [cyb.ai](https://cyb.ai) you can already create [cyberlinks](https://cyb.ai/search/cyberlink), search the [graph](https://cyb.ai/oracle), rank using the [Relevance machine](https://cyb.ai/search/rm), share and store information, [earn rewards](https://cyb.ai/halloffame), [investmint](https://cyb.ai/mint), and [tweet](https://cyb.ai/search/tweet).
-
 ### IPFS, Content-addressing mechanism [~](particles/QmRJCxdcFZkWCvbbEeBTW3ReYtfniiiKVqFVwK3zKzfhQd.md)
 
 IPFS (interplanetary file system) is a distributed (decentralized) file system within which files are stored on network members' computers. Files are received by their CID (cryptographic hash, particle in Bostrom's terminology) using software that supports IPFS protocol.
