@@ -12,9 +12,10 @@ The latest version of Bostrom Journal can be found on [github](https://github.co
 
 Journal address: [Bostrom Journal](https://cyb.ai/network/bostrom/contract/bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa).
 
-## Table of contents [~](particles/QmUwTGzoSLno1JjBLZ3QwEVv7EJUtYyv9hQzAYD4L2TRot.md)
+## Table of contents [~](particles/QmPMaNY2NYCyA3cDTWu1z2zNXFGXCNHLfGRUHbs3Eci5DK.md)
 
 - [Preface ~](#preface-)
+- [Preface to version 1.1 ~](#preface-to-version-11-)
 - [Intro to Bostrom Blockchain ~](#intro-to-bostrom-blockchain-)
   - [Bostrom - the short definition ~](#bostrom---the-short-definition-)
   - [Purpose of the Bostrom network ~](#purpose-of-the-bostrom-network-)
