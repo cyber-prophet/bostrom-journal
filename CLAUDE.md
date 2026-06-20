@@ -24,5 +24,5 @@ In the author's words:
 - **`hash(A, B)`** is a cyberlink reference —  it allows treating the edge as a particle you can point at.
 - A **convention** is an agreement about how to **issue** an instruction for processing the cybergraph — and how to **interpret** it. A convention is the shared rule for encoding an instruction into the graph and reading it back; it is **not** an edge in the graph, and not the processing that consumes the instruction. Never write "a convention is a cyberlink."
 - This is an instruction example: `hash("deny") → hash(A, B)`.
-- The cybergraph is permissionless and general-purpose: anyone can write into it their own way, and anyone can read and process it their own way.
+- The cybergraph is a general-purpose data structure, and its blockchain hosting is permissionless. Anyone can write into it their own way, and anyone can read and process it their own way.
 
