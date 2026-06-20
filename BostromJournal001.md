@@ -93,7 +93,7 @@ If you are interested in researching Bostrom, all of these sources can give you 
 
 More than 4 years have passed since the launch of the network. I decided to update some particles from this issue that I need for publishing Bostrom Journal 002. To save my energy I abstained from editing the other particles, which doesn't seem right to me anymore.
 
-I'm not sure if I'm going to update the separate particles and create new cyberlinks on them. I still believe that this mechanism has something special to it — I just don't have the energy to do the updates properly.
+The proper way to update a particle is to publish a new version and cyberlink it to the one it replaces. I still believe this mechanism has something special to it. So far I've only done this in the repository — the on-chain cyberlinks are not there yet, and I doubt I'll get to them soon.
 
 I intend to rename the "knowledge graph" term to "Cybergraph" according to my beliefs about the concept's substantiality.
 
