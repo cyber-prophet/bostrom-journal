@@ -32,44 +32,25 @@ We should draw our inspiration from `git` whenever possible.
 
 But I would like to go step by step and start with simple things that are needed at the current moment.
 
-!! now collapse everything below into short task, to what i want to achieve. If necessary - create detailed artifacts for relevant steps
-## Intermediate goal
+## Intermediate goal — regenerate edited particles
 
-On the current branch I updated some chapters in `BostromJournal001.md` (see the diff against `main`).
+Nushell plumbing, git-style, that for each chapter edited on this branch (diff `BostromJournal001.md` against `main`) rebuilds its particle and rewires the link.
 
-So, using plumbing commands, we should be able to receive the new particles in `particles/` with only one part from the old format, of this kind:
+Per changed chapter:
 
-<selected-text file="/Users/user/git/cy-container/bostrom-journal/particles/QmNSBAUQG5M5L233D8M9w3J5CV76Kwub4PKNSYs7EAHa1T.md" lines="5-9">---
+1. Build the new particle = chapter body + a slim footer carrying **only** the previous particle's CID (drop author, epoch, similarity, cyberrank, cyberlink fields):
 
-###### Information on the article’s previous version  
+   ```
+   ---
 
-cid: [QmeXv3wAdqXEanK12cPp24RTqV4a4AsWCHAPUX2rQ7sovN](https://cyb.ai/ipfs/QmeXv3wAdqXEanK12cPp24RTqV4a4AsWCHAPUX2rQ7sovN)  
-</selected-text>
+   ###### Information on the article’s previous version  
 
-i.e. the h6 heading and the CID of the previous version.
+   cid: [<prev-cid>](https://cyb.ai/ipfs/<prev-cid>)  
+   ```
 
-Later I guess we'll need to change the whole format, but for now let's keep it as it was established (minus the old fields that I don't want to support now).
+2. Name it by its own CID, computed with `cid-v0.nu`.
+3. Write the new CID back into that chapter's `[~](particles/<cid>.md)` link in `BostromJournal001.md`.
 
-Calculating CIDs is tricky, but the unchanged particles' CIDs should match their old versions (if it is possible — research this).
+Leave unchanged chapters and their particles as-is. Chapters without `[~]` have no previous particle — out of scope.
 
-We have IPFS to check against, but import the algorithm to use i n general from /Users/user/git/ai-sandbox-dev-container/nu-multi proof/nu-multiproof/cid-v0.nu 55
-
-## Findings (CID reproduction)
-
-Full research: `cid-reproduction-research.md`.
-
-- A particle's CID is the IPFS CID v0 of the **whole file's exact bytes** (body + `---` + footer). Verified on all 66 particles, with both `ipfs add --only-hash --quieter --cid-version=0 --raw-leaves=false` and the pure-Nushell `cid-v0.nu`. The two agree exactly, so we don't need the `ipfs` binary at runtime.
-- The hash is the easy part. The hard part is feeding it the **exact** original bytes: trailing two-space line breaks, the final blank line, the curly apostrophe `’` (U+2019, not ASCII), and LF endings all change the CID. The module only handles files under 256 KB (all current particles fit; largest is 18 KB).
-- **The two goals conflict.** Because the CID hashes the whole file, slimming the footer changes the CID — even for chapters whose text didn't change. So "unchanged particles keep their old CID" is **not** possible while we also drop the old footer fields. We can have one or the other, not both.
-- The clean fix is the format change already anticipated above: hash the **body only**, keep the footer/lineage as a sidecar outside the hashed bytes. Then unchanged text keeps a stable CID. This is also cyber's original model — 21 of the 66 current bodies already hash exactly to the CID their own footer names as "previous version".
-- Old particle bodies are **not** uniformly normalized (one keeps `# Heading`, another drops the `#`), so old bytes can't be regenerated from the document by one rule. Treat `particles/` as the authoritative legacy bytes.
-- The 66 existing particles split two ways, recorded by each footer's `levenshtein`/`cosine similarity`: 30 entered the journal with text unchanged (similarity = 1), 36 were edited from a real previous version (similarity < 1). The 21 body-equals-previous-CID matches are the subset whose predecessor was a bare cyber body.
-
-
-Users thoughts:
-
-once again, we checked that: 
-1. In the titile of chapters in BostromJournal001.md (which contain [~]) there are links on markdown files.
-2. Each markdown file is named by its own CID and contains CID of the previous particle.
-3. We can just assume that metadata footer in the previous particles is correct, but it is irrelevant to our task
-4. for our task we can produce the similiar kind output with only updated particles and put into metadata footer the field with the previous version of the particle cid, and put back into bj001 newly generated cids where relevant.
+Details — CID reproduction, the byte-exactness traps, why slimming the footer re-mints the CID even for unchanged text, and the generator pipeline: `cid-reproduction-research.md`.
