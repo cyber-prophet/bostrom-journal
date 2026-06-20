@@ -63,3 +63,13 @@ Full research: `cid-reproduction-research.md`.
 - The clean fix is the format change already anticipated above: hash the **body only**, keep the footer/lineage as a sidecar outside the hashed bytes. Then unchanged text keeps a stable CID. This is also cyber's original model — 21 of the 66 current bodies already hash exactly to the CID their own footer names as "previous version".
 - Old particle bodies are **not** uniformly normalized (one keeps `# Heading`, another drops the `#`), so old bytes can't be regenerated from the document by one rule. Treat `particles/` as the authoritative legacy bytes.
 - The 66 existing particles split two ways, recorded by each footer's `levenshtein`/`cosine similarity`: 30 entered the journal with text unchanged (similarity = 1), 36 were edited from a real previous version (similarity < 1). The 21 body-equals-previous-CID matches are the subset whose predecessor was a bare cyber body.
+
+
+Users thoughts:
+
+once again, we checked that: 
+1. In the titile of chapters in BostromJournal001.md there are links on markdown files.
+2. Each markdown file is named by its own CID and contains CID of the previous particle.
+3. We can just assume that metadata footer in the previous particles is correct, but it is irrelevant to our task
+4. for our task we can produce the similiar kind output with only updated particles and put into metadata footer the field with the previous version of the particle cid, and put back into bj001 newly generated cids where relevant.
+ 
