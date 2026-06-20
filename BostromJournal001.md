@@ -104,11 +104,11 @@ And I intend to remove the relevant information about Cyberrank (token weighted 
 
 ## Intro to Bostrom Blockchain [~](particles/Qmahxtp3r6PEHj5tpqf2cGeibou3ADkZwR6QVfxHU1urMe.md)
 
-### Bostrom - the short definition [~](particles/QmRZ5qnLpBK5br4qJDTJAUVn2ny5fnbSTP6u6U5zMqzeTi.md)
+### Bostrom - the short definition [~](particles/QmXu22YpC93JCvm9RRYKttdr2Ge9W2aqvmdyNXKKitHhkt.md)
 
 Bostrom is the first blockchain in the world to implement Cybergraph. Cybergraph can be represented as a directed graph, where content identifiers (IPFS hashes in the current implementation) are used as vertices (aka nodes). The edges between them are called cyberlinks.
 
-### Purpose of the Bostrom network [~](particles/QmWnDz2eHQ2Lii42zkEuc3kgC1iLmg9vr2D6mjhkQfZT1P.md)
+### Purpose of the Bostrom network [~](particles/QmPfe2tQQ9pHEMe3Qb8Mnkh6wwwv7vNo1KMbRBTSEYwBFZ.md)
 
 Bostrom allows adding knowledge (creating cyberlinks between particles) to the cybergraph verifiably. By "verifiably" we mean that it is guaranteed by blockchain design that the holder of a particular private key added specific content into the blockchain at the known time.
 
@@ -120,7 +120,7 @@ In order to create cyberlinks in Bostrom, user accounts (so-called neurons) must
 
 By definition, created cyberlinks cannot be deleted, though neurons can issue instructions (see BostromJournal002) on how to deal with previously created cyberlinks.
 
-### Capabilities of the Bostrom Blockchain [~](particles/QmNUFQqQB3oRiB7FE2uJg7SX8sUqq6EozZbR73iJwtu5pK.md)
+### Capabilities of the Bostrom Blockchain [~](particles/QmeVwXKgKHatWwqHeKiGDQJxMrqkuBeibp2pR6Eaz6muHn.md)
 
 - new way of sharing, storing, ranking, and searching for information;
 - platform for building on top of these ☝;
@@ -131,7 +131,7 @@ By definition, created cyberlinks cannot be deleted, though neurons can issue in
 
 Site [cyb.ai](https://cyb.ai) is an application built using the Bostrom Blockchain.
 
-### IPFS, Content-addressing mechanism [~](particles/QmRJCxdcFZkWCvbbEeBTW3ReYtfniiiKVqFVwK3zKzfhQd.md)
+### IPFS, Content-addressing mechanism [~](particles/QmQQ9PSqb3rw67WGLQNSMeFiXQNVFn3u9ubkaYhh3enEsX.md)
 
 IPFS (interplanetary file system) is a distributed (decentralized) file system within which files are stored on network members' computers. In the network, files can be addressed and received by their CID (cryptographic hash, particle in Bostrom's terminology) using software that supports IPFS protocol.
 
@@ -139,13 +139,13 @@ Files are downloaded from network participants' nodes. Therefore, the more devic
 
 IPFS does not guarantee the safety or retrievability of the files.
 
-### Bostrom is a full refactoring of the Euler network [~](particles/Qmb9iL8JdJqRG1ioFAzes8MUWzJrxMWso8fW3fanVesL86.md)
+### Bostrom is a full refactoring of the Euler network [~](particles/QmPp3Fy4pZjrhgeksqzwrkBMGvz7XzmBkkhBjjwGDhef8J.md)
 
 Bostrom blockchain is the result of 5 years' work and research of [cyber~congress](https://github.com/cybercongress/) team. Bostrom testnets were named the Euler network.
 
 Founders perceive Bostrom as a canary network in the same way that Kusama relates to Polkadot. Bostrom's cybergraph tends to be a bootstrap hub for domain-specific networks of Cyber.
 
-## Cybergraph [~](particles/QmY5GGToNJ7ZZEju5Q6n52qGLGti3wuLPAa5xNfFEjSjje.md)
+## Cybergraph [~](particles/QmcK8QgSmsYQsVskQtGPWFSeGHXPcaJ7Lh6X1hrZGKQsVs.md)
 
 The cybergraph of Bostrom blockchain consists of pairs: each source particle is connected to a destination particle via cyberlink (with additional information of neuron's address and the including block's info).
 
@@ -161,7 +161,7 @@ A cyberlink (noun) is a link between two particles registered in Bostrom blockch
 
 To cyberlink (verb) - to create a cyberlink between two particles.
 
-### Neurons [~](particles/QmcTqhdMm2YbBBbidvsKr6HzrJAkzBWDDCpHtyBt97JgSz.md)
+### Neurons [~](particles/QmeEJ3WcY2mft2YTxG4XXAjJ2W8GiKNqakUChR9tNHDeVh.md)
 
 A neuron can be:
 
