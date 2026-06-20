@@ -26,14 +26,14 @@ But I believe we can have fun with it, and maybe even get something useful out o
 
 ## Big goal
 
-I want to have tooling for working with BostromJournal like projects in nushell. Between others we need commands to parse journals, propagate changes, calculate cids and print them back into journals.
+I want to have tooling for working with BostromJournal-like projects in nushell. Among other things, we need commands to parse journals, propagate changes, calculate CIDs, and print them back into journals.
 
-We should draw our inspiration from `git` whenever is possible.
+We should draw our inspiration from `git` whenever possible.
 
-But I would like to go step by step and start with simple things that are needed for the current moment.
+But I would like to go step by step and start with simple things that are needed at the current moment.
 
-## Intermid goal
+## Intermediate goal
 
-In the current branch I updated some chapters in `BostromJournal001.md` (see the diff against `main`).
+On the current branch I updated some chapters in `BostromJournal001.md` (see the diff against `main`).
 
 
