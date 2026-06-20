@@ -72,4 +72,5 @@ once again, we checked that:
 2. Each markdown file is named by its own CID and contains CID of the previous particle.
 3. We can just assume that metadata footer in the previous particles is correct, but it is irrelevant to our task
 4. for our task we can produce the similiar kind output with only updated particles and put into metadata footer the field with the previous version of the particle cid, and put back into bj001 newly generated cids where relevant.
- 
+
+!! verify what I said. If there are incorrect statements - correct them in place and commit 
