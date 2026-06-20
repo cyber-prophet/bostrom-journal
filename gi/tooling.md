@@ -68,9 +68,7 @@ Full research: `cid-reproduction-research.md`.
 Users thoughts:
 
 once again, we checked that: 
-1. In the titile of chapters in BostromJournal001.md there are links on markdown files.
+1. Chapter titles in BostromJournal001.md link to markdown files — but only 66 of the 97 headings do; 31 carry no particle link (the newly-added chapters and the deep `####` subsections).
 2. Each markdown file is named by its own CID and contains CID of the previous particle.
 3. We can just assume that metadata footer in the previous particles is correct, but it is irrelevant to our task
 4. for our task we can produce the similiar kind output with only updated particles and put into metadata footer the field with the previous version of the particle cid, and put back into bj001 newly generated cids where relevant.
-
-!! verify what I said. If there are incorrect statements - correct them in place and commit 
