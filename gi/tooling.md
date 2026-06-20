@@ -32,6 +32,7 @@ We should draw our inspiration from `git` whenever possible.
 
 But I would like to go step by step and start with simple things that are needed at the current moment.
 
+!! now collapse everything below into short task, to what i want to achieve. If necessary - create detailed artifacts for relevant steps
 ## Intermediate goal
 
 On the current branch I updated some chapters in `BostromJournal001.md` (see the diff against `main`).
