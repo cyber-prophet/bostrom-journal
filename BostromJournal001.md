@@ -103,7 +103,7 @@ Bostrom is the first blockchain in the world to implement Cybergraph. Cybergraph
 
 ### Purpose of the Bostrom network [~](particles/QmWnDz2eHQ2Lii42zkEuc3kgC1iLmg9vr2D6mjhkQfZT1P.md)
 
-Bostrom allows adding knowledge (creating cyberlinks between particles) to the knowledge graph verifiably. By "verifiably" we mean that it is guaranteed by blockchain design that the holder of a particular private key added specific content into the blockchain at the known time. And it is technically correct to say that the holder of the exact private key signed files (uniquely identified by their hashes) by writing this information into Bostrom blockchain.
+Bostrom allows adding knowledge (creating cyberlinks between particles) to the cybergraph verifiably. By "verifiably" we mean that it is guaranteed by blockchain design that the holder of a particular private key added specific content into the blockchain at the known time.
 
 The knowledge graph is a directed weighted graph between particles (CIDs or Content-ID of files, also known as content addresses, IPFS-hashes, IPFS-links).
 
