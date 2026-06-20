@@ -38,6 +38,7 @@ Nushell plumbing, git-style, that for each chapter edited on this branch (diff `
 
 Per changed chapter:
 
+!! In the previous commit we started the refactoring of metadata, let's use frontmatter yaml with only one field for now `parent_cid` (or propose a better name for previous version). And cid should be just a string (not a link as it is now). update the task
 1. Build the new particle = chapter body + a slim footer carrying **only** the previous particle's CID (drop author, epoch, similarity, cyberrank, cyberlink fields):
 
    ```
