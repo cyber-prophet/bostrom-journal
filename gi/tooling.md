@@ -55,4 +55,4 @@ Per changed chapter:
 
 Leave unchanged chapters and their particles as-is. Chapters without `[~]` have no previous particle — out of scope.
 
-Details — CID reproduction, the byte-exactness traps, why re-wrapping the metadata re-mints the CID even for unchanged text, and the generator pipeline: `cid-reproduction-research.md`.
+Details — how a CID is computed and the generator pipeline, plus (as background, not needed for new particles) the analysis of reproducing the legacy CIDs: `cid-reproduction-research.md`.

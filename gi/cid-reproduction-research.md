@@ -1,6 +1,8 @@
 # Research: reproducing particle CIDs
 
-Scope: the intermediate goal in `tooling.md` — regenerate `particles/` from the edited `BostromJournal001.md`, keep a slim footer (only the previous-version CID), and check whether unchanged particles keep their old CID. All claims below are verified against the 66 files now in `particles/`, using both `ipfs` and the pure-Nushell `cid-v0.nu` module.
+Scope: the intermediate goal in `tooling.md` — regenerate `particles/` from the edited `BostromJournal001.md`, give each new particle a slim `parent` frontmatter (only the previous-version CID), and check whether unchanged particles keep their old CID. All claims below are verified against the 66 files now in `particles/`, using both `ipfs` and the pure-Nushell `cid-v0.nu` module.
+
+**Two separate problems — keep them apart.** Making *new* particles (the goal) is the easy one: you define the format, write clean bytes, hash them. The byte-exactness traps and the "can an unchanged particle keep its old CID" question below do **not** apply to new particles — a new or edited body simply gets a new CID, as it should. They are about *reproducing the legacy CIDs* of the existing 66 files, which is the harder problem this research mostly documents.
 
 ## What a particle CID is
 
