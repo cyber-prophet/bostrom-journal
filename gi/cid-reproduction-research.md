@@ -84,7 +84,7 @@ Reproduce the split by parsing each footer for `levenshtein similarity: (?<v>[0-
 ```
 ---
 
-###### Information on the article’s previous version  
+###### Information on the article's previous version  
 
 cid: [<prev-cid>](https://cyb.ai/ipfs/<prev-cid>)  
 ```
