@@ -141,9 +141,9 @@ IPFS does not guarantee the safety or retrievability of the files.
 
 ### Bostrom is a full refactoring of the Euler network [~](particles/Qmb9iL8JdJqRG1ioFAzes8MUWzJrxMWso8fW3fanVesL86.md)
 
-Bostrom blockchain is the result of 5 years' work and research of [cyber~congress](https://github.com/cybercongress/) team. Bostrom testnets were named as Euler network.
+Bostrom blockchain is the result of 5 years' work and research of [cyber~congress](https://github.com/cybercongress/) team. Bostrom testnets were named the Euler network.
 
-Founders perceive Bostrom as a canary network in the same way that Kusama relates to Polkadot. The Bostrom's cybergraph tends to be a bootstrap hub for domain-specific networks of Cyber.
+Founders perceive Bostrom as a canary network in the same way that Kusama relates to Polkadot. Bostrom's cybergraph tends to be a bootstrap hub for domain-specific networks of Cyber.
 
 ## Knowledge graph [~](particles/QmY5GGToNJ7ZZEju5Q6n52qGLGti3wuLPAa5xNfFEjSjje.md)
 
