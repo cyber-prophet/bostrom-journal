@@ -95,6 +95,13 @@ More than 4 years have passed since the launch of the network. The editor-in-chi
 
 I'm not sure if I'm going to update the separate particles and create new cyberlinks on them. I still believe that this mechanism has something special to it — I just don't have the energy to do the updates properly.
 
+I inted to rename the "knowledge graph" term into "Cybergraph" according to my belifs of the concept substantiality.
+
+And I intend to remove the relevant information about Cyberrank (token weighted pagerank-like rank) mainly because of 2 reasons:
+
+1. The initial ideas about it's usefullness were most often very wrong from real life applications.
+2. I still believe that the concept of Cyberrank is very deep and fundamental to Cybergraphs, though I just don't understand those properties well, and thus this information is irrelevant to the whole cybergaph concept.
+
 ## Intro to Bostrom Blockchain [~](particles/Qmahxtp3r6PEHj5tpqf2cGeibou3ADkZwR6QVfxHU1urMe.md)
 
 ### Bostrom - the short definition [~](particles/QmRZ5qnLpBK5br4qJDTJAUVn2ny5fnbSTP6u6U5zMqzeTi.md)
