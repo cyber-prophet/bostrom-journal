@@ -109,7 +109,10 @@ export def changed-sections [
     let new_secs = open --raw $file | parse-sections
     # Index old by cid -> assembled body, so identity survives heading renames.
     let old_body = $old_secs | reduce --fold {} {|s acc| $acc | insert $s.cid ($s | build-particle) }
-    $new_secs | where {|s| ($old_body | get --optional $s.cid) != ($s | build-particle) and ($old_body | get --optional $s.cid) != null }
+    $new_secs | where {|s|
+        let old = $old_body | get --optional $s.cid
+        $old != null and $old != ($s | build-particle)
+    }
 }
 
 # Regenerate particles for the journal's sections and rewire their `[~]` markers.
