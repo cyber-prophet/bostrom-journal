@@ -112,9 +112,9 @@ Bostrom is the first blockchain in the world to implement Cybergraph. Cybergraph
 
 Bostrom allows adding knowledge (creating cyberlinks between particles) to the cybergraph verifiably. By "verifiably" we mean that it is guaranteed by blockchain design that the holder of a particular private key added specific content into the blockchain at the known time.
 
-The knowledge graph is a directed weighted graph between particles (CIDs or Content-ID of files, also known as content addresses, IPFS-hashes, IPFS-links).
+The cybergraph is a directed weighted graph between particles (CIDs or Content-ID of files, also known as content addresses, IPFS-hashes, IPFS-links).
 
-Cyberlinks are the edges of the knowledge graph, particles are the vertexes (aka nodes).
+Cyberlinks are the edges of the cybergraph, particles are the vertexes (aka nodes).
 
 In order to create cyberlinks in Bostrom, user accounts (so-called neurons) must have VOLT and AMPERE tokens.
 
