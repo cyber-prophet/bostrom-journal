@@ -23,7 +23,7 @@ The main writing was done by agents: I describe some idea for the new chapter, o
 
 And at the end of the current stage I discovered that the sharpness of concepts in agent's writing was very unsatisfactory. Whe I tried to address those issues more precisely just rewrite portions addressing my previous concerns and creating new ones.
 
-With much of work and attempt of fixing this I decided to update the most important relevant information and definitions in the bj001, and to force agents to use them as a baseline.
+With much of work and attempt of fixing this I decided to update the most important relevant information and definitions in the bj001 (BostromJournal001.md - in the current branch - to identify updates see changes vs main), and to force agents to use them as a baseline.
 
 After starting and implementing first changes I understood that rewriting the whole issue is a big work, and I just need to extract the relevant information as chapters into bj002 to make the new issue self contained, and just to use the extracted particles as an anchor.
 
