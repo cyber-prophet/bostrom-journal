@@ -165,7 +165,7 @@ To cyberlink (verb) - to create a cyberlink between two particles.
 
 A neuron can be:
 
-- a private key holder (who can create cyberlinks in the knowledge graph);
+- a private key holder (who can create cyberlinks in the cybergraph);
 - a cosm-wasm contract (autonomus program).
 
 ### Cyberrank [~](particles/Qme4ssKjJHD8aZ7y9C9ys4hQTNqkxtuXDtMzLVH5mJgJZH.md)
