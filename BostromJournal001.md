@@ -89,7 +89,7 @@ There are documents about Bostrom's blockchain written by Bostrom's founders or 
 
 If you are interested in researching Bostrom, all of these sources can give you a lot of information. Nevertheless, I believe that this manual is a good starting point.
 
-## Preface to version 1.1
+## Preface to version 1.1 [~](particles/QmbQYuxKK7ifnNbX2mwdAj5AdGHU2Vj4B2r5XFgV25Qsgd.md)
 
 More than 4 years have passed since the launch of the network. I decided to update some particles from this issue that I need for publishing Bostrom Journal 002. To save my energy I abstained from editing the other particles, which doesn't seem right to me anymore.
 
@@ -819,7 +819,7 @@ To submit a particle to the [Bostrom Journal (BJ)](https://cyb.ai/network/bostro
 
 BJ publishes irregularly.
 
-### Journal's standard formatting markup and tags [~](particles/Qmd8C1vCR4KkfECE8SroHgtqJVmxvzbBbXtCMvm6n2AtYn.md)
+### Journal's standard formatting markup and tags [~](particles/QmUBqXc9yV8XYjFvhfJU2sn9ecmRMisExYUohBEjPpNkho.md)
 
 All the particles were formatted using [Prettier](https://prettier.io/), an opinionated code formatter.
 
