@@ -78,7 +78,7 @@ IPFS не гарантирует получение файлов, даже ес�
 
 > [[staking on cyberlinks]] — direct economic weight to edges. same mechanics, applied to [[axon]]-level — `../cyber/nomics.md:64`
 
-??? Axon у основателя — агрегат киберлинков над одной двойкой («fused connections»); наше «ребро» существует и при одном киберлинке. Считаем соответствием и заносим в editing.md?
+Соответствие с оговоркой: «axon» — агрегат киберлинков над одной двойкой, ребро существует и при одном киберлинке.
 
 ### Нейроны [~](particles/QmeEJ3WcY2mft2YTxG4XXAjJ2W8GiKNqakUChR9tNHDeVh.md)
 
