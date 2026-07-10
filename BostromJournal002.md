@@ -16,7 +16,7 @@ Cybergraph is a shared information space. Its elements are *particles*: units of
 }
 ```
 
-cid_from and cid_to are the CIDs (content identifiers) of the two particles being connected: IPFS hashes that uniquely identify the content of files (regardless of their names). The pair cid_from → cid_to is an *edge* of the cybergraph, directed from cid_from to cid_to; the particles are its nodes. The neuron is the agent (for example, a human, an AI, a contract, or a sensor) that created and signed the cyberlink; it is addressed by its CID (Qm3), so a neuron can be referenced like any content. A neuron becomes a particle when its CID stands in an edge. The exact formats are fixed in the appendix "Canonical encoding".
+cid_from and cid_to are the CIDs (content identifiers) of the two particles being connected: IPFS hashes that uniquely identify the content of files (regardless of their names). The pair cid_from → cid_to is an *edge* of the cybergraph, directed from cid_from to cid_to; the particles are its nodes. The neuron is the agent (for example, a human, an AI, a contract, or a sensor) that created and signed the cyberlink; it is addressed by its CID (Qm3), so a neuron can be referenced like any content. A neuron becomes a particle when its CID stands in an edge. The exact formats are fixed in the appendix "canonical encoding".
 
 Because all three fields — cid_from, cid_to, and neuron — are plain text strings, we can join them into one string with commas and compute the IPFS hash of the resulting string — a derived CID. The hash of the pair "Qm1,Qm2" is the *edge address*: it contains no neuron and is therefore the same for everyone who connected the same particles — it addresses *what* is stated. The hash of the triple "Qm1,Qm2,Qm3" is the cyberlink's derived CID: it addresses the act of a specific neuron — *who* states it. Both addresses can be used to form other cyberlinks — this makes it possible to issue instructions for interpreting edges and specific cyberlinks by means of other cyberlinks. Until such use, a derived CID is only an address: like any CID, it becomes a particle when it stands in an edge.
 
@@ -32,7 +32,7 @@ And, of course, the whole Cybergraph model with its many manifestations, some of
 
 Cybergraph was first implemented on the Bostrom blockchain.
 
-A Bostrom cyberlink carries the same triple as the canon: cid_from and cid_to sit in the record, the neuron is given by the transaction signature. Only the encoding of the neuron diverges: in Bostrom it is a bostrom1… address (a chain-specific hash of the same key), in the canon it is the CID of the public key (see the appendix "Canonical encoding").
+A Bostrom cyberlink carries the same triple as the canon: cid_from and cid_to sit in the record, the neuron is given by the transaction signature. Only the encoding of the neuron diverges: in Bostrom it is a bostrom1… address (a chain-specific hash of the same key), in the canon it is the CID of the public key (see the appendix "canonical encoding").
 
 Beyond the triple, the chain adds only publication metadata. Since Bostrom is a blockchain built on the Cosmos SDK, every cyberlink is contained in a transaction, so two more facts can be read from the raw chain:
 
