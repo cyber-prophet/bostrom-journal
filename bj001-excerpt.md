@@ -68,8 +68,6 @@ IPFS не гарантирует получение файлов, даже ес�
 
 > Five primitives, one graph. Every claim in the system is a [[cyberlink]] signed by a [[neuron]], connecting two [[particles]], weighted by the [[neuron]]'s [[token]] stake. — `../cyber/whitepaper.md:135`
 
-??? «weighted» и «costs focus» — свойства новой архитектуры cyber; в киберлинке Bostrom поля веса нет. Оставить цитаты как есть или пометить расхождение в editing.md?
-
 ### Ребро
 
 Ребро — это связь cid_from → cid_to: то, что утверждает киберлинк, безотносительно нейрона. Киберлинки разных нейронов с одинаковыми cid_from и cid_to несут одно ребро.
