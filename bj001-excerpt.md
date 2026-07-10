@@ -20,6 +20,16 @@ Bostrom позволяет публиковать киберлинки в киб
 
 > Unforgeability: every [[cyberlink]] requires a valid signature from the creating [[neuron]]. Every private transfer requires a ZK proof of ownership. Claims without cryptographic backing are rejected at the protocol level. — `../cyber/epistemology.md:33`
 
+### Хеш
+
+Хеш — строка фиксированной длины, полученная из произвольных данных детерминированной односторонней функцией. Один и тот же вход всегда даёт один и тот же хеш, разные входы — разные хеши.
+
+У основателя:
+
+> deterministic fingerprint of [[data]]. hashing is the act of measurement — it collapses bytes into a [[particle]], the moment [[information]] begins — `../cyber/hash.md:8`
+
+> a [[hash]] is a fixed-length string derived from arbitrary [[data]] through a deterministic one-way function. the same input always yields the same output. different inputs yield different outputs. — `../cyber/hash.md:10`
+
 ### IPFS, механизм контентной адресации [~](particles/QmQQ9PSqb3rw67WGLQNSMeFiXQNVFn3u9ubkaYhh3enEsX.md)
 
 IPFS (interplanetary file system) — это децентрализованная файловая система: файлы хранятся на компьютерах участников сети. Адрес файла — это его CID (content identifier): IPFS вычисляет его из самого содержимого. Поэтому одинаковое содержимое всегда даёт один и тот же CID, а изменённое — другой. По CID файл можно и получить, и проверить, что получил именно его.
