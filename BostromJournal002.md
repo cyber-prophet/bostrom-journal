@@ -61,7 +61,7 @@ A published edge `A → B` has an address — `hash(A, B)`, the CID of A and B t
 
 This lets us form derived CIDs: once an edge is addressable, we can reference it, hash it together with other CIDs, and build structures that reference edges — and edges about edges.
 
-We use this, in particular, to build instructions for processing the raw graph on top of it. An instruction is issued by placing a special CID — such as `hash("deny")` or `hash("quote", A)` — in the source of an ordinary edge. Since every such use is itself an addressable edge, every instruction can in turn be confirmed, denied, or quoted by the same conventions. This recursion makes the set of conventions open.
+We use this, in particular, to build, on top of the raw graph, instructions for processing it. An instruction is issued by placing a special CID — such as `hash("deny")` or `hash("quote", A)` — in the source of an ordinary edge. Since every such use is itself an addressable edge, every instruction can in turn be confirmed, denied, or quoted by the same conventions. This recursion makes the set of conventions open.
 
 Building instructions from the graph's own elements is a kind of *homoiconicity* (a property familiar from programming languages where code and data share one representation). Here that representation is the CID: an instruction consists of the same CIDs and cyberlinks as the graph it processes, so a program that processes the graph lives inside it. And this holds at any scale: the whole cybergraph can at any moment be fixed as a file addressed by a CID computed over it.
 
@@ -108,7 +108,7 @@ A → C                            # auxiliary edge — C is reachable from A (o
 hash("update", hash(A, B)) → C   # authoritative — marks C as an update of the edge
 ```
 
-Updates issue anew from the same CID `hash("update", hash(A, B))`, so an update can itself be updated: the latest edge from this source is the current version. The source is the same for everyone, so anyone can publish an update; whose updates to accept — for example, only the neuron of the original cyberlink — is decided by the read policy. And like any edge, the update edge is itself addressable — `hash("update", hash(A, B)) → C` can be confirmed or denied by another neuron.
+Updates issue anew from the same CID `hash("update", hash(A, B))`, so an update can itself be updated: the latest edge from this source is the current version. The source is the same for everyone, so anyone can publish an update; whose updates to accept — for example, only those of the original cyberlink's neuron — is decided by the read policy. And like any edge, the update edge is itself addressable — `hash("update", hash(A, B)) → C` can be confirmed or denied by another neuron.
 
 #### Quotes
 
@@ -165,7 +165,7 @@ An answer attaches not to the bare Q but to the question-in-context — the addr
 
 #### Authorship: porting from other mediums
 
-The neuron of a cyberlink is the one who wrote the edge into the graph, and it need not be the author of the content. This distinction opens the graph to porting: discussions lived in other mediums — Usenet threads, correspondence, forums — already have authors, dates, and reply edges, but their authorship rests on trust in servers and archives (a From header is a string, not a signature). Porting such a discussion, an archivist publishes the content and states the authorship with a separate edge:
+The neuron of a cyberlink is the one who wrote the edge into the graph, and it need not be the author of the content. This distinction opens the graph to porting: discussions that lived in other mediums — Usenet threads, correspondence, forums — already have authors, dates, and reply edges, but their authorship rests on trust in servers and archives (a From header is a string, not a signature). Porting such a discussion, an archivist publishes the content and states the authorship with a separate edge:
 
 ```
 P - the CID of the author's identifier (for example, hash("ast@cs.vu.nl"))
@@ -176,7 +176,7 @@ hash("author", B) → P     # "the author of content B is P"
 
 The subject is in the source, as with pro/con and question: reading B, a reader computes one hash and reads the outgoing edges — the attribution is recognized even if the author has not appeared in the graph before. Competing attributions issue from one address `hash("author", B)` and are visible side by side, like versions under update. (The mirror form `hash("author", P) → B` would answer "all works of P" with one hash, but the primary query is the reverse one, and it makes attribution from an unknown author uncomputable in advance.)
 
-The signature under the cyberlink belongs to the archivist and certifies the act of porting, not the authorship itself: trust that was implicit in the original medium becomes an explicit addressable statement. From there it lives by the common rules: independent archivists who have checked their own copies of the source repeat the edge — the attribution gains measurable consensus; a mistaken attribution is disputed with deny. And the ported content is immediately open to all the conventions above: the claims of an old thread can be laid out with quote edges and signed with agree/disagree today — a dispute begun in another medium continues in the graph without loss of authorship. The worked example below uses the same device: "Thus have I heard" — Ananda signs the provenance of words spoken not by him.
+The signature under the cyberlink belongs to the archivist and certifies the act of porting, not the authorship itself: trust that was implicit in the original medium becomes an explicit addressable statement. From there it lives by the common rules: independent archivists who have checked their own copies of the source repeat the edge — the attribution gains measurable consensus; a mistaken attribution is disputed with deny. And the ported content is immediately open to all the conventions above: the claims of an old thread can be laid out with quote edges and signed with agree/disagree today — a dispute begun in another medium continues in the graph without loss of authorship. The worked example below uses the same device: "Thus have I heard" — Ananda signs the provenance of words not spoken by him.
 
 #### Identity: another name for the same entity
 
@@ -251,7 +251,7 @@ Recording an output is an ordinary record: the output is published as a file and
 
 #### Information quality
 
-The reference in written culture is not new. A book has it, but behind it there is neither verification nor an index: no way to confirm it, no way to gather all references to one source. The scientific journal added both — a reviewer responsible for verification, and a citation index — but expensively and slowly: review and publication are costly, and issues are bound to time. Cybergraph strengthens each of these capabilities and, on top of that, democratizes the very writing into the shared space.
+The reference in written culture is not new. A book has it, but behind it there is neither verification nor an index: no way to confirm it, no way to gather all references to one source. The scientific journal added both — a reviewer responsible for verification, and a citation index — but expensively and slowly: review and publication are costly, and issues are bound to time. Cybergraph strengthens each of these capabilities and, on top of that, democratizes the very act of writing into the shared space.
 
 Reuse happens at the level of an individual claim, not a file (see "Changing scale"). Verification becomes collective, measurable, and continuous, with a number of participants unreachable for manual review (see "Measurable consensus"). And a corpus stops being locked in its medium: discussions from letters, forums, and oral traditions are ported into the graph and verified in it anew (see "Authorship").
 
@@ -315,6 +315,6 @@ Both ways reflect the current stage of development of the cybergraph and applica
 
 A CID is always CID v0: the content is wrapped into a standard IPFS block (UnixFS dag-pb), hashed with sha2-256, and the hash is encoded in base58 — the result is a string of the form Qm…. The same result is produced by `ipfs add --cid-version=0`.
 
-A neuron is the CID of its public key. Here the canon deliberately diverges from Bostrom, where a neuron is recorded as a `bostrom1…` address (see "Fundamentals"): the canon takes the key's CID so that a neuron is addressable like any other CID. The canonical form must be one: if one neuron can be written in different ways (as an address, as a bare key), the same act gets different derived CIDs of the cyberlink. Addressing of the act breaks: deny of a cyberlink, revoking one's own cyberlink, disputing a specific neuron's agreement — edges computed from different encodings of the neuron target different CIDs, and their repetitions do not match in aggregation. Weighting suffers too: one neuron under two encodings reads as two. The address is a hash of the key, and the key cannot be computed back; for conversion the key is taken from the transaction carrying the cyberlink — the transaction publishes the neuron's key next to the signature — and its CID is computed; without this step a Bostrom cyberlink's derived CID cannot be computed.
+A neuron is the CID of its public key. Here the canon deliberately diverges from Bostrom, where a neuron is recorded as a `bostrom1…` address (see "Fundamentals"): the canon takes the key's CID so that a neuron is addressable like any other CID. There must be one canonical form: if one neuron can be written in different ways (as an address, as a bare key), the same act gets different derived CIDs of the cyberlink. Addressing of the act breaks: deny of a cyberlink, revoking one's own cyberlink, disputing a specific neuron's agreement — edges computed from different encodings of the neuron target different CIDs, and their repetitions do not match in aggregation. Weighting suffers too: one neuron under two encodings reads as two. The address is a hash of the key, and the key cannot be computed back; for conversion the key is taken from the transaction carrying the cyberlink — the transaction publishes the neuron's key next to the signature — and its CID is computed; without this step a Bostrom cyberlink's derived CID cannot be computed.
 
 `hash(x, y, …)` is always the CID of the string of arguments joined with commas; the result is a derived CID. Two special cases: the edge address — `hash(cid_from, cid_to)`; the cyberlink's derived CID — `hash(cid_from, cid_to, neuron)`.
