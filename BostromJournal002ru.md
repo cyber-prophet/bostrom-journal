@@ -1,6 +1,8 @@
 # Bostrom Journal
 
-Editor-in-chief: maxim-uvarov aka cyber-prophet
+Editor-in-chief: maxim-uvarov aka cyber-prophet `bostrom1h29u0h2y98rkhdrwsx0ejk5eq8wvslygexr7p8`
+
+[github](https://github.com/cyber-prophet/bostrom-journal/)
 
 ## Выпуск 2: Кодирование и интерпретация инструкций по обработке киберграфа
 
