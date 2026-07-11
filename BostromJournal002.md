@@ -311,6 +311,8 @@ A CID is opaque: looking at an edge `X → Y`, one cannot see that X is, say, `h
 
 Both ways reflect the current stage of development of the cybergraph and applications and for now remain theory. What matters is that the cybergraph already provides verifiable proof of publication (see "Fundamentals"). Extensions may be used to help indexing — for example, a list of all raw CIDs that went into the derived CIDs at the ends of an edge, written into the transaction memo (today memo is functionally unused); the list eases recognition, while the instruction is still carried by the edge itself.
 
+`hash("convention") → hash("deny")` — a convention declaration: the convention's special CID is published into the graph by an edge from a shared root, and the convention's description is ordinary content, connected to the same special CID by another edge. Knowing the root, a reader computes one hash and reads the outgoing edges — the list of declared conventions; neither way above yields such a list. The first to document declaring conventions in the graph was @snedashkovsky — from the semantic convention root (see "Acknowledgement"). The root neither closes the set nor appoints a registry: a declaration is a convention like any other, and whoever needs their own list picks their own root and interprets it their own way. And like any edge, a declaration is confirmed by repetition and disputed with deny.
+
 ### Appendix: canonical encoding
 
 A CID is always CID v0: the content is wrapped into a standard IPFS block (UnixFS dag-pb), hashed with sha2-256, and the hash is encoded in base58 — the result is a string of the form Qm…. The same result is produced by `ipfs add --cid-version=0`.
