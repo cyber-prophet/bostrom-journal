@@ -26,7 +26,7 @@ In this issue of the journal we devise and make sense of possible approaches —
 
 As far as I know, the first to publish ideas on this topic was @snedashkovsky in [semantic conventions](https://github.com/Snedashkovsky/cyber-semantic-conventions).
 
-And, of course, the whole Cybergraph model with its many manifestations, some of which are described in this issue, was born — in far greater volume — and lives in the minds of the founders.
+And, of course, the whole Cybergraph model with its many manifestations, some of which are described in this issue, was born — in far greater volume — and lives in the minds of the founders @mastercyb and @cyborgshead.
 
 ### Fundamentals
 
