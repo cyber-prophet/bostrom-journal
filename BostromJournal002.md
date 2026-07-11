@@ -24,7 +24,7 @@ In this issue of the journal we devise and make sense of possible approaches —
 
 ### Acknowledgement
 
-As far as I know, the first to publish ideas on this topic was @snedashkovsky in [semantic conventions](https://github.com/Snedashkovsky/cyber-semantic-conventions).
+As far as I know, the first to publish ideas on this topic was @snedashkovsky in [semantic conventions](https://github.com/Snedashkovsky/cyber-semantic-conventions) — in July 2021, months before the Bostrom launch; the examples ran on the test network. His conventions encode application objects — tweet, follow, avatar: the CID of a special string, such as tweet, is placed in the source of an edge and marks the target as an object of that type; the encoding of these CIDs matches the appendix "canonical encoding". He also proposed a meta level: a convention is itself declared in the graph by cyberlinks from the semantic convention root, so the list of conventions can be read from the graph itself.
 
 And, of course, the whole Cybergraph model with its many manifestations, some of which are described in this issue, was born — in far greater volume — and lives in the minds of the founders @mastercyb and @cyborgshead.
 
