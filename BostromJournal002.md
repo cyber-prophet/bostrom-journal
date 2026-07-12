@@ -168,7 +168,7 @@ An answer attaches not to the bare Q but to the question-in-context — the addr
 The neuron of a cyberlink is the one who wrote the edge into the graph, and it need not be the author of the content. This distinction opens the graph to porting: discussions that lived in other mediums — Usenet threads, correspondence, forums — already have authors, dates, and reply edges, but their authorship rests on trust in servers and archives (a From header is a string, not a signature). Porting such a discussion, an archivist publishes the content and states the authorship with a separate edge:
 
 ```
-P - the CID of the author's identifier (for example, hash("ast@cs.vu.nl"))
+P - the CID of the author's identifier (for example, hash("satoshin@gmx.com"))
 B - the CID of the ported content
 
 hash("author", B) → P     # "the author of content B is P"
@@ -186,9 +186,9 @@ P1, P2 - CIDs naming one entity
 hash("same", P1) → P2     # "P1 and P2 are names of one entity"
 ```
 
-One entity lives in the graph under many names: `hash("ast@cs.vu.nl")` and `hash("Andrew S. Tanenbaum")` are different CIDs, and attributions gathered under different names do not add up in aggregation. A same edge states identity (the analogue of owl:sameAs from the semantic web): the entity reads as a cluster — a connected component over same edges; which edges to accept into the cluster is decided by the read policy.
+One entity lives in the graph under many names: `hash("satoshin@gmx.com")`, `hash("satoshi@vistomail.com")` and `hash("Satoshi Nakamoto")` are different CIDs, and attributions gathered under different names do not add up in aggregation. A same edge states identity (the analogue of owl:sameAs from the semantic web): the entity reads as a cluster — a connected component over same edges; which edges to accept into the cluster is decided by the read policy.
 
-Identity is symmetric in meaning, but the edge is directed: the mirror edge is a different pair, and aggregation counts its support separately; whether to read connectivity ignoring direction, and whether to fold both directions into one statement, is decided by the read policy — as is the composition of the cluster. A false identity is disputed with deny. The operand is any CID, including a neuron: the edge `hash("same", hash("ast@cs.vu.nl")) → neuron`, published by that neuron itself, is the assertion "this is me", and ported authors (see above) connect with living participants of the graph, who confirm or dispute the assertion. One caveat: same acts at read time and does not override the format (see the appendix) — the name is baked into derived CIDs by the hash, and they are not recomputed after the fact.
+Identity is symmetric in meaning, but the edge is directed: the mirror edge is a different pair, and aggregation counts its support separately; whether to read connectivity ignoring direction, and whether to fold both directions into one statement, is decided by the read policy — as is the composition of the cluster. A false identity is disputed with deny. The operand is any CID, including a neuron: the edge `hash("same", hash("Satoshi Nakamoto")) → neuron`, published by that neuron itself, is the assertion "this is me", and ported authors (see above) connect with living participants of the graph, who confirm or dispute the assertion. One caveat: same acts at read time and does not override the format (see the appendix) — the name is baked into derived CIDs by the hash, and they are not recomputed after the fact.
 
 ### Collaborative work on information
 
