@@ -1,28 +1,20 @@
 # CLAUDE.md — bostrom-journal
 
-This is not a coding project.
+This is not a software project. You are here as a co-author and editor.
 
-Two documents carry the content:
-- `bj001.md` — hand-written and precise. The reference for tone and accuracy.
-- `bj002.md` — in active editing.
+We are formulating and describing a new fundamental technology. The concepts have not yet settled in the author's mind. Agents write the journal with their own rough edges (from the author's imprecise descriptions). The documents are filled in, but they carry a lot of slack and imprecision. We work together to remove it, so the meaning becomes more exact and easier to grasp.
+
+The content lives in these documents:
+- `BostromJournal001.md` — written by hand and precise. The reference for tone and precision.
+- `bj001-excerpt.md` — selected chapters from `BostromJournal001.md`, adapted to help agents hold the exact wording.
+- `BostromJournal002ru.md` — the current version we work on, close to final.
+- `BostromJournal002.md` — the English translation of `BostromJournal002ru.md`. All updates must stay in sync.
 
 ## Editing the documents
 
-- **Prefer small atomic diffs over regeneration.** Do not rewrite a whole document. One logical change per commit, so any single change can be reverted on its own.
-- **Name what is frozen.** In each task, say what may change and what may not — e.g. "grammar only, change no defined term" vs "you may restructure, but the definitions below are frozen; quote them back unchanged."
-- **The author reviews every commit.** Commit after each change atomically. If in doubt, or something is missing — ask, do not guess.
-- **Do not restate the diff in commit messages.** The diff is the proof. Write the subject line, and add a body only when there is reasoning to preserve — never a list of the word-level changes.
-- **Review for fidelity, not only polish.** A clarity/consistency pass can approve a document that has drifted from its model. Check edits against the invariants below.
-- **Review the git log for the reasoning behind choices.**
+- **Small atomic diffs instead of regeneration.** Do not rewrite a document wholesale. One logical change per commit, so any single change can be reverted on its own.
+- **Do not restate the diff in commit messages.** The diff is the proof. Write the subject line; add a body only when there is reasoning worth preserving — never a list of wording edits.
+- **Read git log for the reasoning behind past choices.**
 
-## Invariants (frozen definitions — do not redefine)
+The rules below treat "blur" — text that is about the thing but not exact. The cause of blur: an LLM by default varies words for beauty and wraps mechanics in abstraction. A spec needs the opposite — the same term everywhere, and mechanics ahead of framing. Rationale behind the terms: `terminology-reflection.md` (branch redefine-p5).
 
-In the author's words:
-
-- A **cyberlink** is an edge of the cybergraph: a connection of exactly two particles, authored by a **neuron** (a private-key holder or an autonomous contract). Nothing else is a cyberlink.
-- A **particle** is an IPFS content hash (a CID).
-- **`hash(...)`** is always one operation: compute a particle's CID.
-- **`hash(A, B)`** is a cyberlink reference —  it allows treating the edge as a particle you can point at.
-- A **convention** is an agreement about how to **issue** an instruction for processing the cybergraph — and how to **interpret** it. A convention is the shared rule for encoding an instruction into the graph and reading it back; it is **not** an edge in the graph, and not the processing that consumes the instruction. Never write "a convention is a cyberlink."
-- This is an instruction example: `hash("deny") → hash(A, B)`.
-- The cybergraph is a general-purpose data structure, and its blockchain hosting is permissionless. Anyone can write into it their own way, and anyone can read and process it their own way.
