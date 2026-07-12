@@ -64,7 +64,7 @@ And, of course, the whole Cybergraph model with its many manifestations, some of
 
 ### Fundamentals
 
-The definition at the start of the issue does not mention a blockchain: the triple and the derived CIDs are defined on top of IPFS hashing — this is the *format* of Cybergraph, fit for any medium where records are published signed. Cybergraph was first implemented on the Bostrom blockchain.
+The definition in the chapter "Cybergraph" does not mention a blockchain: the triple and the derived CIDs are defined on top of IPFS hashing — this is the *format* of Cybergraph, fit for any medium where records are published signed. Cybergraph was first implemented on the Bostrom blockchain.
 
 A Bostrom cyberlink carries the same triple as the format: cid_from and cid_to sit in the record, the neuron is given by the transaction signature. Only the encoding of the neuron diverges: in Bostrom it is a bostrom1… address (a chain-specific hash of the same key), in the format it is the CID of the public key (see the appendix "Cybergraph format").
 
