@@ -1,8 +1,8 @@
-# Bostrom Journal
+# Bostrom Journal [~](particles/QmVUdZRMuhuYUsyQfjzzwgjymdXsXzcgNeJ7bb6Eaeeave.md)
 
-## Issue 2: Encoding and interpreting instructions for processing the cybergraph
+## Issue 2: Encoding and interpreting instructions for processing the cybergraph [~](particles/QmYtzMeeBmLcpWs23qbX9dzwyF5yUNvPx4eWJuzfDnc1xB.md)
 
-### Issue metadata
+### Issue metadata [~](particles/QmYStpQi9PEgX7cbNWfKNBQem7Fo3tLKbwunNv637gao6J.md)
 
 1783825200, 2026-07-12
 
@@ -12,33 +12,33 @@ Editor-in-chief: maxim-uvarov aka cyber-prophet `bostrom1h29u0h2y98rkhdrwsx0ejk5
 
 Journal address: `bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa`.
 
-### Table of contents
+### Table of contents [~](particles/QmYxvLT8kAZYpLk2pJp9UHEaMssqiBbwrMuJm9ModEpvHT.md)
 
-- [Cybergraph](#cybergraph)
-- [Acknowledgement](#acknowledgement)
-- [Fundamentals](#fundamentals)
-- [Novelty](#novelty)
-- [Conventions](#conventions)
-  - [Confirming an edge](#confirming-an-edge)
-  - [Denying an edge and a cyberlink](#denying-an-edge-and-a-cyberlink)
-  - [Updating a previously published edge](#updating-a-previously-published-edge)
-  - [Quotes](#quotes)
-  - [Agreement and disagreement with content](#agreement-and-disagreement-with-content)
-  - [Argument for and against](#argument-for-and-against)
-  - [Question and answer](#question-and-answer)
-  - [Authorship: porting from other mediums](#authorship-porting-from-other-mediums)
-  - [Identity: another name for the same entity](#identity-another-name-for-the-same-entity)
-- [Collaborative work on information](#collaborative-work-on-information)
-  - [Measurable consensus](#measurable-consensus)
-  - [Changing scale: claim, file, corpus](#changing-scale-claim-file-corpus)
-  - [Agents over the graph: output as a reusable value](#agents-over-the-graph-output-as-a-reusable-value)
-  - [Information quality](#information-quality)
-- [A worked example: what did the Buddha actually say?](#a-worked-example-what-did-the-buddha-actually-say)
-- [Applications](#applications)
-- [Reading instructions](#reading-instructions)
-- [Appendix: Cybergraph format](#appendix-cybergraph-format)
+- [Cybergraph ~](#cybergraph-)
+- [Acknowledgement ~](#acknowledgement-)
+- [Fundamentals ~](#fundamentals-)
+- [Novelty ~](#novelty-)
+- [Conventions ~](#conventions-)
+  - [Confirming an edge ~](#confirming-an-edge-)
+  - [Denying an edge and a cyberlink ~](#denying-an-edge-and-a-cyberlink-)
+  - [Updating a previously published edge ~](#updating-a-previously-published-edge-)
+  - [Quotes ~](#quotes-)
+  - [Agreement and disagreement with content ~](#agreement-and-disagreement-with-content-)
+  - [Argument for and against ~](#argument-for-and-against-)
+  - [Question and answer ~](#question-and-answer-)
+  - [Authorship: porting from other mediums ~](#authorship-porting-from-other-mediums-)
+  - [Identity: another name for the same entity ~](#identity-another-name-for-the-same-entity-)
+- [Collaborative work on information ~](#collaborative-work-on-information-)
+  - [Measurable consensus ~](#measurable-consensus-)
+  - [Changing scale: claim, file, corpus ~](#changing-scale-claim-file-corpus-)
+  - [Agents over the graph: output as a reusable value ~](#agents-over-the-graph-output-as-a-reusable-value-)
+  - [Information quality ~](#information-quality-)
+- [A worked example: what did the Buddha actually say? ~](#a-worked-example-what-did-the-buddha-actually-say-)
+- [Applications ~](#applications-)
+- [Reading instructions ~](#reading-instructions-)
+- [Appendix: Cybergraph format ~](#appendix-cybergraph-format-)
 
-### Cybergraph
+### Cybergraph [~](particles/QmYm8yUBxqxPagfkR9cas1e3HYoqYg2h5vURRNSHkzcuE4.md)
 
 Cybergraph is a shared information space. Its elements are *particles*: units of data, each with its own address — a CID. Particles are connected by cyberlinks. Technically, Cybergraph is a data structure made of such cyberlinks, and each cyberlink is a record signed by a neuron, of the form:
 
@@ -56,13 +56,13 @@ Because all three fields — cid_from, cid_to, and neuron — are plain text str
 
 In this issue of the journal we devise and make sense of possible approaches — open conventions for encoding and interpreting instructions for processing the cybergraph.
 
-### Acknowledgement
+### Acknowledgement [~](particles/QmW31mec1wABfNkM2E8NweMSedGH4mmsmLRWgmV3uMm8L8.md)
 
 As far as I know, the first to document conventions of this kind was @snedashkovsky in [semantic conventions](https://github.com/Snedashkovsky/cyber-semantic-conventions) — in July 2021, months before the Bostrom launch; the examples ran on the test network. The form itself was likely born earlier, as an implementation of the ideas behind cyb.ai; whose ideas they were originally is not clear from today's vantage point — Sergey gave them a name and a description. His document encodes application objects — tweet, follow, avatar: the CID of a special string, such as tweet, is placed in the source of an edge and marks the target as an object of that type; the encoding of these CIDs matches the appendix "Cybergraph format". He also proposed a meta level: a convention is itself declared in the graph by cyberlinks from the semantic convention root, so the list of conventions can be read from the graph itself.
 
 And, of course, the whole Cybergraph model with its many manifestations, some of which are described in this issue, was born — in far greater volume — and lives in the minds of the founders @mastercyb and @cyborgshead.
 
-### Fundamentals
+### Fundamentals [~](particles/QmcrJtdsqVZSMPfsmWfUE8DgMdDPDfFDUniJTJHyt3dLb7.md)
 
 The definition in the chapter "Cybergraph" does not mention a blockchain: the triple and the derived CIDs are defined on top of IPFS hashing — this is the *format* of Cybergraph, fit for any medium where records are published signed. Cybergraph was first implemented on the Bostrom blockchain.
 
@@ -75,7 +75,7 @@ Beyond the triple, the chain adds only publication metadata. Since Bostrom is a 
 
 Every transaction with cyberlinks is signed by its neuron, and the block that carries it is signed by validators. Anyone can verify these signatures and, without trusting whoever provided the data, make sure that a specific neuron published a specific cyberlink at a known moment in time. The proof extends to the content: a CID is deterministic from the content, so a cyberlink included in a block fixes that the content of both particles already existed at the moment of publication — anyone who has the file computes its CID and checks it against the one recorded in the cyberlink. Since the account sequence runs without gaps, every transaction of the neuron can be read, so none of its cyberlinks stays hidden.
 
-### Novelty
+### Novelty [~](particles/QmRgSgbsueWLfL8fbrGjj3VQQHToYfVFGSEStBsjUgPpyR.md)
 
 Cybergraph introduces no new cryptographic mechanisms. It assembles known ones — content addressing, signed logs, reification, signed statements — and adds one move: the *connection* itself becomes content-addressed, and with that a shared operand — the edge address is not negotiated but computed by one format (see the appendix). Below: where similar mechanics are already in use (and in Nostr — almost all at once), and what differs.
 
@@ -89,7 +89,7 @@ Cybergraph introduces no new cryptographic mechanisms. It assembles known ones �
 
 **Signed statements and trust: PGP Web of Trust and Verifiable Credentials.** Authorship as a cyberlink (`hash("author", B) → P`) and the signature under every cyberlink belong to the family "make implicit trust explicit and verifiable". PGP Web of Trust [Zimmermann] replaces the central certificate authority with a network of mutual key–identity signatures; W3C Verifiable Credentials [W3C VC] standardizes a statement in which an issuer signs a declaration about a subject and a verifier checks the signature. Porting discussions from other mediums (the section "Authorship") is the same step that separates a VC from a bare From header: attribution turns from a string into a signed addressable statement. The difference is in the economy of primitives: the issuer/holder/subject roles and revocation registries of VC, like the trust layers of WoT, collapse here into cyberlinks plus `deny`, while a neuron's weight remains a read policy, not part of the protocol.
 
-### Conventions
+### Conventions [~](particles/QmPQZEA9ysZxrjE7YTEbPR4cR4oBjuF4kZzQavr6U96CfC.md)
 
 A published edge `A → B` has an address — `hash(A, B)`, the CID of A and B taken together; it can be referenced like any other CID.
 
@@ -107,13 +107,13 @@ And conventions need not be universal. Consumers of the graph come from differen
 
 The sections below give basic examples of such conventions — how to *encode* and how to *interpret* instructions for processing the cybergraph. (`hash()` is always the same operation: compute the CID of the string of arguments joined with commas; see the appendix.)
 
-#### Confirming an edge
+#### Confirming an edge [~](particles/QmaqxKFFQi22K11zfgGhHQ2Vnvw6Q7qvSVBnmXbe5aH2Da.md)
 
 Simply repeat the edge.
 
 Unlike deny/update/quote, confirmation requires no special CID in the source — confirmation is simply the same edge published again by another neuron, and it is exactly this repetition that aggregation counts (see "Measurable consensus").
 
-#### Denying an edge and a cyberlink
+#### Denying an edge and a cyberlink [~](particles/QmWDEik7F2eAcHTmn3PhFwdp2YMFNZFAgLbYWepNgVXWxf.md)
 
 ```
 A - CID
@@ -130,7 +130,7 @@ Two targets of denial — two semantics:
 
 Unlike `update` and `quote`, which embed their operand into the source CID, `hash("deny")` is a fixed CID; what it points to is what is denied.
 
-#### Updating a previously published edge
+#### Updating a previously published edge [~](particles/QmZs3oqjijfg1gbFFzQ7Yr7foVwfs4FJ5QbJrEePHeBJRS.md)
 
 ```
 A - a CID from the original edge
@@ -144,7 +144,7 @@ hash("update", hash(A, B)) → C   # authoritative — marks C as an update of t
 
 Updates issue anew from the same CID `hash("update", hash(A, B))`, so an update can itself be updated: the latest edge from this source is the current version. The source is the same for everyone, so anyone can publish an update; whose updates to accept — for example, only those of the original cyberlink's neuron — is decided by the read policy. And like any edge, the update edge is itself addressable — `hash("update", hash(A, B)) → C` can be confirmed or denied by another neuron.
 
-#### Quotes
+#### Quotes [~](particles/QmV9ZMRrARH3avjbGvSzFEhTCJuChtbrThXK1quhgybzmo.md)
 
 ```
 A - CID
@@ -155,7 +155,7 @@ hash("quote", A) → B       # "B is a faithful excerpt from A"
 
 Confirmation of a quote edge by another neuron states that the excerpt is faithful; `hash("deny") → hash(hash("quote", A), B)` disputes it as misleading out of context.
 
-#### Agreement and disagreement with content
+#### Agreement and disagreement with content [~](particles/Qmdz6dcUPLbNxysMN634sgGc1zUKeHhWTWQCwwff7sZpJt.md)
 
 ```
 B - the CID of the content being evaluated
@@ -168,7 +168,7 @@ Confirmation and deny evaluate edges: confirmation repeats an edge, deny dispute
 
 Agree/disagree and deny are different axes. Agree/disagree speak about content: B is true or false. Deny of an edge speaks about the statement: A → B is false; deny of a cyberlink speaks about the record: a specific neuron's cyberlink is invalid. So disagreement with content is not expressed through deny of someone's agreement — otherwise "I disagree with B" and "this agreement is invalid" would become indistinguishable. The axes combine: `hash("deny") → hash(hash("agree"), B, neuron)` disputes a specific neuron's agreement — for example, as spam — expressing no opinion about B itself.
 
-#### Argument for and against
+#### Argument for and against [~](particles/QmRNZNB4gKuVQ7eX7axZZiwxuzw1eV9UcjRjRyJZ8odHkT.md)
 
 ```
 C - any CID: content, an edge, or a cyberlink
@@ -182,7 +182,7 @@ Agree/disagree record a position, but in a live dispute the bulk of utterances i
 
 The form repeats the logic of update: the operand is embedded in the source, so `hash("pro", C)` — the "for" side of C — is one address for all neurons. Knowing C, a reader computes one hash and reads the outgoing edges — that is the whole query; the level of argumentation is the out-degree. Symmetrically, `hash("con", C)` is the "against" side. (The alternative `hash("pro", B) → C` would direct the edges into the operand itself, but the query "all arguments for C" would then require parsing the source of every incoming edge.) And like any edge, an argument is itself addressable: it is repeated, disputed with deny, and agree/disagree apply to its content B — the dispute over an argument's quality is conducted by the same conventions.
 
-#### Question and answer
+#### Question and answer [~](particles/QmbpHoy3CbAj2nzQmikQPFQD1AxT6Rgoh4MRA6LE6w2mTr.md)
 
 ```
 B - any CID: content, an edge, or a cyberlink
@@ -197,7 +197,7 @@ That Q is a question is visible from its content; there is no need to mark it wi
 
 An answer attaches not to the bare Q but to the question-in-context — the address of the question edge (the same device as deny of a quote). Question texts are often not self-contained ("Is there a consensus on this?"), and one Q asked about different Bs would glue the answers into one shared node. The edge address contains no neuron, so one answer serves everyone who repeated the question. The answer itself is ordinary content: it is evaluated with agree/disagree, arguments are brought to it with pro/con, and the best answer is revealed by aggregation, not by appointment.
 
-#### Authorship: porting from other mediums
+#### Authorship: porting from other mediums [~](particles/QmcQEemUqugd3GZXfb5rHeuWGGNBpekNzuiVxJnLHGf6kM.md)
 
 The neuron of a cyberlink is the one who wrote the edge into the graph, and it need not be the author of the content. This distinction opens the graph to porting: discussions that lived in other mediums — Usenet threads, correspondence, forums — already have authors, dates, and reply edges, but their authorship rests on trust in servers and archives (a From header is a string, not a signature). Porting such a discussion, an archivist publishes the content and states the authorship with a separate edge:
 
@@ -212,7 +212,7 @@ The subject is in the source, as with pro/con and question: reading B, a reader 
 
 The signature under the cyberlink belongs to the archivist and certifies the act of porting, not the authorship itself: trust that was implicit in the original medium becomes an explicit addressable statement. From there it lives by the common rules: independent archivists who have checked their own copies of the source repeat the edge — the attribution gains measurable consensus; a mistaken attribution is disputed with deny. And the ported content is immediately open to all the conventions above: the claims of an old thread can be laid out with quote edges and signed with agree/disagree today — a dispute begun in another medium continues in the graph without loss of authorship. The worked example below uses the same device: "Thus have I heard" — Ananda signs the provenance of words not spoken by him.
 
-#### Identity: another name for the same entity
+#### Identity: another name for the same entity [~](particles/QmaFSQWT5RG2ZKgRmjaJUGCwVmVGHza4Uja3BPZMxKhMp5.md)
 
 ```
 P1, P2 - CIDs naming one entity
@@ -224,7 +224,7 @@ One entity lives in the graph under many names: `hash("satoshin@gmx.com")`, `has
 
 Identity is symmetric in meaning, but the edge is directed: the mirror edge is a different pair, and aggregation counts its support separately; whether to read connectivity ignoring direction, and whether to fold both directions into one statement, is decided by the read policy — as is the composition of the cluster. A false identity is disputed with deny. The operand is any CID, including a neuron: the edge `hash("same", hash("Satoshi Nakamoto")) → neuron`, published by that neuron itself, is the assertion "this is me", and ported authors (see above) connect with living participants of the graph, who confirm or dispute the assertion. One caveat: same acts at read time and does not override the format (see the appendix) — the name is baked into derived CIDs by the hash, and they are not recomputed after the fact.
 
-### Collaborative work on information
+### Collaborative work on information [~](particles/QmdNwUM1zZGYmBdBvRWjyUf4iFmh3venKqoP6VPS8jBbVz.md)
 
 Cyberlinks connect not only content but also neurons through content:
 
@@ -237,7 +237,7 @@ Dave quotes:     hash("quote", A) → B
 
 The graph encodes not only "what is connected to what" but also "who believes what" — and this is open to querying and analysis.
 
-#### Measurable consensus
+#### Measurable consensus [~](particles/QmREoSVgw34mG3NLUegsnvjaonVUq2UqSrznirACLLBKjz.md)
 
 For any statement `A → B`:
 - Count the cyberlinks of different neurons with this edge → the support level
@@ -259,7 +259,7 @@ The exact formula is a matter of read policy. Cybergraph provides the raw data.
 
 A neuron's opinion also lives in time: one can confirm a statement and later deny it. A neuron's cyberlinks are ordered (see "Fundamentals"), so its current opinion is naturally read as the latest in time; earlier ones remain visible history. One's own cyberlink is revoked the same way: `hash("deny") → hash(A, B, neuron)`, where the neuron is the one revoking.
 
-#### Changing scale: claim, file, corpus
+#### Changing scale: claim, file, corpus [~](particles/QmbCKe4xxMpD7fvtLS2yGXQ1bjjqA8YeDNpbkC25qY8pdz.md)
 
 A text file A need not be treated as a single whole. It can be decomposed into the basic claims it makes: each claim — a verbatim excerpt — is published as a separate file B and connected to the original with a quote edge `hash("quote", A) → B` (see "Quotes"). The decomposition is limited to the verbatim: anyone can verify a substring; a normalized paraphrase is built from the excerpt as a separate step and is not part of this convention. Now every claim has its own CID and is individually open to evaluative cyberlinks — agree and disagree (see "Agreement and disagreement with content").
 
@@ -269,7 +269,7 @@ Across the whole set of files this opens analysis beyond counting confirmations:
 
 Together this gives work on information a change of scale: one can zoom in — from the corpus to a file, from the file to an individual claim — evaluate the detail and zoom back out, and the evaluations assemble into properties of the whole. The levels require no different mechanisms: claim, file, and corpus are addressed by CIDs, and the same conventions act at every scale (see "Conventions").
 
-#### Agents over the graph: output as a reusable value
+#### Agents over the graph: output as a reusable value [~](particles/QmevRzhhgYMwUrMkf9RRjUET62PR5oGpkeMUBh75GXpVfA.md)
 
 Heterogeneous agents acting together need explicit rules of interaction that each can verify without trusting the other. Cybergraph carries such rules as conventions in the data itself — no separate coordination layer is needed.
 
@@ -283,7 +283,7 @@ The difference from an ordinary computation cache is that the value is disputabl
 
 Recording an output is an ordinary record: the output is published as a file and becomes a particle when its CID stands in an edge. Into the output's content the neuron can write provenance — the CIDs of the processed cyberlinks and of the particles in them, and a description of the computation performed. Provenance is part of the content, so the output's CID fixes its inputs. What to do with someone else's output is decided by the read policy: trust the neuron, measure consensus, or repeat the declared computation over the same inputs.
 
-#### Information quality
+#### Information quality [~](particles/QmS3z3EbSjWTeWjzo2HWVc7y817Xd4KFiraWCLoV7uy8jS.md)
 
 The reference in written culture is not new. A book has it, but behind it there is neither verification nor an index: no way to confirm it, no way to gather all references to one source. The scientific journal added both — a reviewer responsible for verification, and a citation index — but expensively and slowly: review and publication are costly, and issues are bound to time. Cybergraph strengthens each of these capabilities and, on top of that, democratizes the very act of writing into the shared space.
 
@@ -291,7 +291,7 @@ Reuse happens at the level of an individual claim, not a file (see "Changing sca
 
 Together this opens reprocessing of the accumulated corpus. Say, one can quantitatively evaluate what Buddhism and Advaita have in common — where they call the same phenomenon by different names (`same`) and where they diverge — and do it without the bottleneck of a single expert: the evaluation builds up from many neurons. Once recorded, such knowledge stays addressable and therefore available for further processing; when new facts appear, the corpus is reprocessed from the start — now by agents (see "Agents over the graph"). Concepts turn out connected to quantitative metrics, and this raises discovery (finding relevant information): "the same thing said differently" is not computed by the graph as similarity but carried as a judgment — the same `same` edge; someone states the equivalence, and so, like any edge, it can be disputed (`deny`) and measured by consensus.
 
-### A worked example: what did the Buddha actually say?
+### A worked example: what did the Buddha actually say? [~](particles/QmZqnCSjrkidsUqT3PzkK7djfZuSPmCQ36WwKWaTfSEPtH.md)
 
 The Buddha wrote nothing. He taught for about forty-five years, died, and for four to four and a half centuries his words were passed on by communal recitation aloud — kept in memory, not in writing. There was no original manuscript against which a statement could be verified, and no central authority empowered to certify anything. The methods by which the tradition preserved and verified his words are the tradition's own conventions, built like those defined above. (What follows describes the structure the tradition records; whether every event happened exactly as told is a matter of dispute; the point is the form.)
 
@@ -325,7 +325,7 @@ Preservation is a concern separate from verification. The chain stores only CIDs
 
 And the dimensions for reading a neuron are open in the same way the conventions above are open: statements about its experience, references to external services and metrics imported from them — each is itself a cyberlink that specialized neurons can recheck, confirm, or deny. Dimensions grow through conventions, not through a new mechanism.
 
-### Applications
+### Applications [~](particles/QmTxopYhP3Q43HY29H3wG4an8TuLsHrbjH6FofnScweqZs.md)
 
 | Domain | Application |
 |--------|-------------|
@@ -339,7 +339,7 @@ And the dimensions for reading a neuron are open in the same way the conventions
 
 Twelve conventions on one primitive — edge confirmation, deny, update, quote, agree, disagree, pro, con, question, answer, author, same — are enough to express complex collaborative workflows. Since both humans and contracts can be neurons, the same conventions apply to AI-agent interactions without additional infrastructure.
 
-### Reading instructions
+### Reading instructions [~](particles/QmYfqXrGWhg2raNeiE74WCnL8pva1ndQN5UXcRsFtDpSnm.md)
 
 A CID is opaque: looking at an edge `X → Y`, one cannot see that X is, say, `hash("update", hash(A, B))`. A reader can recognize instructions in two ways. The first is to compute candidates in advance: compute the derived CIDs of everything already seen — edges and cyberlinks — and check the sources and targets of new edges against them. The second is to dereference the source as content; it works only if the preimage of the derived CID — the string `"update,Qm…"` itself — is published as a file. So, when issuing an instruction, publish the preimages of its derived CIDs as well. An edge whose parts do not parse by these rules is not an instruction but an ordinary edge: the content `"deny"` exists outside the convention too.
 
@@ -347,7 +347,7 @@ Both ways reflect the current stage of development of the cybergraph and applica
 
 `hash("convention") → hash("deny")` — a convention declaration: the convention's special CID is published into the graph by an edge from a shared root, and the convention's description is ordinary content, connected to the same special CID by another edge. Knowing the root, a reader computes one hash and reads the outgoing edges — the list of declared conventions; neither way above yields such a list. The first to document declaring conventions in the graph was @snedashkovsky — from the semantic convention root (see "Acknowledgement"). The root neither closes the set nor appoints a registry: a declaration is a convention like any other, and whoever needs their own list picks their own root and interprets it their own way. And like any edge, a declaration is confirmed by repetition and disputed with deny.
 
-### Appendix: Cybergraph format
+### Appendix: Cybergraph format [~](particles/QmR1Z9eJXThaGXCHzbp69NA1UsGV9itXQ9CcvCUTqpSGSY.md)
 
 A CID is always CID v0: the content is wrapped into a standard IPFS block (UnixFS dag-pb), hashed with sha2-256, and the hash is encoded in base58 — the result is a string of the form Qm…. The same result is produced by `ipfs add --cid-version=0`.
 
