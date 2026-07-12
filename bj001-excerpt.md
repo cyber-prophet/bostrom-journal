@@ -123,3 +123,9 @@ IPFS не гарантирует получение файлов, даже ес�
 
 > the [[cybergraph]] 🕸 remembers every thread / from every [[neuron]], living or long dead / [[memory]] — authenticated, whole / a history no hand can ever control — `../cyber/concepts.md:35`
 
+### Формат
+
+Формат киберграфа — запись киберлинка и производных CID, заданная без привязки к блокчейну: киберлинк — тройка (cid_from, cid_to, neuron), нейрон — CID публичного ключа, производный CID — CID строки идентификаторов через запятую; CID — всегда CID v0. Bostrom — первая реализация формата: его киберлинк несёт ту же тройку, но кодирует нейрона адресом bostrom1….
+
+Прямого термина у основателя нет; родственное разделение — Cybergraph (явление) vs the cybergraph (реализация) в английских текстах.
+
