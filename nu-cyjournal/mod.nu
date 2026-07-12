@@ -116,6 +116,99 @@ export def changed-sections [
     }
 }
 
+# Headings of a markdown text, skipping fenced code blocks.
+# Returns rows {level, text, line}: heading level by `#` count, text after the
+# hashes (marker included, verbatim), 0-based line index into `$in | lines`.
+def parse-headings []: string -> table {
+    let lines = $in | lines
+    let fences = $lines | enumerate | where item =~ '^```' | get index
+    $lines
+    | enumerate
+    | where item =~ '^#{1,6} '
+    | where {|row| ($fences | where $it < $row.index | length) mod 2 == 0 }
+    | each {|row|
+        let m = $row.item | parse --regex '^(?<hashes>#+) (?<text>.*)$' | first
+        {level: ($m.hashes | str length) text: $m.text line: $row.index}
+    }
+}
+
+# Render a heading's `[~](...)` marker the way GitHub renders it: as its link
+# text `~`. Rendered text is what enters the TOC entry and the anchor slug.
+def render-marker []: string -> string {
+    str replace --regex '\[~\]\([^)]*\)' '~'
+}
+
+# Drop the marker (with its leading space) — the bare heading title,
+# for matching a heading against a `--title` argument.
+def strip-marker []: string -> string {
+    str replace --regex ' ?\[~\]\([^)]*\)' ''
+}
+
+# GFM anchor slug (github-slugger rules): lowercase, drop everything except
+# letters, digits, `_`, `-` and spaces, then spaces -> hyphens. Numbering of
+# duplicates (-1, -2, …) is the caller's job — it needs document order.
+def gfm-slug []: string -> string {
+    str lowercase
+    | str replace --all --regex '[^\p{L}\p{N}_\- ]' ''
+    | str replace --all ' ' '-'
+}
+
+# Build and place the table-of-contents chapter of a journal file.
+#
+# Entries are the headings that follow the TOC chapter: `###` at the top level,
+# `####` nested one level; deeper headings are omitted — as in 001's original
+# TOC. Anchors follow GitHub's slugger, with duplicates numbered document-wide
+# in heading order (GitHub counts every heading on the page, listed or not).
+# A `[~]` marker renders as `~`, so it enters both entry text and anchor —
+# rerun after markers change and the anchors stay correct.
+#
+# An existing chapter titled `--title` is rewritten in place, its heading line
+# kept byte-verbatim (the `[~]` marker survives). Otherwise the chapter is
+# inserted after the first `###` section — Issue metadata; the TOC follows it.
+# Returns the TOC block; --dry-run returns it without touching the file.
+export def toc [
+    file: string = "BostromJournal001.md" # journal to build the TOC for
+    --title: string = "Table of contents" # TOC chapter heading (ru: Оглавление)
+    --dry-run # return the TOC block without writing the file
+]: nothing -> string {
+    let text = open --raw $file | decode utf-8
+    let lines = $text | split row "\n"
+    let slugged = $text | parse-headings | reduce --fold {seen: {}, rows: []} {|h, acc|
+        let base = $h.text | render-marker | gfm-slug
+        let n = $acc.seen | get --optional $base | default 0
+        {
+            seen: ($acc.seen | upsert $base ($n + 1))
+            rows: ($acc.rows | append ($h | insert slug (if $n == 0 { $base } else { $"($base)-($n)" })))
+        }
+    } | get rows
+    let existing = $slugged | where {|h| ($h.text | strip-marker) == $title }
+    let span = if ($existing | is-not-empty) {
+        let start = $existing | first | get line
+        {
+            start: $start
+            end: ($slugged | where line > $start | first | get line)
+            heading: ($lines | get $start)
+        }
+    } else {
+        let meta = $slugged | where level == 3 | first
+        let at = $slugged | where line > $meta.line | first | get line
+        {start: $at end: $at heading: $"### ($title)"}
+    }
+    let bullets = $slugged | where line >= $span.end | where level in [3 4] | each {|h|
+        let indent = if $h.level == 3 { "" } else { "  " }
+        $"($indent)- [($h.text | render-marker)]\(#($h.slug)\)"
+    }
+    let block = [$span.heading ""] | append $bullets | append ""
+    if not $dry_run {
+        ($lines | slice 0..<$span.start)
+        | append $block
+        | append ($lines | slice $span.end..)
+        | str join "\n"
+        | save --force --raw $file
+    }
+    $block | str join "\n"
+}
+
 # Regenerate particles for the journal's sections and rewire their `[~]` markers.
 #
 # Two disjoint sets are processed: genesis sections (`[~]()`, marker-driven,
