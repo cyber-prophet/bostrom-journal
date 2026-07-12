@@ -12,7 +12,7 @@ The latest version of Bostrom Journal can be found on [github](https://github.co
 
 Journal address: `bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa`.
 
-### Table of contents [~](particles/QmPMaNY2NYCyA3cDTWu1z2zNXFGXCNHLfGRUHbs3Eci5DK.md)
+### Table of contents [~](particles/QmR49TFqhCScXxevdmTgSWmPpHgwhyFm92B4iX52reNsqT.md)
 
 - [Preface ~](#preface-)
 - [Preface to version 1.1 ~](#preface-to-version-11-)
@@ -22,7 +22,7 @@ Journal address: `bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa`.
   - [Capabilities of the Bostrom Blockchain ~](#capabilities-of-the-bostrom-blockchain-)
   - [IPFS, Content-addressing mechanism ~](#ipfs-content-addressing-mechanism-)
   - [Bostrom is a full refactoring of the Euler network ~](#bostrom-is-a-full-refactoring-of-the-euler-network-)
-- [Knowledge graph ~](#knowledge-graph-)
+- [Cybergraph ~](#cybergraph-)
   - [Particles ~](#particles-)
   - [Cyberlinks ~](#cyberlinks-)
   - [Neurons ~](#neurons-)
