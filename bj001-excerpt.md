@@ -1,6 +1,6 @@
 Блоки «У @mastercyb» — вербатим из `https://github.com/cyberia-to/cyber` (draft-спеки cyber, 2026); [[двойные скобки]] — вики-синтаксис его графа.
 
-### Bostrom — краткое определение [~](particles/QmXu22YpC93JCvm9RRYKttdr2Ge9W2aqvmdyNXKKitHhkt.md)
+### Bostrom — краткое определение [~](particles/QmRmVRMsx4t8YvpndPKycTMduGLc5SMKnihGrwYrnqHBsp.md)
 
 Bostrom — первый в мире блокчейн, реализовавший Киберграф.
 
@@ -10,7 +10,7 @@ Bostrom — первый в мире блокчейн, реализовавши�
 
 > The [[bootloader/bostrom|bostrom]] network has run 3+ years as the bootloader — ~70K [[cybics/crystal/neuron|neurons]], 2.9M [[cyberlinks]], 3.1M [[cybics/crystal/particle|particles]] — and is the migration source, not the soft3 network. — `../cyber/cyber/launch.md:51`
 
-### Назначение сети Bostrom [~](particles/QmPfe2tQQ9pHEMe3Qb8Mnkh6wwwv7vNo1KMbRBTSEYwBFZ.md)
+### Назначение сети Bostrom [~](particles/QmVwhtYeeiF74WDK6LCotR8K29RoJuZsHwzwtpsds6PC73.md)
 
 Bostrom позволяет публиковать киберлинки в киберграф доказуемо и проверяемо: устройство блокчейна создаёт доказательство — киберлинк лежит в транзакции, подписанной нейроном, а та включена в подписанный блок. Доказательство и делает факт проверяемым — любой может получить подписанную транзакцию и убедиться сам, не доверяя тому, кто дал данные, что конкретный нейрон добавил конкретное содержимое в известный момент времени.
 
@@ -30,7 +30,7 @@ Bostrom позволяет публиковать киберлинки в киб
 
 > a [[hash]] is a fixed-length string derived from arbitrary [[data]] through a deterministic one-way function. the same input always yields the same output. different inputs yield different outputs. — `../cyber/hash.md:10`
 
-### IPFS, механизм контентной адресации [~](particles/QmQQ9PSqb3rw67WGLQNSMeFiXQNVFn3u9ubkaYhh3enEsX.md)
+### IPFS, механизм контентной адресации [~](particles/QmWae7FrpjQDvP8PrnkXy94QsrrLf3Dx2G9YA5uiPr5x96.md)
 
 IPFS (interplanetary file system) — это децентрализованная файловая система: файлы хранятся на компьютерах участников сети. Адрес файла — это его CID (content identifier): IPFS вычисляет его из самого содержимого. Поэтому одинаковое содержимое всегда даёт один и тот же CID, а изменённое — другой. По CID файл можно и получить, и проверить, что получил именно его.
 
@@ -42,7 +42,7 @@ IPFS не гарантирует получение файлов, даже ес�
 
 > hashing enables [[content addressing]]. instead of asking where content lives, [[neurons]] ask for the content itself by its [[hash]]. any node holding the matching bytes can serve it. location dissolves. — `../cyber/hash.md:16`
 
-### Частицы [~](particles/QmSxizUKhJhyVjzXQJfwiUabsdCdHSSWfkiMRAPcmVjqSY.md)
+### Частицы [~](particles/QmQKbqqCBVCFk1ooE8qKzh49QAyw6ASPmuLr8CXsKooKJ8.md)
 
 Частица киберграфа — это единица данных (в значении экземпляр, элемент массива). Файл становится частицей киберграфа когда его CID стоит в ребре.
 
@@ -54,7 +54,7 @@ IPFS не гарантирует получение файлов, даже ес�
 
 > in [[cyber]], hashing is the gateway act. raw [[data]] enters as unaddressed bytes and exits as a [[particle]] — a unique, permanent identity within the [[knowledge graph]]. — `../cyber/hash.md:12`
 
-### Киберлинки [~](particles/QmZ21tAfZ4Yu2XCWDzMEFUQJFrMTVk8bAgt9GfLMXiYQhH.md)
+### Киберлинки [~](particles/QmWtyGAkqx397Cz5y7bmdisxxWJteLBd3TDh5T5GSoFt6J.md)
 
 Киберлинк — это опубликованная в киберграфе запись (тип данных - record), с полями:
 
@@ -80,7 +80,7 @@ IPFS не гарантирует получение файлов, даже ес�
 
 Соответствие с оговоркой: «axon» — агрегат киберлинков над одной двойкой, ребро существует и при одном киберлинке.
 
-### Нейроны [~](particles/QmeEJ3WcY2mft2YTxG4XXAjJ2W8GiKNqakUChR9tNHDeVh.md)
+### Нейроны [~](particles/QmdNsfR4apTT47nqszaMcCnFC7JPRHjYGLGHmNYcJpa1xW.md)
 
 Нейрон — это публикатор киберлинка.
 
@@ -109,7 +109,7 @@ IPFS не гарантирует получение файлов, даже ес�
 
 > The same function hashes [[particle]] content, [[cyberlink]] identity, Merkle nodes, and polynomial commitments. — `../cyber/whitepaper.md:196`
 
-### Киберграф [~](particles/QmcK8QgSmsYQsVskQtGPWFSeGHXPcaJ7Lh6X1hrZGKQsVs.md)
+### Киберграф [~](particles/QmQkZBYK35T5cjhNiqUN8RCoaDd1tsvWYZ5FMpvwZzR2q5.md)
 
 Киберграф — это совокупность всех опубликованных киберлинков. Киберграф можно представить в форме таблицы, где каждая строчка — это киберлинк, плюс доступная мета информация по транзакциям его включающим из блокчейна (с полями height, timestamp и т.д.).
 
