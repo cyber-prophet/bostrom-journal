@@ -3,8 +3,8 @@
 This is not a coding project.
 
 Two documents carry the content:
-- `BostromJournal001.md` — hand-written and precise. The reference for tone and accuracy.
-- `BostromJournal002.md` — in active editing.
+- `bj001.md` — hand-written and precise. The reference for tone and accuracy.
+- `bj002.md` — in active editing.
 
 ## Editing the documents
 
@@ -26,4 +26,3 @@ In the author's words:
 - A **convention** is an agreement about how to **issue** an instruction for processing the cybergraph — and how to **interpret** it. A convention is the shared rule for encoding an instruction into the graph and reading it back; it is **not** an edge in the graph, and not the processing that consumes the instruction. Never write "a convention is a cyberlink."
 - This is an instruction example: `hash("deny") → hash(A, B)`.
 - The cybergraph is a general-purpose data structure, and its blockchain hosting is permissionless. Anyone can write into it their own way, and anyone can read and process it their own way.
-
