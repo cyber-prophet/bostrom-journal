@@ -1,10 +1,10 @@
-Блоки «У основателя» — вербатим из `../cyber` (draft-спеки cyber, 2026); [[двойные скобки]] — вики-синтаксис его графа.
+Блоки «У @mastercyb» — вербатим из `https://github.com/cyberia-to/cyber` (draft-спеки cyber, 2026); [[двойные скобки]] — вики-синтаксис его графа.
 
 ### Bostrom — краткое определение [~](particles/QmXu22YpC93JCvm9RRYKttdr2Ge9W2aqvmdyNXKKitHhkt.md)
 
 Bostrom — первый в мире блокчейн, реализовавший Киберграф.
 
-У основателя:
+У @mastercyb:
 
 > [[Bostrom]] — the [[bootloader]] chain — `../cyber/whitepaper.md:1006`
 
@@ -14,7 +14,7 @@ Bostrom — первый в мире блокчейн, реализовавши�
 
 Bostrom позволяет публиковать киберлинки в киберграф доказуемо и проверяемо: устройство блокчейна создаёт доказательство — киберлинк лежит в транзакции, подписанной нейроном, а та включена в подписанный блок. Доказательство и делает факт проверяемым — любой может получить подписанную транзакцию и убедиться сам, не доверяя тому, кто дал данные, что конкретный нейрон добавил конкретное содержимое в известный момент времени.
 
-У основателя:
+У @mastercyb:
 
 > the determinism of hashing makes [[proof]] possible. a [[hash]] proves that specific [[data]] existed at the moment of measurement. linking a [[hash]] on-chain anchors that proof in [[consensus]] time. — `../cyber/hash.md:18`
 
@@ -24,7 +24,7 @@ Bostrom позволяет публиковать киберлинки в киб
 
 Хеш — строка фиксированной длины, полученная из произвольных данных детерминированной односторонней функцией. Один и тот же вход всегда даёт один и тот же хеш, разные входы — разные хеши.
 
-У основателя:
+У @mastercyb:
 
 > deterministic fingerprint of [[data]]. hashing is the act of measurement — it collapses bytes into a [[particle]], the moment [[information]] begins — `../cyber/hash.md:8`
 
@@ -36,7 +36,7 @@ IPFS (interplanetary file system) — это децентрализованна�
 
 IPFS не гарантирует получение файлов, даже если они есть в сети. Однако чем больше устройств имеют файл, тем выше шансы его скачать (и потенциально быстрее).
 
-У основателя:
+У @mastercyb:
 
 > [[CID]] (content identifier) is the hash format used across [[IPFS]] and [[cyber]]. it encodes the hash algorithm, the codec, and the digest into a single self-describing address. — `../cyber/hash.md:14`
 
@@ -46,7 +46,7 @@ IPFS не гарантирует получение файлов, даже ес�
 
 Частица киберграфа — это единица данных (в значении экземпляр, элемент массива). Файл становится частицей киберграфа когда его CID стоит в ребре.
 
-У основателя:
+У @mastercyb:
 
 > [[particle]] | Content-addressed node (IPFS hash) | Identity = hash. Same content, same node — `../cyber/whitepaper.md:129`
 
@@ -62,7 +62,7 @@ IPFS не гарантирует получение файлов, даже ес�
 - cid_to
 - neuron
 
-У основателя:
+У @mastercyb:
 
 > [[cyberlink]] | Signed, weighted, directed edge $(i \to j)$ | Timestamped, authenticated, costs [[focus]] — `../cyber/whitepaper.md:131`
 
@@ -72,7 +72,7 @@ IPFS не гарантирует получение файлов, даже ес�
 
 Ребро — это связь cid_from → cid_to: то, что утверждает киберлинк, безотносительно нейрона. Киберлинки разных нейронов с одинаковыми cid_from и cid_to несут одно ребро.
 
-У основателя ближайший термин — «axon»:
+У @mastercyb ближайший термин — «axon»:
 
 > where many agents [[link]] the same two stones / [[axons]] form — the graph's collective bones / fused connections, stronger than a strand — `../cyber/concepts.md:40`
 
@@ -91,7 +91,7 @@ IPFS не гарантирует получение файлов, даже ес�
 
 В физиологии нейрон как функциональная единица — это **интегратор с порогом**: много аналоговых входов суммируются в пространстве и во времени, и если сумма перешла порог, нейрон выдаёт один дискретный всё-или-ничего разряд. Нейрон киберграфа работает так же: он взвешивает разнохарактерную информацию и, перейдя порог «связь стоит того», выдаёт один дискретный разряд — киберлинк. Киберлинк либо опубликован, либо нет.
 
-У основателя:
+У @mastercyb:
 
 > [[neuron]] | Agent identified by public key | Signs edges, holds [[tokens]], accumulates [[karma]] — `../cyber/whitepaper.md:130`
 
@@ -115,7 +115,7 @@ IPFS не гарантирует получение файлов, даже ес�
 
 Также киберграф можно представить как направленный граф, где каждый киберлинк формирует ребро, связывая частицы в качестве вершин графа.
 
-У основателя:
+У @mastercyb:
 
 > cyber is a protocol where [[neurons]] — humans, AIs, agents, sensors — link [[knowledge]] into a single [[cybergraph]] where every claim is authenticated, every decision is provable by [[zheng]] proofs, and [[intelligence]] emerges from the [[topology]] of links rather than from the parameters of a single model. — `../cyber/whitepaper.md:36`
 
