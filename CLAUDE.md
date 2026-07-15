@@ -11,6 +11,8 @@ The content lives in these documents:
 - `bj002.md` — the English translation of `bj002ru.md`.
 - `bj003ru.md` — the issue we are working on now. It may contain Claude's `@` file mentions and other work artifacts. We keep them until the document is finished.
 
+User commits his edits himself, unless he explicitly asks to do so. Terminology might be impercise, but at least it must align with his real intent. While the edits which agents generate might sound correct, though differ from user's intent. I'm not sure how to use this information, and what rules we can derive from it, but I would like to keep it here.
+
 ## Editing the documents
 
 - **Small atomic diffs instead of regeneration.** Do not rewrite a document wholesale. One logical change per commit, so any single change can be reverted on its own.
