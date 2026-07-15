@@ -9,6 +9,7 @@ The content lives in these documents:
 - `bj001-excerpt.md` — selected chapters from `bj001.md`, adapted to help agents hold the exact wording.
 - `bj002ru.md` — the finished, important 2026 version, with the core mechanics described. Written/generated in the editor's native Russian.
 - `bj002.md` — the English translation of `bj002ru.md`.
+- `bj003ru.md` — the issue we are working on now. It may contain Claude's `@` file mentions and other work artifacts. We keep them until the document is finished.
 
 ## Editing the documents
 
