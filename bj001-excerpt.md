@@ -44,7 +44,7 @@ IPFS не гарантирует получение файлов, даже ес�
 
 > hashing enables [[content addressing]]. instead of asking where content lives, [[neurons]] ask for the content itself by its [[hash]]. any node holding the matching bytes can serve it. location dissolves. — `../cyber/hash.md:16`
 
-### Частицы [~](particles/QmQKbqqCBVCFk1ooE8qKzh49QAyw6ASPmuLr8CXsKooKJ8.md)
+### Частицы [~](particles/Qmb3ajGGsADMQE4zFs1vSuQmX4mCchj4BxuJZLPfjw7QiJ.md)
 
 Киберчастица (cyberparticle), далее по тексту просто частица, — это единица данных (в значении экземпляр, элемент массива). Файл становится частицей киберграфа когда его CID стоит в ребре.
 
@@ -82,7 +82,7 @@ IPFS не гарантирует получение файлов, даже ес�
 
 Соответствие с оговоркой: «axon» — агрегат киберлинков над одной двойкой, ребро существует и при одном киберлинке.
 
-### Нейроны [~](particles/QmdNsfR4apTT47nqszaMcCnFC7JPRHjYGLGHmNYcJpa1xW.md)
+### Нейроны [~](particles/Qma37876gQeUiabmFxzLE6GtYpzBbJy6vxyb4USBR1M87S.md)
 
 Кибернейрон (cyberneuron), далее по тексту просто нейрон, — это публикатор киберлинка.
 
