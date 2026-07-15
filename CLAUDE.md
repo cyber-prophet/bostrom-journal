@@ -13,6 +13,8 @@ The content lives in these documents:
 
 The user commits his edits himself, unless he explicitly asks you to commit them. His terminology might be imprecise, but it must at least align with his real intent. The edits that agents generate might sound correct, yet differ from the user's intent. I'm not sure how to use this information, or what rules we can derive from it, but I would like to keep it here.
 
+One rule follows from it. When I show you `git log -p`, my edits are already committed and my intent is preserved in history, so you may commit your own edits freely. When I show you `git diff`, the change is not committed yet — leave it uncommitted until I ask. These two are examples, not the whole rule: derive the same logic from whatever I say.
+
 ## Editing the documents
 
 - **Small atomic diffs instead of regeneration.** Do not rewrite a document wholesale. One logical change per commit, so any single change can be reverted on its own.
