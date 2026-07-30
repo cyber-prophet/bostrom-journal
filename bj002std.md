@@ -14,7 +14,7 @@ Journal address: `bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa`.
 
 ### Table of contents [~](particles/QmYxvLT8kAZYpLk2pJp9UHEaMssqiBbwrMuJm9ModEpvHT.md)
 
-- [Cybergraph ~](#cybergraph-)
+- [Cyberlink and cybergraph ~](#cyberlink-and-cybergraph-)
 - [Acknowledgement ~](#acknowledgement-)
 - [Fundamentals ~](#fundamentals-)
 - [Novelty ~](#novelty-)
@@ -38,13 +38,11 @@ Journal address: `bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa`.
 - [Reading instructions ~](#reading-instructions-)
 - [Appendix: Cybergraph format ~](#appendix-cybergraph-format-)
 
-### Cybergraph [~](particles/Qma1GkqdKPi9NiChKA4vcKGZT2rqEaqH3UwbdZnXqzniT4.md)
-
-Cybergraph is a shared information space. It connects files — in this issue, plain text or, for data structures, JSON — and every file has its own address, a CID (content identifier): an IPFS hash that uniquely identifies the content (regardless of the file's name). The connection between two files is stated by a cyberlink.
+### Cyberlink and cybergraph [~](particles/Qma1GkqdKPi9NiChKA4vcKGZT2rqEaqH3UwbdZnXqzniT4.md)
 
 A cyberlink is a statement by a signer: "these two files are connected". A signer is an agent (for example, a human, an AI) that created and signed the cyberlink. Cybergraph stores both the connection and the one who states it — while the meaning of the statement is produced at read time, by interpretation (see "Conventions").
 
-Technically, Cybergraph is a data structure made of such cyberlinks, and each cyberlink is a signed record of the form:
+Cybergraph is a data structure made of cyberlinks. Each cyberlink is a signed record of the form:
 
 ```
 {
@@ -54,7 +52,7 @@ Technically, Cybergraph is a data structure made of such cyberlinks, and each cy
 }
 ```
 
-cid_from and cid_to are the CIDs of the two files being connected. The pair cid_from → cid_to is an *edge* of the cybergraph, directed from cid_from to cid_to; a file becomes a vertex when its CID stands in an edge. The signer field carries the CID of the signer (Qm3), so the signer can be referenced like any file, and becomes a vertex by the same rule — when their CID stands in an edge. The exact encoding is fixed in the appendix "Cybergraph format".
+cid_from and cid_to are the CIDs of the two files being connected. The pair cid_from → cid_to is an *edge* of the cybergraph, directed from cid_from to cid_to; a file becomes a vertex when its CID stands in an edge. The signer field is the CID of the signer (Qm3), so the signer can be referenced like any file, and becomes a vertex by the same rule — when their CID stands in an edge. The exact encoding is fixed in the appendix "Cybergraph format".
 
 Because all three fields — cid_from, cid_to, and signer — are plain text strings, we can, for example, join them into one string with commas and compute the IPFS hash of the resulting string — a derived CID. The hash of the pair "Qm1,Qm2" is the *edge address*: it contains no signer and is therefore the same for everyone who connected the same files — it addresses *what* is stated. The hash of the triple "Qm1,Qm2,Qm3" is the cyberlink's derived CID: it addresses the act of a specific signer — *who* states it. Both addresses can be used to form other cyberlinks — this makes it possible to issue instructions for interpreting edges and specific cyberlinks by means of other cyberlinks. Until such use, a derived CID is only an address: like any CID, it becomes a vertex when it stands in an edge.
 
@@ -68,7 +66,7 @@ And, of course, the whole Cybergraph model with its many manifestations, some of
 
 ### Fundamentals [~](particles/QmcrJtdsqVZSMPfsmWfUE8DgMdDPDfFDUniJTJHyt3dLb7.md)
 
-The definition in the chapter "Cybergraph" does not mention a blockchain: the triple and the derived CIDs are defined on top of IPFS hashing — this is the *format* of Cybergraph, fit for any medium where records are published signed. Cybergraph was first implemented on the Bostrom blockchain.
+The definition in the chapter "Cyberlink and cybergraph" does not mention a blockchain: the triple and the derived CIDs are defined on top of IPFS hashing — this is the *format* of Cybergraph, fit for any medium where records are published signed. Cybergraph was first implemented on the Bostrom blockchain.
 
 There the same things have other names, and the reader will meet them in Bostrom, on cyb.ai, and in the journal's first issue: a signer there is a *neuron*, and a file whose CID stands in an edge is a *particle*.
 
