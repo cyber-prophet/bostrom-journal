@@ -57,9 +57,9 @@ Cybergraph is a data structure made of cyberlinks. Each cyberlink is a signed re
 }
 ```
 
-cid_from and cid_to are the CIDs of the two files being connected. A CID (content identifier) is a file's address: an IPFS hash that uniquely identifies the content. The pair cid_from → cid_to is an *edge* of the cybergraph, directed from cid_from to cid_to; a file becomes a vertex when its CID stands in an edge. The signer field is the CID of the signer (Qm3), so the signer can be referenced like any file, and becomes a vertex by the same rule — when their CID stands in an edge. The exact encoding is fixed in the appendix "Cybergraph format".
+`cid_from` and `cid_to` are the CIDs of the two files being connected. A CID (content identifier) is a file's address: an IPFS hash that uniquely identifies the content. The pair `cid_from → cid_to` is an *edge* of the cybergraph, directed from `cid_from` to `cid_to`; a file becomes a vertex when its CID stands in an edge. The `signer` field is the CID of the signer (Qm3), so the signer can be referenced like any file, and becomes a vertex by the same rule — when their CID stands in an edge. The exact encoding is fixed in the appendix "Cybergraph format".
 
-Because all three fields — cid_from, cid_to, and signer — are plain text strings, we can, for example, join them into one string with commas and compute the IPFS hash of the resulting string — a derived CID. The hash of the pair "Qm1,Qm2" is the *edge address*: it contains no signer and is therefore the same for everyone who connected the same files — it addresses *what* is stated. The hash of the triple "Qm1,Qm2,Qm3" is the cyberlink's derived CID: it addresses the act of a specific signer — *who* states it. Both addresses can be used to form other cyberlinks — this makes it possible to issue instructions for interpreting edges and specific cyberlinks by means of other cyberlinks. Until such use, a derived CID is only an address: like any CID, it becomes a vertex when it stands in an edge.
+Because all three fields — `cid_from`, `cid_to`, and `signer` — are plain text strings, we can, for example, join them into one string with commas and compute the IPFS hash of the resulting string — a derived CID. The hash of the pair `"Qm1,Qm2"` is the *edge address*: it contains no signer and is therefore the same for everyone who connected the same files — it addresses *what* is stated. The hash of the triple `"Qm1,Qm2,Qm3"` is the cyberlink's derived CID: it addresses the act of a specific signer — *who* states it. Both addresses can be used to form other cyberlinks — this makes it possible to issue instructions for interpreting edges and specific cyberlinks by means of other cyberlinks. Until such use, a derived CID is only an address: like any CID, it becomes a vertex when it stands in an edge.
 
 In this issue of the journal we devise and make sense of possible approaches — open conventions for encoding and interpreting instructions for processing the cybergraph. What is devised here is only the fruit of thought exercises; it has never run up against practice and implementation. Implementing it in real life will make it possible to improve the structure of the conventions quickly and well. That, however, is a task for the future.
 
@@ -75,7 +75,7 @@ The definition in the chapter "Cyberlink and cybergraph" does not mention a bloc
 
 There the same things have other names, and the reader will meet them in Bostrom, on cyb.ai, and in the journal's first issue: a signer there is a *neuron*, and a file whose CID stands in an edge is a *particle*.
 
-A Bostrom cyberlink carries the same triple as the format: cid_from and cid_to sit in the record, the signer is given by the transaction signature. Only the encoding of the signer diverges: in Bostrom it is a bostrom1… address (a chain-specific hash of the same key), in the format it is the CID of the public key (see the appendix "Cybergraph format").
+A Bostrom cyberlink carries the same triple as the format: `cid_from` and `cid_to` sit in the record, the signer is given by the transaction signature. Only the encoding of the signer diverges: in Bostrom it is a bostrom1… address (a chain-specific hash of the same key), in the format it is the CID of the public key (see the appendix "Cybergraph format").
 
 Beyond the triple, the chain adds only publication metadata. Since Bostrom is a blockchain built on the Cosmos SDK, every cyberlink is contained in a transaction, so two more facts can be read from the raw chain:
 
@@ -138,7 +138,7 @@ hash("confirm") → hash(A, B, signer)  # confirming a specific cyberlink
 ```
 
 Two targets of confirmation — two semantics, mirroring `deny` (see "Denying an edge and a cyberlink"):
-- `hash(A, B)` — confirms the statement A → B itself: it is true no matter who published it
+- `hash(A, B)` — confirms the statement `A → B` itself: it is true no matter who published it
 - `hash(A, B, signer)` — confirms a specific cyberlink of a specific signer: the record is valid — for example, it is not spam — with no opinion about the statement itself
 
 Like `hash("deny")`, `hash("confirm")` is a fixed CID: what it points to is what is confirmed.
@@ -161,7 +161,7 @@ hash("deny") → hash(A, B, signer)  # denying a specific cyberlink
 ```
 
 Two targets of denial — two semantics:
-- `hash(A, B)` — disputes the statement A → B itself: it is false no matter who published it
+- `hash(A, B)` — disputes the statement `A → B` itself: it is false no matter who published it
 - `hash(A, B, signer)` — disputes a specific cyberlink of a specific signer: the record is invalid — for example, as spam — with no opinion about the statement itself
 
 Unlike `update` and `quote`, which embed their operand into the source CID, `hash("deny")` is a fixed CID; what it points to is what is denied.
@@ -202,7 +202,7 @@ hash("disagree") → B    # "claim B is false"
 
 Repetition, `confirm`, and `deny` work with edges: repetition states the same edge, `confirm` confirms it, `deny` disputes it. They do not apply to a standalone file: a bare CID B has no edge to repeat, confirm, or deny. With the `agree`/`disagree` pair, an opinion about content gets edges of its own — and from there they aggregate like any others: cyberlinks of different signers with one edge add up into a support level (see "Measurable consensus").
 
-The `agree`/`disagree` pair and the `confirm`/`deny` pair are different axes, and what tells them apart is the subject. `agree`/`disagree` target the content of a file: claim B is true or false. `confirm`/`deny` target the edge — A → B is true or false — or the record: a specific signer's cyberlink is valid or not. "B is true" and "A → B is true" are different statements about different things. So disagreement with content is not expressed through `deny` of someone's agreement — otherwise "I disagree with B" and "this agreement is invalid" would become indistinguishable. The axes combine: `hash("deny") → hash(hash("agree"), B, signer)` disputes a specific signer's agreement — for example, as spam — expressing no opinion about B itself.
+The `agree`/`disagree` pair and the `confirm`/`deny` pair are different axes, and what tells them apart is the subject. `agree`/`disagree` target the content of a file: claim B is true or false. `confirm`/`deny` target the edge — `A → B` is true or false — or the record: a specific signer's cyberlink is valid or not. "B is true" and "`A → B` is true" are different statements about different things. So disagreement with content is not expressed through `deny` of someone's agreement — otherwise "I disagree with B" and "this agreement is invalid" would become indistinguishable. The axes combine: `hash("deny") → hash(hash("agree"), B, signer)` disputes a specific signer's agreement — for example, as spam — expressing no opinion about B itself.
 
 #### Argument for and against [~](particles/QmRNZNB4gKuVQ7eX7axZZiwxuzw1eV9UcjRjRyJZ8odHkT.md)
 
@@ -296,7 +296,7 @@ Consensus(statement) = f(repeats, confirms, denies, signer_weights, time_decay)
 
 The exact formula is a matter of read policy. Cybergraph provides the raw data.
 
-A signer's opinion also lives in time: one can make a statement or confirm someone else's, and later deny it. A signer's cyberlinks are ordered (see "Fundamentals"), so the signer's current opinion is naturally read as the latest in time; earlier ones remain visible history. Changing one's mind about a statement is `hash("deny") → hash(A, B)`; revoking one's own record is `hash("deny") → hash(A, B, signer)`, where signer is the CID of the one revoking.
+A signer's opinion also lives in time: one can make a statement or confirm someone else's, and later deny it. A signer's cyberlinks are ordered (see "Fundamentals"), so the signer's current opinion is naturally read as the latest in time; earlier ones remain visible history. Changing one's mind about a statement is `hash("deny") → hash(A, B)`; revoking one's own record is `hash("deny") → hash(A, B, signer)`, where `signer` is the CID of the one revoking.
 
 #### Changing scale: claim, file, corpus [~](particles/QmbCKe4xxMpD7fvtLS2yGXQ1bjjqA8YeDNpbkC25qY8pdz.md)
 
@@ -346,7 +346,7 @@ Ananda:  A → B                        # "Thus have I heard"
 
 The signature carries Ananda's identity; `content(B)` is the Buddha's words in his retelling. The opening formula of almost every discourse is the provenance edge plus the identity of the hearer: exactly the triple a cyberlink carries. The special CID `hash("heard from the Buddha")` is not in the list above — it is the tradition's own convention: the set of conventions is open (see "Conventions").
 
-The content carries more than the edge. Every discourse opens not only with "Thus have I heard" but also with its setting. One example: *"On one occasion the Blessed One was dwelling near Sāvatthī, in Jeta's Grove"*. The setting names the place, the audience, and the occasion. Together these are the conditions under which the words were heard; the setting is part of content(B) and is recorded in Ananda's words, not the Buddha's. Ananda's standing is recorded too. He is remembered as the foremost of those who had heard much. A reader who knew none of this could still read these dimensions out of the account itself and weigh it accordingly.
+The content carries more than the edge. Every discourse opens not only with "Thus have I heard" but also with its setting. One example: *"On one occasion the Blessed One was dwelling near Sāvatthī, in Jeta's Grove"*. The setting names the place, the audience, and the occasion. Together these are the conditions under which the words were heard; the setting is part of `content(B)` and is recorded in Ananda's words, not the Buddha's. Ananda's standing is recorded too. He is remembered as the foremost of those who had heard much. A reader who knew none of this could still read these dimensions out of the account itself and weigh it accordingly.
 
 The depth of a plain "P said B" comes not from one edge but from who signed it, when it was done, and what the corpus already says about that signer. Cybergraph exposes the same for any signer. The signer's declaration is the signed cyberlink itself. The context at the moment of the act is the signer's earlier cyberlinks. They run without gaps by account sequence, so the record is provably complete: no cyberlink hides between two of the signer's transactions (see "Fundamentals"). And others have made their own cyberlinks about the signer.
 
