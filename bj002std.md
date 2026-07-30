@@ -40,6 +40,11 @@ Journal address: `bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa`.
 
 ### Cyberlink and cybergraph [~](particles/Qma1GkqdKPi9NiChKA4vcKGZT2rqEaqH3UwbdZnXqzniT4.md)
 
+A file, in the most common understanding, is a named collection of data: a text document, a picture, a video, an archive, and so on. For the purposes of the journal we:
+
+1. will take a file to be only its content — the name plays no part.
+2. out of all file types will keep only the text ones (human-readable text or machine-readable data structures serialized in JSON).
+
 A cyberlink is a statement by a signer: "these two files are connected". A signer is an agent (for example, a human, an AI) that created and signed the cyberlink. Cybergraph stores both the connection and the one who states it — while the meaning of the statement is produced at read time, by interpretation (see "Conventions").
 
 Cybergraph is a data structure made of cyberlinks. Each cyberlink is a signed record of the form:
