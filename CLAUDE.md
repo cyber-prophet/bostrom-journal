@@ -7,8 +7,10 @@ We are formulating and describing a new fundamental technology. The concepts hav
 The content lives in these documents:
 - `bj001.md` — written by hand and precise. The reference for tone and precision.
 - `bj001-excerpt.md` — selected chapters from `bj001.md`, adapted to help agents hold the exact wording.
-- `bj002ru.md` — the finished, important 2026 version, with the core mechanics described. Written/generated in the editor's native Russian.
+- `bj002ru.md` — the finished, important 2026 version, with the core mechanics described. Written/generated in the editor's native Russian. Kept as issued, in the coined vocabulary.
 - `bj002.md` — the English translation of `bj002ru.md`.
+- `bj002stdru.md` — the same issue 2 reissued in the standard terms (see the section below). A parallel document, not a replacement: `bj002ru.md` stays untouched so the two readings can be compared.
+- `bj002std.md` — the English translation of `bj002stdru.md`.
 - `bj003ru.md` — the issue we are working on now. It may contain Claude's `@` file mentions and other work artifacts. We keep them until the document is finished.
 
 The user commits his edits himself, unless he explicitly asks you to commit them. His terminology might be imprecise, but it must at least align with his real intent. The edits that agents generate might sound correct, yet differ from the user's intent. I'm not sure how to use this information, or what rules we can derive from it, but I would like to keep it here.
@@ -19,7 +21,7 @@ One rule follows from it. When I show you `git log -p`, my edits are already com
 
 Decision by the author, 2026-07-26: the coined vocabulary makes the cybergraph look more exotic than it is and costs the reader effort before they reach the mechanics. Only two coined terms stay — **киберграф** and **киберлинк** (cybergraph, cyberlink). Everything else uses the ordinary words of graph theory and files.
 
-**Applied.** `bj002ru.md` and `bj002.md` are reissued in the standard terms. The old vocabulary stays only in `bj001.md` / `bj001-excerpt.md` (the historical first issue, kept as written) and in the «Основы» / "Fundamentals" line that gives the reader Bostrom's own names (*нейрон*, *частица*). New text uses the standard terms; the table below is the mapping for reading the older texts.
+**Applied — in parallel files.** The standard-terms reissue of issue 2 lives in `bj002stdru.md` / `bj002std.md`. The original `bj002ru.md` / `bj002.md` are left exactly as issued: a finished issue is a fixed artifact, and rewriting it in place would destroy the older reading instead of letting the two be compared. The coined vocabulary therefore stays in `bj001.md` / `bj001-excerpt.md`, in `bj002ru.md` / `bj002.md`, and — even in the standard-terms files — in the «Основы» / "Fundamentals" line that gives the reader Bostrom's own names (*нейрон*, *частица*). New text uses the standard terms; the table below is the mapping for reading the older texts.
 
 | было | стало | note |
 |---|---|---|
