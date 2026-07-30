@@ -43,9 +43,9 @@ Journal address: `bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa`.
 A file, in the most common understanding, is a named collection of data: a text document, a picture, a video, an archive, and so on. For the purposes of the journal we:
 
 1. will take a file to be only its content — the name plays no part.
-2. out of all file types will keep only the text ones (human-readable text or machine-readable data structures serialized in JSON).
+2. will keep only text files (human-readable text or machine-readable data structures serialized in JSON).
 
-A cyberlink is a statement by a signer: "these two files are connected". A signer is an agent (for example, a human, an AI) that created and signed the cyberlink. Cybergraph stores both the connection and the one who states it — but not the meaning: just as a book stores only text printed on paper, while the meaning arises in the reader, so here the meaning of the statement is produced at read time, by interpretation (see "Conventions").
+A cyberlink is a statement by a signer: "these two files are connected". A signer is an agent (for example, a human, an AI) that created and signed the cyberlink. Cybergraph stores both the connection and the one who states it — but not the meaning: just as a book stores only text printed on paper, and it arises in the reader, so here the meaning of the statement is produced at read time, by interpretation (see "Conventions").
 
 Cybergraph is a data structure made of cyberlinks. Each cyberlink is a signed record of the form:
 
@@ -324,7 +324,7 @@ Recording an output is an ordinary record: the output is published as a file and
 
 #### Information quality [~](particles/QmS3z3EbSjWTeWjzo2HWVc7y817Xd4KFiraWCLoV7uy8jS.md)
 
-The reference in written culture is not new. A book has it, but behind it there is neither verification nor an index: no way to confirm it, no way to gather all references to one source. The scientific journal added both — a reviewer responsible for verification, and a citation index — but expensively and slowly: review and publication are costly, and issues are bound to time. Cybergraph strengthens each of these capabilities and, on top of that, democratizes the very act of writing — anyone can publish.
+The reference in written culture is not new. A book has it, but behind it there is neither verification nor an index: no way to confirm it, no way to gather all references to one source. The scientific journal added both — a reviewer responsible for verification, and a citation index — but expensively and slowly: review and publication are costly, and issues are bound to time. Cybergraph strengthens each of these capabilities and, on top of that, democratizes the very act of writing to the graph — anyone can publish.
 
 Reuse happens at the level of an individual claim, not a file (see "Changing scale"). Verification becomes collective, measurable, and continuous, with a number of participants unreachable for manual review (see "Measurable consensus"). And a corpus stops being locked in its medium: discussions from letters, forums, and oral traditions are ported into the graph and verified in it anew (see "Authorship").
 
