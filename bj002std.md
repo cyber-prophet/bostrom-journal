@@ -324,7 +324,7 @@ Recording an output is an ordinary record: the output is published as a file and
 
 #### Information quality [~](particles/QmS3z3EbSjWTeWjzo2HWVc7y817Xd4KFiraWCLoV7uy8jS.md)
 
-The reference in written culture is not new. A book has it, but behind it there is neither verification nor an index: no way to confirm it, no way to gather all references to one source. The scientific journal added both — a reviewer responsible for verification, and a citation index — but expensively and slowly: review and publication are costly, and issues are bound to time. Cybergraph strengthens each of these capabilities and, on top of that, democratizes the very act of writing into the shared space.
+The reference in written culture is not new. A book has it, but behind it there is neither verification nor an index: no way to confirm it, no way to gather all references to one source. The scientific journal added both — a reviewer responsible for verification, and a citation index — but expensively and slowly: review and publication are costly, and issues are bound to time. Cybergraph strengthens each of these capabilities and, on top of that, democratizes the very act of writing — anyone can publish.
 
 Reuse happens at the level of an individual claim, not a file (see "Changing scale"). Verification becomes collective, measurable, and continuous, with a number of participants unreachable for manual review (see "Measurable consensus"). And a corpus stops being locked in its medium: discussions from letters, forums, and oral traditions are ported into the graph and verified in it anew (see "Authorship").
 
