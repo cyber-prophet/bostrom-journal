@@ -17,7 +17,9 @@ One rule follows from it. When I show you `git log -p`, my edits are already com
 
 ## Terminology: two coined terms, everything else standard
 
-Decision by the author, 2026-07-26 (`todo/20260726-std.md`): the coined vocabulary makes the cybergraph look more exotic than it is and costs the reader effort before they reach the mechanics. Only two coined terms stay — **киберграф** and **киберлинк** (cybergraph, cyberlink). Everything else uses the ordinary words of graph theory and files.
+Decision by the author, 2026-07-26: the coined vocabulary makes the cybergraph look more exotic than it is and costs the reader effort before they reach the mechanics. Only two coined terms stay — **киберграф** and **киберлинк** (cybergraph, cyberlink). Everything else uses the ordinary words of graph theory and files.
+
+**Applied.** `bj002ru.md` and `bj002.md` are reissued in the standard terms. The old vocabulary stays only in `bj001.md` / `bj001-excerpt.md` (the historical first issue, kept as written) and in the «Основы» / "Fundamentals" line that gives the reader Bostrom's own names (*нейрон*, *частица*). New text uses the standard terms; the table below is the mapping for reading the older texts.
 
 | было | стало | note |
 |---|---|---|
