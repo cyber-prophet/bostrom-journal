@@ -34,7 +34,7 @@ Rules that follow:
 - The English issues follow the same mapping: particle → **file** / **vertex**, neuron → **signer**.
 - Не «упрощать» дальше самого механизма: CID, производный CID, адрес ребра, политика чтения, гомоиконичность — остаются, с глоссой при первом появлении.
 
-**Open point — the wire format field `neuron`.** The on-disk cyberlink record in `../nu-cybergraph` uses the field name `neuron` (and `hash(cid_from, cid_to, neuron)` in the format appendix). Renaming a wire field is a code migration, not an editing pass. Until the author decides, prose says «подписант» and the format keeps `neuron`.
+**The record field is `signer`.** Decided 2026-07-27: the journal is primary and `../nu-cybergraph` follows it, so the field was renamed in the format too — `{cid_from, cid_to, signer}` and `hash(cid_from, cid_to, signer)`. The name `neuron` survives only where the journal quotes Bostrom's own vocabulary («Основы»). The code migration is parked in `../nu-cybergraph/todo/`.
 
 ## Editing the documents
 
