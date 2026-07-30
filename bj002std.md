@@ -45,7 +45,7 @@ A file, in the most common understanding, is a named collection of data: a text 
 1. will take a file to be only its content — the name plays no part.
 2. will keep only text files (human-readable text or machine-readable data structures serialized in JSON).
 
-A cyberlink is a statement by a signer: "these two files are connected". A signer is an agent (for example, a human, an AI) that created and signed the cyberlink. Cybergraph stores both the connection and the one who states it — but not the meaning: just as a book stores only text printed on paper, and it arises in the reader, so here the meaning of the statement is produced at read time, by interpretation (see "Conventions").
+A cyberlink is a statement by a signer: "these two files are connected". A signer is an agent (for example, a human, an AI) that created and signed the cyberlink. Cybergraph stores both the connection and the one who states it — but not the meaning: just as a book stores only text printed on paper, and the meaning arises in the reader, so here the meaning of the statement is produced at read time, by interpretation (see "Conventions").
 
 Cybergraph is a data structure made of cyberlinks. Each cyberlink is a signed record of the form:
 
