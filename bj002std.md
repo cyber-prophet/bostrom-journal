@@ -42,7 +42,7 @@ Journal address: `bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa`.
 
 Cybergraph is a shared information space. It connects files — in this issue, plain text or, for data structures, JSON — and every file has its own address, a CID (content identifier): an IPFS hash that uniquely identifies the content (regardless of the file's name). The connection between two files is stated by a cyberlink.
 
-A cyberlink is a statement by a signer: "these two files are connected". A signer is an agent (for example, a human, an AI, a contract, or a sensor) that created and signed the cyberlink. Cybergraph stores both the connection and the one who states it — while the meaning of the statement is produced at read time, by interpretation (see "Conventions").
+A cyberlink is a statement by a signer: "these two files are connected". A signer is an agent (for example, a human, an AI) that created and signed the cyberlink. Cybergraph stores both the connection and the one who states it — while the meaning of the statement is produced at read time, by interpretation (see "Conventions").
 
 Technically, Cybergraph is a data structure made of such cyberlinks, and each cyberlink is a signed record of the form:
 
