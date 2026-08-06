@@ -40,7 +40,7 @@ Journal address: `bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa`.
 
 ### Cyberlink and cybergraph [~](particles/QmbRFQjCp248s4kVHtMSrrnKa3Lnyso53CXwpD7PPL4FPV.md)
 
-A file, in the most common understanding, is a named collection of data: a text document, a picture, a video, an archive, and so on. For the purposes of the journal we:
+A file, in the most common understanding, is a named collection of data: a text document, a picture, a video, an archive, and so on. For the purposes of this issue of the journal we:
 
 1. will take a file to be only its content — the name plays no part.
 2. will keep only text files (human-readable text or machine-readable data structures serialized in JSON).
