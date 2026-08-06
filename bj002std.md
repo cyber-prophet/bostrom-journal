@@ -38,12 +38,14 @@ Journal address: `bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa`.
 - [Reading instructions ~](#reading-instructions-)
 - [Appendix: Cybergraph format ~](#appendix-cybergraph-format-)
 
-### Cyberlink and cybergraph [~](particles/QmbRFQjCp248s4kVHtMSrrnKa3Lnyso53CXwpD7PPL4FPV.md)
+### Cyberlink and cybergraph [~](particles/QmS3dMUhvqE3zUTQr2oLTV4fDkWnwWSrGQfMhLjYUEprje.md)
 
-A file, in the most common understanding, is a named collection of data: a text document, a picture, a video, an archive, and so on. For the purposes of the journal we:
+A file, in the most common understanding, is a named collection of data: a text document, a picture, a video, an archive, and so on. For the purposes of this issue of the journal we:
 
 1. will take a file to be only its content — the name plays no part.
 2. will keep only text files (human-readable text or machine-readable data structures serialized in JSON).
+
+A file is a carrier of meaning: the meaning arises in the reader when they read its content.
 
 A cyberlink is a statement by a signer: "these two files are connected". A signer is an agent (for example, a human, an AI) that created and signed the cyberlink. Cybergraph stores both the connection and the one who states it — but not the meaning: just as a book stores only text printed on paper, and the meaning arises in the reader, so here the meaning of the statement is produced at read time, by interpretation (see "Conventions").
 
@@ -84,13 +86,13 @@ Beyond the triple, the chain adds only publication metadata. Since Bostrom is a 
 
 Every transaction with cyberlinks is signed by the key of its signer, and the block that carries it is signed by validators. Anyone can verify these signatures and, without trusting whoever provided the data, make sure that a specific signer published a specific cyberlink at a known moment in time. The proof extends to the content: a CID is deterministic from the content, so a cyberlink included in a block fixes that the content of both files already existed at the moment of publication — anyone who has the file computes its CID and checks it against the one recorded in the cyberlink. Since the account sequence runs without gaps, every transaction of the signer can be read, so none of their cyberlinks stays hidden.
 
-### Novelty [~](particles/QmVUxzfjSL29RXyoKixxi2YhvH6N4NGhmYQRXN7JXqGEDr.md)
+### Novelty [~](particles/QmNkXhCvVv2UYrc9CHdjqSA8VgGeGv7vVy62vmyfRYSbTt.md)
 
 Cybergraph introduces no new cryptographic mechanisms. It assembles known ones — content addressing, signed logs, reification, signed statements, linking to content and visible reuse — and adds one move: the *connection* itself becomes content-addressed — in the cybergraph this is the edge — and with that a shared operand: the edge address is not negotiated but computed according to a single format (see the appendix). Below: where similar mechanics are already in use (and in Nostr — almost all at once), and what differs.
 
 **Content addressing: IPFS/IPLD and Git.** "The name is the hash of the content" is the foundation of the whole construction (the CID), and it is not new. Git addresses commits, trees, and blobs by the hash of their content, forming a Merkle DAG; IPFS/IPLD generalizes this to an addressable graph of arbitrary data, on which Cybergraph technically stands. What is new here is not the addressing of objects but the addressing of the connections between them (see below).
 
-**Signed logs without trust: Secure Scuttlebutt and Certificate Transparency.** The argument of "Fundamentals" — an account sequence without gaps makes a signer's record provably complete — is a property of an append-only log. Secure Scuttlebutt [Tarr et al., 2019] gives every participant a signed log with sequence numbers: a gap is visible, a replica cannot be thinned out unnoticed — exactly as here. Certificate Transparency [RFC 6962] builds a public Merkle log of certificates that any auditor verifies without trusting the log's publisher; a falsely issued certificate is detected precisely because the log cannot be rewritten after the fact. Cybergraph inherits this property — verifiable completeness without trust in the data provider — but moves its carrier from each participant's separate log (SSB) and a centralized operator (CT) to blockchain consensus and transaction order.
+**Signed logs without trust: Secure Scuttlebutt and Certificate Transparency.** The argument of "Fundamentals" — an account sequence without gaps makes a signer's record provably complete — is a property of an append-only log. Secure Scuttlebutt [Tarr et al., 2019] gives every participant a signed log with sequence numbers: a gap is visible, a replica cannot be thinned out unnoticed — exactly as here. Certificate Transparency [RFC 6962] builds a public Merkle log of certificates that any auditor verifies without trusting the log's publisher; a falsely issued certificate is detected precisely because the log cannot be rewritten after the fact. Cybergraph inherits this property — verifiable completeness without trust in the data provider — but moves its support from each participant's separate log (SSB) and a centralized operator (CT) to blockchain consensus and transaction order.
 
 **Signed events and the social graph: Nostr.** The closest living system. A Nostr event is `{id, pubkey, tags, content, sig}`, where `id` is the sha256 of the serialized event, and tags reference other events and keys; reactions and reposts build a social graph of signed references on top of this. Almost everything matches: a signature by a key, an address derived from content, edges between messages. The difference is in the status of the edge. In Nostr a tag is a reference *inside* an event, one author's metadata; the connection has no deterministic address of its own, shared by everyone — to target someone else's connection with a confirmation, a denial, or an argument, a separate convention would first have to define what counts as a connection and give it a computable name. In Cybergraph, a record carries nothing but the connection and the signer, and `hash(A, B)` is a standalone address: the connection is addressable before and apart from whoever published it, so the recursion of conventions (confirm an edge, dispute a confirmation, bring an argument against an argument) is uniform. Nostr relays, moreover, provide no shared order; here the chain provides it.
 
