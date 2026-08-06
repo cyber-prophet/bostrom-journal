@@ -7,9 +7,9 @@ We are formulating and describing a new fundamental technology. The concepts hav
 The content lives in these documents:
 - `bj001.md` — written by hand and precise. The reference for tone and precision.
 - `bj001-excerpt.md` — selected chapters from `bj001.md`, adapted to help agents hold the exact wording.
-- `bj002ru.md` — the finished, important 2026 version, with the core mechanics described. Written/generated in the editor's native Russian. Kept as issued, in the coined vocabulary.
+- `bj002ru.md` — the finished, important 2026 version, with the core mechanics described. Written/generated in the editor's native Russian. Kept in the coined vocabulary; content synced with `bj002stdru.md` (see the terminology section below).
 - `bj002.md` — the English translation of `bj002ru.md`.
-- `bj002stdru.md` — the same issue 2 reissued in the standard terms (see the section below). A parallel document, not a replacement: `bj002ru.md` stays untouched so the two readings can be compared.
+- `bj002stdru.md` — the same issue 2 reissued in the standard terms (see the section below). A parallel document, not a replacement: `bj002ru.md` keeps the coined vocabulary so the two readings can be compared.
 - `bj002std.md` — the English translation of `bj002stdru.md`.
 - `bj003ru.md` — the issue we are working on now. It may contain Claude's `@` file mentions and other work artifacts. We keep them until the document is finished.
 
@@ -21,7 +21,7 @@ One rule follows from it. When I show you `git log -p`, my edits are already com
 
 Decision by the author, 2026-07-26: the coined vocabulary makes the cybergraph look more exotic than it is and costs the reader effort before they reach the mechanics. Only two coined terms stay — **киберграф** and **киберлинк** (cybergraph, cyberlink). Everything else uses the ordinary words of graph theory and files.
 
-**Applied — in parallel files.** The standard-terms reissue of issue 2 lives in `bj002stdru.md` / `bj002std.md`. The original `bj002ru.md` / `bj002.md` are left exactly as issued: a finished issue is a fixed artifact, and rewriting it in place would destroy the older reading instead of letting the two be compared. The coined vocabulary therefore stays in `bj001.md` / `bj001-excerpt.md`, in `bj002ru.md` / `bj002.md`, and — even in the standard-terms files — in the «Основы» / "Fundamentals" line that gives the reader Bostrom's own names (*нейрон*, *частица*). New text uses the standard terms; the table below is the mapping for reading the older texts.
+**Applied — in parallel files.** The standard-terms reissue of issue 2 lives in `bj002stdru.md` / `bj002std.md`. The original `bj002ru.md` / `bj002.md` stay as the parallel coined-vocabulary edition. Decided 2026-08-06: the editions are kept in sync by content — a substantive change made in one (the `confirm` convention was born in the std reissue) is ported to the other in that edition's vocabulary, as paired ru+en changes — so at any moment the editions differ only in terminology. The coined vocabulary therefore stays in `bj001.md` / `bj001-excerpt.md`, in `bj002ru.md` / `bj002.md`, and — even in the standard-terms files — in the «Основы» / "Fundamentals" line that gives the reader Bostrom's own names (*нейрон*, *частица*). New text uses the standard terms; the table below is the mapping for reading the older texts.
 
 | было | стало | note |
 |---|---|---|
@@ -38,7 +38,7 @@ Rules that follow:
 - The English issues follow the same mapping: particle → **file** / **vertex**, neuron → **signer**.
 - Не «упрощать» дальше самого механизма: CID, производный CID, адрес ребра, политика чтения, гомоиконичность — остаются, с глоссой при первом появлении.
 
-**The record field is `signer`.** Decided 2026-07-27: the journal is primary and `../nu-cybergraph` follows it, so the field was renamed in the format too — `{cid_from, cid_to, signer}` and `hash(cid_from, cid_to, signer)`. The name `neuron` survives only where the journal quotes Bostrom's own vocabulary («Основы»). The code migration is parked in `../nu-cybergraph/todo/`.
+**The record field is `signer`.** Decided 2026-07-27: the journal is primary and `../nu-cybergraph` follows it, so the field was renamed in the format too — `{cid_from, cid_to, signer}` and `hash(cid_from, cid_to, signer)`. The name `neuron` survives in the coined-vocabulary edition (`bj002ru.md` / `bj002.md`) and where the journal quotes Bostrom's own vocabulary («Основы»). The code migration is parked in `../nu-cybergraph/todo/`.
 
 ## Editing the documents
 
