@@ -38,7 +38,7 @@ Journal address: `bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa`.
 - [Reading instructions ~](#reading-instructions-)
 - [Appendix: Cybergraph format ~](#appendix-cybergraph-format-)
 
-### Cyberlink and cybergraph [~](particles/QmbRFQjCp248s4kVHtMSrrnKa3Lnyso53CXwpD7PPL4FPV.md)
+### Cyberlink and cybergraph [~](particles/QmS3dMUhvqE3zUTQr2oLTV4fDkWnwWSrGQfMhLjYUEprje.md)
 
 A file, in the most common understanding, is a named collection of data: a text document, a picture, a video, an archive, and so on. For the purposes of this issue of the journal we:
 
@@ -86,7 +86,7 @@ Beyond the triple, the chain adds only publication metadata. Since Bostrom is a 
 
 Every transaction with cyberlinks is signed by the key of its signer, and the block that carries it is signed by validators. Anyone can verify these signatures and, without trusting whoever provided the data, make sure that a specific signer published a specific cyberlink at a known moment in time. The proof extends to the content: a CID is deterministic from the content, so a cyberlink included in a block fixes that the content of both files already existed at the moment of publication — anyone who has the file computes its CID and checks it against the one recorded in the cyberlink. Since the account sequence runs without gaps, every transaction of the signer can be read, so none of their cyberlinks stays hidden.
 
-### Novelty [~](particles/QmVUxzfjSL29RXyoKixxi2YhvH6N4NGhmYQRXN7JXqGEDr.md)
+### Novelty [~](particles/QmNkXhCvVv2UYrc9CHdjqSA8VgGeGv7vVy62vmyfRYSbTt.md)
 
 Cybergraph introduces no new cryptographic mechanisms. It assembles known ones — content addressing, signed logs, reification, signed statements, linking to content and visible reuse — and adds one move: the *connection* itself becomes content-addressed — in the cybergraph this is the edge — and with that a shared operand: the edge address is not negotiated but computed according to a single format (see the appendix). Below: where similar mechanics are already in use (and in Nostr — almost all at once), and what differs.
 
