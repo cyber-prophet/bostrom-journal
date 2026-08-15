@@ -38,7 +38,7 @@ Rules that follow:
 - The English issues follow the same mapping: particle → **file** / **vertex**, neuron → **signer**.
 - Не «упрощать» дальше самого механизма: CID, производный CID, адрес ребра, политика чтения, гомоиконичность — остаются, с глоссой при первом появлении.
 
-**The record field is `signer`.** Decided 2026-07-27: the journal is primary and `../nu-cybergraph` follows it, so the field was renamed in the format too — `{cid_from, cid_to, signer}` and `hash(cid_from, cid_to, signer)`. The name `neuron` survives in the coined-vocabulary edition (`bj002ru.md` / `bj002.md`) and where the journal quotes Bostrom's own vocabulary («Основы»). The code migration is parked in `../nu-cybergraph/todo/`.
+**The record field is `signer`.** Decided 2026-07-27: the journal is primary and `../nu-cybergraph` follows it, so the field was renamed in the format too — `{cid_from, cid_to, signer}` and `hash(cid_from, cid_to, signer)`. The name `neuron` survives in the coined-vocabulary edition (`bj002ru.md` / `bj002.md`) and where the journal quotes Bostrom's own vocabulary («Основы»). The code migrated: `../nu-cybergraph/nu-cybergraph/_record.nu` defines `LINK_KEYS = [cid_from cid_to signer]`, and `tests/test_record.nu` rejects a record carrying `neuron`.
 
 ## Editing the documents
 
