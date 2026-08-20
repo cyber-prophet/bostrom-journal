@@ -11,7 +11,7 @@ The content lives in these documents:
 - `bj002.md` — the English translation of `bj002ru.md`.
 - `bj002stdru.md` — the same issue 2 reissued in the standard terms (see the section below). A parallel document, not a replacement: `bj002ru.md` keeps the coined vocabulary so the two readings can be compared.
 - `bj002std.md` — the English translation of `bj002stdru.md`.
-- `bj003ru.md` — the issue we are working on now. It may contain Claude's `@` file mentions and other work artifacts. We keep them until the document is finished.
+- `bj003ru.md` / `bj003stdru.md` — the issue in progress. They live on the journal's bj003 branches in the recipient repo, not on the `master` line this monorepo mirrors, so they are absent from this tree. They may contain Claude's `@` file mentions and other work artifacts; we keep those until the document is finished.
 
 The user commits his edits himself, unless he explicitly asks you to commit them. His terminology might be imprecise, but it must at least align with his real intent. The edits that agents generate might sound correct, yet differ from the user's intent. I'm not sure how to use this information, or what rules we can derive from it, but I would like to keep it here.
 
