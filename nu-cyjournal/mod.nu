@@ -116,6 +116,37 @@ export def changed-sections [
     }
 }
 
+# Check every existing `[~](particles/<cid>.md)` marker in a journal file: the
+# CID named in the marker must equal cid-v0 of the particle file's actual bytes
+# on disk. Catches a hand-edited or corrupted particle file, or a marker left
+# pointing at a CID whose file was never written.
+#
+# Genesis markers (`[~]()`) are skipped — they name no particle yet. Returns
+# rows for problems only: {heading, cid, path, problem}; an empty table means
+# every marker checks out.
+export def verify [
+    file: string # journal to check
+    --particles-dir: string = "particles" # where particle files live
+]: nothing -> table {
+    open --raw $file
+    | parse-sections
+    | where cid != ""
+    | each {|s|
+        let path = $"($particles_dir)/($s.cid).md"
+        if not ($path | path exists) {
+            {heading: $s.heading cid: $s.cid path: $path problem: "particle file missing"}
+        } else {
+            let actual = open --raw $path | hash-particle
+            if $actual != $s.cid {
+                {heading: $s.heading cid: $s.cid path: $path problem: $"content hashes to ($actual)"}
+            } else {
+                null
+            }
+        }
+    }
+    | compact
+}
+
 # Headings of a markdown text, skipping fenced code blocks.
 # Returns rows {level, text, line}: heading level by `#` count, text after the
 # hashes (marker included, verbatim), 0-based line index into `$in | lines`.
