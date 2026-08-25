@@ -104,7 +104,7 @@ export def hash-particle []: string -> string {
 # Returns the current-working-tree section rows for the changed sections.
 export def changed-sections [
     file: string # journal path, e.g. BostromJournal001.md
-    --ref: string = "main" # git ref to diff against
+    --ref: string = "master" # git ref to diff against
 ]: nothing -> table {
     let old_secs = ^git show $"($ref):($file)" | parse-sections | where cid != ""
     let new_secs = open --raw $file | parse-sections
@@ -222,7 +222,7 @@ export def toc [
 # Returns rows { heading, old_cid, new_cid }; genesis rows use "" as old_cid.
 export def regenerate [
     file: string = "BostromJournal001.md" # journal to regenerate
-    --ref: string = "main" # git ref to diff against
+    --ref: string = "master" # git ref to diff against
     --particles-dir: string = "particles" # where particle files live
     --dry-run # report what would change without writing
 ]: nothing -> table {
