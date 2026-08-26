@@ -94,13 +94,17 @@ Rules that follow:
   подпись под киберлинком принадлежит **подписанту**.
   Раньше эту разницу приходилось объяснять («нейрон киберлинка не обязан быть автором содержимого»)
   — теперь она видна из слов.
-- The English issues follow the same mapping:
+- The mapping holds for the standard-terms English file `bj002std.md`:
   particle → **file** / **vertex**, neuron → **signer**.
+  It does not reach `bj002.md`, the coined-vocabulary edition, which keeps *particle* and *neuron*,
+  and it does not reach `../nu-cybergraph`, whose SPEC says *particle* and whose store is `particles/`.
+  Nothing was renamed there;
+  only the standard-terms reissue chose other words.
 - Не «упрощать» дальше самого механизма:
   CID, производный CID, адрес ребра, политика чтения, гомоиконичность — остаются, с глоссой при первом появлении.
 
 **The record field is `signer`.**
-Decided 2026-07-27: the journal is primary and `../nu-cybergraph` follows it,
+Decided 2026-07-27: the journal is primary for vocabulary and `../nu-cybergraph` follows it,
 so the field was renamed in the format too
 — `{cid_from, cid_to, signer}` and `hash(cid_from, cid_to, signer)`.
 The name `neuron` survives in the coined-vocabulary edition (`bj002ru.md` / `bj002.md`)
