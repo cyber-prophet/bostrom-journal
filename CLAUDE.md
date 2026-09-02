@@ -90,7 +90,7 @@ Rules that follow:
   Тройка остаётся прежней;
   меняются только слова, которыми мы её описываем.
 - Author-of-content vs signer-of-cyberlink:
-  соглашение `hash("author", B) → P` называет **автора файла**;
+  соглашение `hash("author_particle", B) → P` называет **автора файла**;
   подпись под киберлинком принадлежит **подписанту**.
   Раньше эту разницу приходилось объяснять («нейрон киберлинка не обязан быть автором содержимого»)
   — теперь она видна из слов.
@@ -100,6 +100,14 @@ Rules that follow:
   and it does not reach `../nu-cybergraph`, whose SPEC says *particle* and whose store is `particles/`.
   Nothing was renamed there;
   only the standard-terms reissue chose other words.
+  Nor does the mapping reach the op words:
+  `agree_particle`, `disagree_particle`, `quote_particle`, `author_particle` are the format's own words, hashed as written,
+  and keep *particle* in every edition, the std pair included.
+- **The op words are nu-cybergraph's, letter for letter** (decided 2026-09-02):
+  every convention word names its subject — `_particle`, `_edge`, `_link` —
+  and a bare word (`pro`, `con`, `question`, `same`) means the operand is any CID.
+  The code moves first, the four editions follow as paired ru+en changes;
+  only the addresses still differ, because bj002 hashes a comma-join where the format derives from a record.
 - Не «упрощать» дальше самого механизма:
   CID, производный CID, адрес ребра, политика чтения, гомоиконичность — остаются, с глоссой при первом появлении.
 
