@@ -8,10 +8,12 @@ use mod.nu *
 @test
 def "matching particle is silent" [] {
     let dir = mktemp --directory
+
     cd $dir
     mkdir particles
     let bytes = "# Alpha\n\nbody\n"
     let cid = $bytes | hash-particle
+
     $bytes | save --raw $"particles/($cid).md"
     $"# Alpha [~]\(particles/($cid).md\)\n\nbody\n" | save --raw journal.md
 
@@ -23,14 +25,17 @@ def "matching particle is silent" [] {
 @test
 def "corrupted particle is reported" [] {
     let dir = mktemp --directory
+
     cd $dir
     mkdir particles
     let bytes = "# Alpha\n\nbody\n"
     let cid = $bytes | hash-particle
+
     "tampered" | save --raw $"particles/($cid).md"
     $"# Alpha [~]\(particles/($cid).md\)\n\nbody\n" | save --raw journal.md
 
     let report = verify journal.md
+
     assert equal ($report | length) 1 "one problem reported"
     assert equal $report.0.heading "Alpha"
     assert equal $report.0.cid $cid
@@ -42,11 +47,13 @@ def "corrupted particle is reported" [] {
 @test
 def "missing particle is reported" [] {
     let dir = mktemp --directory
+
     cd $dir
     mkdir particles
     $"# Alpha [~]\(particles/QmMissing00000000000000000000000000000000000000.md\)\n\nbody\n" | save --raw journal.md
 
     let report = verify journal.md
+
     assert equal ($report | length) 1 "one problem reported"
     assert equal $report.0.problem "particle file missing"
 }
@@ -56,6 +63,7 @@ def "missing particle is reported" [] {
 @test
 def "genesis marker is skipped" [] {
     let dir = mktemp --directory
+
     cd $dir
     mkdir particles
     "# Alpha [~]()\n\nbody\n" | save --raw journal.md

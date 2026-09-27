@@ -25,16 +25,19 @@ export def parse-sections []: string -> table {
     let lines = $in | lines
     let heading_idx = $lines | enumerate | where item =~ '^#{1,6} ' | get index
     let next_idx = $heading_idx | skip 1 | append ($lines | length)
+
     $heading_idx | zip $next_idx | each {|pair|
         let hi = $pair.0
         let ni = $pair.1
         let m = $lines | get $hi | parse --regex '^#{1,6} (?<heading>.*) \[~\]\((?<link>[^)]*)\)$'
+
         if ($m | is-empty) {
             null
         } else {
             let cid = $m.0.link | parse-marker-link
             # A heading-only section gives an empty range, which `slice` returns as [].
             let body_lines = $lines | slice ($hi + 1)..<$ni
+
             {cid: $cid heading: $m.0.heading body: ($body_lines | strip-blank-edges) line: $hi}
         }
     } | compact
@@ -44,10 +47,12 @@ export def parse-sections []: string -> table {
 # A `particles/<cid>.md` path -> its CID. Anything else is an authoring mistake.
 def parse-marker-link []: string -> string {
     let link = $in
+
     if ($link | is-empty) {
         ""
     } else {
         let m = $link | parse --regex '^particles/(?<cid>[^)]+)\.md$'
+
         if ($m | is-empty) {
             error make {msg: $"malformed [~] marker link: ($link) — expected empty or particles/<cid>.md"}
         }
@@ -59,6 +64,7 @@ def parse-marker-link []: string -> string {
 def strip-blank-edges []: list<string> -> string {
     let lines = $in
     let nonblank = $lines | enumerate | where ($it.item | str trim) != "" | get index
+
     if ($nonblank | is-empty) {
         ""
     } else {
@@ -85,6 +91,7 @@ export def build-particle []: record -> string {
     } else {
         $"# ($sec.heading)\n\n($sec.body)\n"
     }
+
     $head + $body
 }
 
@@ -110,8 +117,10 @@ export def changed-sections [
     let new_secs = open --raw $file | parse-sections
     # Index old by cid -> assembled body, so identity survives heading renames.
     let old_body = $old_secs | reduce --fold {} {|s acc| $acc | insert $s.cid ($s | build-particle) }
+
     $new_secs | where {|s|
         let old = $old_body | get --optional $s.cid
+
         $old != null and $old != ($s | build-particle)
     }
 }
@@ -133,10 +142,12 @@ export def verify [
     | where cid != ""
     | each {|s|
         let path = $"($particles_dir)/($s.cid).md"
+
         if not ($path | path exists) {
             {heading: $s.heading cid: $s.cid path: $path problem: "particle file missing"}
         } else {
             let actual = open --raw $path | hash-particle
+
             if $actual != $s.cid {
                 {heading: $s.heading cid: $s.cid path: $path problem: $"content hashes to ($actual)"}
             } else {
@@ -153,12 +164,14 @@ export def verify [
 def parse-headings []: string -> table {
     let lines = $in | lines
     let fences = $lines | enumerate | where item =~ '^```' | get index
+
     $lines
     | enumerate
     | where item =~ '^#{1,6} '
     | where {|row| ($fences | where $it < $row.index | length) mod 2 == 0 }
     | each {|row|
         let m = $row.item | parse --regex '^(?<hashes>#+) (?<text>.*)$' | first
+
         {level: ($m.hashes | str length) text: $m.text line: $row.index}
     }
 }
@@ -204,17 +217,19 @@ export def toc [
 ]: nothing -> string {
     let text = open --raw $file | decode utf-8
     let lines = $text | split row "\n"
-    let slugged = $text | parse-headings | reduce --fold {seen: {}, rows: []} {|h, acc|
+    let slugged = $text | parse-headings | reduce --fold {seen: {} rows: []} {|h acc|
         let base = $h.text | render-marker | gfm-slug
         let n = $acc.seen | get --optional $base | default 0
+
         {
             seen: ($acc.seen | upsert $base ($n + 1))
             rows: ($acc.rows | append ($h | insert slug (if $n == 0 { $base } else { $"($base)-($n)" })))
         }
     } | get rows
-    let existing = $slugged | where {|h| ($h.text | strip-marker) == $title }
+    let existing = $slugged | where ($it.text | strip-marker) == $title
     let span = if ($existing | is-not-empty) {
         let start = $existing | first | get line
+
         {
             start: $start
             end: ($slugged | where line > $start | first | get line)
@@ -223,13 +238,16 @@ export def toc [
     } else {
         let meta = $slugged | where level == 3 | first
         let at = $slugged | where line > $meta.line | first | get line
+
         {start: $at end: $at heading: $"### ($title)"}
     }
     let bullets = $slugged | where line >= $span.end | where level in [3 4] | each {|h|
         let indent = if $h.level == 3 { "" } else { "  " }
+
         $"($indent)- [($h.text | render-marker)]\(#($h.slug)\)"
     }
     let block = [$span.heading ""] | append $bullets | append ""
+
     if not $dry_run {
         ($lines | slice 0..<$span.start)
         | append $block
@@ -261,8 +279,10 @@ export def regenerate [
     let changed = changed-sections $file --ref $ref
     let plan = $genesis | append $changed | each {|s|
             let bytes = $s | build-particle
+
             {heading: $s.heading old_cid: $s.cid new_cid: ($bytes | hash-particle) line: $s.line bytes: $bytes}
         }
+
     # Why: an empty plan is a no-op — skip the write entirely so a no-op
     # regenerate touches nothing (no rewritten file, no mtime change).
     if not $dry_run and ($plan | is-not-empty) {
@@ -276,6 +296,7 @@ export def regenerate [
         let updated = $plan | reduce --fold $lines {|p acc|
                 $acc | update $p.line { str replace --regex '\[~\]\([^)]*\)' $"[~]\(($particles_dir)/($p.new_cid).md\)" }
             }
+
         $updated | str join "\n" | save --force --raw $file
     }
     $plan | select heading old_cid new_cid

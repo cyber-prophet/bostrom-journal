@@ -8,8 +8,10 @@ const MAX_SINGLE_CHUNK = 262144
 def varint []: int -> binary {
     mut n = $in
     mut out = 0x[]
+
     while $n >= 128 {
         let byte = ($n mod 128) | bits or 128
+
         $out = ($out | bytes add --end ($byte | into binary | bytes at 0..0))
         $n = $n // 128
     }
@@ -20,6 +22,7 @@ def varint []: int -> binary {
 def unixfs-dag-pb []: binary -> binary {
     let content = $in
     let n = $content | bytes length
+
     if $n > $MAX_SINGLE_CHUNK {
         error make {msg: $"content exceeds single chunk: ($n) > ($MAX_SINGLE_CHUNK)"}
     }
@@ -29,6 +32,7 @@ def unixfs-dag-pb []: binary -> binary {
     let unixfs = (0x[08 02] | bytes add --end $data_field | bytes add --end 0x[18] | bytes add --end $nv)
     # dag-pb PBNode: data=unixfs
     let ulen = ($unixfs | bytes length) | varint
+
     0x[0a] | bytes add --end $ulen | bytes add --end $unixfs
 }
 
@@ -40,6 +44,7 @@ def base58-encode []: binary -> string {
         0..<$pair_count | each {|i|
             let s = $i * 2
             let hex_pair = $hex | str substring ($s)..<($s + 2)
+
             $"0x($hex_pair)" | into int
         }
     )
@@ -47,11 +52,14 @@ def base58-encode []: binary -> string {
     let leading = $byte_list | take while { $in == 0 } | length
     mut nums = $byte_list
     mut digits = []
+
     while not ($nums | is-empty) {
         mut carry = 0
         mut quotient = []
+
         for b in $nums {
             let val = $carry * 256 + $b
+
             $quotient ++= [($val // 58)]
             $carry = $val mod 58
         }
@@ -60,11 +68,13 @@ def base58-encode []: binary -> string {
     }
     let ones = (0..<$leading | each { '1' } | str join)
     let encoded = ($digits | each {|d| $chars | get $d } | str join)
+
     $"($ones)($encoded)"
 }
 
 # Compute CID v0 from raw binary content in pure Nushell (must be ≤ 256 KB)
 export def main []: binary -> string {
     let hash_bytes = $in | unixfs-dag-pb | hash sha256 | decode hex
+
     0x[1220] | bytes add --end $hash_bytes | base58-encode
 }
