@@ -17,15 +17,10 @@ The content lives in these documents:
 - `bj001-excerpt.md` — selected chapters from `bj001.md`,
   adapted to help agents hold the exact wording.
 - `bj002ru.md` — the finished, important 2026 version, with the core mechanics described.
-  Written/generated in the editor's native Russian.
-  Kept in the coined vocabulary;
-  content synced with `bj002stdru.md` (see the terminology section below).
+  Written/generated in the editor's native Russian,
+  in the vocabulary fixed in the terminology section below.
 - `bj002.md` — the English translation of `bj002ru.md`.
-- `bj002stdru.md` — the same issue 2 reissued in the standard terms (see the section below).
-  A parallel document, not a replacement:
-  `bj002ru.md` keeps the coined vocabulary
-  so the two readings can be compared.
-- `bj002std.md` — the English translation of `bj002stdru.md`.
+  Every change to issue 2 is a paired ru+en change.
 - `bj003ru.md` / `bj003stdru.md` — the issue in progress.
   They live on the journal's bj003 branches in the recipient repo,
   not on the `master` line this monorepo mirrors,
@@ -52,33 +47,60 @@ the change is not committed yet
 These two are examples, not the whole rule:
 derive the same logic from whatever I say.
 
-## Terminology: two coined terms, everything else standard
+## Terminology: three coined terms, everything else standard
 
 Decision by the author, 2026-07-26:
 the coined vocabulary makes the cybergraph look more exotic than it is
-and costs the reader effort before they reach the mechanics.
-Only two coined terms stay
-— **киберграф** and **киберлинк** (cybergraph, cyberlink).
-Everything else uses the ordinary words of graph theory and files.
+and costs the reader effort before they reach the mechanics,
+so only **киберграф** and **киберлинк** were to stay,
+and everything else uses the ordinary words of graph theory and files.
+On 2026-09-02 a third term stayed with them (see "How it got here").
+The words that stay:
 
-**Applied — in parallel files.**
-The standard-terms reissue of issue 2 lives in `bj002stdru.md` / `bj002std.md`.
-The original `bj002ru.md` / `bj002.md` stay as the parallel coined-vocabulary edition.
-Decided 2026-08-06: the editions are kept in sync by content
-— a substantive change made in one (the `confirm` convention was born in the std reissue) is ported to the other in that edition's vocabulary, as paired ru+en changes —
-so at any moment the editions differ only in terminology.
-The coined vocabulary therefore stays in `bj001.md` / `bj001-excerpt.md`,
-in `bj002ru.md` / `bj002.md`,
-and — even in the standard-terms files — in the «Основы» / "Fundamentals" line that gives the reader Bostrom's own names (*нейрон*, *частица*).
-New text uses the standard terms;
-the table below is the mapping for reading the older texts.
+- **киберграф** / cybergraph — the data structure made of cyberlinks.
+- **частица** / particle — one name for two things, the vertex of the graph and the bytes of the file under its CID;
+  a file becomes a particle when its CID stands in an edge (`bj001-excerpt.md`, «Частицы»).
+  Kept because the format's own words carry it:
+  `agree_particle`, `disagree_particle`, `quote_particle`, `author_particle` are hashed as written,
+  and `../nu-cybergraph` says *particle* and stores under `particles/`.
+- **киберлинк** / cyberlink — a signer's statement of an edge between two particles;
+  the triple `{cid_from, cid_to, signer}`.
 
-| было | стало | note |
-|---|---|---|
-| киберчастица, частица | **файл** — когда речь о содержимом; **вершина** — когда речь о положении в графе | файл становится вершиной, когда его CID стоит в ребре |
-| кибернейрон, нейрон | **подписант** | тот, чей ключ подписал киберлинк; identity = CID публичного ключа |
-| содержимое (как самостоятельная сущность) | **файл** / **содержимое файла** | «содержимое» остаётся обычным словом, но сущность — файл |
-| ребро, вершина, CID, тезис | без изменений | уже стандартные |
+The signer is **подписант** / signer
+— the one whose key signed the cyberlink;
+identity = CID of the public key —
+and the record field is `signer`.
+Decided 2026-07-27:
+the journal is primary for vocabulary and `../nu-cybergraph` follows it,
+so the field was renamed in the format too
+— `{cid_from, cid_to, signer}` and `hash(cid_from, cid_to, signer)`.
+The content of a particle is a **файл** / file, an ordinary word.
+
+How it got here.
+The 2026-07-26 decision was first applied as a parallel standard-terms reissue, `bj002stdru.md` / `bj002std.md`,
+with *particle* → file / vertex and *neuron* → signer,
+while `bj002ru.md` / `bj002.md` kept the coined vocabulary
+so the two readings could be compared;
+the `confirm` convention was born in that reissue.
+Decision by the author, 2026-09-02:
+the pair goes.
+The op words carry `_particle` in every edition and the code keeps *particle*,
+so the reissue could not remove the word it was made to remove;
+meanwhile the code's record field is `signer`,
+which only the reissue said,
+so neither edition matched the code.
+The coined editions took the code's vocabulary instead
+— *signer* / подписант for the field, *particle* / частица for the file in the graph —
+and the reissue was deleted;
+`git log` holds it.
+Its particles stay in `particles/`:
+published content is not withdrawn.
+
+Bostrom's own names for these things
+— *нейрон* (neuron) for the signer, and *частица* as it was coined there —
+appear in `bj001.md` / `bj001-excerpt.md`
+and in the one line of «Основы» / "Fundamentals" that tells the reader what the signer is called in Bostrom, on cyb.ai and in issue 1.
+Nowhere else.
 
 Rules that follow:
 
@@ -86,7 +108,9 @@ Rules that follow:
   CID можно посчитать от любых байтов,
   но журнал говорит только о файлах:
   тезис — файл, вывод агента — файл, прообраз производного CID — файл.
-- **Киберлинк** — утверждение подписанта о ребре между двумя файлами.
+  Частицей файл становится, когда его CID стоит в ребре;
+  «вершина» — слово теории графов для той же частицы, когда речь только о её месте в графе.
+- **Киберлинк** — утверждение подписанта о ребре между двумя частицами.
   Тройка остаётся прежней;
   меняются только слова, которыми мы её описываем.
 - Author-of-content vs signer-of-cyberlink:
@@ -94,32 +118,13 @@ Rules that follow:
   подпись под киберлинком принадлежит **подписанту**.
   Раньше эту разницу приходилось объяснять («нейрон киберлинка не обязан быть автором содержимого»)
   — теперь она видна из слов.
-- The mapping holds for the standard-terms English file `bj002std.md`:
-  particle → **file** / **vertex**, neuron → **signer**.
-  It does not reach `bj002.md`, the coined-vocabulary edition, which keeps *particle* and *neuron*,
-  and it does not reach `../nu-cybergraph`, whose SPEC says *particle* and whose store is `particles/`.
-  Nothing was renamed there;
-  only the standard-terms reissue chose other words.
-  Nor does the mapping reach the op words:
-  `agree_particle`, `disagree_particle`, `quote_particle`, `author_particle` are the format's own words, hashed as written,
-  and keep *particle* in every edition, the std pair included.
 - **The op words are nu-cybergraph's, letter for letter** (decided 2026-09-02):
   every convention word names its subject — `_particle`, `_edge`, `_link` —
   and a bare word (`pro`, `con`, `question`, `same`) means the operand is any CID.
-  The code moves first, the four editions follow as paired ru+en changes;
+  The code moves first, the editions follow as a paired ru+en change;
   only the addresses still differ, because bj002 hashes a comma-join where the format derives from a record.
 - Не «упрощать» дальше самого механизма:
   CID, производный CID, адрес ребра, политика чтения, гомоиконичность — остаются, с глоссой при первом появлении.
-
-**The record field is `signer`.**
-Decided 2026-07-27: the journal is primary for vocabulary and `../nu-cybergraph` follows it,
-so the field was renamed in the format too
-— `{cid_from, cid_to, signer}` and `hash(cid_from, cid_to, signer)`.
-The name `neuron` survives in the coined-vocabulary edition (`bj002ru.md` / `bj002.md`)
-and where the journal quotes Bostrom's own vocabulary («Основы»).
-The code migrated:
-`../nu-cybergraph/nu-cybergraph/_record.nu` defines `LINK_KEYS = [cid_from cid_to signer]`,
-and `tests/test_record.nu` rejects a record carrying `neuron`.
 
 ## Editing the documents
 
@@ -133,6 +138,11 @@ and `tests/test_record.nu` rejects a record carrying `neuron`.
   add a body only when there is reasoning worth preserving
   — never a list of wording edits.
 - **Read git log for the reasoning behind past choices.**
+- **Particles are regenerated only at merge.**
+  An edit to a chapter leaves its `[~]` marker and `particles/` alone;
+  the reissue runs once, when the branch lands on master
+  (`nu-cyjournal regenerate ./bj002ru.md --ref master`, the same for `./bj002.md`)
+  — so the history does not fill with intermediate versions.
 
 The rules below treat "blur" — text that is about the thing but not exact.
 The cause of blur:
