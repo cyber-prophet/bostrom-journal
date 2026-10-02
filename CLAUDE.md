@@ -73,7 +73,7 @@ and the record field is `signer`.
 Decided 2026-07-27:
 the journal is primary for vocabulary and `../nu-cybergraph` follows it,
 so the field was renamed in the format too
-— `{cid_from, cid_to, signer}` and `hash(cid_from, cid_to, signer)`.
+— `{cid_from, cid_to, signer}` and its derived CID, the hash of the record `{"cid_from":A,"cid_to":B,"signer":S}`.
 The content of a particle is a **файл** / file, an ordinary word.
 
 How it got here.
@@ -114,7 +114,7 @@ Rules that follow:
   Тройка остаётся прежней;
   меняются только слова, которыми мы её описываем.
 - Author-of-content vs signer-of-cyberlink:
-  соглашение `hash("author_particle", B) → P` называет **автора файла**;
+  соглашение `{"about":X,"op":"author_particle"} → P` называет **автора файла**;
   подпись под киберлинком принадлежит **подписанту**.
   Раньше эту разницу приходилось объяснять («нейрон киберлинка не обязан быть автором содержимого»)
   — теперь она видна из слов.
@@ -122,7 +122,7 @@ Rules that follow:
   every convention word names its subject — `_particle`, `_edge`, `_link` —
   and a bare word (`pro`, `con`, `question`, `same`) means the operand is any CID.
   The code moves first, the editions follow as a paired ru+en change;
-  only the addresses still differ, because bj002 hashes a comma-join where the format derives from a record.
+  both derive from the same canonical record, so the addresses agree too.
 - Не «упрощать» дальше самого механизма:
   CID, производный CID, адрес ребра, политика чтения, гомоиконичность — остаются, с глоссой при первом появлении.
 
