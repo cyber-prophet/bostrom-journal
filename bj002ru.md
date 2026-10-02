@@ -38,7 +38,7 @@ Journal address: `bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa`.
 - [Чтение инструкций ~](#чтение-инструкций-)
 - [Приложение: формат киберграфа ~](#приложение-формат-киберграфа-)
 
-### Киберлинк и киберграф [~](particles/QmctVQG4jo5LFfnnEdAywAFJEFJsCJWFzNapG88NsHFu91.md)
+### Киберлинк и киберграф [~](particles/QmRYauU9BXj4VBD3Ynb9hKRFGL5SnvqMefJ5BdKwa7B6ix.md)
 
 У любого файла можно посчитать CID (content identifier)
 — IPFS-хеш, вычисленный от его байтов.
@@ -107,7 +107,7 @@ Journal address: `bostrom1q7zd65fsx8hvh788lyla8wxemlesf0djrhe0wa`.
 Реализация покажет, что в соглашениях менять.
 Однако это задача будущего.
 
-### Благодарность [~](particles/QmUMfurqBUJzpUuqGVM1ovr4C9xvMmcuG9YV71RWZLWAv1.md)
+### Благодарность [~](particles/QmT2uzUAvm1sARWVpEPPFbYn5TTbdpkgGFRvTDXMgzLhtx.md)
 
 Насколько мне известно, первым, кто задокументировал подобные соглашения,
 был @snedashkovsky в [semantic conventions](https://github.com/Snedashkovsky/cyber-semantic-conventions)
@@ -128,7 +128,7 @@ CID специальной строки, например tweet, ставитс�
 часть из которых описана в данном выпуске, — в гораздо большем объёме родилась и живёт в умах основателей @mastercyb и @cyborgshead.
 Всё, что описано в журнале, — лишь вновь открытые идеи основателей Bostrom или производные от них.
 
-### Основы [~](particles/QmXe7k2VWiCbqbqxbB7KA75pmGUiiS3RBjG8zAbptNcpVd.md)
+### Основы [~](particles/QmasBi26QVfrD7VWwWjVhUzfHFJsQbYmLBk7JQTBD2XcqS.md)
 
 Определение из главы «Киберлинк и киберграф» не упоминает блокчейн:
 тройка и производные CID заданы поверх IPFS-хеширования
@@ -167,7 +167,7 @@ CID детерминирован от содержимого,
 можно прочитать каждую транзакцию подписанта,
 так что ни один его киберлинк не остаётся скрытым.
 
-### Новизна [~](particles/QmZUZUW9pK9Vjjq9QnBJTsA9LwFstGq4eLZLSqbXycepw3.md)
+### Новизна [~](particles/QmSjEHPnvicCWCGn9iUpAw3sd41Wmnorq6UX3k7KxAo9fD.md)
 
 Киберграф не вводит новых криптографических механизмов.
 Он собирает известные
@@ -290,7 +290,7 @@ transclusion встроен в адресацию,
 а происхождение выдержки делает видимым соглашение `quote_particle`
 — свойство адреса, а не отдельная система.
 
-### Соглашения [~](particles/QmTXDAKBFGeb9EgbR6C8WWcRSRfDYn9Y71wbMkZFd62ERm.md)
+### Соглашения [~](particles/QmaaWqSqQgzcCmyFuC9DDx46WLmbFdbE5jiLuFeMoWUbea.md)
 
 У опубликованного ребра `A → B` есть адрес
 — `{"cid_from":A,"cid_to":B}`, CID записи из A и B;
@@ -365,7 +365,7 @@ transclusion встроен в адресацию,
 — как *кодировать* и как *интерпретировать* инструкции для обработки киберграфа.
 (`hash("текст")` — CID байтов самого текста.)
 
-#### Подтверждение ребра и киберлинка [~](particles/Qmf4nuQ1hsTUKfc3Nmk9kN5UMWziXNPbegQdKEwA4wAABU.md)
+#### Подтверждение ребра и киберлинка [~](particles/QmbYBcCFcFRTiLmgkCgDzQWpPn1Gu6ymzMVfVaNdvYbLBf.md)
 
 Поддержать утверждение можно двумя способами:
 сделать его своим или подтвердить чужое.
@@ -435,7 +435,7 @@ signer - CID подписанта подтверждаемого киберли�
 киберлинк, отвергнутый как спам, другие подписанты подтверждают как действительный,
 и обе стороны видны рядом.
 
-#### Отрицание ребра и киберлинка [~](particles/QmVN1CY7odCFjkYskdbyPEDjfB63DkRbW468jywxqGe23Q.md)
+#### Отрицание ребра и киберлинка [~](particles/QmZc6gowrkKDta9JaamivG696qhwG8UU1HR8B6Gwsg2PbA.md)
 
 ```
 A - CID
@@ -459,7 +459,7 @@ signer - CID подписанта оспариваемого киберлинк�
 `{"op":"deny_edge"}` и `{"op":"deny_link"}` — фиксированные CID;
 отрицается то, на что они указывают.
 
-#### Обновление ранее опубликованного ребра [~](particles/Qmd5YkkT68R7FRgwHDSp7hYAX7EPyWEmiLpigpAVZdDAQB.md)
+#### Обновление ранее опубликованного ребра [~](particles/QmS7qgk2Ld7njj93t1MBPrKz2ASUnsmnB9TftbgJHGDeD2.md)
 
 ```
 A - CID из исходного ребра
@@ -482,7 +482,7 @@ A → C                                                        # вспомог�
 И как любое ребро, ребро обновления само адресуемо
 — `{"about":{"cid_from":A,"cid_to":B},"op":"update_edge"} → C` может быть подтверждено через `confirm_edge` или отвергнуто через `deny_edge` другим подписантом.
 
-#### Цитаты [~](particles/QmTBiqaSQdh4T3wmBR8DMFeMJX9zh4Y2Y4FpNejhkSLhqt.md)
+#### Цитаты [~](particles/QmcAGvC8pC25dK5JtSJLeFWK39qK55PJQT6GGgMZigAoVt.md)
 
 ```
 A - CID
@@ -495,7 +495,7 @@ B - CID, content(B) — подстрока content(A) (независимо пр
 его повторение утверждает, что выдержка добросовестна;
 `{"op":"deny_edge"} → {"cid_from":{"about":A,"op":"quote_particle"},"cid_to":B}` оспаривает её как вводящую в заблуждение вне контекста.
 
-#### Согласие и несогласие с содержимым [~](particles/QmZc2xZpk96EgNYNeYWjz8S8LMbbsdGW3U3EzEwuxSnEHD.md)
+#### Согласие и несогласие с содержимым [~](particles/Qmesba7BzXAi8F9Mx5gkwvaBtRYohNZRhsrAamFNdKVTVr.md)
 
 ```
 B - CID оцениваемого содержимого
@@ -528,7 +528,7 @@ B - CID оцениваемого содержимого
 — например, как спам, —
 не выражая мнения о самом B.
 
-#### Довод за и против [~](particles/QmXPcbSn4QoBMvnoHd3gdZGvAks3J3snxBg1phVXNxU1mS.md)
+#### Довод за и против [~](particles/QmPRdkT1oxyz3X6wXWQJhY7tLWm8d4XUAmfZ6DJtnmoNSq.md)
 
 ```
 X - любой CID: содержимое, ребро или киберлинк
@@ -563,7 +563,7 @@ B - CID содержимого-довода
 а к содержимому B применяют `agree_particle`/`disagree_particle`
 — спор о качестве довода ведётся теми же соглашениями.
 
-#### Вопрос и ответ [~](particles/QmNrds7KSYpXjZgyTXwuZtYiQ2n4YdLCZYHQDf4c2bWbyj.md)
+#### Вопрос и ответ [~](particles/QmTu4ADkKPaC913GDTAFkwAyEpnVmCV2hjfKbUScaZtHmT.md)
 
 ```
 X - любой CID: содержимое, ребро или киберлинк
@@ -602,7 +602,7 @@ R - CID содержимого-ответа
 к нему приводят доводы `pro`/`con`,
 а лучший ответ выявляет агрегация, а не назначение.
 
-#### Авторство: перенос из других медиумов [~](particles/Qmb2M6wrvyJrqcu95WbUpXLFyvJyxbpH3SQT8Zgy51G77K.md)
+#### Авторство: перенос из других медиумов [~](particles/QmRX5mhfTyxKFu5YTCY3tL3jwX5DRRspWahU1fGHv8tPM6.md)
 
 Подписант киберлинка — тот, кто записал ребро в граф,
 и он не обязан быть автором содержимого.
@@ -644,7 +644,7 @@ X - CID перенесённого содержимого
 Тем же приёмом пользуется разобранный пример ниже:
 «Так я слышал» — Ананда подписывает происхождение слов, произнесённых не им.
 
-#### Тождество: другое имя той же сущности [~](particles/QmNisSpteU34gb2k6G6ciC72dASh81kVefNdaChNEyM4Mv.md)
+#### Тождество: другое имя той же сущности [~](particles/QmaPtSJmVaUn6ptLZwrSE2b7jAwds7hJtC68vdmhDzXco2.md)
 
 ```
 P1, P2 - CID, именующие одну сущность
@@ -677,7 +677,7 @@ P1, P2 - CID, именующие одну сущность
 — в производные CID имя вшито хешем,
 и задним числом они не пересчитываются.
 
-### Совместная работа над информацией [~](particles/QmfCqN1CF5xSHpbNWckboVZRWhciUWXQKicfKpJqeoTRr3.md)
+### Совместная работа над информацией [~](particles/QmaE4qdbvhqj5PEf8UhtBprw5DCSPkfKx8H4iYLnFvKVGe.md)
 
 Киберлинки связывают частицы, а через них — и подписантов:
 
@@ -692,7 +692,7 @@ Erin подтверждает: {"op":"confirm_edge"} → {"cid_from":A,"cid_to":
 Граф кодирует не только «что с чем связано», но и «кто во что верит»
 — и это поддаётся запросам и анализу.
 
-#### Измеримый консенсус [~](particles/QmV3GQpTyr8RWSHCtE2xwZEuoaF2L7PYixc8uNgmyJL1PF.md)
+#### Измеримый консенсус [~](particles/QmbVm31RKFi3yS8yq5FmcoXv9p7eSLASDJqdjdZaAZZkaF.md)
 
 Для любого утверждения `A → B`:
 - Посчитать киберлинки разных подписантов с этим ребром → уровень поддержки:
@@ -727,7 +727,7 @@ Consensus(statement) = f(repeats, confirms, denies, signer_weights, time_decay)
 отзыв собственной записи — `{"op":"deny_link"} → {"cid_from":A,"cid_to":B,"signer":signer}`,
 где `signer` — CID самого отзывающего.
 
-#### Смена масштаба: тезис, файл, корпус [~](particles/QmZ8h5kHyzv2Prj4mQiPCJv97CXx4hwz3BksyCBzZtT7zC.md)
+#### Смена масштаба: тезис, файл, корпус [~](particles/QmPdXaSG7dyRqhYVVVgfoTVSZNTVEZVstwt2f3dBNd6ti8.md)
 
 Текстовый файл A не обязательно рассматривать как единое целое.
 Его можно разложить на базовые тезисы, которые он делает:
@@ -763,7 +763,7 @@ Consensus(statement) = f(repeats, confirms, denies, signer_weights, time_decay)
 тезис, файл и корпус адресуются CID,
 и одни и те же соглашения действуют на каждом масштабе (см. «Соглашения»).
 
-#### Агенты над графом: вывод как переиспользуемое значение [~](particles/QmUf4rf7gnMsvjqpHmr5xjEt4VbbXSuNHrh94ZDPxGGCkd.md)
+#### Агенты над графом: вывод как переиспользуемое значение [~](particles/QmTZMavM8eUTaBVZnEjbN7TKEtkhZeLUitZyfnRjUsjUQ7.md)
 
 Разнородным агентам, действующим сообща, нужны явные правила взаимодействия,
 которые каждый может проверить, не доверяя другому.
@@ -819,7 +819,7 @@ Consensus(statement) = f(repeats, confirms, denies, signer_weights, time_decay)
 кто взял вывод как есть — подтверждает чужое (см. «Подтверждение ребра и киберлинка»),
 и в графе видно, чего стоит каждый голос.
 
-#### Качество информации [~](particles/QmUtxsjXTGxGLbXErFqqZcPX4VNfGxsFeT9NnzaUgQdXrc.md)
+#### Качество информации [~](particles/QmUTpXto1eeGje7uqCouzR6LeWT384XiX56PDjqRAtsEXz.md)
 
 Ссылка в письменной культуре не нова.
 В книге она есть,
@@ -859,7 +859,7 @@ Consensus(statement) = f(repeats, confirms, denies, signer_weights, time_decay)
 эквивалентность кто-то утверждает,
 и потому её, как любое ребро, можно оспорить (`deny_edge`) и измерить консенсусом.
 
-### Разобранный пример: что на самом деле сказал Будда? [~](particles/QmTbkgpjMYgZZaDKAuPyjM41pxVfStq3QBQigcwJVEPRxc.md)
+### Разобранный пример: что на самом деле сказал Будда? [~](particles/QmY84i5KbzaTvAmynMES2CVwqDGwWsBNVi3Nw55J293nQW.md)
 
 Будда ничего не писал.
 Он учил около сорока пяти лет, умер,
@@ -971,7 +971,7 @@ Ananda:  A → B                        # "Так я слышал"
 который специализированные подписанты могут перепроверить, подтвердить или отвергнуть.
 Измерения растут через соглашения, а не через новый механизм.
 
-### Применения [~](particles/QmPGFQ1CZu3C8vcbqY3qSLbwupu2gsfqYYhb7DpETZvYoE.md)
+### Применения [~](particles/Qmb1zRQNkBsfiGQhgxJ5d7oST1jf1WbFFAesKveyNCqWva.md)
 
 | Область | Применение |
 |--------|-------------|
@@ -990,7 +990,7 @@ Ananda:  A → B                        # "Так я слышал"
 Поскольку подписантами могут быть и люди, и контракты,
 те же соглашения применимы к взаимодействиям ИИ-агентов без дополнительной инфраструктуры.
 
-### Чтение инструкций [~](particles/QmeMzydcE9u2BmpzvLwd1Pze3ho2Gnc3i1AkeMcC78xAzR.md)
+### Чтение инструкций [~](particles/QmdtuVrmUNrM6DVgJfGeYpJ9UDtMpGyhk3uRrRpprGjnyn.md)
 
 CID непрозрачен:
 глядя на ребро, нельзя увидеть, что его источник — это, скажем, `{"about":{"cid_from":A,"cid_to":B},"op":"update_edge"}`.
@@ -1036,7 +1036,7 @@ nu-cybergraph, реализация формата на Nushell, публику�
 тот выбирает свой корень и интерпретирует его по-своему.
 И как любое ребро, объявление повторяют, подтверждают через `confirm_edge` и оспаривают через `deny_edge`.
 
-### Приложение: формат киберграфа [~](particles/QmUnypsqpq1Ftz3Mz51E4Xn9ruxJTyA2GGt8vZ6FLr4BbB.md)
+### Приложение: формат киберграфа [~](particles/QmUVXWsUyTwfRj9JHukB6SzSW5WW3uXmRLG8WyUeyQnriN.md)
 
 CID — всегда CID v0:
 содержимое оборачивается в стандартный IPFS-блок (UnixFS dag-pb), хешируется sha2-256,
