@@ -141,7 +141,7 @@ Rules that follow:
 - **Particles are regenerated only at merge.**
   An edit to a chapter leaves its `[~]` marker and `particles/` alone;
   the reissue runs once, when the branch lands on master
-  (`nu-cyjournal regenerate ./bj002ru.md --ref master`, the same for `./bj002.md`)
+  (from `bostrom-journal/`: `use nu-cyjournal; nu-cyjournal regenerate ./bj002ru.md --ref master`, the same for `./bj002.md`)
   — so the history does not fill with intermediate versions.
 
 The rules below treat "blur" — text that is about the thing but not exact.
