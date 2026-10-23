@@ -5,7 +5,7 @@
 # section edited on this branch (vs `main`), and rewires its `[~]` link to the
 # new CID. Composable plumbing: parse -> build body -> hash -> place/rewire.
 
-export use cid-v0.nu
+export use cid-v0.nu [ main ]
 
 # Parse journal markdown into sections.
 #
@@ -21,26 +21,25 @@ export use cid-v0.nu
 # the marker suffix removed, `body` is the section text with leading/trailing
 # blank lines stripped (otherwise byte-verbatim), and `line` is the heading's
 # 0-based index into `$in | lines` (the rewire targets it positionally).
+@category bostrom-journal
 export def parse-sections []: string -> table {
     let lines = $in | lines
     let heading_idx = $lines | enumerate | where item =~ '^#{1,6} ' | get index
-    let next_idx = $heading_idx | skip 1 | append ($lines | length)
 
-    $heading_idx | zip $next_idx | each {|pair|
-        let hi = $pair.0
-        let ni = $pair.1
-        let m = $lines | get $hi | parse --regex '^#{1,6} (?<heading>.*) \[~\]\((?<link>[^)]*)\)$'
+    $heading_idx
+    | append ($lines | length)
+    | window 2
+    | each {|pair|
+        {hi: $pair.0 ni: $pair.1 m: ($lines | get $pair.0 | parse --regex '^#{1,6} (?<heading>.*) \[~\]\((?<link>[^)]*)\)$')}
+    }
+    | where m != []
+    | each {|s|
+        let cid = $s.m.0.link | parse-marker-link
+        # A heading-only section gives an empty range, which `slice` returns as [].
+        let body_lines = $lines | slice ($s.hi + 1)..<$s.ni
 
-        if ($m | is-empty) {
-            null
-        } else {
-            let cid = $m.0.link | parse-marker-link
-            # A heading-only section gives an empty range, which `slice` returns as [].
-            let body_lines = $lines | slice ($hi + 1)..<$ni
-
-            {cid: $cid heading: $m.0.heading body: ($body_lines | strip-blank-edges) line: $hi}
-        }
-    } | compact
+        {cid: $cid heading: $s.m.0.heading body: ($body_lines | strip-blank-edges) line: $s.hi}
+    }
 }
 
 # Resolve a `[~](...)` marker link to a particle CID. Empty link -> genesis "".
@@ -83,6 +82,7 @@ def strip-blank-edges []: list<string> -> string {
 # has a previous version; absence <=> genesis. Bare bodies also match how the
 # original cyber particles were stored.) Otherwise a `parent:` frontmatter
 # carries the previous-version CID (a plain string).
+@category bostrom-journal
 export def build-particle []: record -> string {
     let sec = $in
     let head = if ($sec.cid | is-empty) { "" } else { $"---\nparent: ($sec.cid)\n---\n\n" }
@@ -96,6 +96,7 @@ export def build-particle []: record -> string {
 }
 
 # CID v0 of a particle's text (its exact UTF-8 bytes).
+@category bostrom-journal
 export def hash-particle []: string -> string {
     $in | into binary | cid-v0
 }
@@ -109,6 +110,7 @@ export def hash-particle []: string -> string {
 # index is built only over non-empty cids, so empty keys can't collide.
 #
 # Returns the current-working-tree section rows for the changed sections.
+@category bostrom-journal
 export def changed-sections [
     file: string # journal path, e.g. BostromJournal001.md
     --ref: string = "master" # git ref to diff against
@@ -133,6 +135,7 @@ export def changed-sections [
 # Genesis markers (`[~]()`) are skipped — they name no particle yet. Returns
 # rows for problems only: {heading, cid, path, problem}; an empty table means
 # every marker checks out.
+@category bostrom-journal
 export def verify [
     file: string # journal to check
     --particles-dir: string = "particles" # where particle files live
@@ -140,22 +143,18 @@ export def verify [
     open --raw $file
     | parse-sections
     | where cid != ""
-    | each {|s|
-        let path = $"($particles_dir)/($s.cid).md"
-
-        if not ($path | path exists) {
-            {heading: $s.heading cid: $s.cid path: $path problem: "particle file missing"}
+    | insert path {|s| $"($particles_dir)/($s.cid).md" }
+    | insert problem {|s|
+        if not ($s.path | path exists) {
+            "particle file missing"
         } else {
-            let actual = open --raw $path | hash-particle
+            let actual = open --raw $s.path | hash-particle
 
-            if $actual != $s.cid {
-                {heading: $s.heading cid: $s.cid path: $path problem: $"content hashes to ($actual)"}
-            } else {
-                null
-            }
+            if $actual != $s.cid { $"content hashes to ($actual)" }
         }
     }
-    | compact
+    | where problem != null
+    | select heading cid path problem
 }
 
 # Headings of a markdown text, skipping fenced code blocks.
@@ -210,6 +209,7 @@ def gfm-slug []: string -> string {
 # kept byte-verbatim (the `[~]` marker survives). Otherwise the chapter is
 # inserted after the first `###` section — Issue metadata; the TOC follows it.
 # Returns the TOC block; --dry-run returns it without touching the file.
+@category bostrom-journal
 export def toc [
     file: string = "BostromJournal001.md" # journal to build the TOC for
     --title: string = "Table of contents" # TOC chapter heading (ru: Оглавление)
@@ -269,6 +269,7 @@ export def toc [
 # byte-identical, so a document-wide `str replace` would mis-target. The file is
 # read losslessly and the marker on each section's own line is rewritten.
 # Returns rows { heading, old_cid, new_cid }; genesis rows use "" as old_cid.
+@category bostrom-journal
 export def regenerate [
     file: string = "BostromJournal001.md" # journal to regenerate
     --ref: string = "master" # git ref to diff against

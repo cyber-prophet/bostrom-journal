@@ -5,7 +5,7 @@ const BASE58_ALPHABET = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvw
 const MAX_SINGLE_CHUNK = 262144
 
 # Protobuf varint encoding
-def varint []: int -> binary {
+export def varint []: int -> binary {
     mut n = $in
     mut out = 0x[]
 
@@ -19,7 +19,7 @@ def varint []: int -> binary {
 }
 
 # Wrap content in UnixFS dag-pb protobuf (single-chunk leaf node, no links)
-def unixfs-dag-pb []: binary -> binary {
+export def unixfs-dag-pb []: binary -> binary {
     let content = $in
     let n = $content | bytes length
 
@@ -37,7 +37,7 @@ def unixfs-dag-pb []: binary -> binary {
 }
 
 # Base58btc encoding
-def base58-encode []: binary -> string {
+export def base58-encode []: binary -> string {
     let hex = $in | encode hex
     let pair_count = ($hex | str length) // 2
     let byte_list = (

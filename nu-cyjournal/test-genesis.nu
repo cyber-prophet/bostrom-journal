@@ -43,8 +43,8 @@ def "double genesis rewires by position and fills each link distinctly" [] {
     ^git config user.email t@t
     ^git config user.name t
     "# seed\n" | save --raw journal.md
-    ^git add -A
-    ^git commit --quiet -m init
+    ^git add --all
+    ^git commit --quiet --message init
     $doc | save --force --raw journal.md
 
     let report = regenerate journal.md --ref (^git rev-parse HEAD | str trim)
@@ -74,8 +74,8 @@ def "existing unchanged particle is untouched" [] {
     ^git config user.email t@t
     ^git config user.name t
     $doc | save --force --raw journal.md
-    ^git add -A
-    ^git commit --quiet -m init
+    ^git add --all
+    ^git commit --quiet --message init
 
     let report = regenerate journal.md --ref (^git rev-parse HEAD | str trim)
 
@@ -96,8 +96,8 @@ def "empty plan does not touch the file" [] {
     ^git config user.email t@t
     ^git config user.name t
     $doc | save --force --raw journal.md
-    ^git add -A
-    ^git commit --quiet -m init
+    ^git add --all
+    ^git commit --quiet --message init
 
     let before = ls journal.md | get 0.modified
 
